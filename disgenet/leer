@@ -1,2 +1,3 @@
 # folder con script de disgenet y input data
 # ojo, descomprimir los .rar
+falta: obtener secuencias, aa que cambia/n y posiciones. Algunas se podrian traer de la data de Clinvar o de Uniprot (ver column source)
