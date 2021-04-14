@@ -1,0 +1,590 @@
+uniprot,organism,mlo,mim,hgnc_id
+O15527,Homo sapiens,nuclear speckle,601982.0,HGNC:8125
+O43663,Homo sapiens,pcg body,603484.0,HGNC:9341
+O75494,Homo sapiens,nuclear speckle,605221.0,HGNC:16713
+O95613,Homo sapiens,centrosome/spindle pole body,605925.0,HGNC:16068
+P08047,Homo sapiens,centrosome/spindle pole body,189906.0,HGNC:11205
+P38159,Homo sapiens,sam68 nuclear body,300199.0,HGNC:9910
+P42858,Homo sapiens,centrosome/spindle pole body,613004.0,HGNC:4851
+P46100,Homo sapiens,pml nuclear body,300032.0,HGNC:886
+P48729,Homo sapiens,nuclear speckle,600505.0,HGNC:2451
+Q00987,Homo sapiens,pml nuclear body,164785.0,HGNC:6973
+Q02040,Homo sapiens,nuclear speckle,465000.0,HGNC:18783
+Q07666,Homo sapiens,sam68 nuclear body,602489.0,HGNC:18116
+Q07955,Homo sapiens,nuclear speckle,600812.0,HGNC:10780
+Q08170,Homo sapiens,nuclear speckle,601940.0,HGNC:10786
+Q15424,Homo sapiens,nuclear stress body,602895.0,HGNC:10520
+Q5HYJ3,Homo sapiens,nuclear speckle,,HGNC:28492
+Q66PJ3,Homo sapiens,nuclear speckle,607668.0,HGNC:18076
+Q7L014,Homo sapiens,nuclear speckle,617848.0,HGNC:18681
+Q86V81,Homo sapiens,nuclear speckle,,
+Q96FC9,Homo sapiens,centrosome/spindle pole body,601150.0,HGNC:2736
+Q96MU7,Homo sapiens,nuclear speckle,617283.0,HGNC:30626
+Q96QD9,Homo sapiens,nuclear speckle,616933.0,HGNC:25407
+Q99459,Homo sapiens,nuclear speckle,602868.0,HGNC:1743
+Q99996,Homo sapiens,centrosome/spindle pole body,604001.0,HGNC:379
+Q9H2X6,Homo sapiens,pml nuclear body,606868.0,HGNC:14402
+Q9NSB8,Homo sapiens,postsynaptic density,604799.0,HGNC:17513
+Q9UK58,Homo sapiens,nuclear speckle,613384.0,HGNC:20569
+Q9UQ35,Homo sapiens,nuclear speckle,606032.0,HGNC:16639
+Q9Y4E5,Homo sapiens,pml nuclear body,615708.0,HGNC:21091
+O15234,Homo sapiens,nuclear speckle,606504.0,HGNC:17040
+O43660,Homo sapiens,nuclear speckle,605961.0,HGNC:9089
+O43781,Homo sapiens,nuclear speckle,603497.0,HGNC:3094
+P18583,Homo sapiens,nuclear speckle,182465.0,HGNC:11183
+P23497,Homo sapiens,pml nuclear body,604585.0,HGNC:11206
+P49711,Homo sapiens,centrosome/spindle pole body,604167.0,HGNC:13723
+P54132,Homo sapiens,pml nuclear body,604610.0,HGNC:1058
+P63165,Homo sapiens,pml nuclear body,601912.0,HGNC:12502
+P84103,Homo sapiens,nuclear speckle,603364.0,HGNC:10785
+Q12888,Homo sapiens,dna damage foci,605230.0,HGNC:11999
+Q12988,Homo sapiens,others,604624.0,HGNC:5248
+Q13427,Homo sapiens,nuclear speckle,606093.0,HGNC:14650
+Q14145,Homo sapiens,others,606016.0,HGNC:23177
+Q14149,Homo sapiens,pml nuclear body,610078.0,HGNC:23572
+Q14191,Homo sapiens,pml nuclear body,604611.0,HGNC:12791
+Q14676,Homo sapiens,dna damage foci,607593.0,HGNC:21163
+Q16082,Homo sapiens,others,602179.0,HGNC:5247
+Q16236,Homo sapiens,others,600492.0,HGNC:7782
+Q86U42,Homo sapiens,nuclear speckle,602279.0,HGNC:8565
+Q8NDV7,Homo sapiens,chromatoid body,610739.0,HGNC:11969
+Q8TEQ6,Homo sapiens,gemini of cajal body,607005.0,HGNC:20043
+Q8WXD5,Homo sapiens,gemini of cajal body,607006.0,HGNC:20044
+Q9H0G5,Homo sapiens,nuclear speckle,616173.0,HGNC:25305
+Q9H840,Homo sapiens,gemini of cajal body,607419.0,HGNC:20045
+Q9NWZ8,Homo sapiens,gemini of cajal body,300962.0,HGNC:26044
+O00401,Homo sapiens,postsynaptic density,605056.0,HGNC:12735
+O00571,Homo sapiens,postsynaptic density,300160.0,HGNC:2745
+O14980,Homo sapiens,cajal body,602559.0,HGNC:12825
+O15169,Homo sapiens,others,603816.0,HGNC:903
+O43670,Homo sapiens,others,603428.0,HGNC:12998
+O60500,Homo sapiens,others,602716.0,HGNC:7908
+O75928,Homo sapiens,pml nuclear body,603567.0,HGNC:17311
+P04637,Homo sapiens,centrosome/spindle pole body,191170.0,HGNC:11998
+P05067,Homo sapiens,centrosome/spindle pole body,104760.0,HGNC:620
+P06241,Homo sapiens,nucleolus,137025.0,HGNC:4037
+P06748,Homo sapiens,centrosome/spindle pole body,164040.0,HGNC:7910
+P09651,Homo sapiens,nuclear speckle,164017.0,HGNC:5031
+P10276,Homo sapiens,pml nuclear body,180240.0,HGNC:9864
+P10636,Homo sapiens,stress granule,157140.0,HGNC:6893
+P17600,Homo sapiens,postsynaptic density,313440.0,HGNC:11494
+P22626,Homo sapiens,nuclear speckle,600124.0,HGNC:5033
+P24928,Homo sapiens,nucleolus,,
+P26599,Homo sapiens,nuclear speckle,600693.0,HGNC:9583
+P29590,Homo sapiens,centrosome/spindle pole body,102578.0,HGNC:9113
+P31483,Homo sapiens,others,603518.0,HGNC:11802
+P33240,Homo sapiens,cleavage body,300907.0,HGNC:2484
+P35637,Homo sapiens,nuclear speckle,137070.0,HGNC:4010
+P46777,Homo sapiens,stress granule,603634.0,HGNC:10360
+P49790,Homo sapiens,stress granule,603948.0,HGNC:8062
+P51991,Homo sapiens,nucleolus,605372.0,HGNC:24941
+P52292,Homo sapiens,stress granule,600685.0,HGNC:6395
+P52948,Homo sapiens,stress granule,601021.0,HGNC:8068
+P55854,Homo sapiens,pml nuclear body,602231.0,HGNC:11124
+P62750,Homo sapiens,postsynaptic density,602326.0,HGNC:10317
+Q01085,Homo sapiens,others,603413.0,HGNC:11804
+Q01130,Homo sapiens,nuclear speckle,600813.0,HGNC:10783
+Q01844,Homo sapiens,centrosome/spindle pole body,133450.0,HGNC:3508
+Q06787,Homo sapiens,neuronal granule,309550.0,HGNC:3775
+Q13148,Homo sapiens,gemini of cajal body,605078.0,HGNC:11571
+Q13151,Homo sapiens,stress granule,609409.0,HGNC:5030
+Q13283,Homo sapiens,neuronal granule,608431.0,HGNC:30292
+Q13501,Homo sapiens,others,601530.0,HGNC:11280
+Q14011,Homo sapiens,cajal body,602649.0,HGNC:1982
+Q14103,Homo sapiens,stress granule,601324.0,HGNC:5036
+Q14781,Homo sapiens,pcg body,602770.0,HGNC:1552
+Q14974,Homo sapiens,nucleolus,602738.0,HGNC:6400
+Q15717,Homo sapiens,others,603466.0,HGNC:3312
+Q15811,Homo sapiens,postsynaptic density,602442.0,HGNC:6183
+Q32P51,Homo sapiens,nucleolus,,HGNC:27067
+Q5FBB7,Homo sapiens,centrosome/spindle pole body,609168.0,HGNC:25088
+Q7Z5Q1,Homo sapiens,stress granule,610605.0,HGNC:21745
+Q8WXF1,Homo sapiens,nuclear speckle,612408.0,HGNC:20320
+Q92499,Homo sapiens,cleavage body,601257.0,HGNC:2734
+Q92777,Homo sapiens,postsynaptic density,600755.0,HGNC:11495
+Q96EP5,Homo sapiens,balbiani body,607430.0,HGNC:2683
+Q96PV0,Homo sapiens,postsynaptic density,603384.0,HGNC:11497
+Q9GZQ8,Homo sapiens,others,609604.0,HGNC:13352
+Q9H0L4,Homo sapiens,p-body,611968.0,HGNC:17086
+Q9NQI0,Homo sapiens,nuage,605281.0,HGNC:18700
+Q9NWB1,Homo sapiens,stress granule,605104.0,HGNC:18222
+Q9UER7,Homo sapiens,pml nuclear body,603186.0,HGNC:2681
+Q9UKV8,Homo sapiens,nuclear speckle,606229.0,HGNC:3263
+Q00839,Homo sapiens,rnp granules,602869.0,HGNC:5048
+Q13627,Homo sapiens,null_phasepdb_ht,600855.0,HGNC:3091
+Q99729,Homo sapiens,rnp granules,602688.0,HGNC:5034
+O14979,Homo sapiens,stress granule,607137.0,HGNC:5037
+P31942,Homo sapiens,stress granule,602324.0,HGNC:5043
+P31943,Homo sapiens,stress granule,,HGNC:5041
+P38432,Homo sapiens,stress granule,600272.0,HGNC:2184
+P45973,Homo sapiens,nucleolus,604478.0,HGNC:1555
+P55795,Homo sapiens,stress granule,300610.0,HGNC:5042
+P98179,Homo sapiens,stress granule,300027.0,HGNC:9900
+Q92804,Homo sapiens,nucleolus,601574.0,HGNC:11547
+Q96PK6,Homo sapiens,nucleolus,612409.0,HGNC:14219
+Q7Z739,Homo sapiens,stress granule,618669.0,HGNC:26465
+Q9BYJ9,Homo sapiens,stress granule,616529.0,HGNC:15867
+Q9Y5A9,Homo sapiens,stress granule,610640.0,HGNC:31675
+Q9UPQ9,Homo sapiens,stress granule,610740.0,HGNC:29190
+A2A288,Homo sapiens,p-body,611106.0,HGNC:21175
+A4D1E9,Homo sapiens,nucleolus,610920.0,HGNC:25106
+A8CG34,Homo sapiens,nuclear pore complex,615754.0,HGNC:34005
+I0J062,Homo sapiens,nucleolus,,
+O00257,Homo sapiens,nucleus speckles,603079.0,HGNC:1554
+O00422,Homo sapiens,nucleus speckles,602949.0,HGNC:10530
+O14641,Homo sapiens,stress granule,602151.0,HGNC:3086
+O14746,Homo sapiens,nucleolus,187270.0,HGNC:11730
+O15047,Homo sapiens,nucleus speckles,611052.0,HGNC:29010
+O15055,Homo sapiens,nucleolus,603426.0,HGNC:8846
+O15550,Homo sapiens,nucleolus,300128.0,HGNC:12637
+O43390,Homo sapiens,paraspeckle,607201.0,HGNC:5047
+O43447,Homo sapiens,nucleus speckles,606095.0,HGNC:14651
+O43561,Homo sapiens,membrane clusters,602354.0,HGNC:18874
+O43791,Homo sapiens,nucleus speckles,602650.0,HGNC:11254
+O43809,Homo sapiens,paraspeckle,604978.0,HGNC:13870
+O43823,Homo sapiens,nucleolus,604692.0,HGNC:378
+O60318,Homo sapiens,nuclear pore complex,603294.0,HGNC:6946
+O60479,Homo sapiens,paraspeckle,600525.0,HGNC:2916
+O60563,Homo sapiens,transcription factories,143055.0,HGNC:1599
+O60832,Homo sapiens,cajal body,300126.0,HGNC:2890
+O60885,Homo sapiens,transcription factories,608749.0,HGNC:13575
+O60934,Homo sapiens,pml body,602667.0,HGNC:7652
+O60936,Homo sapiens,nucleolus,605235.0,HGNC:7869
+O75151,Homo sapiens,nucleolus,604351.0,HGNC:8920
+O75177,Homo sapiens,paraspeckle,606472.0,HGNC:15592
+O75319,Homo sapiens,nucleus speckles,603092.0,HGNC:3066
+O75554,Homo sapiens,nucleus speckles,604981.0,HGNC:12739
+O75791,Homo sapiens,signaling puncta,604518.0,HGNC:4563
+O75817,Homo sapiens,smn granule,606113.0,HGNC:19949
+O75925,Homo sapiens,nucleus speckles,603566.0,HGNC:2752
+O76064,Homo sapiens,null_phasepdb_rev,611685.0,HGNC:10071
+O94818,Homo sapiens,nucleolus,603577.0,HGNC:7870
+O94906,Homo sapiens,cajal body,613979.0,HGNC:15860
+O95232,Homo sapiens,nucleus speckles,609434.0,HGNC:24309
+O95453,Homo sapiens,cajal body,604212.0,HGNC:8609
+P01106,Homo sapiens,nucleolus,190080.0,HGNC:7553
+P02545,Homo sapiens,nucleus speckles,150330.0,HGNC:6636
+P08621,Homo sapiens,nucleus speckles,180740.0,HGNC:11150
+P0DI83,Homo sapiens,nucleolus,610917.0,HGNC:16519
+P10071,Homo sapiens,null_phasepdb_rev,165240.0,HGNC:4319
+P12270,Homo sapiens,nuclear pore complex,189940.0,HGNC:12017
+P13056,Homo sapiens,pml body,601529.0,HGNC:7971
+P15502,Homo sapiens,null_phasepdb_rev,130160.0,HGNC:3327
+P15927,Homo sapiens,pml body,179836.0,HGNC:10290
+P16333,Homo sapiens,membrane clusters,600508.0,HGNC:7664
+P16383,Homo sapiens,nucleolus,189901.0,HGNC:1317
+P17676,Homo sapiens,nucleus speckles,189965.0,HGNC:1834
+P17931,Homo sapiens,null_phasepdb_rev,153619.0,HGNC:6563
+P19474,Homo sapiens,p-body,109092.0,HGNC:11312
+P19544,Homo sapiens,nucleus speckles,607102.0,HGNC:12796
+P20592,Homo sapiens,nuclear pore complex,147890.0,HGNC:7533
+P21359,Homo sapiens,nucleolus,613113.0,HGNC:7765
+P25490,Homo sapiens,nucleus speckles,600013.0,HGNC:12856
+P26651,Homo sapiens,stress granule,190700.0,HGNC:12862
+P27694,Homo sapiens,pml body,179835.0,HGNC:10289
+P29375,Homo sapiens,nucleolus,180202.0,HGNC:9886
+P33076,Homo sapiens,pml body,600005.0,HGNC:7067
+P38919,Homo sapiens,nucleus speckles,608546.0,HGNC:18683
+P40337,Homo sapiens,stress granule,608537.0,HGNC:12687
+P41220,Homo sapiens,nucleolus,600861.0,HGNC:9998
+P43243,Homo sapiens,null_phasepdb_rev,164015.0,HGNC:6912
+P48436,Homo sapiens,paraspeckle,608160.0,HGNC:11204
+P49715,Homo sapiens,nucleolus,116897.0,HGNC:1833
+P49792,Homo sapiens,nuclear pore complex,601181.0,HGNC:9848
+P50222,Homo sapiens,nucleus speckles,600535.0,HGNC:7014
+P50750,Homo sapiens,transcription factories,603251.0,HGNC:1780
+P51531,Homo sapiens,nucleus speckles,600014.0,HGNC:11098
+P51532,Homo sapiens,nucleus speckles,603254.0,HGNC:11100
+P51816,Homo sapiens,nucleus speckles,300806.0,HGNC:3776
+P51955,Homo sapiens,nucleolus,604043.0,HGNC:7745
+P52298,Homo sapiens,nucleus speckles,605133.0,HGNC:7659
+P52597,Homo sapiens,paraspeckle,601037.0,HGNC:5039
+P52824,Homo sapiens,nucleus speckles,601207.0,HGNC:2856
+P55199,Homo sapiens,nucleus speckles,600284.0,HGNC:23114
+P55735,Homo sapiens,nuclear pore complex,600152.0,HGNC:10697
+P57052,Homo sapiens,nucleus speckles,617937.0,HGNC:9897
+P57740,Homo sapiens,nuclear pore complex,607617.0,HGNC:29914
+P60484,Homo sapiens,pml body,601728.0,HGNC:9588
+P61011,Homo sapiens,nucleus speckles,604857.0,HGNC:11301
+P61129,Homo sapiens,paraspeckle,,HGNC:24762
+P61236,Homo sapiens,nucleolus,609724.0,HGNC:18327
+P61978,Homo sapiens,paraspeckle,600712.0,HGNC:5044
+P62993,Homo sapiens,signaling puncta,108355.0,HGNC:4566
+P78344,Homo sapiens,null_phasepdb_rev,,
+P78352,Homo sapiens,pre and postsynaptic densities,602887.0,HGNC:2903
+Q01081,Homo sapiens,nucleus speckles,191317.0,HGNC:12453
+Q01826,Homo sapiens,pml body,602075.0,HGNC:10541
+Q04206,Homo sapiens,nucleus speckles,164014.0,HGNC:9955
+Q05066,Homo sapiens,nucleus speckles,480000.0,HGNC:11311
+Q06587,Homo sapiens,nucleus speckles,602045.0,HGNC:10018
+Q06609,Homo sapiens,pml body,179617.0,HGNC:9817
+Q07021,Homo sapiens,null_phasepdb_unirev,601269.0,HGNC:1243
+Q07889,Homo sapiens,null_phasepdb_rev,182530.0,HGNC:11187
+Q08752,Homo sapiens,nucleolus,601753.0,HGNC:9257
+Q09028,Homo sapiens,nucleus speckles,602923.0,HGNC:9887
+Q09161,Homo sapiens,nucleus speckles,600469.0,HGNC:7658
+Q0WX57,Homo sapiens,nucleolus,,HGNC:44458
+Q12769,Homo sapiens,nuclear pore complex,607614.0,HGNC:18017
+Q12837,Homo sapiens,nucleus speckles,113725.0,HGNC:9219
+Q13094,Homo sapiens,signaling puncta,601603.0,HGNC:6529
+Q13247,Homo sapiens,nucleus speckles,601944.0,HGNC:10788
+Q13342,Homo sapiens,nuclear body,608602.0,HGNC:17133
+Q13435,Homo sapiens,nucleus speckles,605591.0,HGNC:10769
+Q13526,Homo sapiens,nucleus speckles,601052.0,HGNC:8988
+Q13761,Homo sapiens,paraspeckle,600210.0,HGNC:10473
+Q13901,Homo sapiens,nucleolus,606997.0,HGNC:29911
+Q14004,Homo sapiens,nucleus speckles,603309.0,HGNC:1733
+Q14151,Homo sapiens,sam68 nuclear bodies,608066.0,HGNC:21605
+Q14157,Homo sapiens,paraspeckle,616472.0,HGNC:29877
+Q14164,Homo sapiens,pml body,605048.0,HGNC:14552
+Q14331,Homo sapiens,cajal body,601278.0,HGNC:3954
+Q14596,Homo sapiens,null_phasepdb_rev,166945.0,HGNC:6746
+Q14764,Homo sapiens,nuclear pore complex,605088.0,HGNC:7531
+Q14966,Homo sapiens,nucleus speckles,614349.0,HGNC:17894
+Q15007,Homo sapiens,nucleus speckles,605442.0,HGNC:16846
+Q15020,Homo sapiens,nucleus speckles,611684.0,HGNC:16860
+Q15056,Homo sapiens,null_phasepdb_rev,603431.0,HGNC:12741
+Q15648,Homo sapiens,transcription factories,604311.0,HGNC:9234
+Q15723,Homo sapiens,stress granule,,HGNC:3317
+Q16198,Homo sapiens,transcription factories,,
+Q16533,Homo sapiens,nucleolus,600591.0,HGNC:11134
+Q16630,Homo sapiens,nucleus speckles,604979.0,HGNC:13871
+Q16790,Homo sapiens,nucleolus,603179.0,HGNC:1383
+Q3ZCQ8,Homo sapiens,nucleus speckles,607381.0,HGNC:23656
+Q53GS7,Homo sapiens,nuclear pore complex,603371.0,HGNC:4315
+Q5EE01,Homo sapiens,nucleolus,611264.0,HGNC:21488
+Q5F1R6,Homo sapiens,nucleolus,617048.0,HGNC:27030
+Q5H9S7,Homo sapiens,nucleolus,612515.0,HGNC:25784
+Q5HY92,Homo sapiens,paraspeckle,605295.0,HGNC:13285
+Q5JVS0,Homo sapiens,cajal body,617369.0,HGNC:17062
+Q5T5X7,Homo sapiens,nucleolus,616374.0,HGNC:23040
+Q5TGY3,Homo sapiens,paraspeckle,615790.0,HGNC:25230
+Q5U5Q3,Homo sapiens,paraspeckle,611005.0,HGNC:28040
+Q6IMN6,Homo sapiens,rnp granules,610375.0,HGNC:21259
+Q6NT76,Homo sapiens,cajal body,618610.0,HGNC:26137
+Q6P2H3,Homo sapiens,spindle pole,,HGNC:25309
+Q6P6C2,Homo sapiens,nucleus speckles,613303.0,HGNC:25996
+Q6PCD5,Homo sapiens,pml body,614151.0,HGNC:25539
+Q6PJT7,Homo sapiens,nucleus speckles,613279.0,HGNC:20509
+Q6UWU4,Homo sapiens,nucleolus,616642.0,HGNC:21114
+Q6VMQ6,Homo sapiens,pml body,613644.0,HGNC:20092
+Q6ZMT4,Homo sapiens,nucleolus,,HGNC:22224
+Q6ZN04,Homo sapiens,cytoplasmic granule,611008.0,HGNC:25297
+Q6ZN17,Homo sapiens,nucleolus,611044.0,HGNC:32207
+Q75N03,Homo sapiens,nucleus speckles,606872.0,HGNC:21225
+Q7L622,Homo sapiens,nucleolus,611299.0,HGNC:20338
+Q7Z2E3,Homo sapiens,nucleolus,606350.0,HGNC:15984
+Q7Z6G8,Homo sapiens,cajal body,607815.0,HGNC:24600
+Q86SG3,Homo sapiens,null_phasepdb_rev,400048.0,HGNC:15966
+Q86U44,Homo sapiens,nucleus speckles,612472.0,HGNC:17563
+Q86WT6,Homo sapiens,nucleus speckles,616017.0,HGNC:17857
+Q86YP4,Homo sapiens,nucleus speckles,614997.0,HGNC:29989
+Q86YR5,Homo sapiens,null_phasepdb_rev,609491.0,HGNC:17858
+Q8IV48,Homo sapiens,nucleolus,608739.0,HGNC:23994
+Q8IY18,Homo sapiens,pml body,609386.0,HGNC:20465
+Q8IYB3,Homo sapiens,nucleus speckles,605975.0,HGNC:16638
+Q8IYB7,Homo sapiens,p-body,614184.0,HGNC:28648
+Q8IYW5,Homo sapiens,null_phasepdb_rev,612688.0,HGNC:26661
+Q8IZD2,Homo sapiens,nucleus speckles,608444.0,HGNC:18541
+Q8IZL2,Homo sapiens,nucleus speckles,607537.0,HGNC:16259
+Q8IZU1,Homo sapiens,nucleolus,300477.0,HGNC:18403
+Q8N163,Homo sapiens,sam68 nuclear bodies,607359.0,HGNC:23360
+Q8N1F7,Homo sapiens,nuclear pore complex,614351.0,HGNC:28958
+Q8N2W9,Homo sapiens,pml body,605989.0,HGNC:17002
+Q8N3C0,Homo sapiens,nucleus speckles,614217.0,HGNC:18697
+Q8N3Z6,Homo sapiens,nucleolus,,HGNC:26209
+Q8N684,Homo sapiens,paraspeckle,,HGNC:30098
+Q8N726,Homo sapiens,nucleolus,600160.0,HGNC:1787
+Q8N884,Homo sapiens,null_phasepdb_rev,613973.0,HGNC:21367
+Q8N9N2,Homo sapiens,nucleus speckles,614215.0,HGNC:24268
+Q8NCA5,Homo sapiens,paraspeckle,,HGNC:24520
+Q8ND90,Homo sapiens,nucleolus,604010.0,HGNC:9158
+Q8NDT2,Homo sapiens,nucleus speckles,612602.0,HGNC:24303
+Q8NG50,Homo sapiens,nucleolus,612896.0,HGNC:19950
+Q8NG66,Homo sapiens,nucleolus,609779.0,HGNC:18593
+Q8NHM5,Homo sapiens,nucleolus,609078.0,HGNC:13610
+Q8TBZ6,Homo sapiens,nucleolus,616013.0,HGNC:28403
+Q8TC56,Homo sapiens,nucleus speckles,,HGNC:28397
+Q8TD16,Homo sapiens,nuclear pore complex,609797.0,HGNC:17208
+Q8TF01,Homo sapiens,nucleus speckles,616653.0,HGNC:21222
+Q8WUM0,Homo sapiens,nuclear pore complex,607613.0,HGNC:18016
+Q8WV24,Homo sapiens,nucleolus,605335.0,HGNC:8933
+Q8WWM7,Homo sapiens,nucleus speckles,607931.0,HGNC:31326
+Q8WWY3,Homo sapiens,cajal body,606419.0,HGNC:15446
+Q8WXF8,Homo sapiens,nucleolus,617078.0,HGNC:24450
+Q8WXI9,Homo sapiens,nucleus speckles,614998.0,HGNC:30778
+Q8WYP5,Homo sapiens,nuclear pore complex,610853.0,HGNC:24618
+Q8WZ33,Homo sapiens,nucleolus,,
+Q92585,Homo sapiens,nucleus speckles,605424.0,HGNC:13632
+Q92621,Homo sapiens,nuclear pore complex,614352.0,HGNC:18658
+Q92737,Homo sapiens,nucleolus,602220.0,HGNC:16954
+Q92766,Homo sapiens,nucleus speckles,602209.0,HGNC:10449
+Q92966,Homo sapiens,nucleolus,602348.0,HGNC:11136
+Q92993,Homo sapiens,nucleolus,601409.0,HGNC:5275
+Q93062,Homo sapiens,p-body,601558.0,HGNC:19097
+Q969G3,Homo sapiens,nucleus speckles,603111.0,HGNC:11109
+Q969H0,Homo sapiens,nucleolus,606278.0,HGNC:16712
+Q969K3,Homo sapiens,nucleolus,608299.0,HGNC:17297
+Q96AY2,Homo sapiens,nucleolus,610885.0,HGNC:24965
+Q96CJ1,Homo sapiens,nucleus speckles,607659.0,HGNC:23115
+Q96EB6,Homo sapiens,pml body,604479.0,HGNC:14929
+Q96EP1,Homo sapiens,pml body,605209.0,HGNC:20455
+Q96EV8,Homo sapiens,pre and postsynaptic density,607145.0,HGNC:17328
+Q96EZ8,Homo sapiens,nucleolus,609504.0,HGNC:6960
+Q96GC6,Homo sapiens,nucleolus,605467.0,HGNC:13068
+Q96GD4,Homo sapiens,null_phasepdb_rev,604970.0,HGNC:11390
+Q96GM8,Homo sapiens,nucleus speckles,613931.0,HGNC:15954
+Q96HA1,Homo sapiens,nuclear pore complex,615753.0,HGNC:19702
+Q96HI0,Homo sapiens,nucleolus,612845.0,HGNC:28407
+Q96HW7,Homo sapiens,cajal body,611348.0,HGNC:25048
+Q96J87,Homo sapiens,paraspeckle,612681.0,HGNC:14059
+Q96JC9,Homo sapiens,cajal body,608315.0,HGNC:20907
+Q96JK9,Homo sapiens,nucleus speckles,608991.0,HGNC:16272
+Q96LA8,Homo sapiens,nucleolus,608274.0,HGNC:18241
+Q96LT7,Homo sapiens,p-body,614260.0,HGNC:28337
+Q96MF7,Homo sapiens,pml body,617246.0,HGNC:26513
+Q96NS1,Homo sapiens,nucleolus,609725.0,HGNC:18328
+Q96NY9,Homo sapiens,nucleolus,606591.0,HGNC:29814
+Q96PM9,Homo sapiens,nucleolus,609124.0,HGNC:17521
+Q96Q89,Homo sapiens,nucleolus,605498.0,HGNC:7212
+Q96QA6,Homo sapiens,nucleolus,609723.0,HGNC:18326
+Q96RS0,Homo sapiens,cajal body,606461.0,HGNC:17843
+Q96S94,Homo sapiens,nucleus speckles,613482.0,HGNC:20570
+Q96SB8,Homo sapiens,pml body,609387.0,HGNC:20466
+Q96SQ7,Homo sapiens,nucleus speckles,,HGNC:24126
+Q96ST3,Homo sapiens,nucleolus,607776.0,HGNC:19353
+Q96T37,Homo sapiens,nucleus speckles,606077.0,HGNC:14959
+Q99607,Homo sapiens,pml body,300775.0,HGNC:3319
+Q99720,Homo sapiens,pre and postsynaptic density,601978.0,HGNC:8157
+Q9BRP8,Homo sapiens,nucleolus,,HGNC:30258
+Q9BSJ6,Homo sapiens,nucleolus,617611.0,HGNC:25483
+Q9BUJ2,Homo sapiens,paraspeckle,605800.0,HGNC:17011
+Q9BW27,Homo sapiens,nuclear pore complex,170285.0,HGNC:8734
+Q9BWF2,Homo sapiens,nucleolus,605958.0,HGNC:30764
+Q9BWG6,Homo sapiens,nucleus speckles,608095.0,HGNC:23136
+Q9BXS6,Homo sapiens,nuclear pore complex,612818.0,HGNC:18538
+Q9BYB0,Homo sapiens,pre and postsynaptic density,,
+Q9BZC1,Homo sapiens,null_phasepdb_rev,612679.0,HGNC:14015
+Q9BZJ0,Homo sapiens,nucleus speckles,610952.0,HGNC:15762
+Q9C0B1,Homo sapiens,nucleus speckles,610966.0,HGNC:24678
+Q9H089,Homo sapiens,cajal body,610780.0,HGNC:25652
+Q9H116,Homo sapiens,nucleolus,613842.0,HGNC:15808
+Q9H165,Homo sapiens,paraspeckle,606557.0,HGNC:13221
+Q9H1I8,Homo sapiens,nucleus speckles,614216.0,HGNC:24103
+Q9H1Q7,Homo sapiens,paraspeckle,,HGNC:16212
+Q9H2U1,Homo sapiens,nucleus speckles,612767.0,HGNC:14410
+Q9H4Z2,Homo sapiens,paraspeckle,610827.0,HGNC:15807
+Q9H633,Homo sapiens,cajal body,612524.0,HGNC:21300
+Q9H6R0,Homo sapiens,inflammasome,614405.0,HGNC:16718
+Q9H814,Homo sapiens,nucleolus,604924.0,HGNC:10241
+Q9H869,Homo sapiens,nucleolus,607860.0,HGNC:30935
+Q9H9Z2,Homo sapiens,p-body,611043.0,HGNC:15986
+Q9HA38,Homo sapiens,nucleolus,606452.0,HGNC:29983
+Q9HAJ7,Homo sapiens,nucleolus,610398.0,HGNC:25663
+Q9HC62,Homo sapiens,nuclear pore complex,608261.0,HGNC:23116
+Q9HCG8,Homo sapiens,nucleus speckles,615186.0,HGNC:29322
+Q9NPA8,Homo sapiens,nuclear pore complex,,HGNC:24449
+Q9NPE3,Homo sapiens,cajal body,606471.0,HGNC:14378
+Q9NPH5,Homo sapiens,nucleolus,605261.0,HGNC:7891
+Q9NPJ4,Homo sapiens,p-body,611882.0,HGNC:23158
+Q9NQB0,Homo sapiens,pml body,602228.0,HGNC:11641
+Q9NQZ3,Homo sapiens,null_phasepdb_rev,400003.0,HGNC:2682
+Q9NR00,Homo sapiens,nucleus speckles,607702.0,HGNC:1357
+Q9NR21,Homo sapiens,nuclear pore complex,616706.0,HGNC:1186
+Q9NR90,Homo sapiens,null_phasepdb_rev,400027.0,HGNC:15965
+Q9NRA8,Homo sapiens,nucleus speckles,607445.0,HGNC:16687
+Q9NRC8,Homo sapiens,nucleolus,606212.0,HGNC:14935
+Q9NRG9,Homo sapiens,nuclear pore complex,605378.0,HGNC:13666
+Q9NRN9,Homo sapiens,nucleolus,618628.0,HGNC:25006
+Q9NRR4,Homo sapiens,nucleolus,608828.0,HGNC:17904
+Q9NTZ6,Homo sapiens,paraspeckle,607179.0,HGNC:9898
+Q9NVM4,Homo sapiens,nucleolus,610087.0,HGNC:25557
+Q9NVV9,Homo sapiens,pml body,609520.0,HGNC:20856
+Q9NYF8,Homo sapiens,nucleus speckles,612588.0,HGNC:16863
+Q9NZ56,Homo sapiens,nucleolus,606373.0,HGNC:14074
+Q9P0U4,Homo sapiens,nucleus speckles,609150.0,HGNC:24343
+Q9P1T7,Homo sapiens,nucleolus,614511.0,HGNC:28870
+Q9P2E3,Homo sapiens,z granule,,HGNC:29271
+Q9UBY9,Homo sapiens,cajal body,610692.0,HGNC:5249
+Q9UKX7,Homo sapiens,nuclear pore complex,604646.0,HGNC:8065
+Q9UKY1,Homo sapiens,nucleus speckles,604764.0,HGNC:12871
+Q9UL42,Homo sapiens,nucleolus,603970.0,HGNC:9159
+Q9ULX6,Homo sapiens,nucleus speckles,609475.0,HGNC:29857
+Q9UN81,Homo sapiens,stress granule,,
+Q9UPS6,Homo sapiens,nucleus speckles,611055.0,HGNC:29187
+Q9Y230,Homo sapiens,nucleus speckles,604788.0,HGNC:10475
+Q9Y2F5,Homo sapiens,cajal body,617958.0,HGNC:29154
+Q9Y2V2,Homo sapiens,sress granule,616885.0,HGNC:17150
+Q9Y2W1,Homo sapiens,nucleus speckles,603809.0,HGNC:22964
+Q9Y3M2,Homo sapiens,nucleus speckles,607757.0,HGNC:1307
+Q9Y3R0,Homo sapiens,pml body,604597.0,HGNC:18708
+Q9Y3S2,Homo sapiens,nucleolus,609550.0,HGNC:15462
+Q9Y3Y2,Homo sapiens,nucleus speckles,614206.0,HGNC:24511
+Q9Y4X5,Homo sapiens,cajal body,605624.0,HGNC:689
+Q9Y4Y9,Homo sapiens,p-body,607285.0,HGNC:17162
+Q9Y580,Homo sapiens,paraspeckle,612413.0,HGNC:9904
+Q9Y657,Homo sapiens,nucleolus,609936.0,HGNC:11243
+Q9Y6X2,Homo sapiens,nucleus speckles,605987.0,HGNC:16861
+A0A0U1RRE5,Homo sapiens,p-body,300992.0,HGNC:50713
+P00441,Homo sapiens,stress granule,147450.0,HGNC:11179
+P22087,Homo sapiens,cajal body,134795.0,HGNC:3599
+P23396,Homo sapiens,nucleolus,600454.0,HGNC:10420
+P25685,Homo sapiens,nucleolus,604572.0,HGNC:5270
+P55060,Homo sapiens,stress granule,601342.0,HGNC:2431
+P63244,Homo sapiens,stress granule,176981.0,HGNC:4399
+Q504Q3,Homo sapiens,p-body,617447.0,HGNC:20074
+Q58A45,Homo sapiens,p-body,617448.0,HGNC:29991
+Q5W0Q7,Homo sapiens,cajal body,617470.0,HGNC:20294
+Q9BY44,Homo sapiens,stress granule,609234.0,HGNC:3254
+Q9BZB8,Homo sapiens,stress granule,607342.0,HGNC:21744
+Q9H9G7,Homo sapiens,p-body,607355.0,HGNC:18421
+Q9H9Y6,Homo sapiens,nucleolus,602000.0,HGNC:20454
+Q9P2D1,Homo sapiens,nucleolus,608892.0,HGNC:20626
+O00165,Homo sapiens,p-body,605998.0,HGNC:16915
+O60828,Homo sapiens,stress granule,300463.0,HGNC:9330
+P04792,Homo sapiens,stress granule,602195.0,HGNC:5246
+P06730,Homo sapiens,p-body,133440.0,HGNC:3287
+P0DMV8,Homo sapiens,stress granule,140550.0,HGNC:5232
+P63279,Homo sapiens,stress granule,601661.0,HGNC:12485
+Q8TCF1,Homo sapiens,stress granule,,HGNC:25858
+Q9UKL3,Homo sapiens,histone locus body,,
+Q9UHD9,Homo sapiens,stress granule,300264.0,HGNC:12509
+P46783,Homo sapiens,nucleolus,603632.0,HGNC:10383
+P62310,Homo sapiens,p-body,607283.0,HGNC:17874
+P62312,Homo sapiens,p-body,607286.0,HGNC:17017
+Q9UK45,Homo sapiens,p-body,607287.0,HGNC:20470
+Q9Y333,Homo sapiens,p-body,607282.0,HGNC:13940
+A1L020,Homo sapiens,p-body,611007.0,HGNC:33482
+A5YKK6,Homo sapiens,p-body,604917.0,HGNC:7877
+O00566,Homo sapiens,nucleolus,605503.0,HGNC:7213
+O15213,Homo sapiens,nucleolus,611440.0,HGNC:13923
+O15381,Homo sapiens,nucleolus,602426.0,HGNC:8070
+O15446,Homo sapiens,nucleolus,107325.0,HGNC:24219
+O95707,Homo sapiens,nucleolus,606114.0,HGNC:30081
+P11388,Homo sapiens,nucleolus,126430.0,HGNC:11989
+P17480,Homo sapiens,nucleolus,600673.0,HGNC:12511
+P17844,Homo sapiens,nucleolus,180630.0,HGNC:2746
+P36873,Homo sapiens,nucleolus,176914.0,HGNC:9283
+P42285,Homo sapiens,nucleolus,618122.0,HGNC:18734
+P55265,Homo sapiens,nucleolus,146920.0,HGNC:225
+P55769,Homo sapiens,nucleolus,601304.0,HGNC:7819
+P62140,Homo sapiens,nucleolus,600590.0,HGNC:9282
+Q06265,Homo sapiens,nucleolus,606180.0,HGNC:9137
+Q13428,Homo sapiens,nucleolus,606847.0,HGNC:11654
+Q13610,Homo sapiens,nucleolus,,HGNC:17015
+Q13895,Homo sapiens,nucleolus,603871.0,HGNC:1157
+Q14684,Homo sapiens,nucleolus,610654.0,HGNC:23818
+Q15024,Homo sapiens,nucleolus,606488.0,HGNC:28112
+Q15061,Homo sapiens,nucleolus,616195.0,HGNC:28945
+Q15397,Homo sapiens,nucleolus,609960.0,HGNC:29676
+Q5C9Z4,Homo sapiens,nucleolus,611269.0,HGNC:13244
+Q5SY16,Homo sapiens,nucleolus,,HGNC:26265
+Q6RFH5,Homo sapiens,nucleolus,617947.0,HGNC:25529
+Q76FK4,Homo sapiens,nucleolus,611534.0,HGNC:23387
+Q8IUF8,Homo sapiens,nucleolus,612049.0,HGNC:19441
+Q8IZD4,Homo sapiens,stress granule,609843.0,HGNC:24451
+Q8IZH2,Homo sapiens,p-body,607994.0,HGNC:30654
+Q8IZL8,Homo sapiens,nucleolus,609455.0,HGNC:30134
+Q8NDF8,Homo sapiens,nucleolus,605540.0,HGNC:30758
+Q8NEJ9,Homo sapiens,nucleolus,610777.0,HGNC:20271
+Q8NI36,Homo sapiens,nucleolus,609669.0,HGNC:30696
+Q92841,Homo sapiens,nucleolus,,
+Q92979,Homo sapiens,nucleolus,611531.0,HGNC:16912
+Q969X6,Homo sapiens,nucleolus,607456.0,HGNC:1983
+Q96EU6,Homo sapiens,nucleolus,613475.0,HGNC:21374
+Q96FQ6,Homo sapiens,nucleolus,617437.0,HGNC:20441
+Q96G21,Homo sapiens,nucleolus,612981.0,HGNC:30856
+Q96GQ7,Homo sapiens,nucleolus,616621.0,HGNC:15837
+Q99848,Homo sapiens,nucleolus,614443.0,HGNC:15531
+Q9BQ04,Homo sapiens,paraspeckle,,HGNC:28842
+Q9BUT9,Homo sapiens,stress granule,,HGNC:14142
+Q9BV38,Homo sapiens,nucleolus,,HGNC:17956
+Q9BZE4,Homo sapiens,nucleolus,,HGNC:21535
+Q9C086,Homo sapiens,nucleolus,616456.0,HGNC:13324
+Q9GZL7,Homo sapiens,nucleolus,616620.0,HGNC:14098
+Q9GZS1,Homo sapiens,nucleolus,,HGNC:17631
+Q9H0D6,Homo sapiens,nucleolus,608851.0,HGNC:12836
+Q9H0S4,Homo sapiens,nucleolus,615428.0,HGNC:18682
+Q9H4L4,Homo sapiens,nucleolus,612844.0,HGNC:17862
+Q9H583,Homo sapiens,nucleolus,,HGNC:25517
+Q9H8H0,Homo sapiens,nucleolus,615366.0,HGNC:24557
+Q9H8H2,Homo sapiens,nucleolus,616533.0,HGNC:16715
+Q9H9L3,Homo sapiens,nucleolus,611930.0,HGNC:25745
+Q9HAF1,Homo sapiens,nucleolus,611001.0,HGNC:25674
+Q9HBD1,Homo sapiens,stress granule,615231.0,HGNC:21461
+Q9HCE1,Homo sapiens,stress granule,610742.0,HGNC:7200
+Q9NQT4,Homo sapiens,nucleolus,606492.0,HGNC:24662
+Q9NQT5,Homo sapiens,nucleolus,606489.0,HGNC:17944
+Q9NRX1,Homo sapiens,nucleolus,,HGNC:32790
+Q9NTK5,Homo sapiens,nucleolus,611175.0,HGNC:28833
+Q9NV06,Homo sapiens,nucleolus,616196.0,HGNC:24535
+Q9NV31,Homo sapiens,nucleolus,612980.0,HGNC:14497
+Q9NVN8,Homo sapiens,nucleolus,300873.0,HGNC:25553
+Q9NVP1,Homo sapiens,nucleolus,606355.0,HGNC:2741
+Q9NVU7,Homo sapiens,nucleolus,,HGNC:25537
+Q9NW13,Homo sapiens,nucleolus,612074.0,HGNC:21863
+Q9NXF1,Homo sapiens,nucleolus,616717.0,HGNC:25988
+Q9NYH9,Homo sapiens,nucleolus,,HGNC:18279
+Q9NYV6,Homo sapiens,nucleolus,605121.0,HGNC:30346
+Q9P275,Homo sapiens,nucleolus,612543.0,HGNC:20062
+Q9UL18,Homo sapiens,p-body,606228.0,HGNC:3262
+Q9UQ80,Homo sapiens,nucleolus,602145.0,HGNC:8550
+Q9Y221,Homo sapiens,nucleolus,,HGNC:24328
+Q9Y3B2,Homo sapiens,nucleolus,606493.0,HGNC:17286
+Q9Y4W2,Homo sapiens,nucleolus,300964.0,HGNC:25726
+O15116,Homo sapiens,p-body,607281.0,HGNC:20472
+P39748,Homo sapiens,nucleolus,600393.0,HGNC:3650
+Q04637,Homo sapiens,stress granule,600495.0,HGNC:3296
+Q14152,Homo sapiens,stress granule,602039.0,HGNC:3271
+Q92973,Homo sapiens,stress granule,602901.0,HGNC:6401
+Q9BPY3,Homo sapiens,cajal body,616587.0,HGNC:26110
+Q9BUR4,Homo sapiens,cajal body,612661.0,HGNC:25522
+Q9NPI6,Homo sapiens,stress granule,607010.0,HGNC:18714
+Q9NZM5,Homo sapiens,nucleolus,605691.0,HGNC:4333
+Q9Y4Z0,Homo sapiens,p-body,607284.0,HGNC:17259
+Q13823,Homo sapiens,nucleolus,609365.0,HGNC:29925
+C9JLW8,Homo sapiens,stress granule,616514.0,HGNC:28007
+O00567,Homo sapiens,nucleolus,614154.0,HGNC:15911
+O76021,Homo sapiens,nucleolus,615874.0,HGNC:24534
+P56182,Homo sapiens,nucleolus,610653.0,HGNC:18785
+Q14671,Homo sapiens,stress granule,607204.0,HGNC:14957
+Q53HL2,Homo sapiens,nucleolus,609977.0,HGNC:14629
+Q71RC2,Homo sapiens,stress granule,618657.0,HGNC:24320
+Q7Z417,Homo sapiens,stress granule,609356.0,HGNC:17634
+Q86WX3,Homo sapiens,nucleolus,610225.0,HGNC:28749
+Q8IY81,Homo sapiens,nucleolus,618411.0,HGNC:17136
+Q8N567,Homo sapiens,nucleolus,,HGNC:25424
+Q99700,Homo sapiens,stress granule,601517.0,HGNC:10555
+Q9BVP2,Homo sapiens,nucleolus,608011.0,HGNC:29931
+Q9H7B2,Homo sapiens,nucleolus,618471.0,HGNC:20870
+Q9NX58,Homo sapiens,nucleolus,617684.0,HGNC:26021
+Q9UKD2,Homo sapiens,nucleolus,,HGNC:18477
+Q9UMY1,Homo sapiens,nucleolus,611533.0,HGNC:21040
+Q9UNQ2,Homo sapiens,nucleolus,612499.0,HGNC:30217
+Q9Y4C8,Homo sapiens,nucleolus,616444.0,HGNC:29098
+P11940,Homo sapiens,stress granule,604679.0,HGNC:8554
+P26196,Homo sapiens,stress granule,600326.0,HGNC:2747
+P62913,Homo sapiens,nucleolus,604175.0,HGNC:10301
+Q12906,Homo sapiens,nucleolus,603182.0,HGNC:6038
+Q6P2E9,Homo sapiens,p-body,606030.0,HGNC:17157
+Q8ND56,Homo sapiens,stress granule,610677.0,HGNC:24489
+Q96F86,Homo sapiens,p-body,609842.0,HGNC:26114
+Q9NZI8,Homo sapiens,stress granule,608288.0,HGNC:28866
+O75683,Homo sapiens,nucleolus,185642.0,HGNC:11478
+P55072,Homo sapiens,stress granule,601023.0,HGNC:12666
+Q14207,Homo sapiens,histone locus body,601448.0,HGNC:7896
+Q16637,Homo sapiens,cajal body,601627.0,HGNC:11118
+P11387,Homo sapiens,nucleolus,126420.0,HGNC:11986
+P46013,Homo sapiens,nucleolus,176741.0,HGNC:7107
+Q14978,Homo sapiens,nucleolus,602394.0,HGNC:15608
+Q9H0A0,Homo sapiens,nucleolus,609221.0,HGNC:29830
+Q9NR30,Homo sapiens,nucleolus,606357.0,HGNC:2744
+Q8IU60,Homo sapiens,p-body,609844.0,HGNC:24452
+P03372,Homo sapiens,enhanceosome,133430.0,HGNC:3467
+P04156,Homo sapiens,cytoplasmic protein granule,176640.0,HGNC:9449
+P23771,Homo sapiens,enhanceosome,131320.0,HGNC:4172
+Q07352,Homo sapiens,cytoplasmic ribonucleoprotein granule,601064.0,HGNC:1107
+Q8NE35,Homo sapiens,p-body,610606.0,HGNC:21746
+P26368,Homo sapiens,nuclear speckle,191318.0,HGNC:23156
+Q15233,Homo sapiens,paraspeckle,300084.0,HGNC:7871
+P23246,Homo sapiens,paraspeckle,605199.0,HGNC:10774
