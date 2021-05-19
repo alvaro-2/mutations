@@ -10,4 +10,4 @@ El orden para ver los scripts seria algo asi:
 - generar_tabla_mutaciones.ipynb  
 - generar_tabla_proteinas.ipynb  
     
-Al final, se deberia ir guardando las tablas finales para la db en /db_tables
+Por ultimo, se deberia ir guardando las tablas finales para la db en /db_tables
