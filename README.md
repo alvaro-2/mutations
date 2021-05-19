@@ -5,8 +5,8 @@ Luego, en el main, un script para generar la tabla de mutaciones y otro para la 
 
 El orden para ver los scripts seria algo asi:  
 - /clinvar/clinvar_box1_mutaciones_en_proteinas_v2.ipynb  
--/disgenet/disgenet_total.ipynb  
--/uniprot/uniprot_variants.ipynb  
+- /disgenet/disgenet_total.ipynb  
+- /uniprot/uniprot_variants.ipynb  
 - generar_tabla_mutaciones.ipynb  
 - generar_tabla_proteinas.ipynb  
     
