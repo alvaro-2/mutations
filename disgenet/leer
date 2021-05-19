@@ -1,3 +1,7 @@
-# folder con script de disgenet y input data
+# folder con script de disgenet e input data
 # ojo, descomprimir los .rar
-falta: obtener secuencias, aa que cambia/n y posiciones. Algunas se podrian traer de la data de Clinvar o de Uniprot (ver column source)
+
+
+00 -> disgenet_box1.ipynb; no mirar, mejor el de abajo
+
+01 -> disgenet_total.ipynb; reune toda la data de variantes curadas asociadas a disease en disgenet
