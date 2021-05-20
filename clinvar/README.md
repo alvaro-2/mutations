@@ -7,7 +7,7 @@ o se puede generar a partir de la database completa asi:
 
 Clinvar database completa -> variant_summary.txt.gz, descargar de aqui:
 https://drive.google.com/file/d/1voGrP3aeA5JUdJK4xdUJvlFIGdNxDpu8/view?usp=sharing  
-<code>
+```
 clinvar = pd.read_csv('variant_summary.txt', sep= '\t')
 clinvar.columns = clinvar.columns.str.lower().str.replace(' ',"_").str.replace("-",'_').str.replace('/','_')
 clinvar = clinvar.rename(columns={'#alleleid' : 'alleleid', 'rs#_(dbsnp)': 'snpid', 'origin':'allelic_origins', 'originsimple':'origin'})
@@ -15,7 +15,7 @@ clinvar = clinvar[clinvar.assembly == 'GRCh38'] # me quedo solo con las entradas
 #Subset del df de ClinVar: vs
 vs = clinvar[['geneid', 'genesymbol', 'hgnc_id', 'snpid', 'alleleid', 'chromosomeaccession', 'chromosome', 'start', 'stop', 'type', 'name', 'origin', 'phenotypeids', 'phenotypelist', 'otherids']]
 vs.to_csv('datasets/vs.csv.gz', index= False, compression= 'gzip')
-</code>
+```
 
 
 dataset falses: son los aa que no coinciden con la seq canonica de uniprot, al googlear algunos de esos snps encontras que son en otras isoformas.
