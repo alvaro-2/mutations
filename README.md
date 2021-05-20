@@ -15,4 +15,4 @@ Por ultimo, se deberia ir guardando las tablas finales para la db en /db_tables
 --------------------------
 
 # Esquema de la db
-![esquema](https://github.com/[alvaro-2]/[mutations]/blob/[main]/esquema.png)
+![esquema](https://github.com/alvaro-2/mutations/blob/main/esquema.png)
