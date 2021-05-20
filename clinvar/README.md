@@ -1,12 +1,11 @@
 00 -> clinvar_box1.ipynb; no mirar, la version mejorada y completa es el de abajo
 
 01 -> clinvar_box1_mutaciones_en_proteinas_v2.ipynb; este script procesa el dataset de ClinVar, vs (Variant Summary).
-Requiere descargar el dataset vs.csv.gz de aqui: https://drive.google.com/file/d/1SXbzWKRhBeCvp8-FFrsi-mhnvtNRjyL6/view?usp=sharing
+Requiere descargar el dataset vs.csv.gz de [aqui](https://drive.google.com/file/d/1SXbzWKRhBeCvp8-FFrsi-mhnvtNRjyL6/view?usp=sharing)
 
 o se puede generar a partir de la database completa asi:
 
-Clinvar database completa -> variant_summary.txt.gz, descargar de aqui:
-https://drive.google.com/file/d/1voGrP3aeA5JUdJK4xdUJvlFIGdNxDpu8/view?usp=sharing  
+Clinvar database completa -> variant_summary.txt.gz, descargar de [aqui](https://drive.google.com/file/d/1voGrP3aeA5JUdJK4xdUJvlFIGdNxDpu8/view?usp=sharing)  
 ```
 clinvar = pd.read_csv('variant_summary.txt', sep= '\t')
 clinvar.columns = clinvar.columns.str.lower().str.replace(' ',"_").str.replace("-",'_').str.replace('/','_')
