@@ -11,3 +11,8 @@ El orden para ver los scripts seria algo asi:
 - generar_tabla_proteinas.ipynb  
     
 Por ultimo, se deberia ir guardando las tablas finales para la db en /db_tables
+
+--------------------------
+
+# Esquema de la db
+![alt text](https://github.com/[alvaro-2]/[mutations]/blob/[main]/esquema.png?raw=true)
