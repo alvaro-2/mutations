@@ -1,4 +1,4 @@
-# mutations
+# Mutations
 -------------------------------
 el pre-processing de cada database esta en c/u de las carpetas (clinvar, disgenet, uniprot).  
 Luego, en el main, un script para generar la tabla de mutaciones y otro para la tabla de proteinas.
