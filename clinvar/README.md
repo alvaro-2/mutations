@@ -17,5 +17,6 @@ vs = clinvar[['geneid', 'genesymbol', 'hgnc_id', 'snpid', 'alleleid', 'chromosom
 vs.to_csv('datasets/vs.csv.gz', index= False, compression= 'gzip')
 ```
 
-# dataset falses: son los aa que no coinciden con la seq canonica de uniprot, al googlear algunos de esos snps encontras que son en otras isoformas.
+
+dataset falses: son los aa que no coinciden con la seq canonica de uniprot, al googlear algunos de esos snps encontras que son en otras isoformas.
   con el codigo de acceso a nuccore (ej. NM_001002295.2, esta en la tabla) se podria traer la seq de esa isoforma (creo)
