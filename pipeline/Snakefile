@@ -1,0 +1,41 @@
+# import json
+# with open("../metadata/gtex_v8.custom.config") as instr:
+#     gtex_conf = json.load(instr)
+
+# results_dir = ["/cbscratch/franco/trans-eqtl/dev-pipeline/gtex_v8_SHAPEIT2_032021_rev_freeze/raw/summary_dev"]
+
+configfile: "config.json"
+
+mutsources = ["clinvar"]
+
+rule all:
+    input:
+        expand(config["dbdata_dir"]+"/{protsource}_clinvar.csv.gz", protsource=config["prot_sources"])
+
+rule download_clinvar:
+    params:
+        url="https://ftp.ncbi.nlm.nih.gov/pub/clinvar/tab_delimited/variant_summary.txt.gz"
+    output:
+        outfile=config["clinvar_source"]
+    shell:
+        "wget -O {output.outfile} {params.url}"
+
+rule preproc_clinvar:
+    input: 
+        config["clinvar_source"]
+    output:
+        config["mut_data"]["clinvar"] # "../../data/vs_clinvar.csv.gz"
+    shell:
+        "{config[python]} ../scripts/preproc_clinvar.py --in {input} --out {output}"
+
+def get_clinvar_prot_outputs(wildcards):
+    return config["data_sources"][wildcards.protsource]["path"]
+
+rule proc_clinvar:
+    input:
+        clinvar=config["mut_data"]["clinvar"],
+        prot=get_clinvar_prot_outputs # config["data_sources"]['{protsource}']["path"]
+    output:
+        config["dbdata_dir"]+"/{protsource}_clinvar.csv.gz" # clinvar_box1_mutations_proc_test.csv.gz
+    shell:
+        "{config[python]} ../scripts/parse_clinvar.py --clinvar {input.clinvar} --prot {input.prot} --out {output}"
