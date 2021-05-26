@@ -1,8 +1,7 @@
 # import json
-# with open("../metadata/gtex_v8.custom.config") as instr:
-#     gtex_conf = json.load(instr)
+# with open("test.custom.config") as instr:
+#     custom_conf = json.load(instr)
 
-# results_dir = ["/cbscratch/franco/trans-eqtl/dev-pipeline/gtex_v8_SHAPEIT2_032021_rev_freeze/raw/summary_dev"]
 
 configfile: "config.json"
 

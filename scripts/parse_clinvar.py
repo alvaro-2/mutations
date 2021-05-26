@@ -238,6 +238,7 @@ if __name__ == "__main__":
     
     delins2 = leftovers2check[leftovers2check.is_del == False]
     delins2.consequence = "delins"
+    delins2 = delins2.drop(columns=["is_del"])
     delins3 = pd.concat([delins, delins2])
 
 
