@@ -1,14 +1,15 @@
 {
     "dbdata_dir": "../db_data",
-    "clinvar_source": "/home/franco/cmblab/alvaro/data/variant_summary.txt.gz",
+    "clinvar_source": "/mnt/c/Users/User/Documents/data/variant_summary.txt.gz",
     "disgenet_source": "fill_in",
     "mut_data" : {
         "clinvar" : "../../data/vs_clinvar.csv.gz",
         "disgenet" : "../../data/disgenet.txt"
     },
-    "python" : "/home/franco/miniconda3/bin/python",
-    "prot_sources" : [ "box1" ],
+    "python" : "/home/alvaro/miniconda3/bin/python",
+    "prot_sources" : [ "box1", "total" ],
     "data_sources" : {
-        "box1" : { "path" : "../box1_proteins.csv" }
+        "box1" : { "path" : "../box1_proteins.csv" },
+	"total" : { "path" : "../poner nombre.csv" }
     }
 }
