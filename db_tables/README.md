@@ -2,8 +2,8 @@
 
 ## protein table may have missing values as follows:  
 
-  | Column | Non-Null Count | Dtype
- ---  | --- | --- | ---
+ ix | Column | Non-Null Count | Dtype  
+ ---  | --- | --- | ---  
  0 | id_protein | 4368 non-null | int64  
  1 | uniprot_acc | 4368 non-null | object  
  2 | hgnc_id | 4283 non-null | object  
