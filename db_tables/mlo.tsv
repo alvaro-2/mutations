@@ -1,117 +1,103 @@
 mlo	id_mlo
-cytoplasmic stress granule	1
-cytoplasmic ribonucleoprotein granule	2
-synaptosome, neuron projection	3
-neuronal ribonucleoprotein granule	4
-nuclear protein granule	5
-membrane cluster	6
-actin cortical patch	7
-Arp2/3 protein complex	8
-P granule	9
-pi-body	10
-nuclear pore central transport channel	11
-selective hydrogel-like meshwork formed by FG-nucleoporins in nuclear pore central channel	12
-extracellular matrix	13
-collagen-containing extracellular matrix	14
-paraspeckle	15
-heterochromatin	16
-nucleolus	17
-granular component	18
-cytoplasmic protein granule	19
-cytoplasmic microtubule	20
-condensed compartments of microtubule bundling	21
-RISC complex	22
-P-body	23
-micro-ribonucleoprotein complex	24
-miRISC	25
-GW-body	26
-galectin complex	27
-galectin lattice	28
-inclusion body	29
-p62 body	30
-TCR signalosome	31
-LAT signalosome	32
-presynaptic cytosol	33
-a matrix holding together clusters of synaptic vesicles (SVs)	34
-intracellular DNA/protein granule	35
-cGAS foci	36
-enhanceosome	37
-nuclear body	38
-nuclear bodies that occur at super enhancers in mESCs	39
-ribonucleoprotein complex	40
-Sam68 nuclear bodies (SNBs)	41
-SPOP/DAXX body	42
-RNA polymerase II, holoenzyme	43
-POLII clusters	44
-nuclear speckle	45
-PcG protein complex	46
-euchromatin	47
-PcG chromatin condensates	48
-TIS granule	49
-robustly E2-activated enhancers (MegaTrans) enhancers	50
-liquid-like DYRK3 speckles	51
-PML body	52
-postsynaptic density	53
-MORC3-NBs	54
-Stress granule	55
-Transcription Factories	56
-Z granule	57
-null_phasepdb_rev	58
-Pre and postsynaptic densities	59
-Cajal body	60
-Membrane clusters	61
-Signaling puncta	62
-Paraspeckle	63
-Nucleolus	64
-P-body, Stress granule	65
-Histone Locus body	66
-Histone locus body	67
-Sam68 nuclear bodies	68
-Nuclear pore complex	69
-Nucleus speckles	70
-Centrosome	71
-RNP granules	72
-Neuronal inclusions	73
-Nuclear Compartments	74
-TAU protein	75
-Heterochromatin	76
-Polycomb body	77
-null_phasepdb_uniprot	78
-SMN granule	79
-Spindle pole	80
-Cytoplasmic ribonucleoprotein granule	81
-Nuclear body	82
-Gem	83
-Cytoplasmic granule	84
-P-body, GW body	85
-Pre and postsynaptic density	86
-Inflammasome	87
-Sress granule	88
-Nuclear speckles	89
-Polycomb bodies	90
-null_phasepdb_ht	91
-Droplet	92
-DNA damage foci	93
-Gemini of cajal body	94
-Nuclear speckle	95
-Others	96
-Spindle apparatus	97
-Sam68 nuclear body	98
-Postsynaptic density	99
-Centrosome/Spindle pole body	100
-Microtubule	101
-PcG body	102
-PML nuclear body	103
-Nuage	104
-Neuronal granule	105
-Cleavage body	106
-DDX1 body	107
-Chromatoid body	108
-Balbiani body	109
-OPT domain	110
-Mitochondrial RNA granule	111
-Perinucleolar compartment	112
-U body	113
-Receptor cluster	114
-Pericentriolar matrix	115
-Nuclear stress body	116
+Nucleolus	1
+Stress granule	2
+Postsynaptic density	3
+P-body	4
+null_phasepdb_ht	5
+Centrosome/Spindle pole body	6
+Nuclear speckle	7
+PML nuclear body	8
+Others	9
+Paraspeckle	10
+Cajal body	11
+Mitochondrial RNA granule	12
+null_phasepdb_rev	13
+RNP granules	14
+Nuclear pore complex	15
+Sam68 nuclear body	16
+Spindle apparatus	17
+Histone locus body	18
+PcG body	19
+DNA damage foci	20
+cytoplasmic stress granule	21
+Gemini of cajal body	22
+Nuclear body	23
+Transcription Factories	24
+Pre and postsynaptic density	25
+OPT domain	26
+Nuclear stress body	27
+Neuronal granule	28
+Membrane cluster	29
+nuclear protein granule	30
+Cytoplasmic ribonucleoprotein granule	31
+Receptor cluster	32
+Gem	33
+Chromatoid body	34
+Spindle pole	35
+enhanceosome	36
+Polycomb body	37
+neuronal ribonucleoprotein granule	38
+miRISC	39
+Arp2/3 protein complex	40
+actin cortical patch	41
+Droplet	42
+Cleavage body	43
+Microtubule	44
+LAT signalosome	45
+cytoplasmic protein granule	46
+Heterochromatin	47
+TCR signalosome	48
+Signaling puncta	49
+micro-ribonucleoprotein complex	50
+ribonucleoprotein complex	51
+nuclear bodies that occur at super enhancers in mESCs	52
+DDX1 body	53
+Centrosome	54
+Neuronal inclusions	55
+Nuclear Compartments	56
+RISC complex	57
+SPOP/DAXX body	58
+a matrix holding together clusters of synaptic vesicles (SVs)	59
+presynaptic cytosol	60
+GW-body	61
+P granule	62
+Balbiani body	63
+robustly E2-activated enhancers (MegaTrans) enhancers	64
+holoenzyme	65
+MORC3-NBs	66
+Pericentriolar matrix	67
+null_phasepdb_unirev	68
+extracellular matrix	69
+galectin lattice	70
+p62 body	71
+cGAS foci	72
+collagen-containing extracellular matrix	73
+PcG chromatin condensates	74
+RNA polymerase II	75
+Inflammasome	76
+Cytoplasmic granule	77
+postsynaptic density	78
+liquid-like DYRK3 speckles	79
+GW body	80
+TIS granule	81
+POLII clusters	82
+pi-body	83
+TAU protein	84
+synaptosome	85
+PcG protein complex	86
+Histone Locus body	87
+inclusion body	88
+condensed compartments of microtubule bundling	89
+nuclear pore central transport channel	90
+granular component	91
+Z granule	92
+neuron projection	93
+Nuage	94
+SMN granule	95
+euchromatin	96
+galectin complex	97
+intracellular DNA/protein granule	98
+U body	99
+cytoplasmic microtubule	100
+Perinucleolar compartment	101
+selective hydrogel-like meshwork formed by FG-nucleoporins in nuclear pore central channel	102
