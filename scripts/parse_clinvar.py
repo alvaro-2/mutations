@@ -108,7 +108,7 @@ def separar_en_cols(df, column, conseq, conseq_regex, override=False):
 
     df_crop = df_crop.drop(columns=['aux'])
 
-    return df_crop[['cambio', 'start_aa', 'end_aa', 'from', 'to', 'consequence']]
+    return df_crop
 
 def separar_en_cols_raros(df, column, conseq, conseq_regex, override=False):
     df_crop = df[df[column].str.contains(conseq_regex)].copy()
@@ -137,7 +137,7 @@ def separar_en_cols_raros(df, column, conseq, conseq_regex, override=False):
 
     df_crop = df_crop.drop(columns=['aux'])
 
-    return df_crop[['cambio', 'start_aa', 'end_aa', 'from', 'to', 'consequence']]
+    return df_crop
 
 
 
@@ -237,10 +237,9 @@ if __name__ == "__main__":
     deletions3 = pd.concat([deletions2, delet3])
     
     delins2 = leftovers2check[leftovers2check.is_del == False]
-    delins2.consequence = "delins"
+    delins2["consequence"] = "delins"
     delins2 = delins2.drop(columns=["is_del"])
     delins3 = pd.concat([delins, delins2])
-
 
     ## Concatenate everything
     print(f"Found {deletions3.shape[0]} deletions")
