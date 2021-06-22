@@ -87,22 +87,19 @@ def generate_sql(table_info):
     #read the colnames
     coln_names = list(table_data.columns)
     cols_intfloat = table_info.get('int', []) + table_info.get('float', [])
-    for i in cols_intfloat:
-        y = table_data[i].isna()
-        #convert to string for the next step
-        table_data[i] = table_data[i].astype(str) 
-        #convert NULLs in int and float column
-        table_data.loc[y, i] = "NULL"
-
         
-    for i in set(coln_names).difference(set(cols_intfloat)):
+    for i in coln_names:
         y = table_data[i].isna()
         #convert to string for the next step
-        table_data[i] = table_data[i].astype(str)  
+        if i in table_info.get('int', []):
+            table_data.loc[~y, i] = [str(int(x)) for x in table_data.loc[~y, i]]
+        elif i in table_info.get('float', []):
+            table_data.loc[~y, i] = [str(float(x)) for x in table_data.loc[~y, i]]
+        else:            
+            #convert string columns with double-quote
+            table_data.loc[~y, i] = ["\"" + str(k) + "\"" for k in table_data[i][~y]] 
         #convert NULLs in string column       
         table_data.loc[y, i] = "NULL"
-        #convert string columns with double-quote 
-        table_data.loc[~y, i] = ["\"" + k + "\"" for k in table_data[i][~y] ]        
         
     #convert coln_names to SQL text
     coln_names = (", ").join(["`" + i + "`" for i in coln_names])
