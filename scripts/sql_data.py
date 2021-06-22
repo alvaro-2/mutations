@@ -52,7 +52,7 @@ TABLES_ORDER_NUMTYPE = [
      "int": ["id_dataset"]},     
     {"table": "protein_has_mlo",
      "file": "protein_has_mlo",
-     "int": ["id_protein", "id_database", "id_mlo", "id_rol"]},
+     "int": ["id_proteinmlo", "id_protein", "id_dataset", "id_mlo", "id_rol"]},
     {"table": "mutation_has_pfam_domain",
      "file": "mutation_has_pfam_domain",
      "int": ["id_mutation", "id_protein", "start", "end"]}, 
