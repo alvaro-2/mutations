@@ -37,14 +37,14 @@ if __name__ == "__main__":
     vs = clinvar[['hgnc_id', 'snpid', 'variationid', 'chromosome', 'start', 'stop', 'type', 'name', 'origin', 'phenotypeids', 'phenotypelist', 'otherids']]
     vs.to_csv(opts.output, index= False, compression= 'gzip')
 
-    # Subset mutations with "p." only
+    # Subset mutations with "p." only: change in protein
     vs['cambio'] = vs.name.map(lambda x: re.findall('\(p\..*\)$', x)).str[0]
     vs.cambio = vs.cambio.str.strip('()')
-    vs.cambio = vs.cambio.str.lstrip('p.') # se usa lstrip xq strip tambien saca las p del final 
+    vs.cambio = vs.cambio.str.lstrip('p.')
     # drop the nans
     vs = vs[vs.cambio.notnull()]
 
-    # Cambio en nucleotido
+    # Change in nucleotide
     vs['cambio_nt'] = vs.name.map(lambda x: re.findall(': ?c\.(.*) ?\(p\.', x)).str[0]
     nt_null = vs.name[vs.cambio_nt.isnull()]
     print(nt_null.head(10))
