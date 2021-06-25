@@ -14,9 +14,9 @@ TABLES_ORDER_NUMTYPE = [
      "file": "mutation",
      "int": ["id_mutation", "start_genomic", "end_genomic", "start_aa", "end_aa", 
              "id_protein", "id_consequence"]},     
-    #{"table": "disease",
-    # "file": "disease",
-    # "int": ["id_disease"]},  
+    {"table": "disease",
+     "file": "disease",
+     "int": ["id_disease"]},  
     {"table": "disorder_region",
      "file": "disorder_region",
      "int": ["id_idr", "start", "end", "length", "id_protein"]},  
@@ -26,9 +26,9 @@ TABLES_ORDER_NUMTYPE = [
     {"table": "pfam_domain",
      "file": "pfam_domain",
      "int": []},  
-    #{"table": "mutation_has_disease",
-    # "file": "mutation_has_disease",
-    # "int": ["id_mutation", "id_disease"]}, 
+    {"table": "mutation_has_disease",
+     "file": "mutation_has_disease",
+     "int": ["id_mutation", "id_disease"]}, 
     {"table": "source",
      "file": "source",
      "int": ["id_source"]},
@@ -64,7 +64,13 @@ TABLES_ORDER_NUMTYPE = [
      "int": ["id_citation_source"]},
     {"table": "mutation_has_citation",
      "file": "mutation_has_citation",
-     "int": ["id_mutation", "id_citation_source"]}    
+     "int": ["id_mutation", "id_citation_source"]},
+    {"table": "cross_reference",
+     "file": "cross_reference",
+     "int": ["id_cross"]},
+    {"table": "disease_has_cross_reference",
+     "file": "disease_has_cross_reference",
+     "int": ["id_disease", "id_cross"]}     
     ]
 
 FOLDER_TABLES = "db_tables"
