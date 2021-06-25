@@ -1,0 +1,4376 @@
+id_disease	name
+1	Joubert syndrome 23
+2	Joubert syndrome
+3	Short-rib thoracic dysplasia 14 with polydactyly
+4	Congenital cerebellar hypoplasia
+5	Rod-cone dystrophy
+6	Intellectual disability
+7	Retinal dystrophy
+8	Joubert Syndrome and Related Disorders
+9	Neonatal hypotonia
+10	Cryptorchidism
+11	Myopathy
+12	Failure to thrive
+13	Abnormal facial shape
+14	Generalized hypotonia
+15	Global developmental delay
+16	Postnatal microcephaly
+17	Leg dystonia
+18	Seizures
+19	Lower limb spasticity
+20	Dyspnea
+21	Movement disorder
+22	Muscular hypotonia
+23	Generalized tonic-clonic seizures
+24	Neurodevelopmental Disability
+25	hypotonia
+26	Absent or delayed speech development
+27	Microcephaly
+28	Deeply set eye
+29	Feeding difficulties
+30	Mental retardation, autosomal dominant 7
+31	Microphthalmia
+32	Generalized seizures
+33	Syndromic X-linked mental retardation, Cabezas type
+34	Short stature
+35	Li-Fraumeni syndrome 1
+36	Hereditary cancer-predisposing syndrome
+37	Sarcoma
+38	Li-Fraumeni syndrome
+39	Acute myeloid leukemia
+40	Neoplasm of the breast
+41	Small cell lung cancer
+42	Malignant melanoma of skin
+43	Ovarian Serous Cystadenocarcinoma
+44	Neoplasm of the large intestine
+45	Multiple myeloma
+46	Adenocarcinoma of prostate
+47	Neoplasm of brain
+48	Neoplasm
+49	Medulloblastoma
+50	Adenocarcinoma of stomach
+51	Squamous cell carcinoma of the skin
+52	Uterine Carcinosarcoma
+53	Transitional cell carcinoma of the bladder
+54	Brainstem glioma
+55	Chronic lymphocytic leukemia
+56	Carcinoma of esophagus
+57	Malignant neoplasm of body of uterus
+58	Myelodysplastic syndrome
+59	Hepatocellular carcinoma
+60	Pancreatic adenocarcinoma
+61	Squamous cell lung carcinoma
+62	Squamous cell carcinoma of the head and neck
+63	Lung adenocarcinoma
+64	Glioblastoma
+65	Malignant Colorectal Neoplasm
+66	Ovarian Neoplasms
+67	Lymphoma
+68	Lip and oral cavity carcinoma
+69	Rhabdomyosarcoma (disease)
+70	Joubert syndrome 5
+71	Blindness
+72	Cystic renal dysplasia
+73	Occipital encephalocele
+74	Bardet-Biedl syndrome 14
+75	Meckel syndrome, type 4
+76	Senior-Loken syndrome 6
+77	Leber congenital amaurosis 10
+78	Nephronophthisis
+79	Meckel-Gruber syndrome
+80	Abnormality of eye movement
+81	Nystagmus
+82	Ichthyosis (disease)
+83	Congenital blindness
+84	Absent speech
+85	Visual field defect
+86	Blurred vision
+87	Thyroid gland undifferentiated (anaplastic) carcinoma
+88	Adrenocortical carcinoma
+89	Delayed speech and language development
+90	Mental retardation, autosomal dominant 31
+91	Central hypotonia
+92	Molar tooth sign on MRI
+93	Behavioral abnormality
+94	Slurred speech
+95	Progressive gait ataxia
+96	Abnormal retinal morphology
+97	Abnormality of vision
+98	Abnormal heart morphology
+99	Li-Fraumeni syndrome 2
+100	Prostate cancer, susceptibility to
+101	Familial cancer of breast
+102	Breast and colorectal cancer, susceptibility to
+103	Leiomyosarcoma
+104	Breast cancer, susceptibility to
+105	Osteosarcoma
+106	Malignant tumor of prostate
+107	Astrocytoma
+108	CHEK2-Related Cancer Susceptibility
+109	Hematochezia
+110	Colitis
+111	Thrombocytopenia
+112	Inflammation of the large intestine
+113	Diffuse intrinsic pontine glioma
+114	B Lymphoblastic Leukemia/Lymphoma, Not Otherwise Specified
+115	Proximal muscle weakness
+116	Elevated serum creatine phosphokinase
+117	Elevated hepatic transaminases
+118	Breast carcinoma
+119	Hypertrophic cardiomyopathy
+120	Xia-Gibbs syndrome
+121	Sleep apnea
+122	Infantile muscular hypotonia
+123	Mental retardation, autosomal dominant 42
+124	Acute lymphoid leukemia
+125	Breast adenocarcinoma
+126	OVARIAN CANCER, EPITHELIAL, SOMATIC
+127	Carcinoma of colon
+128	Neoplasm of stomach
+129	Non-small cell lung cancer
+130	Seborrheic keratosis
+131	Congenital lipomatous overgrowth, vascular malformations, and epidermal nevi
+132	Neoplasm of ovary
+133	PIK3CA related overgrowth spectrum
+134	Renal cell carcinoma, papillary, 1
+135	Uterine cervical neoplasms
+136	Rosette-forming glioneuronal tumor
+137	MACRODACTYLY, SOMATIC
+138	Autosomal recessive axonal neuropathy with neuromyotonia
+139	neurodegenerative disorder
+140	Autistic behavior
+141	Thenar muscle atrophy
+142	Distal amyotrophy
+143	Steppage gait
+144	Distal muscle weakness
+145	Early infantile epileptic encephalopathy 4
+146	Early infantile epileptic encephalopathy
+147	Follicular thyroid carcinoma
+148	Epidermal nevus
+149	Large congenital melanocytic nevus
+150	Neurocutaneous melanocytosis
+151	Epidermal nevus syndrome
+152	Melanoma
+153	Nasopharyngeal Neoplasms
+154	Metastatic pancreatic neuroendocrine tumours
+155	Microcephaly, normal intelligence and immunodeficiency
+156	Breast-ovarian cancer, familial 1
+157	Lissencephaly
+158	Protruding ear
+159	Encephalopathy
+160	Neuroblastoma
+161	RAS Inhibitor response
+162	Vascular Tumors Including Pyogenic Granuloma
+163	Rasopathy
+164	Macrodactyly of toe
+165	Stroke
+166	Capillary malformation of the lower lip, lymphatic malformation of face and neck, asymmetry of face and limbs, and partial/generalized overgrowth
+167	Cowden syndrome 1
+168	Megalencephaly-capillary malformation-polymicrogyria syndrome
+169	PTEN hamartoma tumor syndrome
+170	Macrocephalus
+171	Ventriculomegaly
+172	Papillary renal cell carcinoma, sporadic
+173	Carcinoma of gallbladder
+174	Pyridoxine-dependent epilepsy
+175	Morphological abnormality of the central nervous system
+176	Abnormality of brain morphology
+177	Neurodevelopmental abnormality
+178	Epilepsy
+179	Delayed gross motor development
+180	Noonan syndrome 1
+181	Metachondromatosis
+182	LEOPARD syndrome 1
+183	Juvenile myelomonocytic leukemia
+184	Noonan syndrome
+185	Noonan syndrome 3
+186	Cardiovascular phenotype
+187	Inborn genetic diseases
+188	Pectus excavatum
+189	Ptosis
+190	Brachycephaly
+191	Brachydactyly
+192	Cerebellar ataxia
+193	EEG with periodic lateralized epileptiform discharges
+194	Neoplasm of the thyroid gland
+195	Charcot-Marie-Tooth disease type 2E
+196	Charcot-Marie-Tooth disease, type 1C
+197	Decreased nerve conduction velocity
+198	Peripheral neuropathy
+199	Peripheral demyelination
+200	Hand muscle atrophy
+201	Pes cavus
+202	Distal lower limb muscle weakness
+203	Clubbing of toes
+204	Alternating hemiplegia of childhood 2
+205	Cerebellar ataxia-areflexia-pes cavus-optic atrophy-sensorineural hearing loss syndrome
+206	Dystonia 12
+207	Tetraparesis
+208	Dystonia
+209	Oculogyric crisis
+210	Cafe-au-lait spot
+211	Intellectual disability, mild
+212	Hemiplegia
+213	Freckling
+214	Torsion dystonia
+215	Periodic paralysis
+216	Episodic hemiplegia
+217	Tuberous sclerosis syndrome
+218	Tuberous sclerosis 1
+219	Cardiac rhabdomyoma
+220	Hamartoma
+221	Hypomelanotic macule
+222	Periventricular gray matter heterotopia
+223	Robin sequence
+224	Benign familial neonatal seizures 1
+225	EEG with localized low amplitude activity
+226	Absence seizures
+227	EEG with focal slow activity
+228	Attention deficit hyperactivity disorder
+229	Malignant tumor of floor of mouth
+230	Cowden syndrome
+231	Epileptic encephalopathy, early infantile, 1
+232	Caused by mutation in the TBC1 domain family, member 24
+233	Deafness, autosomal dominant 65
+234	Deafness, autosomal recessive 86
+235	DOORS syndrome
+236	Myoclonic epilepsy, familial infantile
+237	Early infantile epileptic encephalopathy 16
+238	Charcot-Marie-Tooth disease, recessive intermediate A
+239	Charcot-Marie-Tooth disease type 2K
+240	Charcot-Marie-Tooth disease, type 4A
+241	Polyneuropathy
+242	Sensory neuropathy
+243	Peripheral axonal neuropathy
+244	Elevated alkaline phosphatase
+245	GDAP1-Related Disorders
+246	Charcot-Marie-Tooth disease
+247	Sensorimotor neuropathy
+248	Hearing impairment
+249	Restrictive deficit on pulmonary function testing
+250	Muscle weakness
+251	Dysphonia
+252	Myoclonus
+253	Adenoid cystic carcinoma
+254	PARP Inhibitor response
+255	Sensorineural hearing loss
+256	Infantile spasms
+257	Papillary thyroid carcinoma
+258	Astrocytoma, low-grade, somatic
+259	Germ cell tumor, nonseminomatous
+260	Cardio-facio-cutaneous syndrome
+261	Colonic neoplasm
+262	Lung cancer
+263	Gastrointestinal stromal tumor
+264	Cystic epithelial invagination containing papillae lined by columnar epithelium
+265	Cerebral arteriovenous malformation
+266	Trametinib-Dabrafenib Response
+267	Vemurafenib-Cobimetinib Response
+268	Colorectal cancer
+269	Nephroblastoma
+270	Cancer
+271	Cortical tubers
+272	Multiple renal cysts
+273	Motor delay
+274	Truncal obesity
+275	Mitochondrial complex III deficiency, nuclear type 1
+276	Intellectual disability, severe
+277	Sparse hair
+278	Li-Fraumeni-like syndrome
+279	Non-Hodgkin lymphoma
+280	Astrocytoma, anaplastic
+281	Pleomorphic xanthoastrocytoma
+282	Cerebellar atrophy
+283	Specific learning disability
+284	Epilepsy, familial temporal lobe, 7
+285	Norman-Roberts syndrome
+286	Familial temporal lobe epilepsy 1
+287	Ataxia-telangiectasia syndrome
+288	Febrile seizures
+289	EEG abnormality
+290	Decreased testosterone in males
+291	Stomach cancer
+292	Hypogonadotropic hypogonadism 7 with or without anosmia
+293	Neoplasm of the pancreas
+294	Visual impairment
+295	Optic atrophy
+296	Hypothyroidism
+297	Hydronephrosis
+298	Head and Neck Neoplasms
+299	Histone Methylation Therapy response
+300	Hand tremor
+301	Cerebellar vermis atrophy
+302	Singleton-Merten syndrome 1
+303	Aicardi-Goutieres syndrome 7
+304	Colpocephaly
+305	Megalencephaly
+306	Brain atrophy
+307	Hypoplasia of the corpus callosum
+308	Early infantile epileptic encephalopathy 7
+309	KCNQ2-Related Disorders
+310	Niemann-Pick disease, type C2
+311	Iron deposition in globus pallidus
+312	Neurofibromatosis, type 1
+313	Neurofibromas
+314	Multiple cafe-au-lait spots
+315	Optic nerve glioma
+316	Axillary freckling
+317	Neurofibromatosis, familial spinal
+318	Café-au-lait macules with pulmonary stenosis
+319	Neurofibromatosis-Noonan syndrome
+320	Cataract (disease)
+321	Tall stature
+322	Kyphosis
+323	Variant of unknown significance
+324	Primary dilated cardiomyopathy
+325	Dilated cardiomyopathy 1A
+326	Cardiomyopathy
+327	Charcot-Marie-Tooth disease, type 2
+328	Monogenic diabetes
+329	CNS disorder
+330	Gowers sign
+331	Craniosynostosis
+332	Skeletal muscle atrophy
+333	Congenital microcephaly
+334	Severe intrauterine growth retardation
+335	Severe postnatal growth retardation
+336	Decreased body weight
+337	Profound global developmental delay
+338	Epileptic encephalopathy
+339	Hepatoblastoma
+340	Adenocarcinoma
+341	Atypical teratoid/rhabdoid tumor
+342	Cerebellar cortical atrophy
+343	Vulvar adenocarcinoma of mammary gland type
+344	Nicolaides-Baraitser syndrome
+345	Hirsutism
+346	LEUKEMIA, CHRONIC LYMPHOCYTIC, SOMATIC
+347	Neurodevelopmental disorder
+348	Nasopharyngeal carcinoma
+349	Pyruvate dehydrogenase E1-alpha deficiency
+350	Lactic acidosis
+351	Epicanthus
+352	Abnormality of earlobe
+353	Depressed nasal bridge
+354	Prominent eyelashes
+355	Wide mouth
+356	Neurodevelopmental delay
+357	Polymicrogyria
+358	Hypospadias, penile
+359	Very long chain fatty acid accumulation
+360	Primary microcephaly
+361	Lissencephaly 3
+362	Tubulinopathies
+363	Decreased head circumference
+364	Abnormality of the corpus callosum
+365	Corpus callosum atrophy
+366	Epileptic encephalopathy, early infantile, 36
+367	Rare genetic intellectual disability
+368	Intellectual disability, autosomal dominant 9
+369	Hereditary sensory and autonomic neuropathy type IIC
+370	Spastic paraplegia 30, autosomal recessive
+371	Severe global developmental delay
+372	Clinodactyly of the 5th finger
+373	Congenital cataract
+374	Harel-Yoon syndrome
+375	Hydrocephalus
+376	NEURODEVELOPMENTAL DISORDER WITH BRAIN ANOMALIES AND WITH OR WITHOUT VERTEBRAL OR CARDIAC ANOMALIES
+377	Neurodevelopmental disorders
+378	Tibial pseudoarthrosis
+379	Autistic disorder of childhood onset
+380	Progressive myoclonic epilepsy
+381	Mental retardation, autosomal dominant 35
+382	Moderate global developmental delay
+383	Subependymal nodules
+384	Epileptic encephalopathy, infantile or early childhood 1
+385	Language delay and attention deficit-hyperactivity disorder/cognitive impairment with or without cardiac arrhythmia
+386	Intellectual developmental disorder with cardiac arrhythmia
+387	Strabismus
+388	GLUT1 deficiency syndrome 1, autosomal recessive
+389	NEURODEVELOPMENTAL DISORDER AND STRUCTURAL BRAIN ANOMALIES WITH OR WITHOUT SEIZURES AND SPASTICITY
+390	Alexander Disease
+391	EPILEPTIC ENCEPHALOPATHY, EARLY INFANTILE, 76
+392	Progressive sensorineural hearing impairment
+393	Brain malformation
+394	Intellectual disability, moderate
+395	History of neurodevelopmental disorder
+396	Heimler syndrome 2
+397	Peroxisome biogenesis disorder 4a (zellweger)
+398	Peroxisome biogenesis disorder 4B
+399	Peroxisome biogenesis disorders, Zellweger syndrome spectrum
+400	Bilateral sensorineural hearing impairment
+401	Limitation of movement at ankles
+402	Hyporeflexia
+403	Neurofibroma
+404	Inguinal freckling
+405	Lisch nodules
+406	Mitochondrial DNA depletion syndrome 12b (cardiomyopathic type), autosomal recessive
+407	Myopia (disease)
+408	Vertigo
+409	Left ventricular hypertrophy
+410	Mitochondrial respiratory chain defects
+411	Abnormality of mitochondrial metabolism
+412	Mitochondrial myopathy
+413	Functional abnormality of the middle ear
+414	Apnea
+415	Developmental regression
+416	Retinitis pigmentosa
+417	Meckel syndrome type 6
+418	Pes planus
+419	Noonan syndrome and Noonan-related syndrome
+420	Pulmonic stenosis (disease)
+421	Noonan syndrome 6
+422	RAS-associated autoimmune leukoproliferative disorder
+423	Carcinoma of pancreas
+424	Nevus sebaceous
+425	Primary low grade serous adenocarcinoma of ovary
+426	Juvenile retinoschisis
+427	Cone/cone-rod dystrophy
+428	Congenital stationary night blindness
+429	Electronegative electroretinogram
+430	Color vision test abnormality
+431	Nyctalopia
+432	Abnormality of color vision
+433	Peripheral visual field loss
+434	Reduced visual acuity
+435	Polydactyly
+436	Obesity
+437	Rare genetic deafness
+438	Corpus callosum, agenesis of
+439	Mild global developmental delay
+440	Muscular dystrophy
+441	Waddling gait
+442	Decreased patellar reflex
+443	Limb-girdle muscular dystrophy
+444	Proximal lower limb amyotrophy
+445	Lower limb muscle weakness
+446	Rimmed vacuoles
+447	Limb-girdle muscle atrophy
+448	Limb-girdle muscle weakness
+449	TTN-Related Disorders
+450	Tuberous sclerosis 2
+451	Cortical dysplasia
+452	Renal dysplasia
+453	Coarctation of aorta
+454	Abnormal pyramidal signs
+455	Progressive cerebellar ataxia
+456	Optic neuropathy
+457	Abnormality of the cerebral white matter
+458	Congenital sensorineural hearing impairment
+459	Deafness, autosomal recessive 89
+460	Symmetrical dyschromatosis of extremities
+461	Aicardi-Goutieres syndrome 6
+462	EMG abnormality
+463	Pain
+464	Joint laxity
+465	EMG: myopathic abnormalities
+466	Schuurs-hoeijmakers syndrome
+467	Multiple congenital anomalies
+468	Hypotelorism
+469	Optic disc pallor
+470	Horseshoe kidney
+471	Mitral valve prolapse
+472	Aortic root dilatation
+473	PACS1-related syndrome
+474	Polycystic kidney dysplasia
+475	Scoliosis
+476	Noonan syndrome with multiple lentigines
+477	Alzheimer disease 2
+478	Primary degenerative dementia of the Alzheimer type, presenile onset
+479	Warfarin response
+480	Alzheimer disease
+481	Focal hyperintensity of cerebral white matter on MRI
+482	Abnormal CSF amyloid level
+483	Parkinsonism
+484	Dementia
+485	Hypercholesterolemia
+486	Hypertriglyceridemia
+487	Lipoprotein glomerulopathy
+488	Mitochondrial complex IV deficiency
+489	Long eyelashes
+490	Abnormality of the gallbladder
+491	Megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 1
+492	Obsessive-compulsive behavior
+493	Hereditary nonpolyposis colorectal neoplasms
+494	Lynch syndrome I
+495	Aqueductal stenosis
+496	Choreoathetosis
+497	Lynch syndrome
+498	Muir-Torré syndrome
+499	McCune-Albright syndrome
+500	Sex cord-stromal tumor
+501	Cushing's syndrome
+502	PITUITARY ADENOMA 3, MULTIPLE TYPES
+503	Facial grimacing
+504	Micrognathia
+505	Thumb deformity (disease)
+506	Mental deterioration
+507	Chronic kidney disease
+508	Ischemic stroke
+509	Craniopharyngioma
+510	Teratoma
+511	Imperforate anus
+512	Limb-girdle muscular dystrophy, type 2J
+513	Dilated cardiomyopathy 1G
+514	Cystic hygroma
+515	Cleft palate
+516	Bilateral talipes equinovarus
+517	Hydrops fetalis
+518	Congenital cystic adenomatoid malformation of the lung
+519	Familial hypertrophic cardiomyopathy 9
+520	Heart-hand syndrome, Slovenian type
+521	Laminopathy
+522	Left ventricular noncompaction
+523	Arrhythmogenic right ventricular cardiomyopathy
+524	Reduced ejection fraction
+525	Mitral regurgitation
+526	Ventricular tachycardia
+527	Cortical visual impairment
+528	Osteopenia
+529	Expressive language delay
+530	Neurodevelopmental disorder with or without hyperkinetic movements and seizures, autosomal dominant
+531	Plagiocephaly
+532	Vesicoureteral reflux
+533	Hearing loss
+534	Frontotemporal cerebral atrophy
+535	Spastic tetraparesis
+536	Cerebral atrophy
+537	Leukoencephalopathy
+538	Severe dystonia
+539	NEURODEVELOPMENTAL DISORDER WITH MICROCEPHALY, CATARACTS, AND RENAL ABNORMALITIES
+540	Hypertelorism
+541	Low-set ears
+542	Downslanted palpebral fissures
+543	Chorioretinal atrophy
+544	Epileptic encephalopathy, early infantile, 19
+545	Epilepsy, juvenile myoclonic 5
+546	Epilepsy, childhood absence 4
+547	Idiopathic generalized epilepsy
+548	Chronic myelogenous leukemia, BCR-ABL1 positive
+549	Retinitis pigmentosa 26
+550	Retinal pigment epithelial atrophy
+551	Cone-rod dystrophy
+552	Cone-rod degeneration
+553	Pigmentary retinopathy
+554	Central scotoma
+555	Visual loss
+556	Drusen
+557	Increased serum lactate
+558	Elevated brain lactate level by MRS
+559	Cowden syndrome 5
+560	Diaphragmatic eventration
+561	Intestinal duplication
+562	Abnormality of the hairline
+563	Thanatophoric dysplasia type 1
+564	Skeletal dysplasia with acanthosis nigricans
+565	Carcinoma
+566	Thin upper lip vermilion
+567	Long philtrum
+568	Single transverse palmar crease
+569	Pachygyria
+570	Disease
+571	Happy demeanor
+572	SULEIMAN-EL-HATTAB SYNDROME
+573	Megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 2
+574	Capillary hemangiomas
+575	Mastocytosis
+576	Partial albinism
+577	Malignant tumor of testis
+578	Dilated cardiomyopathy 1S
+579	Emery-Dreifuss muscular dystrophy
+580	Lipoatrophy with Diabetes, Hepatic Steatosis, Hypertrophic Cardiomyopathy, and Leukomelanodermic Papules
+581	Emery-Dreifuss muscular dystrophy 2, autosomal dominant
+582	Familial partial lipodystrophy 2
+583	Lethal tight skin contracture syndrome
+584	Mandibuloacral dysplasia with type A lipodystrophy
+585	Charcot-Marie-Tooth disease type 2B1
+586	Hutchinson-Gilford syndrome
+587	Congenital muscular dystrophy, LMNA-related
+588	Lipodystrophy (disease)
+589	Facial asymmetry
+590	Ventricular septal defect
+591	Abnormal morphology of the hippocampus
+592	Focal seizures
+593	Heterotopia
+594	Spasticity
+595	Cardiofaciocutaneous syndrome 1
+596	Myopathy, myofibrillar, 9, with early respiratory failure
+597	Myopathy, early-onset, with fatal cardiomyopathy
+598	Tibial muscular dystrophy
+599	Intrinsic hand muscle atrophy
+600	EMG: slow motor conduction
+601	Distal lower limb amyotrophy
+602	Foot dorsiflexor weakness
+603	Neoplasm of the parathyroid gland
+604	Hypertensive disorder
+605	Renal cyst
+606	Pilomatrixoma
+607	Endometrial neoplasm
+608	Spastic Paraplegia, Recessive
+609	Hereditary sensory and autonomic neuropathy type II
+610	Intellectual Disability, Dominant
+611	Periventricular nodular heterotopia 1
+612	Oto-palato-digital syndrome, type II
+613	Frontometaphyseal dysplasia 1
+614	Melnick-Needles syndrome
+615	Adenoma sebaceum
+616	Moderate sensorineural hearing impairment
+617	Hemiparesis
+618	Lethal acantholytic epidermolysis bullosa
+619	Skin fragility-woolly hair-palmoplantar keratoderma syndrome
+620	Migraine
+621	Dilated cardiomyopathy with woolly hair and keratoderma
+622	Arrhythmogenic right ventricular dysplasia 8
+623	Spastic paraplegia 64, autosomal recessive
+624	Macrothrombocytopenia and granulocyte inclusions with or without nephritis or sensorineural hearing loss
+625	MYH9-related disorder
+626	Stage 5 chronic kidney disease
+627	Generalized dystonia
+628	Functional motor deficit
+629	Greig cephalopolysyndactyly syndrome
+630	Breast-ovarian cancer, familial 2
+631	Hereditary breast and ovarian cancer syndrome
+632	Hyperammonemia
+633	Neurodegeneration
+634	Abnormality of metabolism/homeostasis
+635	Amyotrophic lateral sclerosis 14, with or without frontotemporal dementia
+636	Inclusion body myopathy with early-onset Paget disease and frontotemporal dementia
+637	Inclusion body myopathy with early-onset Paget disease with or without frontotemporal dementia 1
+638	Agenesis of permanent teeth
+639	Splenomegaly
+640	Shwachman-Diamond syndrome 1
+641	Noonan syndrome 5
+642	LEOPARD syndrome 2
+643	Cardiomyopathy, dilated, 1NN
+644	Emery-Dreifuss muscular dystrophy 4, autosomal dominant
+645	Spinocerebellar ataxia, autosomal recessive 8
+646	Abnormality of the sternum
+647	Hypertrophic cardiomyopathy 25
+648	Primary familial hypertrophic cardiomyopathy
+649	Arrhythmia
+650	Sick sinus syndrome
+651	Gray matter heterotopias
+652	Anxiety
+653	Rhizomelic chondrodysplasia punctata type 1
+654	Peroxisome biogenesis disorder 9B
+655	Bulbous nose
+656	Early infantile epileptic encephalopathy 2
+657	Atypical Rett syndrome
+658	Angelman syndrome-like
+659	Neuronal ceroid lipofuscinosis
+660	Childhood-onset autosomal recessive slowly progressive spinocerebellar ataxia
+661	Ceroid lipofuscinosis neuronal 2
+662	Atrial fibrillation
+663	Brugada syndrome
+664	Congestive heart failure
+665	Limb-Girdle Muscular Dystrophy, Recessive
+666	EMG: chronic denervation signs
+667	Reduced vital capacity
+668	Limb dystonia
+669	Myelodysplastic syndrome progressed to acute myeloid leukemia
+670	Mitochondrial diseases
+671	Fanconi anemia
+672	POLG-Related Spectrum Disorders
+673	Progressive sclerosing poliodystrophy
+674	Fanconi anemia, complementation group I
+675	Macrocephaly/autism syndrome
+676	Abnormality of connective tissue
+677	Decreased testicular size
+678	Micropenis
+679	Rare genetic syndrome
+680	Hyperactivity
+681	Joint hypermobility
+682	ZTTK syndrome
+683	Generalized myoclonic seizures
+684	FRASER SYNDROME 3
+685	Gait imbalance
+686	Pitt-Hopkins-like syndrome 1
+687	Autism 15
+688	Unilateral renal agenesis
+689	Abnormality of finger
+690	Coarse facial features
+691	ADRENAL CORTICAL NEOPLASM
+692	Mental retardation, autosomal dominant 5
+693	Cerebellar cyst
+694	Myopathic facies
+695	Abnormality of muscle fibers
+696	Cardiac arrhythmia, ankyrin B-related
+697	Long QT syndrome
+698	Developmental delay
+699	NEURODEVELOPMENTAL DISORDER WITH SEVERE MOTOR IMPAIRMENT AND ABSENT LANGUAGE
+700	Bifunctional peroxisomal enzyme deficiency
+701	Perrault syndrome
+702	HSD17B4-Related Disorders
+703	Epileptic spasms
+704	Pheochromocytoma
+705	Paragangliomas 4
+706	Hereditary Paraganglioma-Pheochromocytoma Syndromes
+707	Paraganglioma
+708	Rolandic epilepsy
+709	Hereditary spastic paraplegia 10
+710	Spastic paraplegia
+711	Spastic paraparesis
+712	Hypointensity of cerebral white matter on MRI
+713	Pitt-Hopkins-like syndrome 2
+714	Schizophrenia 17
+715	Primary autosomal recessive microcephaly 3
+716	Deafness, autosomal recessive 28
+717	Mental retardation, autosomal dominant 44
+718	INTELLECTUAL DEVELOPMENTAL DISORDER, AUTOSOMAL DOMINANT 63, WITH MACROCEPHALY
+719	Carcinoma of cervix
+720	Urinary bladder cancer
+721	Bladder carcinoma
+722	Rubinstein-Taybi syndrome 1
+723	Rubinstein-Taybi syndrome 2
+724	Joubert syndrome 3
+725	Association with valproate-induced liver toxicity
+726	Mental retardation-hypotonic facies syndrome, X-linked
+727	Alpha thalassemia-X-linked intellectual disability syndrome
+728	Mental retardation-hypotonic facies syndrome X-linked, 1
+729	Retinal atrophy
+730	Hypoautofluorescent retinal lesion
+731	Abnormal macular morphology
+732	Lissencephaly 4
+733	NDE1-related microhydranencephaly
+734	EMG: axonal abnormality
+735	Impaired vibration sensation at ankles
+736	Difficulty walking
+737	Aplasia/Hypoplasia of the ulna
+738	Achilles tendon contracture
+739	Lower limb amyotrophy
+740	Abnormality of cardiovascular system morphology
+741	Early infantile epileptic encephalopathy 10
+742	Ataxia-oculomotor apraxia 4
+743	Early infantile epileptic encephalopathy 12
+744	Normocytic anemia
+745	NEURODEVELOPMENTAL DISORDER WITH OR WITHOUT HYPERKINETIC MOVEMENTS AND SEIZURES, AUTOSOMAL RECESSIVE
+746	Hemimegalencephaly
+747	Rubinstein-Taybi syndrome
+748	Dysphasia
+749	Long QT syndrome 4
+750	Cardiac arrhythmia
+751	Death in infancy
+752	Rolandic epilepsy-paroxysmal exercise-induced dystonia-writer's cramp syndrome
+753	Progressive microcephaly
+754	Central hypoventilation
+755	Areflexia
+756	Stereotypical hand wringing
+757	NEURODEVELOPMENTAL DISORDER WITH BEHAVIORAL ABNORMALITIES, ABSENT SPEECH, AND HYPOTONIA
+758	Cerebral cortical atrophy
+759	Memory impairment
+760	Pendular nystagmus
+761	Benign Rolandic epilepsy
+762	Alstrom syndrome
+763	Leukodystrophy
+764	Early infantile epileptic encephalopathy 5
+765	Undetermined early-onset epileptic encephalopathy
+766	Polymalformative syndrome
+767	Posteriorly rotated ears
+768	Progressive myoclonus epilepsy with ataxia
+769	Cardiac arrest
+770	Sudden cardiac death
+771	Large for gestational age
+772	Mental retardation, X-linked 19
+773	Coffin-Lowry syndrome
+774	Rhabdoid tumor predisposition syndrome 2
+775	Cerebral palsy
+776	Subcortical band heterotopia
+777	Lissencephaly due to LIS1 mutation
+778	Ovarian cancer
+779	FANCONI ANEMIA, COMPLEMENTATION GROUP S
+780	Pancreatic cancer 4
+781	Breast and/or ovarian cancer
+782	Schizophrenia
+783	Autism spectrum disorder
+784	Hepatic cysts
+785	Leukodystrophy, hypomyelinating, 9
+786	Poor speech
+787	INTELLECTUAL DEVELOPMENTAL DISORDER, AUTOSOMAL RECESSIVE 67
+788	Tatton-Brown-rahman syndrome
+789	Menke-Hennekam syndrome 1
+790	Autosomal recessive polycystic kidney disease
+791	Colorectal cancer, protection against
+792	Periportal fibrosis
+793	Oligohydramnios
+794	Polycystic liver disease
+795	Hereditary cutaneous melanoma
+796	PURA-related severe neonatal hypotonia-seizures-encephalopathy syndrome due to a point mutation
+797	Intellectual Disability, Recessive
+798	Mental retardation, autosomal recessive 13
+799	Genu varum
+800	Skeletal dysplasia
+801	Leber congenital amaurosis
+802	Peroxisome biogenesis disorder 1A (Zellweger)
+803	Peroxisome biogenesis disorder 1B
+804	Deafness enamel hypoplasia nail defects
+805	Peroxisomal disorder
+806	Blepharophimosis
+807	Angelman syndrome
+808	Epilepsy, focal, with speech disorder and with or without mental retardation
+809	Lafora disease
+810	Mental retardation, autosomal dominant 13
+811	Charcot-Marie-Tooth disease, axonal, type 2O
+812	Epileptic encephalopathy, early infantile, 33
+813	EEF1A2-related developmental and degenerative epileptic-dyskinetic encephalopathy
+814	N-terminal acetyltransferase deficiency
+815	Primary autosomal recessive microcephaly 1
+816	Abnormality of the periventricular white matter
+817	Spinocerebellar Ataxia, Dominant
+818	Retinitis pigmentosa 40
+819	Congenital stationary night blindness, autosomal dominant 2
+820	Photophobia
+821	Primary autosomal recessive microcephaly 5
+822	Ehlers-Danlos syndrome, classic type
+823	Fragile skin
+824	Bruising susceptibility
+825	Osteogenesis imperfecta type I
+826	Arterial dissection
+827	Early myoclonic encephalopathy
+828	Dilation of lateral ventricles
+829	Ventricular hypertrophy
+830	NEURODEVELOPMENTAL DISORDER WITH ABSENT LANGUAGE AND VARIABLE SEIZURES
+831	Chorea
+832	Carney-Stratakis syndrome
+833	Fatigue
+834	Abnormal myelination
+835	Pelizaeus-Merzbacher disease
+836	Mental retardation, autosomal recessive 3
+837	GLUT1 deficiency syndrome 2
+838	Charcot-Marie-Tooth disease, type 2A2A
+839	Microcephalic osteodysplastic primordial dwarfism type II
+840	Kabuki syndrome 2
+841	Heterotopia, periventricular, autosomal recessive
+842	Encephalocele
+843	Severe hydrocephalus
+844	B lymphoblastic leukemia lymphoma, no ICD-O subtype
+845	Intellectual disability, autosomal dominant 54
+846	Dilated cardiomyopathy 1II
+847	Cataract 16, multiple types
+848	Myofibrillar Myopathy, Dominant
+849	Fatal infantile hypertonic myofibrillar myopathy
+850	Rigidity and multifocal seizure syndrome, lethal neonatal
+851	mitochondrial
+852	Mental retardation, autosomal dominant 19
+853	Abnormal lung growth, pulmonary hypertension, microcephaly, and spasticity
+854	FRAXE
+855	Mental retardation, autosomal dominant 18
+856	SHANK3-Related Disorder
+857	22q13.3 deletion syndrome
+858	Mental retardation, autosomal dominant 32
+859	Mental retardation, autosomal recessive 5
+860	GLUT1 deficiency syndrome 1
+861	Hermansky-Pudlak syndrome 2
+862	Primary autosomal recessive microcephaly 2
+863	Macular dystrophy
+864	Diabetes mellitus
+865	Perifoveal ring of hyperautofluorescence
+866	NEURODEVELOPMENTAL DISORDER WITH OR WITHOUT SEIZURES AND GAIT ABNORMALITIES
+867	NEURODEVELOPMENTAL DISORDER WITH IMPAIRED INTELLECTUAL DEVELOPMENT, HYPOTONIA, AND ATAXIA
+868	Cornelia de Lange syndrome 5
+869	SNIJDERS BLOK-CAMPEAU SYNDROME
+870	Baraitser-Winter syndrome 1
+871	Short neck
+872	Desmoid tumor, somatic
+873	Early Infantile Epileptic Encephalopathy, Autosomal Recessive
+874	Mild fetal ventriculomegaly
+875	Pseudohypoparathyroidism
+876	Subcutaneous calcification
+877	Juvenile myoclonic epilepsy
+878	Dilated cardiomyopathy
+879	Mental retardation, X-linked 1
+880	Dyskeratosis Congenita, Recessive
+881	Idiopathic fibrosing alveolitis, chronic form
+882	Aplastic anemia
+883	Dyskeratosis congenita, autosomal dominant, 2
+884	Pulmonary fibrosis and/or bone marrow failure, telomere-related, 1
+885	Cutaneous malignant melanoma 9
+886	Dyskeratosis congenita
+887	Intellectual disability, autosomal dominant 47
+888	STAG1-related disorder
+889	EEG with photoparoxysmal response
+890	Intellectual disability, autosomal dominant 53
+891	Marfanoid habitus and intellectual disability
+892	Mental retardation and microcephaly with pontine and cerebellar hypoplasia
+893	Deficiency of pyrroline-5-carboxylate reductase
+894	Growth delay due to insulin-like growth factor I resistance
+895	GLUTAMATE FORMIMINOTRANSFERASE DEFICIENCY
+896	Von Hippel-Lindau syndrome
+897	Erythrocytosis, familial, 2
+898	Renal cell carcinoma, nonpapillary
+899	Primary autosomal recessive microcephaly 7
+900	CHARGE association
+901	Congenital muscular hypertrophy-cerebral syndrome
+902	Clitoral hypertrophy
+903	Premature birth
+904	Patent ductus arteriosus
+905	Abnormal renal morphology
+906	X-Linked Mental Retardation 41
+907	Congenital hyperammonemia, type I
+908	Cornelia de Lange syndrome 1
+909	Succinate-semialdehyde dehydrogenase deficiency
+910	Mental retardation, X-linked 102
+911	Branched-chain keto acid dehydrogenase kinase deficiency
+912	Combined d-2- and l-2-hydroxyglutaric aciduria
+913	Hypochondroplasia
+914	Dysarthria
+915	Gait ataxia
+916	Regorafenib response
+917	Schizophrenia 15
+918	Wilson-Turner X-linked mental retardation syndrome
+919	Epileptic encephalopathy, early infantile, 30
+920	Encephalopathy due to defective mitochondrial and peroxisomal fission 2
+921	Mitochondrial encephalomyopathy
+922	Kohlschutter's syndrome
+923	Chédiak-Higashi syndrome
+924	GNB1-Related Disorder
+925	Early onset focal segmental glomerulosclerosis
+926	Light complexion
+927	GALLOWAY-MOWAT SYNDROME 7
+928	Supraventricular tachycardia
+929	facial dysmorphism
+930	Seizure disorder
+931	Amelogenesis imperfecta
+932	Peripheral pulmonary artery stenosis
+933	Generalized hypoplasia of dental enamel
+934	Focal seizures with impairment of consciousness or awareness
+935	Oculofaciocardiodental syndrome
+936	Ventricular fibrillation
+937	OCULOECTODERMAL SYNDROME, SOMATIC
+938	Noonan syndrome-like disorder with or without juvenile myelomonocytic leukemia
+939	EPILEPTIC ENCEPHALOPATHY, EARLY INFANTILE, 65
+940	Esophageal atresia
+941	Abnormality of the pinna
+942	Tracheoesophageal fistula
+943	Cleft of soft palate
+944	Small nail
+945	Narrow palate
+946	Thin vermilion border
+947	Typical Joubert syndrome MRI findings
+948	Mitochondrial DNA depletion syndrome 5 (encephalomyopathic with or without methylmalonic aciduria)
+949	Severe intellectual deficiency
+950	LEOPARD syndrome 3
+951	Noonan syndrome 7
+952	Intractable seizure
+953	Polycystic kidney disease, adult type
+954	Headache
+955	Dilatation of the cerebral artery
+956	Intellectual disability, autosomal dominant 48
+957	Familial dilated cardiomyopathy and peripheral neuropathy
+958	Joubert syndrome 1
+959	Coronary artery disease
+960	Prolidase deficiency
+961	Skeletal disorder
+962	PTPN11-related disorder
+963	G6PD COSENZA
+964	Glucose 6 phosphate dehydrogenase deficiency
+965	Osteoporosis
+966	Meningioma
+967	Anemia, nonspherocytic hemolytic, due to G6PD deficiency
+968	Hypertonia
+969	Language impairment
+970	Chronic myelomonocytic leukemia
+971	Abnormality of hair growth
+972	Prolonged QT interval
+973	Thrombocytosis
+974	Midaortic syndrome
+975	Familial adenomatous polyposis 1
+976	Gardner syndrome
+977	Adenomatous polyposis coli with congenital cholesteatoma
+978	Duodenal polyposis
+979	Adenomatous colonic polyposis
+980	Intestinal polyp
+981	Gastric polyposis
+982	Hyperplastic colonic polyposis
+983	Colon adenocarcinoma
+984	Familial multiple polyposis syndrome
+985	Hereditary Cancer Syndrome
+986	Hereditary motor and sensory neuropathy with optic atrophy
+987	Charcot-Marie-Tooth disease, axonal, autosomal recessive, type 2A2B
+988	Bicuspid aortic valve
+989	Aortic dilatation
+990	Hereditary sensory neuropathy type 1D
+991	Osteomyelitis leading to amputation due to slow healing fractures
+992	Distal sensory impairment
+993	Penetrating foot ulcers
+994	Hypophosphaturia
+995	Abnormality of the choroid
+996	Left ventricular noncompaction cardiomyopathy
+997	Familial hypertrophic cardiomyopathy 1
+998	Cone dystrophy 3
+999	Oto-palato-digital syndrome, type I
+1000	Conductive hearing impairment
+1001	Myeloproliferative disorder
+1002	Anisocoria
+1003	Telecanthus
+1004	Heterochromia iridis
+1005	Myofibrillar myopathy 1
+1006	Muscular dystrophy, limb-girdle, type 2R
+1007	Neuromuscular disease
+1008	Syncope
+1009	Brugada syndrome 6
+1010	ENCEPHALOPATHY, NEONATAL SEVERE, WITH LACTIC ACIDOSIS AND BRAIN ABNORMALITIES
+1011	Abnormality of the right ventricle
+1012	White matter deficit
+1013	Cognitive impairment
+1014	Periventricular nodular heterotopia
+1015	PERIVENTRICULAR NODULAR HETEROTOPIA 9
+1016	Anterior segment dysgenesis 4
+1017	Hypoplasia of the iris
+1018	Ring dermoid of cornea
+1019	Irido-corneo-trabecular dysgenesis
+1020	Axenfeld-Rieger syndrome type 1
+1021	PITX2-Related Eye Abnormalities
+1022	Esophageal Squamous Cell Carcinoma
+1023	SDHB-Related Disorders
+1024	Right ventricular cardiomyopathy
+1025	Cardiofaciocutaneous syndrome 2
+1026	Ambiguous genitalia
+1027	Mast cell leukemia
+1028	Hematologic neoplasm
+1029	Dysgerminoma
+1030	MAST CELL LEUKEMIA, SOMATIC
+1031	MASTOCYTOSIS WITH ASSOCIATED HEMATOLOGIC DISORDER, SOMATIC
+1032	MASTOCYTOSIS, SYSTEMIC, SOMATIC
+1033	Cutaneous mastocytosis
+1034	D-2-hydroxyglutaric aciduria 2
+1035	Epidermolysis bullosa simplex due to plakophilin deficiency
+1036	Dilated Cardiomyopathy, Dominant
+1037	Cystoid macular edema
+1038	Optic atrophy 9
+1039	Infantile cerebellar-retinal degeneration
+1040	Cerebral dysmyelination
+1041	Acanthosis nigricans
+1042	Atrial septal defect
+1043	Macular degeneration
+1044	Primary open angle glaucoma
+1045	Abnormality of the corticospinal tract
+1046	Easy fatigability
+1047	Dysphagia
+1048	Neuropathy, hereditary sensory, with spastic paraplegia, autosomal recessive
+1049	Carney triad
+1050	Oculomotor apraxia
+1051	Conjunctival telangiectasia
+1052	Immunodeficiency
+1053	intellectual deficiency
+1054	Stomatin-deficient cryohydrocytosis with neurologic defects
+1055	Dystonia 9
+1056	Cardiofaciocutaneous syndrome 3
+1057	MAP2K1-related RASopathy
+1058	MASTOCYTOSIS, CUTANEOUS AND SYSTEMIC, SOMATIC
+1059	Retinitis pigmentosa 43
+1060	Optic disc hypoplasia
+1061	Fanconi anemia, complementation group D1
+1062	Wilms tumor 1
+1063	Glioma susceptibility 3
+1064	Partial agenesis of the corpus callosum
+1065	Cutaneous malignant melanoma 2
+1066	Melanoma-pancreatic cancer syndrome
+1067	Multiple cutaneous malignancies
+1068	Infantile myofibromatosis 1
+1069	Infantile myofibromatosis
+1070	Ascites
+1071	Edema
+1072	Hepatomegaly
+1073	Skin nodule
+1074	Kosaki overgrowth syndrome
+1075	Premature aging syndrome, Penttinen type
+1076	Basal ganglia calcification, idiopathic, 4
+1077	CEP290-Related Disorders
+1078	Congenital diaphragmatic hernia
+1079	Myofibrillar myopathy
+1080	Dilated cardiomyopathy 1I
+1081	Neurogenic scapuloperoneal syndrome, Kaeser type
+1082	Abnormality of the eye
+1083	Glycogen storage disease due to glucose-6-phosphatase deficiency type IA
+1084	Glycogen storage disease
+1085	Hypoglycemia
+1086	Alzheimer disease, type 3
+1087	Visual hallucinations
+1088	Rigidity
+1089	Irritability
+1090	Hypomimic face
+1091	Personality changes
+1092	Abnormality of neuronal migration
+1093	Naxos disease
+1094	Arrhythmogenic right ventricular cardiomyopathy, type 12
+1095	Left atrial enlargement
+1096	Retinitis pigmentosa 44
+1097	Abnormal electroretinogram
+1098	Familial isolated arrhythmogenic right ventricular dysplasia
+1099	Familial dilated cardiomyopathy
+1100	High forehead
+1101	Choanal atresia
+1102	Pyloric stenosis
+1103	Hartsfield syndrome
+1104	Pfeiffer syndrome
+1105	Hypogonadotropic hypogonadism 2 with or without anosmia
+1106	Trigonocephaly 1
+1107	Osteoglophonic dysplasia
+1108	Intellectual developmental disorder and retinitis pigmentosa; IDDRP
+1109	McKusick-Kaufman syndrome
+1110	Bardet-Biedl syndrome 6
+1111	Bardet-biedl syndrome 2/6, digenic
+1112	Bardet-Biedl syndrome
+1113	Ewing's sarcoma
+1114	Encephalocraniocutaneous lipomatosis
+1115	Lymphoblastic leukemia, acute, with lymphomatous features
+1116	Bilateral conductive hearing impairment
+1117	Abnormality of the zygomatic bone
+1118	Bardet-Biedl syndrome 8
+1119	Retinitis pigmentosa 51
+1120	Colorectal cancer, susceptibility to
+1121	Desmoid disease, hereditary
+1122	APC-Associated Polyposis Disorders
+1123	Conduction disorder of the heart
+1124	Tremor
+1125	Pancreatic cysts
+1126	Head tremor
+1127	Torticollis
+1128	Hammertoe
+1129	OPTIC ATROPHY 12
+1130	Noncompaction cardiomyopathy
+1131	Left ventricular noncompaction 1
+1132	Clonus
+1133	Lower limb hyperreflexia
+1134	Hyperreflexia
+1135	Sudden unexplained death
+1136	Postaxial polydactyly type A1
+1137	Bifid nail
+1138	Abnormality of the nail
+1139	Ridged nail
+1140	Postaxial polydactyly
+1141	Narrow chest
+1142	Hyperechogenic kidneys
+1143	Clubfoot
+1144	Proteus-like syndrome
+1145	PTEN-related disorder
+1146	Depigmentation/hyperpigmentation of skin
+1147	Pallister-Hall syndrome
+1148	Hamartoma of hypothalamus
+1149	Preaxial polydactyly 4
+1150	Congenital aneurysm of ascending aorta
+1151	Familial thoracic aortic aneurysm and aortic dissection
+1152	Loeys-Dietz syndrome
+1153	Marfan syndrome
+1154	Thoracic aortic dissection
+1155	Dilatation of the thoracic aorta
+1156	Hereditary nonpolyposis colorectal cancer type 6
+1157	Loeys-Dietz syndrome 2
+1158	Drash syndrome
+1159	Meacham syndrome
+1160	Nephrotic syndrome, type 4
+1161	Frasier syndrome
+1162	Wilms tumor, aniridia, genitourinary anomalies, and mental retardation syndrome
+1163	Steroid-resistant nephrotic syndrome
+1164	Nephrotic range proteinuria
+1165	Hypogonadotropic hypogonadism 5 with or without anosmia
+1166	Cutaneous malignant melanoma 3
+1167	Deafness, autosomal dominant 4
+1168	Myotonia
+1169	Spinal muscular atrophy, lower extremity-predominant, 2A, autosomal dominant
+1170	Heart failure
+1171	Lynch syndrome II
+1172	Turcot syndrome
+1173	Atrial fibrillation, familial, 1
+1174	Systolic heart failure
+1175	Focal T2 hyperintense basal ganglia lesion
+1176	Craniosynostosis, nonspecific
+1177	Progressive pes cavus
+1178	Fasciculations
+1179	Absent Achilles reflex
+1180	EMG: neuropathic changes
+1181	Horizontal nystagmus
+1182	Leber congenital amaurosis 6
+1183	Palmoplantar blistering
+1184	Skin fragility with non-scarring blistering
+1185	Focal segmental glomerulosclerosis
+1186	Proteinuria
+1187	Renal insufficiency
+1188	Focal segmental glomerulosclerosis 5
+1189	Cardiomyopathy, dilated, with woolly hair, keratoderma, and tooth agenesis
+1190	Spherocytosis type 4
+1191	Autosomal dominant distal renal tubular acidosis
+1192	Renal tubular acidosis, distal, with hemolytic anemia
+1193	Hemolytic anemia
+1194	Prostate neoplasm
+1195	Benign prostatic hyperplasia
+1196	Cardiomyopathy, dilated, 1u
+1197	Acne inversa, familial, 3
+1198	Pick's disease
+1199	Frontotemporal dementia
+1200	Premature ventricular contraction
+1201	Romano-Ward syndrome
+1202	Long QT syndrome 11
+1203	Premature ovarian insufficiency
+1204	Wolfram-like syndrome, autosomal dominant
+1205	Diabetes mellitus AND insipidus with optic atrophy AND deafness
+1206	Autosomal dominant nonsyndromic deafness 6
+1207	Diabetes mellitus type 2
+1208	Cataract 41
+1209	WFS1-Related Spectrum Disorders
+1210	Pancreatic cancer 2
+1211	BRCA2-Related Disorders
+1212	Multiple lipomas
+1213	Retinal coloboma
+1214	Chorioretinal coloboma
+1215	Pulmonary artery atresia
+1216	Abnormality of retinal pigmentation
+1217	Concomitant strabismus
+1218	Exodeviation
+1219	Ankylosis
+1220	Malignant tumor of esophagus
+1221	Upper limb muscle weakness
+1222	Motor polyneuropathy
+1223	Pulmonary arterial hypertension
+1224	Epistaxis
+1225	Pulmonary arterial hypertension related to hereditary hemorrhagic telangiectasia
+1226	Telangiectasia, hereditary hemorrhagic, type 2
+1227	Oral cavity telangiectasia
+1228	Telangiectasia of the skin
+1229	Vitiligo
+1230	FGFR2 related craniosynostosis
+1231	Isolated coronal synostosis
+1232	Saethre-Chotzen syndrome
+1233	Beare-Stevenson cutis gyrata syndrome
+1234	Crouzon syndrome
+1235	Xeroderma pigmentosum, group D
+1236	Trichothiodystrophy 1, photosensitive
+1237	Ovarian carcinoma
+1238	Psychosis
+1239	Tip-toe gait
+1240	Pes valgus
+1241	Spastic diplegia
+1242	Flexion contracture
+1243	Spastic paraplegia 4, autosomal dominant
+1244	Dilated cardiomyopathy 1CC
+1245	Familial hypertrophic cardiomyopathy 20
+1246	Pancreatic cancer, susceptibility to
+1247	Punctate palmoplantar keratoderma type 2
+1248	Reduced bone mineral density
+1249	Pathologic fracture
+1250	Bardet-Biedl syndrome 1
+1251	Usher syndrome
+1252	Arthrogryposis multiplex congenita
+1253	Prostate cancer, somatic
+1254	IMMUNODEFICIENCY, DEVELOPMENTAL DELAY, AND HYPOHOMOCYSTEINEMIA
+1255	Tachycardia
+1256	Hypopigmentation of the skin
+1257	Cystic fibrosis
+1258	Hereditary pancreatitis
+1259	ataluren response - Efficacy
+1260	Bronchiectasis with or without elevated sweat chloride 1
+1261	Congenital bilateral aplasia of vas deferens from CFTR mutation
+1262	ivacaftor response - Efficacy
+1263	Amyloidogenic transthyretin amyloidosis
+1264	Bare lymphocyte syndrome 2
+1265	Gait disturbance
+1266	Late-onset muscular dystrophy
+1267	Fatty replacement of skeletal muscle
+1268	Depressivity
+1269	Ataxia-telangiectasia-like disorder
+1270	Muenke syndrome
+1271	Relative macrocephaly
+1272	Severe muscular hypotonia
+1273	Dilated cardiomyopathy 1AA
+1274	CFTR-related disorders
+1275	Acquired hemoglobin H disease
+1276	Renier-Gabreels-Jasper syndrome
+1277	Abnormality of the skeletal system
+1278	Postaxial polydactyly, type A1/B
+1279	Cerebellar vermis hypoplasia
+1280	NEUROOCULOCARDIOGENITOURINARY SYNDROME
+1281	Kidney Carcinoma
+1282	Focal cortical dysplasia type II
+1283	Paroxysmal dyskinesia
+1284	Paroxysmal choreoathetosis
+1285	Sleep disturbance
+1286	Catecholaminergic polymorphic ventricular tachycardia
+1287	Arrhythmogenic right ventricular dysplasia, familial, 2
+1288	Catecholaminergic polymorphic ventricular tachycardia type 1
+1289	Ataxia-telangiectasia variant
+1290	T-cell prolymphocytic leukemia
+1291	Fanconi anemia, complementation group A
+1292	Absent thumb
+1293	Absent radius
+1294	Cardiomyopathy, familial hypertrophic, 26
+1295	Myopathy, distal, 4
+1296	Myofibrillar myopathy, filamin C-related
+1297	Cardiovascular
+1298	Undetectable light- and dark-adapted electroretinogram
+1299	Mixed Phenotype Acute Leukemia, T/Myeloid, Not Otherwise Specified
+1300	ERCC2-Related Disorders
+1301	Polycystic liver disease 1
+1302	Multicystic kidney dysplasia
+1303	Arhinia choanal atresia microphthalmia
+1304	Microphallus
+1305	Short nose
+1306	Skin ulcer
+1307	Abnormal autonomic nervous system physiology
+1308	Gingival fibromatosis 1
+1309	Noonan syndrome 4
+1310	Senior-Loken syndrome 5
+1311	Retinoblastoma
+1312	Macroglossia
+1313	Mental retardation, autosomal dominant 36
+1314	Dilated cardiomyopathy 1Y
+1315	Left ventricular noncompaction 9
+1316	Arrhythmogenic right ventricular dysplasia 9
+1317	Complete atrioventricular canal defect
+1318	Anterior segment dysgenesis 1
+1319	Dilatation of the ascending aorta
+1320	Paroxysmal atrial fibrillation
+1321	Amyloidosis
+1322	Myalgia
+1323	Gastrointestinal stromal tumor, familial
+1324	Genetic syndrome with a Dandy-Walker malformation as major feature
+1325	Dandy-Walker syndrome
+1326	Iron accumulation in brain
+1327	Severe temper tantrums
+1328	Stereotypical body rocking
+1329	Acanthocytosis due to band 3 ht
+1330	Acanthocytosis
+1331	Thrombocytopenia 6
+1332	Myelofibrosis
+1333	Thoracic scoliosis
+1334	Subcutaneous neurofibromas
+1335	Anemia
+1336	Lymphadenitis
+1337	Renal cortical cysts
+1338	Sudden cardiac arrest
+1339	Cone-rod dystrophy and hearing loss 1
+1340	Retinitis pigmentosa 28
+1341	Factor V deficiency
+1342	Thrombophilia due to activated protein C resistance
+1343	Recurrent abortion
+1344	Budd-Chiari syndrome
+1345	Venous thrombosis
+1346	Parathyroid adenoma
+1347	Lipoma
+1348	Pituitary adenoma
+1349	Autosomal dominant distal hereditary motor neuropathy
+1350	Pelvic girdle muscle weakness
+1351	Thymoma
+1352	Orofaciodigital syndrome I
+1353	Joubert syndrome 10
+1354	Simpson-Golabi-Behmel syndrome, type 2
+1355	Autosomal recessive limb-girdle muscular dystrophy type 2G
+1356	Familial hypertrophic cardiomyopathy 23
+1357	Progressive supranuclear ophthalmoplegia
+1358	Parkinson disease, late-onset
+1359	Parkinson-dementia syndrome
+1360	Rippling muscle disease 2
+1361	Distal myopathy, Tateyama type
+1362	Acromesomelic dysplasia, Demirhan type
+1363	Brachydactyly type A2
+1364	Mandibuloacral dysplasia
+1365	Familial partial lipodystrophy
+1366	Cancer of multiple types, susceptibility to
+1367	Gastrointestinal carcinoma
+1368	Colon cancer, susceptibility to
+1369	Renovascular hypertension
+1370	Lymphangiomyomatosis
+1371	PEX7-Related Disorders
+1372	Phytanic acid storage disease
+1373	Intention tremor
+1374	Mild hypermetropia
+1375	Macroscopic hematuria
+1376	Congenital heart defects, multiple types, 3
+1377	Delusions
+1378	Malignant tumor of colon
+1379	Familial restrictive cardiomyopathy
+1380	Cerebral cortical neurodegeneration
+1381	Aphasia
+1382	Intellectual developmental disorder with persistence of fetal hemoglobin
+1383	Deafness, autosomal recessive 32
+1384	Achondroplasia
+1385	Hereditary sensory and autonomic neuropathy type IIA
+1386	Microretrognathia
+1387	Aspiration pneumonia
+1388	Frontometaphyseal dysplasia
+1389	Congenital ptosis
+1390	Abnormality of the retinal vasculature
+1391	CNS demyelination
+1392	Sensory impairment
+1393	Muscle stiffness
+1394	Progressive spastic paraplegia
+1395	Early infantile epileptic encephalopathy 17
+1396	Neurodevelopmental disorder with involuntary movements
+1397	Myofibrillar myopathy, BAG3-related
+1398	Dilated cardiomyopathy 1HH
+1399	Multiple joint contractures
+1400	Medullary thyroid carcinoma
+1401	Hereditary nonpolyposis colorectal cancer type 5
+1402	Endometrial carcinoma
+1403	Thoracolumbar scoliosis
+1404	Abnormality of the temporomandibular joint
+1405	Chronic pain
+1406	Misalignment of teeth
+1407	Crouzon syndrome with acanthosis nigricans
+1408	Tricuspid regurgitation
+1409	Abnormal morphology of the left ventricle
+1410	Leukemia, acute, ?X-linked
+1411	Polycythemia vera
+1412	Lynch-like syndrome
+1413	Embryonal rhabdomyosarcoma
+1414	Abnormality of the kidney
+1415	Hereditary cryohydrocytosis with normal stomatin
+1416	Familial hypertrophic cardiomyopathy 11
+1417	Left ventricular noncompaction 4
+1418	Atrial septal defect 5
+1419	Dilated cardiomyopathy 1R
+1420	Tetralogy of Fallot
+1421	Tethered cord
+1422	PHACE syndrome
+1423	Hyperbilirubinemia
+1424	Gilbert's syndrome
+1425	Bilirubin, serum level of, quantitative trait locus 1
+1426	Crigler-Najjar syndrome, type II
+1427	Crigler-Najjar syndrome type 1
+1428	Lucey-Driscoll syndrome
+1429	Hemidystonia
+1430	Increased bone mineral density
+1431	Cortical sclerosis
+1432	Recurrent fractures
+1433	Paget disease of bone 3
+1434	Frontotemporal dementia and/or amyotrophic lateral sclerosis 3
+1435	Spastic paraplegia-Paget disease of bone syndrome
+1436	Amyotrophic lateral sclerosis and/or frontotemporal dementia 1
+1437	Paget disease of bone 2, early-onset
+1438	Insulin-resistant diabetes mellitus AND acanthosis nigricans
+1439	Leprechaunism syndrome
+1440	Pineal hyperplasia AND diabetes mellitus syndrome
+1441	Bailey-Bloch congenital myopathy
+1442	Fetal akinesia sequence
+1443	Farber disease
+1444	Female infertility
+1445	Abnormality of the ovary
+1446	Premature ovarian failure 8
+1447	Usher syndrome, type 3A
+1448	Loeys-Dietz syndrome 1
+1449	Familial keratoacanthoma
+1450	Senior Loken syndrome
+1451	Connective tissue disease
+1452	Amyotrophic lateral sclerosis, susceptibility to
+1453	Amyotrophic lateral sclerosis type 1
+1454	Distal hereditary motor neuronopathy type 7B
+1455	Perry syndrome
+1456	Chronic sinusitis
+1457	Lung disease, non-specific
+1458	Neuropathy, axonal, with vocal cord paresis, autosomal recessive
+1459	Charcot-Marie-Tooth disease, axonal, with vocal cord paresis, autosomal recessive
+1460	Chronic pancreatitis
+1461	Hypermelanotic macule
+1462	Recurrent pancreatitis
+1463	Achromatopsia 6
+1464	Retinal cone dystrophy 3A
+1465	PDE6H-Related Disorders
+1466	Abnormal light- and dark-adapted electroretinogram
+1467	Limb-girdle muscular dystrophy, type 1B
+1468	West syndrome
+1469	Diabetes mellitus type 2, susceptibility to
+1470	Exercise stress response, impaired, association with
+1471	Permanent neonatal diabetes mellitus
+1472	Transient Neonatal Diabetes, Dominant
+1473	Hyperinsulinism, Dominant/Recessive
+1474	Maturity onset diabetes mellitus in young
+1475	Islet cell hyperplasia
+1476	glibenclamide response - Efficacy
+1477	gliclazide response - Efficacy
+1478	glimepiride response - Efficacy
+1479	glipizide response - Efficacy
+1480	gliquidone response - Efficacy
+1481	sulfonamides, urea derivatives response - Efficacy
+1482	Transient neonatal diabetes mellitus 3
+1483	Maturity-onset diabetes of the young, type 13
+1484	Alzheimer disease, familial, 3, with unusual plaques
+1485	Alpha-B crystallinopathy
+1486	Even-plus syndrome
+1487	Venous malformation
+1488	Abnormality of digit
+1489	Dural ectasia
+1490	Hemolytic uremic syndrome, atypical, susceptibility to, 7
+1491	Atypical hemolytic uremic syndrome
+1492	Nephrotic syndrome, type 7
+1493	Cancer progression and tumor cell motility
+1494	Leukemia
+1495	Hodgkin lymphoma
+1496	Retinitis pigmentosa 18
+1497	Retinitis pigmentosa 13
+1498	Retinitis Pigmentosa 23
+1499	Retinitis pigmentosa 33
+1500	Retinitis pigmentosa 69
+1501	Renal agenesis
+1502	Semantic dementia
+1503	Hyperinsulinemic hypoglycemia familial 5
+1504	Anosmia
+1505	Leukemia, acute lymphoblastic, susceptibility to
+1506	Enlarged kidney
+1507	Hemangioma
+1508	Colorectal cancer, non-polyposis
+1509	Charcot-Marie-Tooth disease, demyelinating, type 1f
+1510	CHARCOT-MARIE-TOOTH DISEASE, DOMINANT INTERMEDIATE G
+1511	Cone-rod dystrophy 13
+1512	Epidermolysis bullosa simplex with pyloric atresia
+1513	Epidermolysis bullosa simplex with nail dystrophy
+1514	Limb-girdle muscular dystrophy, type 2Q
+1515	Epidermolysis bullosa simplex with muscular dystrophy
+1516	Epidermolysis bullosa simplex, Ogna type
+1517	Combined saposin deficiency
+1518	Nonsyndromic Hearing Loss, Recessive
+1519	Galactosylceramide beta-galactosidase deficiency
+1520	Metachromatic leukodystrophy
+1521	Retinitis pigmentosa-deafness syndrome
+1522	Atypical Gaucher Disease
+1523	Deafness, autosomal recessive 12
+1524	Usher syndrome type 1D
+1525	CDH23-Related Disorders
+1526	Ductal breast carcinoma
+1527	Loss of speech
+1528	Angiofibromas
+1529	Wolff-Parkinson-White pattern
+1530	Familial hypertrophic cardiomyopathy 3
+1531	Parkinson disease 8, autosomal dominant
+1532	Cogwheel rigidity
+1533	Resting tremor
+1534	Familial platelet disorder with associated myeloid malignancy
+1535	Neoplasm of the liver
+1536	Intrahepatic cholangiocarcinoma
+1537	Restrictive cardiomyopathy
+1538	Hepatocellular adenoma
+1539	Peutz-Jeghers syndrome
+1540	Retinitis pigmentosa 31
+1541	Amyotrophic lateral sclerosis
+1542	Urinary incontinence
+1543	Afibrinogenemia, congenital
+1544	Hypofibrinogenemia
+1545	Abnormal bleeding
+1546	MELORHEOSTOSIS, ISOLATED, SOMATIC MOSAIC
+1547	Uterine leiomyoma
+1548	Charcot-Marie-Tooth disease, dominant intermediate B
+1549	Myopathy, centronuclear, 1
+1550	Leber congenital amaurosis 5
+1551	Osteogenesis imperfecta
+1552	Infantile cortical hyperostosis
+1553	Ehlers-Danlos syndrome, procollagen proteinase deficient
+1554	Pigmentary pallidal degeneration
+1555	Neurodegeneration with brain iron accumulation 1, atypical
+1556	Hypoprebetalipoproteinemia, acanthocytosis, retinitis pigmentosa, and pallidal degeneration
+1557	Slowed slurred speech
+1558	Micrographia
+1559	Smith-Kingsmore syndrome
+1560	Palpitations
+1561	Clinodactyly
+1562	3-4 toe syndactyly
+1563	DICER1-related pleuropulmonary blastoma cancer predisposition syndrome
+1564	Exudative vitreoretinopathy
+1565	Blue sclerae
+1566	Lumbar hyperlordosis
+1567	Proportionate short stature
+1568	Diabetes mellitus type 1
+1569	VACTERL association with hydrocephalus
+1570	BLOOD GROUP--WRIGHT ANTIGEN
+1571	Macular edema
+1572	Spinal rigidity
+1573	Areflexia of lower limbs
+1574	Thoracic kyphoscoliosis
+1575	Myopathy, centronuclear
+1576	Low-output congestive heart failure
+1577	Tuberous sclerosis and lymphangiomyomatosis
+1578	Spinal muscular atrophy, lower extremity predominant 1, autosomal dominant
+1579	Hereditary motor and sensory neuropathy
+1580	Glaucoma
+1581	Deviation of toes
+1582	Interrupted aortic arch type B
+1583	Diamond-Blackfan anemia
+1584	gene sequencing
+1585	GATA-1-related thrombocytopenia with dyserythropoiesis
+1586	Thrombocytopenia, platelet dysfunction, hemolysis, and imbalanced globin synthesis
+1587	Anemia without thromobocytopenia, X-linked
+1588	Complete trisomy 21 syndrome
+1589	Fibroma
+1590	Progressive distal muscular atrophy
+1591	Abnormality of the foot
+1592	Progressive inability to walk
+1593	Dilated cardiomyopathy 1L
+1594	Autosomal recessive limb-girdle muscular dystrophy type 2F
+1595	Small intestinal polyp
+1596	Hamartomatous polyposis
+1597	MFN2-Related Disorders
+1598	Leukemia, acute myeloid, susceptibility to
+1599	DIEGO BLOOD GROUP ANTIGEN
+1600	Clumsiness
+1601	Interosseus muscle atrophy
+1602	Hereditary diffuse gastric cancer
+1603	Colorectal polyposis
+1604	Abnormal platelet function
+1605	Susceptibility to uveal melanoma
+1606	Paroxysmal familial ventricular fibrillation 1
+1607	Perrault syndrome 1
+1608	Cancer of the pancreas
+1609	Centronuclear myopathy
+1610	Osteogenesis imperfecta type III
+1611	Dentinogenesis imperfecta
+1612	Bloom syndrome
+1613	Autosomal recessive retinitis pigmentosa
+1614	Deafness, autosomal dominant 13
+1615	Ear malformation
+1616	Long palpebral fissure
+1617	Altered myosin contractile function
+1618	Aortic aneurysm, familial thoracic 4
+1619	Retinitis pigmentosa 15
+1620	Primary ciliary dyskinesia
+1621	Dilatation
+1622	Cirrhosis of liver
+1623	Interstitial pneumonitis
+1624	Cerebral calcification
+1625	Rajab interstitial lung disease with brain calcifications
+1626	Episodic ataxia, type 5
+1627	Epilepsy, idiopathic generalized 9
+1628	Supravalvar aortic stenosis
+1629	Cutis laxa, autosomal dominant 1
+1630	Williams syndrome
+1631	Charcot-Marie-Tooth disease type 4
+1632	Charcot-Marie-Tooth disease, type 4B2
+1633	Familial colorectal cancer
+1634	X-linked hydrocephalus syndrome
+1635	Corpus callosum, partial agenesis of, X-linked
+1636	Parkinson disease 2
+1637	Young-onset Parkinson disease
+1638	Leprosy 2
+1639	Arrhythmogenic right ventricular dysplasia, familial 1
+1640	Band 3 memphis
+1641	SWANN BLOOD GROUP ANTIGEN
+1642	Partial lipodystrophy, Dunnigan
+1643	Emery-Dreifuss muscular dystrophy 3, autosomal recessive
+1644	Distal spinal muscular atrophy
+1645	Distal hereditary motor neuronopathy type 5
+1646	Charcot-Marie-Tooth disease type 2D
+1647	Epilepsy, idiopathic generalized, susceptibility to, 12
+1648	Breast and colorectal cancer
+1649	Cardiofaciocutaneous syndrome 4
+1650	Hereditary nonpolyposis colon cancer
+1651	Lymphoedema
+1652	Retinal dysplasia
+1653	Dominant hereditary optic atrophy
+1654	Abortive cerebellar ataxia
+1655	Optic nerve hypoplasia
+1656	Autosomal dominant optic atrophy plus syndrome
+1657	Acute leukemia of ambiguous lineage
+1658	Fumarase deficiency
+1659	Hereditary leiomyomatosis and renal cell cancer
+1660	Tumor susceptibility linked to germline BAP1 mutations
+1661	Multifocal breast carcinoma
+1662	Heinz body anemia
+1663	Stereotypy
+1664	Aggressive behavior
+1665	Postural instability
+1666	MACULAR DEGENERATION, AGE-RELATED, 9, SUSCEPTIBILITY TO
+1667	Atypical hemolytic-uremic syndrome 5
+1668	Age-related macular degeneration 9
+1669	Complement component 3 deficiency, autosomal recessive
+1670	Atrioventricular septal defect
+1671	GLUT1 deficiency syndrome
+1672	Lethal congenital contracture syndrome 5
+1673	Cerebrooculofacioskeletal syndrome 2
+1674	Trichothiodystrophy
+1675	Adrenocortical carcinoma, pediatric
+1676	Idiopathic hypereosinophilic syndrome
+1677	Photosensitive tonic-clonic seizures
+1678	Mental retardation, autosomal dominant
+1679	WEISS-KRUSZKA SYNDROME
+1680	Joubert syndrome with ocular defect
+1681	Dilated Cardiomyopathy, Recessive
+1682	Familial Hypertrophic Cardiomyopathy with Wolff-Parkinson-White Syndrome
+1683	Ciliary dyskinesia, primary, 2
+1684	CEBALID syndrome
+1685	Mandibuloacral dysplasia with type A lipodystrophy, atypical
+1686	Autosomal recessive axonal hereditary motor and sensory neuropathy
+1687	Hurler syndrome
+1688	Mucopolysaccharidosis, MPS-I-H/S
+1689	Mucopolysaccharidosis, MPS-I-S
+1690	Mucopolysaccharidosis type 1
+1691	Dyskeratosis congenita, autosomal recessive, 4
+1692	Thyroiditis
+1693	Arteriovenous fistula
+1694	Papule
+1695	Abnormal CNS myelination
+1696	Immunodeficiency 31C
+1697	Immunodeficiency 31a
+1698	Mycobacterial and viral infections, susceptibility to, autosomal recessive
+1699	Chronic mucocutaneous candidiasis
+1700	Sudden death
+1701	Hereditary angioneurotic edema
+1702	Factor XII deficiency disease
+1703	Nephrolithiasis/osteoporosis, hypophosphatemic
+1704	Nephrolithiasis/osteoporosis, hypophosphatemic, 1
+1705	Dextrocardia
+1706	Delayed puberty
+1707	Hereditary angioedema type 3
+1708	Deep venous thrombosis
+1709	Thromboembolism
+1710	Infiltrating duct carcinoma of breast
+1711	Methylmalonic acidemia
+1712	Mevalonic aciduria
+1713	Hyperimmunoglobulin D with periodic fever
+1714	Vitamin B12-responsive methylmalonic acidemia type cblB
+1715	Cardiac valvular dysplasia, X-linked
+1716	FG syndrome 2
+1717	Terminal osseous dysplasia
+1718	BCS1L-Related Disorders
+1719	GRACILE syndrome
+1720	Pili torti-deafness syndrome
+1721	Leigh syndrome
+1722	Deficiency of 3-hydroxyacyl-CoA dehydrogenase
+1723	Hyperinsulinemic hypoglycemia, familial, 4
+1724	Platelet-type bleeding disorder 15
+1725	Macrothrombocytopenia
+1726	Hereditary spastic paraplegia 3A
+1727	JOUBERT SYNDROME 33
+1728	Cephalocele
+1729	Aplasia/Hypoplasia of the phalanges of the hand
+1730	Aplasia/Hypoplasia involving the metacarpal bones
+1731	Hand oligodactyly
+1732	Cutaneous leiomyoma
+1733	Primitive neuroectodermal tumor
+1734	Charcot-Marie-Tooth disease, dominant intermediate E
+1735	Celiac disease
+1736	Dermatitis, atopic
+1737	Isolated unilateral hemispheric cerebellar hypoplasia
+1738	Facial hemangioma
+1739	Cerebrooculofacioskeletal syndrome 1
+1740	bilateral breast cancer
+1741	Endometrial Endometrioid Adenocarcinoma, Variant with Squamous Differentiation
+1742	Pemigatinib resistance
+1743	FGFR3-related disorder
+1744	Invasive Lobular Breast Carcinoma
+1745	Melanoma and neural system tumor syndrome
+1746	Combined oxidative phosphorylation deficiency 8
+1747	Progressive cone dystrophy (without rod involvement)
+1748	Thanatophoric dysplasia, type 2
+1749	Spermatocytic seminoma
+1750	Charcot-Marie-Tooth disease, demyelinating, type 4F
+1751	Charcot-Marie-Tooth disease, type I
+1752	Charcot-Marie-Tooth disease type 5
+1753	SPINOCEREBELLAR ATAXIA 46
+1754	Decreased glucosephosphate isomerase activity
+1755	Limitation of neck motion
+1756	Obstructive sleep apnea syndrome
+1757	Pain insensitivity
+1758	Colorectal adenoma
+1759	Alveolar rhabdomyosarcoma (disease)
+1760	Pattern dystrophy of the retina
+1761	Jaundice
+1762	Spherocytosis
+1763	Increased total bilirubin
+1764	Transient neonatal diabetes mellitus 2
+1765	Hyperinsulinemic hypoglycemia, familial, 1
+1766	Visceral myopathy
+1767	Megacystis
+1768	Chronic intestinal pseudoobstruction
+1769	Visceral neuropathy, familial, autosomal dominant
+1770	Dilated cardiomyopathy 1W
+1771	Fabry disease
+1772	Ornithine aminotransferase deficiency
+1773	Gyrate atrophy
+1774	Sturge-Weber syndrome
+1775	Capillary malformation
+1776	Infantile encephalopathy
+1777	Complement component 2 deficiency
+1778	Complement factor B deficiency
+1779	Atypical hemolytic-uremic syndrome 4
+1780	Teeth, supernumerary
+1781	Abnormality of the clavicle
+1782	Congenital pseudoarthrosis of the clavicle
+1783	Aplasia/Hypoplasia of the clavicles
+1784	Aicardi Goutieres syndrome
+1785	ADAR-Related Disorders
+1786	Congenital myopathy with fiber type disproportion
+1787	Nemaline myopathy 1
+1788	Cap myopathy 1
+1789	Charcot-Marie-Tooth disease, type 2A1
+1790	Alzheimer disease, type 4
+1791	Genetic non-acquired premature ovarian failure
+1792	Acrocephalosyndactyly type I
+1793	Acrocephalosyndactyly
+1794	Camptodactyly-tall stature-scoliosis-hearing loss syndrome
+1795	Cerebellar hemangioblastoma
+1796	Retinal capillary hemangioma
+1797	Spinal hemangioblastoma
+1798	Pineoblastoma
+1799	Larsen syndrome, dominant type
+1800	Atelosteogenesis type 1
+1801	Spondylocarpotarsal synostosis syndrome
+1802	Atelosteogenesis type III
+1803	Boomerang dysplasia
+1804	FLNB-Related Spectrum Disorders
+1805	Bullous ichthyosiform erythroderma
+1806	Erythroderma, ichthyosiform, congenital reticular
+1807	Ichthyosis, cyclic, with epidermolytic hyperkeratosis
+1808	CODON 72 POLYMORPHISM
+1809	paclitaxel response - Efficacy, Toxicity/ADR
+1810	cyclophosphamide response - Efficacy, Toxicity/ADR
+1811	antineoplastic agents response - Efficacy, Toxicity/ADR
+1812	fluorouracil response - Efficacy, Toxicity/ADR
+1813	cisplatin response - Efficacy, Toxicity/ADR
+1814	Anaplastic/large cell medulloblastoma
+1815	Spastic gait
+1816	ATRX-Related Disorder
+1817	Leber congenital amaurosis 1
+1818	Renal hypoplasia (disease)
+1819	Reduced renal corticomedullary differentiation
+1820	Retinal thinning
+1821	Osteogenesis imperfecta with normal sclerae, dominant form
+1822	Macrocytic anemia
+1823	Interstitial pulmonary abnormality
+1824	Premature graying of hair
+1825	Short telomere length
+1826	Dilated cardiomyopathy 1V
+1827	Mitochondrial trifunctional protein deficiency
+1828	Lchad deficiency with maternal acute fatty liver of pregnancy
+1829	Long-chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+1830	LCHAD Deficiency
+1831	HADHA-Related Disorders
+1832	Hematuria
+1833	Factor B fast/slow polymorphism
+1834	BF*FA/S
+1835	Age-related macular degeneration 14
+1836	Right ventricular dilatation
+1837	Left ventricular failure
+1838	Propionicacidemia
+1839	Mitochondrial complex 3 deficiency, nuclear type 10
+1840	Hereditary spastic paraplegia 39
+1841	Microtia
+1842	Fractures of the long bones
+1843	Cystinuria
+1844	Thrombocytopenia, X-linked, without dyserythropoietic anemia
+1845	breast cancer
+1846	FLNA-related disorder
+1847	Brugada syndrome 1
+1848	Susceptibility to malaria
+1849	Bone mineral density quantitative trait locus 18
+1850	G6PD A+
+1851	Myeloproliferative/lymphoproliferative neoplasms, familial (multiple types), susceptibility to
+1852	Bone marrow hypocellularity
+1853	Myelodysplasia
+1854	Vitelliform macular dystrophy type 2
+1855	Iron Overload
+1856	Vitreoretinochoroidopathy
+1857	Retinitis Pigmentosa, Recessive
+1858	Abnormality of skeletal morphology
+1859	Congenital heart disease
+1860	CONGENITAL HEART DEFECTS AND SKELETAL MALFORMATIONS SYNDROME
+1861	Aortic valve disorder
+1862	Adams-Oliver syndrome 5
+1863	Nonsmall cell lung cancer, response to tyrosine kinase inhibitor in, somatic
+1864	Adenocarcinoma of lung, response to tyrosine kinase inhibitor in, somatic
+1865	Tyrosine kinase inhibitor response
+1866	carboplatin, docetaxel, erlotinib, gemcitabine, and paclitaxel response - Efficacy
+1867	gefitinib response - Efficacy
+1868	erlotinib response - Efficacy
+1869	Gefitinib response
+1870	Erlotinib response
+1871	Polycythemia (disease)
+1872	Jackson-Weiss syndrome
+1873	Antley-Bixler syndrome without genital anomalies or disordered steroidogenesis
+1874	Aortic aneurysm, familial thoracic 2
+1875	Angioedema induced by ACE inhibitors, susceptibility to
+1876	G6PD deficient hemolytic anemia
+1877	G6PD MEDITERRANEAN
+1878	G6PD SASSARI
+1879	G6PD CAGLIARI
+1880	Crigler-Najjar syndrome
+1881	Nephronophthisis 15
+1882	Acute megakaryoblastic leukemia
+1883	Mediastinal germ cell tumor
+1884	Cone-rod dystrophy, X-linked 1
+1885	Cone-rod dystrophy 7
+1886	Noonan syndrome-like disorder with loose anagen hair 2
+1887	Paroxysmal nonkinesigenic dyskinesia 1
+1888	Paroxysmal dystonia
+1889	Niemann-Pick disease, type B
+1890	Sphingomyelin/cholesterol lipidosis
+1891	Niemann-Pick disease, type A
+1892	Skeletal myopathy
+1893	Dyskeratosis congenita, X-linked
+1894	Juvenile primary lateral sclerosis
+1895	Infantile-onset ascending hereditary spastic paralysis
+1896	Amyotrophic lateral sclerosis type 2
+1897	Warburg micro syndrome 2
+1898	Cataract-intellectual disability-hypogonadism syndrome
+1899	Kidney Disease
+1900	Abnormality of the vasculature
+1901	Charcot-Marie-Tooth disease axonal type 2F
+1902	Motor axonal neuropathy
+1903	Distal peripheral sensory neuropathy
+1904	Hereditary spastic paraplegia 9A
+1905	Cutis laxa, autosomal dominant 3
+1906	Cutis laxa, autosomal recessive IIIA
+1907	ALDH18A1 deficiency
+1908	Distal hereditary motor neuronopathy type 2B
+1909	Bilateral ptosis
+1910	Long QT syndrome 12
+1911	Thrombocytopenia 4
+1912	Hereditary spastic paraplegia
+1913	Acrodysostosis 1 with or without hormone resistance
+1914	Pigmented nodular adrenocortical disease, primary, 1
+1915	Carney complex, type 1
+1916	Familial atrial myxoma
+1917	Charlevoix-Saguenay spastic ataxia
+1918	Retinoblastoma, trilateral
+1919	PEHO syndrome
+1920	Ataxia-hypogonadism-choroidal dystrophy syndrome
+1921	Trichomegaly-retina pigmentary degeneration-dwarfism syndrome
+1922	Laurence-Moon syndrome
+1923	Hemolytic anemia, nonspherocytic, due to glucose phosphate isomerase deficiency
+1924	Pre-B-cell acute lymphoblastic leukemia
+1925	Adenomatous polyposis coli, susceptibility to
+1926	Agammaglobulinemia 7, autosomal recessive
+1927	Immunodeficiency 36
+1928	SHORT syndrome
+1929	Congenital muscular dystrophy
+1930	Polycystic kidney disease, autosomal dominant
+1931	Levy-Hollister syndrome
+1932	Retinitis pigmentosa 79
+1933	Focal cortical dysplasia of Taylor type 2B
+1934	Pitt-Hopkins-like syndrome
+1935	Bilateral Breast Carcinoma
+1936	Recurrent infections
+1937	Sepsis
+1938	Lymphoproliferative syndrome 2, X-linked
+1939	Ovarian Serous Surface Papillary Adenocarcinoma
+1940	Retinitis pigmentosa 11
+1941	Juvenile polyposis syndrome
+1942	Hereditary mixed polyposis syndrome 2
+1943	Cortical dysplasia, complex, with other brain malformations 5
+1944	PONTOCEREBELLAR HYPOPLASIA, HYPOTONIA, AND RESPIRATORY INSUFFICIENCY SYNDROME, NEONATAL LETHAL
+1945	Hypogonadotropic hypogonadism 19 with or without anosmia
+1946	Hyperpigmentation of the skin
+1947	Abnormal vena cava morphology
+1948	Aortic tortuosity
+1949	Pilocytic astrocytoma
+1950	Coffin-Siris syndrome
+1951	Glaucoma, normal tension, susceptibility to
+1952	Mitochondrial DNA depletion syndrome 14 (cardioencephalomyopathic type)
+1953	Myopathy, reducing body, X-linked, early-onset, severe
+1954	Uruguay faciocardiomusculoskeletal syndrome
+1955	Scapuloperoneal myopathy, X-linked dominant
+1956	Myopathy, reducing body, X-linked, childhood-onset
+1957	Myopathy with postural muscle atrophy, X-linked
+1958	Hereditary fructosuria
+1959	Confetti-like hypopigmented macules
+1960	Glioma susceptibility 2
+1961	Diamond-Blackfan anemia 1
+1962	Diamond-Blackfan anemia 6
+1963	See cases
+1964	Mental retardation, autosomal dominant 38
+1965	Familial type 3 hyperlipoproteinemia
+1966	atorvastatin response - Efficacy
+1967	Loss of consciousness
+1968	Spastic paraplegia 9b, autosomal recessive
+1969	Retinal degeneration
+1970	Microphthalmia, isolated 5
+1971	Late-onset retinal degeneration
+1972	Hyperpigmented streaks
+1973	Subretinal exudate
+1974	Bleeding disorder, platelet-type, 21
+1975	Dyskinesia
+1976	Spherocytosis, Dominant
+1977	Distal Renal Tubular Acidosis, Dominant
+1978	Cholestasis of pregnancy
+1979	Cholestasis, benign recurrent intrahepatic 1
+1980	Progressive familial intrahepatic cholestasis 2
+1981	Cholestasis, progressive familial intrahepatic 1
+1982	Zellweger syndrome
+1983	Hyperkinesis
+1984	Abnormality of coordination
+1985	Retinopathy
+1986	Perisylvian polymicrogyria
+1987	Type III lissencephaly
+1988	Bradykinesia
+1989	Neuroblastoma 1
+1990	Cutis laxa
+1991	Inherited Immunodeficiency Diseases
+1992	Nemaline myopathy 5
+1993	Papillon-Lefèvre syndrome
+1994	Haim-Munk syndrome
+1995	Periodontitis, aggressive, 1
+1996	Finnish congenital nephrotic syndrome
+1997	Nephrotic syndrome
+1998	Pseudohypoaldosteronism type 2A
+1999	Pseudohypoaldosteronism type 2C
+2000	Pituitary carcinoma
+2001	Ganglioneuroblastoma
+2002	Parathyroid carcinoma
+2003	Primary hyperparathyroidism
+2004	Respiratory distress
+2005	NEURODEVELOPMENTAL DISORDER WITH HYPOTONIA, NEONATAL RESPIRATORY INSUFFICIENCY, AND THERMODYSREGULATION
+2006	Werdnig-Hoffmann disease
+2007	Spinal muscular atrophy, type II
+2008	Kugelberg-Welander disease
+2009	Adult spinal muscular atrophy
+2010	Combined oxidative phosphorylation deficiency 3
+2011	Autosomal dominant familial acute myeloid leukemia
+2012	Congenital long QT syndrome
+2013	Cataract 30
+2014	Werner syndrome
+2015	Hirschsprung disease 1
+2016	Spinal muscular atrophy
+2017	Rickets
+2018	Metabolic acidosis
+2019	Renal tubular acidosis
+2020	Mental retardation, autosomal dominant 16
+2021	Familial hypertrophic cardiomyopathy 15
+2022	Subvalvular aortic stenosis
+2023	Mutism
+2024	Microprolactinoma
+2025	ALS2-Related Disorders
+2026	Seizures, benign familial neonatal, 1, and/or myokymia
+2027	Spondylocostal dysostosis 1, autosomal recessive
+2028	Non-syndromic syndactyly
+2029	Leukodystrophy and acquired microcephaly with or without dystonia
+2030	Autoimmune hemolytic anemia
+2031	Autoimmune thrombocytopenia
+2032	Xeroderma pigmentosum
+2033	Early onset Alzheimer disease with behavioral disturbance
+2034	Spinocerebellar atrophy
+2035	Klippel-Feil syndrome 1, autosomal dominant
+2036	Dyskeratosis congenita, autosomal dominant 1
+2037	Dyskeratosis congenita, autosomal dominant, 3
+2038	Revesz syndrome
+2039	Autosomal recessive congenital ichthyosis 1
+2040	Oligodontia-colorectal cancer syndrome
+2041	Oligodontia
+2042	Shoulder girdle muscle weakness
+2043	Genetic motor neuron disease
+2044	Cerebral hemorrhage
+2045	Microphthalmia, isolated 6
+2046	cetuximab response - Dosage
+2047	panitumumab response - Dosage
+2048	Autosomal dominant nonsyndromic deafness 17
+2049	Acute intermittent porphyria
+2050	Congenital myasthenic syndrome 13
+2051	DPAGT1-CDG
+2052	Periampullary adenoma
+2053	Vitelliform macular dystrophy 1
+2054	Duchenne muscular dystrophy
+2055	Becker muscular dystrophy
+2056	Dilated cardiomyopathy 3B
+2057	Subcapsular cataract
+2058	Abnormality of the fundus
+2059	Sense of smell impaired
+2060	Insomnia
+2061	Ependymoma
+2062	Multiminicore Disease
+2063	MASA syndrome
+2064	Primary autosomal recessive microcephaly 9
+2065	CEP152-Related Disorders
+2066	Seckel syndrome 5
+2067	Malignant tumor of sigmoid colon
+2068	Multiple system atrophy
+2069	Nijmegen breakage syndrome-like disorder
+2070	Lissencephaly, Recessive
+2071	Angiopathy, hereditary, with nephropathy, aneurysms, and muscle cramps
+2072	Brain small vessel disease with hemorrhage
+2073	Acquired porencephaly
+2074	Brain small vessel disease 1 with or without ocular anomalies
+2075	Hyperparathyroidism 2
+2076	Hyperparathyroidism 1
+2077	Severe Myopia
+2078	Familial hypertrophic cardiomyopathy 19
+2079	Long QT syndrome 1
+2080	DSP-Related Disorders
+2081	Mitochondrial DNA depletion syndrome 2
+2082	Mitochondrial DNA depletion syndrome
+2083	Progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal recessive 3
+2084	Thrombophilia due to factor V Leiden
+2085	Ischemic stroke, susceptibility to
+2086	Budd-Chiari syndrome, susceptibility to
+2087	Epileptic encephalopathy, early infantile, 53
+2088	Parkinson disease 20, early-onset
+2089	Colorectal cancer, early onset
+2090	Myelodysplastic Syndrome with Single Lineage Dysplasia
+2091	Primary hyperoxaluria, type II
+2092	Nephrolithiasis
+2093	Nephrocalcinosis
+2094	Leukoencephalopathy with vanishing white matter
+2095	Brachydactyly, type a1, d
+2096	Fibular hypoplasia and complex brachydactyly
+2097	Anterior segment dysgenesis
+2098	Neuropathy, hereditary sensory and autonomic, type VI
+2099	Epidermolysis bullosa simplex, autosomal recessive 2
+2100	Charcot-Marie-Tooth disease, type 2L
+2101	Distal hereditary motor neuronopathy type 2A
+2102	Amblyopia
+2103	Rhabdomyosarcoma, embryonal, 2
+2104	Goiter, multinodular 1, with or without Sertoli-Leydig cell tumors
+2105	Axon pathfinding, cardiac, ocular and genital defects
+2106	Syndromic neurodevelopmental disorder
+2107	Abnormality of the skin
+2108	Infertility
+2109	Male infertility
+2110	Deafness, autosomal dominant 22
+2111	Deafness, autosomal recessive 37
+2112	Dilatation of ascending aorta
+2113	Lethal congenital contracture syndrome 1
+2114	Lethal arthrogryposis with anterior horn cell disease
+2115	Cataract, autosomal recessive congenital 5
+2116	Sengers syndrome
+2117	Severe X-linked myotubular myopathy
+2118	Senior-Loken syndrome 7
+2119	Bardet-Biedl syndrome 16
+2120	Arthralgia
+2121	Bardet-Biedl syndrome 7
+2122	Cowden syndrome 7
+2123	Congenital dyserythropoietic anemia, type II
+2124	Hereditary spastic paraplegia 8
+2125	Ritscher-Schinzel syndrome 1
+2126	Ritscher-Schinzel syndrome
+2127	Citrullinemia type I
+2128	Citrin deficiency
+2129	Citrullinemia type II
+2130	Neonatal intrahepatic cholestasis caused by citrin deficiency
+2131	DSP-related arrhythmogenic cardiomyopathy
+2132	IFIH1-related immunodeficiency
+2133	Primary autosomal recessive microcephaly 6
+2134	Seckel syndrome 4
+2135	Lethal skeletal dysplasia
+2136	Perrault syndrome 5
+2137	Mitochondrial DNA depletion syndrome 7 (hepatocerebral type)
+2138	Autosomal dominant progressive external ophthalmoplegia with mitochondrial DNA deletions 3
+2139	Autosomal recessive cerebellar ataxia
+2140	Sensory ataxic neuropathy-dysarthria-ophthalmoparesis syndrome
+2141	PDE6B-Related Disorders
+2142	Congenital ocular coloboma
+2143	FLNA related disorders
+2144	Jeune thoracic dystrophy
+2145	Curry-Hall syndrome
+2146	Ellis-van Creveld syndrome
+2147	Xeroderma pigmentosum, group G
+2148	Spastic paraplegia 45, autosomal recessive
+2149	Microcephaly, progressive, with seizures and cerebral and cerebellar atrophy
+2150	Early infantile epileptic encephalopathy 34
+2151	Wolfram syndrome
+2152	Charcot-Marie-Tooth disease, type 4B3
+2153	Ectodermal dysplasia 11b, hypohidrotic/hair/tooth type, autosomal recessive
+2154	Ectodermal dysplasia 11a, hypohidrotic/hair/tooth type, autosomal dominant
+2155	Hypohidrotic ectodermal dysplasia
+2156	G6PD ASAHI
+2157	chlorproguanil and dapsone response - Toxicity/ADR
+2158	Parkinsonism with spasticity, X-linked
+2159	Treacher Collins syndrome 1
+2160	Carcinoma of male breast
+2161	Autosomal recessive cutis laxa type 3B
+2162	Autosomal recessive cutis laxa type 2B
+2163	Hereditary spastic paraplegia 5A
+2164	de Barsy syndrome
+2165	Hereditary spastic paraplegia 15
+2166	Colorectal / endometrial cancer
+2167	Focal dystonia
+2168	Medulloblastoma, desmoplastic
+2169	Cutaneous malignant melanoma 1
+2170	Arterial calcification, generalized, of infancy, 1
+2171	Hypophosphatemic rickets, autosomal recessive, 2
+2172	Cataract, autosomal dominant, multiple types, with microcornea
+2173	Cataract, autosomal dominant
+2174	Abnormality of the pancreas
+2175	Insulin resistance, susceptibility to
+2176	Polymorphic ventricular tachycardia
+2177	Hirschsprung disease
+2178	Cranioectodermal dysplasia
+2179	Multiple Epiphyseal Dysplasia, Dominant
+2180	Short Rib Polydactyly Syndrome
+2181	Short rib polydactyly syndrome 5
+2182	Cranioectodermal dysplasia 2
+2183	Reynolds syndrome
+2184	Greenberg dysplasia
+2185	Pelger-Huët anomaly
+2186	Regressive spondylometaphyseal dysplasia
+2187	Pyruvate kinase deficiency of red cells
+2188	Adenosine triphosphate, elevated, of erythrocytes
+2189	Lymphoproliferative syndrome 1, X-linked
+2190	Brachydactyly type B1
+2191	Robinow syndrome, autosomal dominant 1
+2192	Robinow syndrome, autosomal recessive
+2193	Peroxisome biogenesis disorder 3A
+2194	Infantile Refsum's disease
+2195	Jakob-Creutzfeldt disease
+2196	Gerstmann-Straussler-Scheinker syndrome
+2197	Huntington disease-like 1
+2198	Genetic prion diseases
+2199	Peroxisomal biogenesis disorder 3b
+2200	Fatal familial insomnia
+2201	FG syndrome 4
+2202	Spontaneous, recurrent epistaxis
+2203	Synostosis involving bones of the lower limbs
+2204	Family history of cardiomyopathy
+2205	Acute monocytic leukemia
+2206	Acute monoblastic leukemia
+2207	Pontocerebellar hypoplasia, type 1b
+2208	Reduced tendon reflexes
+2209	Pyruvate dehydrogenase complex deficiency
+2210	Maple syrup urine disease, type 3
+2211	Nonsmall cell lung cancer, resistance to tyrosine kinase inhibitor in
+2212	EGFR-related lung cancer
+2213	Aortic aneurysm, familial thoracic 6
+2214	Aortic valve stenosis
+2215	Abnormal aortic valve physiology
+2216	Joubert syndrome 21
+2217	Lip telangiectasia
+2218	Rheumatoid arthritis
+2219	Long QT syndrome 2
+2220	Respiratory failure requiring assisted ventilation
+2221	Colorectal cancer, sporadic, susceptibility to
+2222	Duodenal adenocarcinoma
+2223	Rectal Adenocarcinoma
+2224	Hereditary spastic paraplegia 13
+2225	Epilepsy, juvenile absence, susceptibility to, 1
+2226	Typical absence seizures
+2227	Acquired partial lipodystrophy
+2228	Lipodystrophy, partial, acquired, susceptibility to
+2229	Epilepsy, progressive myoclonic, 9
+2230	Familial visceral amyloidosis, Ostertag type
+2231	ABetaA21G amyloidosis
+2232	Alzheimer disease, type 1
+2233	ABeta amyloidosis, Arctic type
+2234	Neuropathy, hereditary motor and sensory, Russe type
+2235	Hemolytic anemia due to hexokinase deficiency
+2236	NEURODEVELOPMENTAL DISORDER WITH VISUAL DEFECTS AND BRAIN ANOMALIES
+2237	Charcot-Marie-Tooth disease type 2B2
+2238	Ataxia-telangiectasia-like disorder 1
+2239	Glycogen storage disease, type II
+2240	Ciliary dyskinesia, primary, 15
+2241	Multiple Cutaneous and Uterine Leiomyomas
+2242	B lymphoblastic leukemia lymphoma with hyperdiploidy
+2243	Renal angiomyolipoma
+2244	Combined oxidative phosphorylation deficiency 13
+2245	Deafness, autosomal recessive 70
+2246	Encephalopathy due to defective mitochondrial and peroxisomal fission 1
+2247	Optic atrophy 5
+2248	Hereditary nonpolyposis colorectal cancer type 7
+2249	Hereditary cancer
+2250	Melnick-Fraser syndrome
+2251	Mitochondrial DNA depletion syndrome 1 (MNGIE type)
+2252	Fatal Infantile Cardioencephalomyopathy
+2253	Cardioencephalomyopathy, fatal infantile, due to cytochrome c oxidase deficiency
+2254	Tricuspid atresia (disease)
+2255	Burkitt lymphoma
+2256	Qualitative or quantitative defects of delta-sarcoglycan
+2257	Iris coloboma
+2258	Coloboma of optic disc
+2259	Brooke-Spiegler syndrome
+2260	Familial multiple trichoepitheliomata
+2261	Cylindromatosis, familial
+2262	Congenital nephrotic syndrome
+2263	Spinal muscular atrophy-progressive myoclonic epilepsy syndrome
+2264	Abnormality of acetylcarnitine metabolism
+2265	Episodic metabolic acidosis
+2266	Knee dislocation
+2267	Limited knee flexion/extension
+2268	Patellar hypoplasia
+2269	L1 syndrome
+2270	Unilateral polymicrogyria
+2271	Rudimentary fibula
+2272	Ankle contracture
+2273	Infantile nephronophthisis
+2274	Nonepidermolytic palmoplantar keratoderma
+2275	Loeys-Dietz syndrome 3
+2276	Treacher Collins syndrome
+2277	T Lymphoblastic Leukemia/Lymphoma
+2278	Triple-Negative Breast Cancer Finding
+2279	Neuroepithelial neoplasm
+2280	Granular cell cancer
+2281	Auriculocondylar syndrome 2
+2282	Auriculocondylar syndrome 1
+2283	Auriculocondylar syndrome
+2284	Leukemia, Philadelphia chromosome-positive, resistant to imatinib
+2285	Hereditary spastic paraplegia 2
+2286	Cardiomyopathy, familial restrictive, 5
+2287	Amyotrophic lateral sclerosis 14 without frontotemporal dementia
+2288	Peroxisome biogenesis disorder type 1A
+2289	ABeta amyloidosis, Iowa type
+2290	Cleft palate, isolated
+2291	Stickler syndrome, type 5
+2292	Intervertebral disc disorder
+2293	Epiphyseal dysplasia, multiple, 2
+2294	LISSENCEPHALY 9 WITH COMPLEX BRAINSTEM MALFORMATION
+2295	Early T cell progenitor acute lymphoblastic leukemia
+2296	Deficiency of guanidinoacetate methyltransferase
+2297	Mitochondrial complex I deficiency
+2298	Rett syndrome
+2299	NEURODEVELOPMENTAL DISORDER WITH POOR LANGUAGE AND LOSS OF HAND SKILLS
+2300	Acroleukopathy, symmetric
+2301	Pituitary dependent hypercortisolism
+2302	Somatotroph adenoma
+2303	STAT3 gain of function
+2304	Hyper-IgE recurrent infection syndrome 1, autosomal dominant
+2305	Autoimmune disease, multisystem, infantile-onset, 1
+2306	Pulmonary fibrosis and/or bone marrow failure, telomere-related, 4
+2307	Dyskeratosis congenita, autosomal recessive 6
+2308	Pulmonary fibrosis
+2309	Familial Interstitial Pneumonia
+2310	Pleuropulmonary blastoma
+2311	Bowing of the legs
+2312	Lower limb pain
+2313	Hypophosphatemic rickets
+2314	Glycogen storage disease IXb
+2315	Dystonia 16
+2316	Tremor, hereditary essential, 4
+2317	Amyotrophic lateral sclerosis 6, with or without frontotemporal dementia
+2318	Spinal muscular atrophy, late-onset, finkel type
+2319	Amyotrophic lateral sclerosis type 8
+2320	Adult proximal spinal muscular atrophy, autosomal dominant
+2321	Abnormal muscle tone
+2322	Progressive familial heart block type IB
+2323	Progressive familial heart block, type 1A
+2324	Hemochromatosis type 5
+2325	Seckel syndrome 1
+2326	Aicardi Goutieres syndrome 5
+2327	Chilblain lupus 2
+2328	G6PD KAIPING
+2329	G6PD ANANT
+2330	G6PD DHON
+2331	G6PD PETRICH-LIKE
+2332	G6PD SAPPORO-LIKE
+2333	Hereditary insensitivity to pain with anhidrosis
+2334	Familial medullary thyroid carcinoma
+2335	Holoprosencephaly sequence
+2336	Holoprosencephaly 4
+2337	Facial paralysis
+2338	Abnormality of internal carotid artery
+2339	Unilateral ptosis
+2340	Respiratory insufficiency
+2341	Reticulocytopenia
+2342	G6PD CHATHAM
+2343	Neuromuscular disorder
+2344	Nonsyndromic hearing loss and deafness
+2345	PTEN hamartoma tumor syndromes
+2346	Diamond-Blackfan anemia 3
+2347	Ventricular arrhythmia
+2348	Human HOXA1 syndromes
+2349	Microtia, hearing impairment, and cleft palate
+2350	Bosley-Salih-Alorainy syndrome
+2351	Leber's optic atrophy
+2352	Diamond-Blackfan anemia 7
+2353	Epileptic encephalopathy, early infantile, 51
+2354	Brachydactyly, type B1Robinow syndrome, autosomal recessive
+2355	Refsum disease, adult, 1
+2356	CARDIOMYOPATHY, FAMILIAL HYPERTROPHIC
+2357	Neutropenia
+2358	Severe congenital neutropenia 3, autosomal recessive
+2359	Prion disease, susceptibility to
+2360	Alzheimer disease, early-onset, susceptibility to
+2361	Aphasia, primary progressive, susceptibility to
+2362	Leukodystrophy, hypomyelinating, 6
+2363	Autosomal dominant torsion dystonia 4
+2364	cisplatin response - Toxicity/ADR
+2365	Xeroderma pigmentosum, group C
+2366	Congenital disorder of glycosylation
+2367	Ciliary dyskinesia, primary, 10
+2368	Nephronophthisis 9
+2369	Hyperekplexia
+2370	Hyperekplexia 1
+2371	Molybdenum cofactor deficiency, complementation group C
+2372	PNPLA6-related disorders
+2373	Phosphoglycerate dehydrogenase deficiency
+2374	Neu-Laxova syndrome 1
+2375	Choroid plexus papilloma
+2376	Papillary renal cell carcinoma
+2377	Bardet-Biedl syndrome 4
+2378	Pfeiffer syndrome, type III
+2379	Hematological disease
+2380	Insulin resistance syndrome, type A
+2381	Dyskeratosis congenita autosomal recessive 1
+2382	Trichoepithelioma, multiple familial, 2
+2383	Meningioma, familial
+2384	Coffin-Siris syndrome 5
+2385	Retinitis pigmentosa 17
+2386	Bjornstad syndrome with mild mitochondrial complex III deficiency
+2387	Orofaciodigital syndrome xiv
+2388	Pulmonary arterial hypertension associated with congenital heart disease
+2389	Sweat chloride elevation without cystic fibrosis
+2390	Peroxisome biogenesis disorder 11A
+2391	Peroxisome biogenesis disorder 11B
+2392	G6PD VIANGCHAN
+2393	G6PD JAMMU
+2394	Pancreatitis, idiopathic, susceptibility to
+2395	Hypertrypsinemia, neonatal, susceptibility to
+2396	Pancreatitis
+2397	B-cell non-Hodgkin lymphoma
+2398	Ganglioglioma
+2399	Amyotrophic lateral sclerosis type 10
+2400	Motor neuron disease
+2401	TARDBP-related frontotemporal dementia
+2402	G6PD SEATTLE-LIKE
+2403	G6PD MODENA
+2404	Abnormality of the aortic valve
+2405	Ulcerative colitis
+2406	Neurological speech impairment
+2407	Coronal craniosynostosis
+2408	Autosomal dominant epilepsy
+2409	Brain tumor-polyposis syndrome 2
+2410	Epileptic encephalopathy, early infantile, 29
+2411	Charcot-Marie-Tooth disease, type 2N
+2412	Fanconi anemia, complementation group D2
+2413	Charcot-Marie-Tooth disease, type 4D
+2414	B lymphoblastic leukemia lymphoma with t(12;21)(p13;q22); TEL-AML1 (ETV6-RUNX1)
+2415	Juvenile amyotrophic lateral sclerosis
+2416	Abnormality of calcium homeostasis
+2417	Abnormality of urine calcium concentration
+2418	Carotid artery dilatation
+2419	Aortic aneurysm
+2420	Torsade de pointes
+2421	Amyotrophic lateral sclerosis 16, juvenile
+2422	Distal spinal muscular atrophy, autosomal recessive 2
+2423	Spinocerebellar ataxia type 28
+2424	Spastic ataxia 5, autosomal recessive
+2425	Renal-hepatic-pancreatic dysplasia 2
+2426	NEURODEVELOPMENTAL DISORDER WITH CEREBELLAR ATROPHY AND WITH OR WITHOUT SEIZURES
+2427	Autosomal recessive myogenic arthrogryposis multiplex congenita
+2428	Adrenal pheochromocytoma
+2429	Recurrent paroxysmal headache
+2430	Spastic paraplegia 17
+2431	Syndromic retinitis pigmentosa
+2432	Benign familial neonatal seizures 2
+2433	C3 deficiency
+2434	Peripheral neuropathy, myopathy, hoarseness, and hearing loss
+2435	Maturity-onset diabetes of the young, type 11
+2436	Systemic lupus erythematosus
+2437	Early onset epileptic encephalopathy
+2438	Charcot-Marie-Tooth disease, axonal, type 2y
+2439	ENCEPHALOPATHY, PROGRESSIVE, EARLY-ONSET, WITH EPISODIC RHABDOMYOLYSIS
+2440	KBG syndrome
+2441	Dopamine agonist response
+2442	Neuroferritinopathy
+2443	Glycogen storage disease 0, muscle
+2444	Hereditary hyperferritinemia with congenital cataracts
+2445	unspecified heart condition
+2446	Multiple congenital anomalies-hypotonia-seizures syndrome 2
+2447	Paroxysmal nocturnal hemoglobinuria 1
+2448	developmental delay with seizures
+2449	Neonatal diabetes mellitus
+2450	Diabetes mellitus, insulin-dependent, 2
+2451	DIABETES MELLITUS, PERMANENT NEONATAL 4
+2452	Hyper-IgE syndrome
+2453	Mental retardation, CASK-related, X-linked
+2454	Leukodystrophy, hypomyelinating, 12
+2455	Collagen VI-related myopathy
+2456	Myosclerosis
+2457	Bethlem myopathy 1
+2458	ARTHROGRYPOSIS MULTIPLEX CONGENITA 3, MYOGENIC TYPE
+2459	Interstitial lung and liver disease
+2460	Charcot-Marie-Tooth disease, axonal, type 2u
+2461	Cockayne syndrome type A
+2462	Leukodystrophy, hypomyelinating, 11
+2463	Treacher Collins syndrome 3
+2464	Alternating hemiplegia of childhood 1
+2465	Inclusion Body Myopathy, Dominant
+2466	Amyotrophic Lateral Sclerosis, Dominant
+2467	Fanconi anemia, complementation group G
+2468	Robinow-Sorauf syndrome
+2469	Craniosynostosis 1
+2470	Osteogenesis imperfecta type 10
+2471	Preterm premature rupture of membranes
+2472	Amyotrophic lateral sclerosis, typical
+2473	Developmental malformations-deafness-dystonia syndrome
+2474	Hereditary factor VIII deficiency disease
+2475	FACTOR VIII (EAST HARTFORD)
+2476	Reduced factor VIII activity
+2477	Familial hemiplegic migraine
+2478	Familial hemiplegic migraine type 2
+2479	Cavernous hemangioma
+2480	Cerebral cavernous malformation
+2481	HOLOPROSENCEPHALY 12 WITH OR WITHOUT PANCREATIC AGENESIS
+2482	Familial hypercholesterolemia
+2483	Hyperlipoproteinemia
+2484	Hereditary pyropoikilocytosis
+2485	Elliptocytosis 3
+2486	Aortic valve disease 2
+2487	Radioulnar synostosis
+2488	G6PD MAHIDOL
+2489	Cone dystrophy 4
+2490	Achromatopsia
+2491	Childhood ganglioglioma
+2492	Spherocytosis type 1
+2493	Branchiootorenal syndrome with cataract
+2494	Otofaciocervical syndrome 1
+2495	Branchiootic syndrome
+2496	Osteoblastic Osteosarcoma
+2497	Gastrointestinal polyposis
+2498	Spinocerebellar ataxia 42
+2499	CACNA1G-related disorders
+2500	SPINOCEREBELLAR ATAXIA 42, EARLY-ONSET, SEVERE, WITH NEURODEVELOPMENTAL DEFICITS
+2501	Progressive External Ophthalmoplegia with Mitochondrial DNA Deletions
+2502	Ataxia Neuropathy Spectrum Disorders
+2503	Prostate cancer, hereditary, 1
+2504	Fibrinogen Milano XII, digenic
+2505	Intestinal polyposis
+2506	Lip hyperpigmentation
+2507	Hamartomatous stomach polyps
+2508	Epilepsy, idiopathic generalized, susceptibility to, 14
+2509	Primary ciliary dyskinesia 25
+2510	Amyotrophy, hereditary neuralgic
+2511	Hermansky-Pudlak syndrome
+2512	Steatocystoma multiplex
+2513	Pachyonychia congenita 2
+2514	C3 POLYMORPHISM, HAV 4-1 PLUS/MINUS TYPE
+2515	Scaphocephaly, maxillary retrusion, and mental retardation
+2516	Abnormality of coagulation
+2517	Hereditary factor IX deficiency disease
+2518	Dyskeratosis congenita, autosomal recessive, 3
+2519	Hydatidiform mole, recurrent, 1
+2520	CARASIL
+2521	Aortic regurgitation
+2522	Distal arthrogryposis type 1A
+2523	Nemaline myopathy 4
+2524	Distal arthrogryposis type 2B
+2525	PONTOCEREBELLAR HYPOPLASIA, TYPE 1D
+2526	Hemiplegia/hemiparesis
+2527	Spinocerebellar ataxia, autosomal recessive 14
+2528	Spinocerebellar ataxia type 5
+2529	Early-onset Alzheimer's disease
+2530	Thrombocythemia 1
+2531	Mitochondrial complex I deficiency, nuclear type 1
+2532	Anophthalmia - microphthalmia
+2533	Iron deficiency anemia
+2534	Atransferrinemia
+2535	Autosomal dominant pseudohypoaldosteronism type 1
+2536	Pseudohypoaldosteronism type 2E
+2537	Cerebral amyloid angiopathy, APP-related
+2538	Hereditary cerebral hemorrhage with amyloidosis
+2539	Molybdenum cofactor deficiency, complementation group A
+2540	Transposition of the great arteries
+2541	DFNA6/14/38 Nonsyndromic Low-Frequency Sensorineural Hearing Loss
+2542	Skin/hair/eye pigmentation, variation in, 1
+2543	Mental retardation, autosomal recessive 38
+2544	Prader-Willi syndrome
+2545	Aortic dissection
+2546	Cutaneous polyarteritis nodosa
+2547	Metachromatic leukodystrophy variant
+2548	Choroid plexus carcinoma
+2549	Pontocerebellar hypoplasia type 1A
+2550	Pontocerebellar hypoplasia type 1
+2551	Focal epilepsy
+2552	Charcot-Marie-Tooth disease type 2P
+2553	Pulmonary hypertension, neonatal, susceptibility to
+2554	21-HYDROXYLASE POLYMORPHISM
+2555	Congenital adrenal hyperplasia
+2556	Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency
+2557	Cutis laxa, autosomal dominant
+2558	Glycogen storage disease, type V
+2559	Myeloid Leukemia Associated with Down Syndrome
+2560	Specific granule deficiency 1
+2561	Autosomal recessive severe congenital neutropenia
+2562	Specific granule deficiency 2
+2563	Carney complex
+2564	CDH2-related condition
+2565	AGENESIS OF CORPUS CALLOSUM, CARDIAC, OCULAR, AND GENITAL SYNDROME
+2566	Spongiform encephalopathy with neuropsychiatric features
+2567	Myeloproliferative Neoplasm
+2568	Familial thoracic aortic aneurysm
+2569	Marfanoid habitus
+2570	Hypogonadotropic hypogonadism 2 with anosmia
+2571	Parkinson disease 19a, juvenile-onset
+2572	Cataract 19, multiple types
+2573	Severe congenital neutropenia
+2574	Polycystic kidney disease 3
+2575	Atrophoderma vermiculatum
+2576	Keratosis pilaris
+2577	Wagner syndrome
+2578	Vitreoretinopathy
+2579	Hypermethioninemia with s-adenosylhomocysteine hydrolase deficiency
+2580	Rhabdomyolysis
+2581	Neurodegeneration with ataxia, dystonia, and gaze palsy, childhood-onset
+2582	Sensory axonal neuropathy
+2583	Ehlers-Danlos syndrome due to tenascin-X deficiency
+2584	Vesicoureteral reflux 8
+2585	Intracranial hemorrhage
+2586	Polyps, multiple and recurrent inflammatory fibroid, gastrointestinal
+2587	Charcot-Marie-Tooth disease, X-linked dominant, 6
+2588	Pyruvate dehydrogenase E3-binding protein deficiency
+2589	Prostate cancer, hereditary, 2
+2590	Combined oxidative phosphorylation deficiency 17
+2591	Hermansky-Pudlak syndrome 7
+2592	Hermansky-Pudlak syndrome 1
+2593	Hypogonadism with anosmia
+2594	TTN-Related disorder
+2595	Autosomal recessive multiple pterygium syndrome
+2596	Congenital Myasthenic Syndrome, Dominant/Recessive
+2597	Lethal multiple pterygium syndrome
+2598	Osteogenesis imperfecta, recessive perinatal lethal
+2599	Mucolipidosis type IV
+2600	Transposition of the great arteries, dextro-looped 3
+2601	Epilepsy, progressive myoclonic 8
+2602	Congenital heart defects
+2603	Mitochondrial DNA depletion syndrome 9 (encephalomyopathic with methylmalonic aciduria)
+2604	Hereditary sensory neuropathy type IE
+2605	Beckwith-Wiedemann syndrome
+2606	Alpha-methylacyl-CoA racemase deficiency
+2607	Oculocutaneous albinism
+2608	Mitochondrial complex 1 deficiency, nuclear type 10
+2609	Mungan syndrome
+2610	Cornelia de Lange syndrome 4
+2611	Autosomal dominant retinitis pigmentosa
+2612	BODY MASS INDEX QUANTITATIVE TRAIT LOCUS 20
+2613	Familial hemophagocytic lymphohistiocytosis
+2614	Hemophagocytic lymphohistiocytosis, familial, 5
+2615	Amyotrophic lateral sclerosis 15, with or without frontotemporal dementia
+2616	Congenital lactic acidosis, Saguenay-Lac-Saint-Jean type
+2617	Classic multiminicore myopathy
+2618	Ectodermal dysplasia 10A, hypohidrotic/hair/nail type, autosomal dominant
+2619	Autosomal recessive limb-girdle muscular dystrophy type 2D
+2620	Paraparesis
+2621	Porphyrinuria
+2622	Episodic abdominal pain
+2623	Progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal recessive 4
+2624	Mitochondrial DNA-depletion syndrome 3, hepatocerebral
+2625	Mitochondrial DNA depletion syndrome, hepatocerebral form due to DGUOK deficiency
+2626	Parkinson disease, mitochondrial
+2627	Mitochondrial complex 1 deficiency, nuclear type 7
+2628	Ectodermal dysplasia and immunodeficiency 1
+2629	Incontinentia pigmenti syndrome
+2630	Epidermolysis bullosa junctionalis with pyloric atresia
+2631	Deficiency of galactokinase
+2632	Primary hyperoxaluria
+2633	Primary Ovarian Insufficiency
+2634	MUSCULAR DYSTROPHY, LIMB-GIRDLE, AUTOSOMAL RECESSIVE 6, DIGENIC
+2635	Autosomal dominant omodysplasia
+2636	Robinow syndrome, autosomal dominant 2
+2637	RPGRIP1L-Related Disorders
+2638	Bannayan-Riley-Ruvalcaba syndrome
+2639	Usher syndrome, type 1J
+2640	Usher syndrome type 1
+2641	Colon cancer, advanced
+2642	Polyhydramnios
+2643	B Lymphoblastic Leukemia/Lymphoma with t(v;11q23.3); KMT2A Rearranged
+2644	Progressive muscle weakness
+2645	RETINITIS PIGMENTOSA 90
+2646	Pancreatic cancer 1
+2647	Unverricht-Lundborg syndrome
+2648	TAFRO syndrome
+2649	Anaplastic ependymoma
+2650	Wolcott-Rallison dysplasia
+2651	Juvenile Polyposis
+2652	Heterotaxia
+2653	Ataxia-telangiectasia without immunodeficiency
+2654	Breast cancer, early-onset
+2655	NEURODEVELOPMENTAL DISORDER WITH HYPERKINETIC MOVEMENTS WITHOUT SEIZURES, AUTOSOMAL RECESSIVE
+2656	MAPT-Related Spectrum Disorders
+2657	Mirror movements 2
+2658	Mitochondrial DNA depletion syndrome 12a (cardiomyopathic type), autosomal dominant
+2659	Acute alcohol sensitivity
+2660	Alcohol dependence
+2661	Susceptibility to hangover
+2662	Sublingual nitroglycerin, susceptibility to poor response to
+2663	Esophageal cancer, alcohol-related, susceptibility to
+2664	Spinal muscular atrophy, distal, autosomal recessive, 5
+2665	Spastic paraplegia 75, autosomal recessive
+2666	Sitosterolemia
+2667	Sitosterolemia 1
+2668	Pseudopseudohypoparathyroidism
+2669	Primary autosomal recessive microcephaly
+2670	Pseudohypoparathyroidism type 1C
+2671	Charcot-Marie-Tooth disease type 2B
+2672	Pachyonychia congenita syndrome
+2673	Cap myopathy 2
+2674	PITUITARY TUMOR 3, GROWTH HORMONE-SECRETING, SOMATIC
+2675	Polyostotic fibrous dysplasia, somatic, mosaic
+2676	Pulmonary hypoplasia
+2677	Baraitser-Winter Syndrome 2
+2678	Deafness, autosomal dominant 20
+2679	Renal cell carcinoma with paraneoplastic erythrocytosis
+2680	Amelogenesis imperfecta, type IV
+2681	Tricho-dento-osseous syndrome
+2682	Trichohepatoenteric syndrome 1
+2683	Dilated cardiomyopathy with left ventricular noncompaction
+2684	Cutaneous telangiectasia and cancer syndrome, familial
+2685	MICROCEPHALY, SHORT STATURE, AND LIMB ABNORMALITIES
+2686	Microcephaly-micromelia syndrome
+2687	Quebec platelet disorder
+2688	Myoclonic epilepsy, juvenile 1
+2689	Severe primary microcephaly
+2690	Neonatal death
+2691	Bardet-Biedl syndrome 5
+2692	Exudative vitreoretinopathy 1
+2693	Baraitser-Winter syndrome
+2694	Opitz GBBB syndrome, type II
+2695	Hypertelorism, Teebi type
+2696	Maple syrup urine disease
+2697	Maple syrup urine disease type 2
+2698	Limb tremor
+2699	Hyperphosphatemic familial tumoral calcinosis 1
+2700	TUMORAL CALCINOSIS, HYPERPHOSPHATEMIC, FAMILIAL, 2
+2701	Tumoral calcinosis, hyperphosphatemic, familial
+2702	Ateleiotic dwarfism
+2703	Familial breast and ovarian cancer
+2704	Severe autosomal recessive muscular dystrophy of childhood - North African type
+2705	Hutchinson-Gilford progeria syndrome, childhood-onset
+2706	Autosomal dominant osteopetrosis 2
+2707	Autosomal recessive osteopetrosis 4
+2708	Elliptocytosis
+2709	Corneal crystals
+2710	INTELLECTUAL DEVELOPMENTAL DISORDER, AUTOSOMAL RECESSIVE 72
+2711	Discoid lupus rash
+2712	Cerebral palsy, spastic quadriplegic, 3
+2713	PACHYGYRIA, MICROCEPHALY, DEVELOPMENTAL DELAY, AND DYSMORPHIC FACIES, WITH OR WITHOUT SEIZURES
+2714	DLD-Related Disorders
+2715	Familial hypoalphalipoproteinemia
+2716	Hereditary hemorrhagic telangiectasia type 1
+2717	Robinow syndrome, autosomal dominant 3
+2718	Autosomal recessive hypohidrotic ectodermal dysplasia syndrome
+2719	Mental retardation, X-linked 99
+2720	Mental retardation, X-linked 99, syndromic, female-restricted
+2721	Hereditary palmoplantar keratoderma
+2722	Pulmonary Surfactant Metabolism Dysfunction, Dominant
+2723	Osteogenesis Imperfecta, Recessive
+2724	Surfactant metabolism dysfunction, pulmonary, 2
+2725	Hereditary breast cancer
+2726	Rare pervasive developmental disorder
+2727	B Lymphoblastic Leukemia/Lymphoma with Hypodiploidy
+2728	BMPR1A Skeletal Dysplasia Syndrome
+2729	Deficiency of ferroxidase
+2730	Hypoceruloplasminemia
+2731	Abnormality of the intrahepatic bile duct
+2732	Charcot-Marie-Tooth disease type 4B2 with early-onset glaucoma
+2733	Deoxygalactonojirimycin response
+2734	Moyamoya angiopathy
+2735	B-Lymphoblastic Leukemia/Lymphoma with Intrachromosomal Amplification of Chromosome 21
+2736	Scapulohumeral muscular dystrophy
+2737	Torsades de pointes
+2738	Acrodysostosis
+2739	Primary pulmonary hypertension
+2740	Osteopetrosis
+2741	fluorouracil and oxaliplatin response - Efficacy
+2742	cyclophosphamide and epirubicin response - Efficacy, Toxicity/ADR
+2743	Platinum compounds response - Toxicity/ADR
+2744	Cortical dysplasia, complex, with other brain malformations 1
+2745	Fibrosis of extraocular muscles, congenital, 3a, with or without extraocular involvement
+2746	Arrhythmogenic ventricular cardiomyopathy
+2747	Essential tremor
+2748	Parkinson disease 21
+2749	Familial hypercholesterolemia 1
+2750	Familial hypercholesterolemia 4
+2751	Cerebellar ataxia, deafness, and narcolepsy, autosomal dominant
+2752	Global developmental delay - lung cysts - overgrowth - Wilms tumor syndrome
+2753	Dopamine receptor d2, reduced brain density of
+2754	ethanol response - Toxicity/ADR
+2755	clozapine response - Toxicity/ADR
+2756	bupropion response - Efficacy
+2757	olanzapine response - Toxicity/ADR
+2758	antipsychotics response - Toxicity/ADR
+2759	risperidone response - Toxicity/ADR
+2760	ondansetron response - Efficacy
+2761	simvastatin response - Efficacy
+2762	Tramadol response
+2763	Inflammatory bowel disease 13
+2764	Propionic acidemia
+2765	Pontocerebellar hypoplasia, type 9
+2766	Spastic paraplegia 63, autosomal recessive
+2767	Glycogen phosphorylase kinase deficiency
+2768	Charcot-Marie-Tooth disease, dominant intermediate C
+2769	Nonsyndromic cleft lip palate
+2770	Vitamin D-dependent rickets, type 2
+2771	Chudley-McCullough syndrome
+2772	GPSM2-Related Disorders
+2773	Syndromic intellectual disability
+2774	Koolen-de Vries syndrome
+2775	Autosomal dominant hypophosphatemic rickets
+2776	Neuropsychiatric disorder
+2777	Thiel-Behnke corneal dystrophy
+2778	Encephalopathy, progressive, early-onset, with brain atrophy and thin corpus callosum
+2779	Frontotemporal dementia and/or amyotrophic lateral sclerosis 4
+2780	Glaucoma 1, open angle, p
+2781	Polycystic kidney disease 4
+2782	Slowed nerve conduction velocity, autosomal dominant
+2783	Hepatitis c virus, susceptibility to
+2784	Inflammatory bowel disease
+2785	Meier-Gorlin syndrome
+2786	Meier-gorlin syndrome 6
+2787	Spastic paraplegia 79, autosomal recessive
+2788	Parkinson disease 5
+2789	Craniosynostosis, nonsyndromic unicoronal
+2790	Fraser syndrome 1
+2791	Kabuki syndrome 1
+2792	Wiedemann-Steiner syndrome
+2793	Warburg micro syndrome
+2794	Deafness, X-linked 1
+2795	Charcot-Marie-Tooth disease, X-linked recessive, type 5
+2796	Oligosynaptic infertility
+2797	Microcephaly 17, primary, autosomal recessive
+2798	Meier-Gorlin syndrome 1
+2799	Split-hand/foot malformation 1
+2800	Split-foot malformation with mesoaxial polydactyly
+2801	EHLERS-DANLOS SYNDROME, ARTHROCHALASIA TYPE, 2
+2802	KAT6A syndrome
+2803	Cerebellar atrophy, visual impairment, and psychomotor retardation
+2804	Congenital anomalies of kidney and urinary tract
+2805	Congenital absence of salivary gland
+2806	NEUTROPENIA, SEVERE CONGENITAL, 8, AUTOSOMAL DOMINANT
+2807	Arts syndrome
+2808	Neurodevelopmental disorder with hypotonia, seizures, and absent language
+2809	Verheij syndrome
+2810	Leukemia-Lymphoma, Adult T-Cell
+2811	SYNE1-Related Disorders
+2812	Mitochondrial complex 1 deficiency, nuclear type 2
+2813	Glaucoma 1, open angle, G
+2814	Usher syndrome, type 2C
+2815	EXUDATIVE VITREORETINOPATHY 7
+2816	Hereditary hemorrhagic telangiectasia
+2817	Cone-rod dystrophy and hearing loss 2
+2818	Granulomatous disease, chronic, autosomal recessive, cytochrome b-negative
+2819	Chronic granulomatous disease
+2820	Congenital hemolytic anemia
+2821	Mosaic variegated aneuploidy syndrome 2
+2822	Mosaic variegated aneuploidy syndrome 1
+2823	Hypotension
+2824	Craniofacial dystonia
+2825	Familial restrictive cardiomyopathy 1
+2826	Zimmermann-Laband syndrome 2
+2827	Zimmermann-Laband syndrome 1
+2828	Cholestasis
+2829	Diarrhea
+2830	Neutropenia, nonimmune chronic idiopathic, of adults
+2831	Severe congenital neutropenia 2, autosomal dominant
+2832	Parkinson Disease, Recessive
+2833	Parkinson disease 6, autosomal recessive early-onset
+2834	Hypomyelinating leukodystrophy 7
+2835	Mental retardation, X-linked, syndromic, Bain type
+2836	Carnitine palmitoyltransferase 1A deficiency
+2837	Carnitine palmitoyltransferase I deficiency
+2838	TERT-associated disorder
+2839	Parkinson disease 7
+2840	Familial hypoplastic, glomerulocystic kidney
+2841	Maple syrup urine disease, thiamine-responsive, type II
+2842	Coffin-Siris syndrome 1
+2843	Hereditary nephrotic syndrome
+2844	Hypohidrotic Ectodermal Dysplasia, Recessive
+2845	Congenital combined immunodeficiency
+2846	IMMUNODEFICIENCY 71 WITH INFLAMMATORY DISEASE AND CONGENITAL THROMBOCYTOPENIA
+2847	Mental retardation, autosomal recessive 47
+2848	AUTOINFLAMMATION, IMMUNE DYSREGULATION, AND EOSINOPHILIA
+2849	Ritscher-schinzel syndrome 2
+2850	Ataxia
+2851	Facioscapulohumeral muscular dystrophy 2
+2852	Desmoid tumors
+2853	Protection against Creutzfeldt-Jakob disease
+2854	Intellectual disability-obesity-brain malformations-facial dysmorphism syndrome
+2855	Gastrointestinal stromal tumor of small intestine
+2856	NEURODEVELOPMENTAL DISORDER WITH OR WITHOUT AUTISTIC FEATURES AND/OR STRUCTURAL BRAIN ABNORMALITIES
+2857	Mixed Phenotype Acute Leukemia with t(v;11q23.3); KMT2A Rearranged
+2858	Transferrin variant chi
+2859	Combined oxidative phosphorylation deficiency 30
+2860	Hemosiderosis, systemic, due to aceruloplasminemia
+2861	Robinow syndrome, autosomal recessive, with aplasia/hypoplasia of phalanges and metacarpals/metatarsals
+2862	Intrahepatic cholestasis with episodic jaundice
+2863	ATR-X-related syndrome
+2864	Seckel syndrome
+2865	Lhermitte-Duclos disease
+2866	Costello syndrome
+2867	TSC2-Related Disorder
+2868	O'Donnell-Luria-Rodan syndrome
+2869	Hoyeraal-Hreidarsson syndrome
+2870	Familial breast-ovarian cancer type 1
+2871	MTOR-related megalencephaly and pigmentary mosaicism in skin
+2872	Microcephaly with or without chorioretinopathy, lymphedema, or mental retardation
+2873	PPP2R1A-related neurodevelopmental disorders
+2874	Pancreatic Neoplasms
+2875	Autosomal recessive spastic ataxia
+2876	Charcot-Marie-Tooth disease, type 2M
+2877	Sudden cardiac failure, alcohol-induced
+2878	Sudden cardiac failure, infantile
+2879	Glycogen storage disease type III
+2880	CEREBELLAR ATROPHY WITH SEIZURES AND VARIABLE DEVELOPMENTAL DELAY
+2881	Glycogen storage disease, type VII
+2882	EPILEPTIC ENCEPHALOPATHY, EARLY INFANTILE, 82
+2883	Mantle cell lymphoma
+2884	Familial atypical mycobacteriosis, type 1, X-linked
+2885	Hereditary ataxia
+2886	Peroxisome biogenesis disorders
+2887	Lactate dehydrogenase deficiency type A
+2888	Glycogen storage disease XI
+2889	Clark-Baraitser syndrome
+2890	Mental retardation, autosomal dominant 21
+2891	Autosomal recessive infantile epilepsy
+2892	Parkinson disease
+2893	Infantile epilepsy
+2894	Glioma susceptibility 1
+2895	Epilepsy, X-linked, with variable learning disabilities and behavior disorders
+2896	Hepatic veno-occlusive disease-immunodeficiency syndrome
+2897	Mycobacterium tuberculosis, susceptibility to
+2898	Optic atrophy 7
+2899	NEURODEGENERATION WITH BRAIN IRON ACCUMULATION 8
+2900	Neurodegeneration with brain iron accumulation
+2901	Nephrotic syndrome, type 2, susceptibility to
+2902	Nephrotic syndrome, idiopathic, steroid-resistant
+2903	Idiopathic nephrotic syndrome
+2904	Isolated macular dystrophy
+2905	Congenital hypomyelinating neuropathy 3
+2906	Coenzyme Q10 deficiency, Oculomotor Apraxia Type
+2907	Ataxia-oculomotor apraxia type 1
+2908	11q partial monosomy syndrome
+2909	Epileptic encephalopathy, early infantile, 31
+2910	Dyslexia 1
+2911	Autosomal recessive non-syndromic sensorineural deafness type DFNB
+2912	Bent bone dysplasia syndrome
+2913	EPILEPTIC ENCEPHALOPATHY, EARLY INFANTILE, 67
+2914	Troyer syndrome
+2915	Haemorrhagic telangiectasia 2
+2916	Non-syndromic pontocerebellar hypoplasia
+2917	Pituitary adenoma predisposition
+2918	G6PD CANTON
+2919	G6PD GIFU
+2920	G6PD AGRIGENTO
+2921	G6PD TAIWAN-HAKKA
+2922	Neurodevelopmental disorder with epilepsy, cataracts, feeding difficulties, and delayed brain myelination
+2923	Spherocytosis type 2
+2924	Rhizomelic chondrodysplasia punctata type 2
+2925	Spinal Muscular Atrophy, Dominant
+2926	Congenital heart defects, dysmorphic facial features, and intellectual developmental disorder
+2927	Beta-hydroxyisobutyryl-CoA deacylase deficiency
+2928	Pyruvate dehydrogenase E2 deficiency
+2929	MARS-Related Disorder
+2930	Angiokeratoma corporis diffusum with arteriovenous fistulas
+2931	Mitochondrial complex 1 deficiency, nuclear type 6
+2932	CARNITINE PALMITOYLTRANSFERASE IA POLYMORPHISM
+2933	CPT1A ARCTIC VARIANT
+2934	FACTOR VIII (OKAYAMA)
+2935	Cataract 11
+2936	Limb-Girdle Muscular Dystrophy, Dominant
+2937	Limb-girdle muscular dystrophy, type 1E
+2938	Leukoencephalopathy, progressive, with ovarian failure
+2939	Paroxysmal non-kinesigenic dyskinesia
+2940	Lenz microphthalmia syndrome
+2941	EPILEPTIC ENCEPHALOPATHY, EARLY INFANTILE, 85, WITH OR WITHOUT MIDLINE BRAIN DEFECTS
+2942	Alternating hemiplegia of childhood
+2943	Combined oxidative phosphorylation deficiency 1
+2944	Combined oxidative phosphorylation deficiency
+2945	Intermediate maple syrup urine disease type 2
+2946	AV junctional rhythm
+2947	Impaired gluconeogenesis
+2948	Abnormality of acid-base homeostasis
+2949	Spermatogenesis maturation arrest
+2950	Non-obstructive azoospermia
+2951	Diffuse palmoplantar hyperkeratosis
+2952	Diastolic dysfunction
+2953	Achromatopsia 5
+2954	3-Methylglutaconic aciduria
+2955	Angiosarcoma
+2956	Persistent fetal circulation syndrome
+2957	LEUKODYSTROPHY, HYPOMYELINATING, 17
+2958	Decreased activity of mitochondrial ATP synthase complex
+2959	Mitochondrial complex 5 (ATP synthase) deficiency nuclear type 5
+2960	Transferrin variant c1/c2
+2961	Alzheimer disease, susceptibility to
+2962	Epileptic encephalopathy, early infantile, 54
+2963	Fulminant hepatic failure
+2964	INFANTILE LIVER FAILURE SYNDROME 3
+2965	Supratentorial primitive neuroectodermal tumor
+2966	B Lymphoblastic Leukemia/Lymphoma with t(9;22)(q34.1;q11.2); BCR-ABL1
+2967	Sea-blue histiocyte syndrome
+2968	Distal hereditary motor neuronopathy
+2969	Ceruloplasmin belfast
+2970	Chronic multifocal osteomyelitis
+2971	Early infantile epileptic encephalopathy 59
+2972	NEPHROTIC SYNDROME, TYPE 21
+2973	Myocardial infarction, decreased susceptibility to
+2974	Factor X deficiency
+2975	Factor VII deficiency
+2976	Hereditary thrombocytopenia and hematologic cancer predisposition syndrome
+2977	Collapse (finding)
+2978	History of Sudden Cardiac Death
+2979	UBTF E210K Neuroregression Syndrome
+2980	Childhood-onset motor and cognitive regression syndrome with extrapyramidal movement disorder
+2981	Infantile or childhood onset neurodegenerative disease, global developmental delay, and intellectual disability
+2982	UBTF-Related Disorder
+2983	Rare syndromic intellectual disability
+2984	Transferrin variant b2
+2985	Shone complex
+2986	Hypomagnesemia 4, renal
+2987	Hereditary renal cell carcinoma
+2988	Prune belly syndrome
+2989	Blepharocheilodontic syndrome 2
+2990	Cleft Lip with or without Cleft Palate
+2991	Aplasia cutis congenita (disease)
+2992	Spastic paraplegia 4, modifier of
+2993	short QT syndrome
+2994	Familial aortopathy
+2995	Mental retardation, autosomal recessive 37
+2996	Continuous spike and waves during slow-wave sleep syndrome
+2997	Disrupted sleep-wake cycle with developmental delay and learning difficulty
+2998	Mental retardation, X-linked, syndromic, wu type
+2999	Leukoencephalopathy with brain stem and spinal cord involvement-high lactate syndrome
+3000	Palmoplantar keratoderma i, striate, focal, or diffuse
+3001	Lethal congenital contracture syndrome 7
+3002	Thrombocytopenia 2
+3003	Lymphoproliferative syndrome 1
+3004	Charcot-Marie-Tooth disease, recessive intermediate B
+3005	Barrett esophagus/esophageal adenocarcinoma
+3006	Spinal muscular atrophy with congenital bone fractures 2
+3007	Episodic ataxia, type 6
+3008	GONADAL DYSGENESIS, DYSMORPHIC FACIES, RETINAL DYSTROPHY, AND MYOPATHY
+3009	SPERMATOGENIC FAILURE 36
+3010	Immunodeficiency 26 with or without neurologic abnormalities
+3011	NEURODEVELOPMENTAL DISORDER WITH MICROCEPHALY AND STRUCTURAL BRAIN ANOMALIES
+3012	Neurodevelopmental disorder with microcephaly, hypotonia, and variable brain anomalies
+3013	Multiple acyl-CoA dehydrogenase deficiency
+3014	Glutaric acidemia IIA
+3015	Encephalopathy, acute, infection-induced, 3, suceptibility to
+3016	Glycogen storage disease type X
+3017	Reticular dysgenesis
+3018	Brody myopathy
+3019	Alagille syndrome, ATP8B1 related
+3020	Glycogen storage disease due to muscle beta-enolase deficiency
+3021	Spondyloenchondrodysplasia with immune dysregulation
+3022	Transient myeloproliferative disorder of Down syndrome
+3023	Leukemia, acute myeloid, m0 subtype
+3024	Deafness, autosomal recessive 103
+3025	Congenital disorder of glycosylation type 2B
+3026	3-Methylglutaconic aciduria type 1
+3027	Spinocerebellar ataxia type 14
+3028	Polycystic kidney disease
+3029	Left ventricular noncompaction 7
+3030	Deafness, autosomal recessive 24
+3031	Leigh syndrome due to mitochondrial complex III deficiency
+3032	Dermatofibrosis lenticularis disseminata
+3033	Mental retardation, autosomal recessive 58
+3034	ELP2-Related Disorders
+3035	Renpenning syndrome 1
+3036	Gamma-aminobutyric acid transaminase deficiency
+3037	Pyruvate carboxylase deficiency
+3038	Ataxia with Oculomotor Apraxia
+3039	Microcephaly, Cortical Malformations, and Intellectual Disability
+3040	Primary Microcephaly, Recessive
+3041	Warburg micro syndrome 1
+3042	Pontocerebellar hypoplasia, type 1c
+3043	Alzheimer disease, familial, with spastic paraparesis and unusual plaques
+3044	Hypoparathyroidism-deafness-renal disease syndrome
+3045	Perrault syndrome 2
+3046	Deafness, autosomal recessive 12, modifier of
+3047	Agenesis of the corpus callosum with peripheral neuropathy
+3048	Mental retardation, autosomal dominant 14
+3049	Primary autosomal recessive microcephaly 8
+3050	Brunner syndrome
+3051	Multiple Cutaneous and Mucosal Venous Malformations
+3052	Alazami syndrome
+3053	Insulin resistance
+3054	Short stature, brachydactyly, intellectual developmental disability, and seizures
+3055	Congenital myasthenic syndrome 12
+3056	Glycogen storage disease IXd
+3057	MENTAL RETARDATION, AUTOSOMAL DOMINANT 58
+3058	Osteogenesis imperfecta, type VI
+3059	Pyruvate dehydrogenase E1-beta deficiency
+3060	Mental retardation, syndromic 14, X-linked
+3061	Welander distal myopathy
+3062	Craniofacial-skeletal-dermatologic dysplasia
+3063	Spherocytosis type 5
+3064	Sjögren-Larsson syndrome
+3065	HYPOTONIA, ATAXIA, DEVELOPMENTAL DELAY, AND TOOTH ENAMEL DEFECT SYNDROME
+3066	Smith-Lemli-Opitz syndrome
+3067	Amyotrophic lateral sclerosis type 9
+3068	Osteogenesis imperfecta type 1, mild
+3069	Microcephaly, short stature, and impaired glucose metabolism 1
+3070	MITOCHONDRIAL DNA DEPLETION SYNDROME 3
+3071	Portal hypertension, noncirrhotic
+3072	intellectual disability with severe speech impairment
+3073	Mental retardation, autosomal dominant 40
+3074	Robinow syndrome, autosomal recessive, with brachy-syn-polydactyly
+3075	FIBRINOGEN BALTIMORE 2
+3076	RAHMAN SYNDROME
+3077	Takenouchi-Kosaki syndrome
+3078	UV-sensitive syndrome 3
+3079	Epilepsy, progressive myoclonic 2b
+3080	Joubert syndrome 15
+3081	Spongy degeneration of central nervous system
+3082	Canavan Disease, Familial Form
+3083	Gyrate atrophy of choroid and retina with pyridoxine-responsive ornithinemia
+3084	Mental retardation 30, X-linked
+3085	Campomelic dysplasia with autosomal sex reversal
+3086	Camptomelic dysplasia
+3087	Chediak-Higashi syndrome, adult type
+3088	Fructose-biphosphatase deficiency
+3089	Glycogen storage disease IIIa
+3090	Glycogen storage disease IIIb
+3091	Fanconi anemia, complementation group R
+3092	BH4-deficient hyperphenylalaninemia A
+3093	Dysfibrinogenemia, congenital
+3094	Cerebral cavernous malformations 1
+3095	COMBINED OXIDATIVE PHOSPHORYLATION DEFICIENCY 44
+3096	Pseudohypoaldosteronism type 2B
+3097	Torsion dystonia 6
+3098	Retinal dystrophy, early-onset severe
+3099	Griscelli syndrome type 1
+3100	Familial X-linked hypophosphatemic vitamin D refractory rickets
+3101	Familial Hypophosphatemic Rickets
+3102	Focal segmental glomerulosclerosis 1
+3103	Charcot-Marie-Tooth disease, axonal, type 2T
+3104	Spondylometaphyseal dysplasia-cone-rod dystrophy syndrome
+3105	Neural tube defect
+3106	Cerebellar ataxia, mental retardation, and dysequilibrium syndrome 4
+3107	Mental retardation with panhypopituitarism, X-linked
+3108	Pituitary stalk interruption syndrome
+3109	Phosphoribosylpyrophosphate synthetase superactivity
+3110	Craniosynostosis syndrome
+3111	Cornelia de Lange syndrome 3
+3112	Amyotrophic lateral sclerosis 21
+3113	Mental retardation 63, X-linked
+3114	FRONTOTEMPORAL DEMENTIA WITH TDP43 INCLUSIONS, TARDBP-RELATED
+3115	AU-KLINE SYNDROME
+3116	Peritoneal mesothelioma
+3117	Abnormality of lipid metabolism
+3118	Spinal neurofibromas
+3119	Median cleft lip and palate
+3120	Spastic tetraplegia
+3121	Glomerulonephritis (disease)
+3122	Invasive Breast Carcinoma
+3123	Progressive cone degeneration
+3124	Demyelinating peripheral neuropathy
+3125	Renal neoplasm
+3126	Mesangiocapillary glomerulonephritis
+3127	Rieger syndrome
+3128	Lobar holoprosencephaly
+3129	Larsen syndrome
+3130	Keratoconus
+3131	Squamous cell carcinoma
+3132	Continuous spike and waves during slow sleep
+3133	Corticobasal syndrome
+3134	Primary progressive non fluent aphasia
+3135	Keloid formation
+3136	Hereditary nonpolyposis colorectal carcinoma
+3137	Everolimus response
+3138	Mental Retardation, Psychosocial
+3139	Tonic-clonic epilepsy
+3140	Unilateral Hypotonia
+3141	Malignant tumor of ascending colon
+3142	GARS-Associated Axonal Neuropathy
+3143	Uveal melanoma
+3144	Ocular melanocytosis
+3145	Progressive external ophthalmoplegia with mitochondrial DNA deletions, digenic
+3146	Congenital aniridia
+3147	SMAD3-Related Disorder
+3148	SYT1-associated neurodevelopmental disorder
+3149	Infantile hypotonia-oculomotor anomalies-hyperkinetic movements-developmental delay syndrome
+3150	GATAD2B-Related Disorder
+3151	Multiple joint dislocations, short stature, craniofacial dysmorphism, and congenital heart defects
+3152	MULTIPLE JOINT DISLOCATIONS, SHORT STATURE, AND CRANIOFACIAL DYSMORPHISM WITH CONGENITAL HEART DEFECTS
+3153	Smith-Magenis Syndrome-like
+3154	CASK-Related Disorder
+3155	MEF2C-Related Disorder
+3156	Mental retardation, stereotypic movements, epilepsy, and/or cerebral malformations
+3157	Bladder cancer, transitional cell, somatic
+3158	Hereditary diffuse leukoencephalopathy with spheroids
+3159	Hypomyelination, global cerebral
+3160	Asparagine synthetase deficiency
+3161	Infertility associated with multi-tailed spermatozoa and excessive DNA
+3162	Leukodystrophy, hypomyelinating, 4
+3163	Nemaline myopathy 7
+3164	Deficiency of transaldolase
+3165	Warsaw breakage syndrome
+3166	Monocarboxylate transporter 1 deficiency, autosomal recessive
+3167	Monocarboxylate transporter 1 deficiency
+3168	Autosomal recessive centronuclear myopathy
+3169	Exercise-induced hyperinsulinism
+3170	Spastic paraplegia 76, autosomal recessive
+3171	Stromme syndrome
+3172	SPINAL MUSCULAR ATROPHY, INFANTILE, JAMES TYPE
+3173	Methylmalonate semialdehyde dehydrogenase deficiency
+3174	Spondyloepiphyseal dysplasia, stanescu type
+3175	Microphthalmia, syndromic 13
+3176	Primary autosomal recessive microcephaly 10
+3177	Dementia, Deafness, and Sensory Neuropathy
+3178	Combined oxidative phosphorylation deficiency 4
+3179	Congenital disorder of glycosylation type Ir
+3180	Parkinson disease 11
+3181	Growth retardation, developmental delay, coarse facies, and early death
+3182	Severe congenital neutropenia 4, autosomal recessive
+3183	Riddle syndrome
+3184	Seckel syndrome 7
+3185	Immunodeficiency 40
+3186	Distal hereditary motor neuronopathy type 2C
+3187	Autoimmune interstitial lung, joint, and kidney disease
+3188	heterogeneous nuclear ribonucleoprotein G, human
+3189	Meckel syndrome 12
+3190	PILAROWSKI-BJORNSSON SYNDROME
+3191	CALFAN syndrome
+3192	Spinocerebellar ataxia, autosomal recessive 21
+3193	Mitochondrial DNA depletion syndrome, hepatocerebral form
+3194	Mitochondrial DNA depletion syndrome 15 (hepatocerebral type)
+3195	Noonan-Like Syndrome Disorder
+3196	Cataract, autosomal recessive congenital 4
+3197	Immunodeficiency 50
+3198	NEURODEVELOPMENTAL DISORDER WITH HYPOTONIA, MICROCEPHALY, AND SEIZURES
+3199	Polyhydramnios, megalencephaly, and symptomatic epilepsy
+3200	Fibrosis of extraocular muscles, congenital, 1
+3201	Fibrosis of extraocular muscles, congenital, 3b
+3202	Polymicrogyria, asymmetric
+3203	Spinocerebellar ataxia, autosomal recessive 16
+3204	Polymicrogyria with optic nerve hypoplasia
+3205	Pulmonary alveolar proteinosis
+3206	Neurodegeneration with brain iron accumulation 6
+3207	Pigmented nodular adrenocortical disease, primary, 4
+3208	Epileptic encephalopathy, early infantile, 50
+3209	CHARCOT-MARIE-TOOTH DISEASE, AXONAL, TYPE 2DD
+3210	Immunodeficiency 8
+3211	North american indian childhood cirrhosis
+3212	Hypomyelination with brainstem and spinal cord involvement and leg spasticity
+3213	Mitochondrial complex 1 deficiency, nuclear type 26
+3214	Salt and pepper developmental regression syndrome
+3215	Parkinson disease 17
+3216	Myopathy, congenital, compton-north
+3217	Morbid obesity and spermatogenic failure
+3218	Short stature, onychodysplasia, facial dysmorphism, and hypotrichosis
+3219	Primordial dwarfism
+3220	Bone marrow failure syndrome 1
+3221	Myopathy, proximal, and ophthalmoplegia
+3222	Pelizaeus-Merzbacher disease, atypical
+3223	Immunodeficiency due to interleukin-1 receptor-associated kinase-4 deficiency
+3224	3-methylglutaconic aciduria type V
+3225	Dyserythropoietic anemia with thrombocytopenia
+3226	Mandibulofacial dysostosis-microcephaly syndrome
+3227	Trichohepatoenteric syndrome 2
+3228	Witteveen-kolk syndrome
+3229	Deafness, autosomal dominant 56
+3230	Charcot-Marie-Tooth Neuropathy X
+3231	Encephalopathy, familial, with neuroserpin inclusion bodies
+3232	Amelogenesis imperfecta, hypocalcification type
+3233	Bardet-Biedl syndrome 1/7, digenic
+3234	CYBA POLYMORPHISM
+3235	Very early onset inflammatory bowel disease
+3236	Congenital bile acid synthesis defect 2
+3237	CARBONIC ANHYDRASE II VARIANT
+3238	Osteopetrosis with renal tubular acidosis
+3239	Familial High Density Lipoprotein Deficiency
+3240	Generalized epilepsy with febrile seizures plus, type 9
+3241	Ovalocytosis, southeast Asian
+3242	Malaria, cerebral, resistance to
+3243	Deafness, autosomal dominant 40
+3244	Charcot-Marie-Tooth disease, dominant intermediate b, with neutropenia
+3245	Congenital glucose-galactose malabsorption
+3246	Spondyloepimetaphyseal dysplasia, pakistani type
+3247	INTELLECTUAL DEVELOPMENTAL DISORDER WITH SEVERE SPEECH AND AMBULATION DEFECTS
+3248	Autism
+3249	ACTL6B-related dominant intellectual disability
+3250	Natural killer cell and glucocorticoid deficiency with DNA repair defect
+3251	Deficiency of phosphoserine phosphatase
+3252	Coronary sclerosis, medial, of infancy
+3253	Bare lymphocyte syndrome type 1
+3254	POLR1C-Related Disorders
+3255	Renal tubular acidosis, proximal, with ocular abnormalities and mental retardation
+3256	TAP1 deficiency, somatic
+3257	Meretoja syndrome
+3258	Leukodystrophy, adult-onset, autosomal dominant
+3259	Epilepsy, familial adult myoclonic, 5
+3260	Adenylate kinase deficiency, hemolytic anemia due to
+3261	Leukoencephalopathy, cystic, without megalencephaly
+3262	Dilated cardiomyopathy-hypergonadotropic hypogonadism syndrome
+3263	Coffin Siris/Intellectual Disability
+3264	Anadysplasia-like, spontaneously remitting spondylometaphyseal dysplasia
+3265	Perlman syndrome
+3266	Familial benign pemphigus
+3267	Perrault syndrome 3
+3268	Oculomaxillofacial dysostosis
+3269	Pachyonychia congenita 3
+3270	Familial Autism Spectrum Disorder
+3271	Joubert syndrome 9/15, digenic
+3272	Hypogonadism, diabetes mellitus, alopecia, mental retardation and electrocardiographic abnormalities
+3273	Alzheimer disease familial 3, with spastic paraparesis
+3274	Winchester syndrome
+3275	Neonatal pseudo-hydrocephalic progeroid syndrome
+3276	Congenital short bowel syndrome, X-linked
+3277	Intestinal pseudoobstruction, neuronal, chronic idiopathic, X-linked
+3278	SPINAL MUSCULAR ATROPHY, LOWER EXTREMITY-PREDOMINANT, 2B, PRENATAL ONSET, AUTOSOMAL DOMINANT
+3279	Kabuki-like syndrome
+3280	Moyamoya disease 2
+3281	Fructosuria, essential
+3282	Spinocerebellar ataxia, X-linked 1
+3283	Autoimmune lymphoproliferative syndrome, type III
+3284	Microphthalmia, isolated 8
+3285	Spinal muscular atrophy, X-linked 2
+3286	Acrofacial dysostosis, Cincinnati type
+3287	NUCLEOSIDE PHOSPHORYLASE POLYMORPHISM
+3288	Purine-nucleoside phosphorylase deficiency
+3289	Lissencephaly, X-linked
+3290	Subcortical laminar heterotopia, X-linked
+3291	Myeloperoxidase deficiency
+3292	Prostate cancer/brain cancer susceptibility
+3293	Neuroendocrine tumor of pancreas
+3294	BRAIN ABNORMALITIES, NEURODEGENERATION, AND DYSOSTEOSCLEROSIS
+3295	Deafness, congenital, with onychodystrophy, autosomal dominant
+3296	Fragile X syndrome
+3297	Porokeratosis of Mibelli
+3298	Congenital stationary night blindness, type 1A
+3299	Glucocorticoid deficiency with achalasia
+3300	Heterotaxy, visceral, 4, autosomal
+3301	Focal segmental glomerulosclerosis 8
+3302	Nephronophthisis 18
+3303	Ciliary dyskinesia, primary, 6
+3304	Sifrim-Hitz-Weiss syndrome
+3305	Okur-chung neurodevelopmental syndrome
+3306	Ciliary dyskinesia, primary, 34
+3307	Intellectual disability, X-linked 106
+3308	Hypocalciuric hypercalcemia, familial, type II
+3309	Amyotrophic lateral sclerosis 19
+3310	endometrial cancer
+3311	Pituitary adenoma, growth hormone-secreting, 2
+3312	Cortical dysplasia, complex, with other brain malformations 6
+3313	Ivacaftor response
+3314	Chediak-Higashi syndrome, childhood type
+3315	Dihydropteridine reductase deficiency
+3316	Huntington disease
+3317	Diamond-Blackfan anemia 5
+3318	Hypogonadotropic hypogonadism 5 without anosmia
+3319	Alpha-thalassemia/mental retardation syndrome
+3320	Dent disease type 2
+3321	Zellweger Spectrum Disorder
+3322	Keratosis follicularis
+3323	Oculopharyngeal muscular dystrophy
+3324	Chronic adenoiditis
+3325	ANEMIA, PERINATAL HEMOLYTIC, FATAL OR NEAR-FATAL
+3326	Glucocorticoid resistance, generalized
+3327	Intellectual disability, autosomal dominant 56
+3328	Hereditary liability to pressure palsies
+3329	Intellectual developmental disorder with gastrointestinal difficulties and high pain threshold
+3330	Ehlers-Danlos syndrome, type 3
+3331	SEVERE ACHONDRODYSPLASIA WITH DEVELOPMENTAL DELAY AND ACANTHOSIS NIGRICANS
+3332	Elliptocytosis 1
+3333	Borjeson-Forssman-Lehmann syndrome
+3334	Pettigrew syndrome
+3335	Phosphoglycerate kinase 1 deficiency
+3336	46,XY sex reversal, type 1
+3337	46,XY true hermaphroditism, SRY-related
+3338	G6PD TAIWAN-HAKKA 2
+3339	Peroxisome biogenesis disorder 14B
+3340	Familial hypertrophic cardiomyopathy 4
+3341	MULLEGAMA-KLEIN-MARTINEZ SYNDROME
+3342	HOLOPROSENCEPHALY 13, X-LINKED
+3343	Arginase deficiency
+3344	Ataxia, spastic, 4, autosomal recessive
+3345	Mucopolysaccharidosis, MPS-III-D
+3346	Gaucher's disease, type 1
+3347	Chylomicron retention disease
+3348	Alport syndrome, autosomal recessive
+3349	3-methylcrotonyl CoA carboxylase 2 deficiency
+3350	Heart, malformation of
+3351	Hypocalcemia, autosomal dominant 2
+3352	46,XY sex reversal 8
+3353	Hutchinson-Gilford progeria syndrome, atypical
+3354	Arnold-Chiari malformation
+3355	Neoplasm of head and neck
+3356	Pancytopenia
+3357	Third degree atrioventricular block
+3358	Short-rib thoracic dysplasia 3 with or without polydactyly
+3359	NIK deficiency
+3360	Triple-negative breast cancer
+3361	Adrenocortical tumor, somatic
+3362	Granulosa cell tumor of the ovary
+3363	Thecoma, somatic
+3364	Huntington disease-like syndrome
+3365	CEREBRAL AMYLOID ANGIOPATHY, PRNP-RELATED
+3366	Lobular capillary hemangioma
+3367	Congenital tufted angioma
+3368	Kaposiform hemangioendothelioma
+3369	Schizophrenia, susceptibility to
+3370	Essential tremor, susceptibility to
+3371	Hereditary essential tremor 1
+3372	Craniofacial-ulnar-renal syndrome
+3373	Ectrodactyly
+3374	Osteopoikilosis with melorheostosis
+3375	Dermatofibrosis lenticularis disseminata, isolated
+3376	Hereditary sensory and autonomic neuropathy
+3377	recessive ARS-related multisystem disease
+3378	CHD3-Related Disorder
+3379	DYNC1H1-related neurodevelopmental disorders
+3380	CSNK2A1- Related Disorders
+3381	Ehlers-Danlos syndrome
+3382	Oligodendroglioma
+3383	Trichohepatoenteric syndrome
+3384	ROSAH syndrome
+3385	Splenomegaly, cytopenia, and vision loss
+3386	Autosomal dominant non-syndromic sensorineural deafness type DFNA
+3387	Congenital titinopathy
+3388	Immunodeficiency 15
+3389	Microcephaly with mental retardation and digital anomalies
+3390	Inclusion body myopathy with early-onset Paget disease with or without frontotemporal dementia 2
+3391	Charcot-Marie-Tooth disease, dominant intermediate F
+3392	Erythrocyte lactate transporter defect
+3393	Familial intrahepatic cholestasis type 1
+3394	Anemia, sideroblastic, 4
+3395	Polyendocrine-polyneuropathy syndrome
+3396	Hemangioma, capillary infantile
+3397	AICAR transformylase/IMP cyclohydrolase deficiency
+3398	Advanced sleep phase syndrome, familial, 2
+3399	Familial advanced sleep phase syndrome 1
+3400	Spinocerebellar ataxia type 26
+3401	Mitochondrial complex III deficiency, nuclear type 6
+3402	Asplenia, isolated congenital
+3403	CD59-mediated hemolytic anemia with or without immune-mediated polyneuropathy
+3404	Cortical dysplasia, complex, with other brain malformations 3
+3405	Cortical dysplasia, complex, with other brain malformations 2
+3406	Cocoon syndrome
+3407	Lethal congenital contractural syndrome 3
+3408	Severe congenital neutropenia 5, autosomal recessive
+3409	Osteogenesis imperfecta type 9
+3410	Congenital hydrocephalus
+3411	Complement factor d deficiency
+3412	Inflammatory skin and bowel disease, neonatal, 2
+3413	Gabriele de Vries syndrome
+3414	SHUKLA-VERNON SYNDROME
+3415	Immunodeficiency 24
+3416	EPILEPTIC ENCEPHALOPATHY, EARLY INFANTILE, 56
+3417	Retinitis pigmentosa-hearing loss-premature aging-short stature-facial dysmorphism syndrome
+3418	FANCONI ANEMIA, COMPLEMENTATION GROUP W
+3419	Hydranencephaly with renal aplasia-dysplasia
+3420	Pontocerebellar hypoplasia, type 7
+3421	JOUBERT SYNDROME 35
+3422	MacInnes syndrome
+3423	NEURODEVELOPMENTAL DISORDER WITH ATAXIC GAIT, ABSENT SPEECH, AND DECREASED CORTICAL WHITE MATTER
+3424	Agammaglobulinemia 5, autosomal dominant
+3425	Muscular dystrophy, limb-girdle, type 2y
+3426	Epilepsy, familial temporal lobe, 8
+3427	Mucopolysaccharidosis-plus syndrome
+3428	Mental retardation, autosomal recessive 60
+3429	Mental retardation, autosomal dominant 34
+3430	NEURODEVELOPMENTAL DISORDER WITH MICROCEPHALY, SEIZURES, AND CORTICAL ATROPHY
+3431	Chronic obstructive pulmonary disease
+3432	Fanconi anemia, complementation group V
+3433	Progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal recessive 2
+3434	NOONAN SYNDROME 11
+3435	2,4-Dienoyl-CoA reductase deficiency
+3436	SPINOCEREBELLAR ATAXIA 47
+3437	Cleft palate, psychomotor retardation, and distinctive facial features
+3438	Inherited bone marrow failure syndrome
+3439	Bone marrow failure syndrome 3
+3440	Mental retardation, X-linked, syndromic 34
+3441	Short stature, developmental delay, and congenital heart defects
+3442	SPASTIC TETRAPLEGIA AND AXIAL HYPOTONIA, PROGRESSIVE
+3443	Bleeding disorder platelet type macrothrombocytopenia
+3444	Neuropathy, hereditary motor and sensory, type 6B
+3445	HSPB1-Related Disorders
+3446	Spastic paraplegia 62, autosomal recessive
+3447	Lung damage, immunodeficiency and chromosome breakage syndrome
+3448	Lung disease, immunodeficiency, and chromosome breakage syndrome
+3449	Macular dystrophy, patterned, 3
+3450	Growth retardation, intellectual developmental disorder, hypotonia, and hepatopathy
+3451	Thyroid hormone metabolism, abnormal
+3452	Renal dysplasia and retinal aplasia
+3453	Immunodeficiency 22
+3454	Ataxia-telangiectasia-like disorder 2
+3455	3-methylglutaconic aciduria type 9
+3456	Lethal congenital contracture syndrome 2
+3457	Palmoplantar keratoderma and woolly hair
+3458	Spinocerebellar ataxia 41
+3459	Spondylometaphyseal dysplasia, megarbane-dagher-melki type
+3460	Cole-Carpenter syndrome
+3461	Platelet-type bleeding disorder 19
+3462	Chronic atrial and intestinal dysrhythmia
+3463	Mosaic variegated aneuploidy syndrome
+3464	Combined oxidative phosphorylation deficiency 9
+3465	Parkinson disease 18
+3466	Fleck retina, familial benign
+3467	EPILEPTIC ENCEPHALOPATHY, EARLY INFANTILE, 58
+3468	Autism 17
+3469	NEURODEVELOPMENTAL DISORDER AND LANGUAGE DELAY WITH OR WITHOUT STRUCTURAL BRAIN ABNORMALITIES
+3470	Sudden infant death with dysgenesis of the testes syndrome
+3471	Calcification of joints and arteries
+3472	Mitochondrial complex 1 deficiency, nuclear type 5
+3473	Epilepsy, early-onset, vitamin b6-dependent
+3474	Cerebral visual impairment and intellectual disability
+3475	INTELLECTUAL DEVELOPMENTAL DISORDER 62
+3476	Vascular malformation, primary intraosseous
+3477	Erythroderma, congenital, with palmoplantar keratoderma, hypotrichosis, and hyper-ige
+3478	Osteosclerotic metaphyseal dysplasia
+3479	MENTAL RETARDATION, AUTOSOMAL DOMINANT 57
+3480	Chromosome 19q13.11 deletion syndrome
+3481	JOINT LAXITY, SHORT STATURE, AND MYOPIA
+3482	Meesmann corneal dystrophy 2
+3483	Familial partial lipodystrophy 6
+3484	Immunodeficiency 52
+3485	Abdominal obesity-metabolic syndrome 3
+3486	Intellectual disability and seizures
+3487	POIRIER-BIENVENU NEURODEVELOPMENTAL SYNDROME
+3488	Myopathy, congenital, with neuropathy and deafness
+3489	Rothmund-Thomson syndrome type 1
+3490	CRANIOSYNOSTOSIS 7, SUSCEPTIBILITY TO
+3491	Autosomal dominant progressive external ophthalmoplegia with mitochondrial DNA deletions 4
+3492	Mental retardation, X-linked, syndromic 32
+3493	Cole disease
+3494	Benign familial neonatal seizures
+3495	Spermatogenic failure 10
+3496	Alopecia, neurologic defects, and endocrinopathy syndrome
+3497	C1q deficiency
+3498	Monoclonal B-Cell Lymphocytosis
+3499	Glaucoma 1, open angle, F
+3500	Mitochondrial complex v (atp synthase) deficiency, nuclear type 4
+3501	Psoriasis susceptibility 13
+3502	Microcephaly and chorioretinopathy, autosomal recessive, 1
+3503	HYPOPIGMENTATION, ORGANOMEGALY, AND DELAYED MYELINATION AND DEVELOPMENT
+3504	Nuclearly-encoded mitochondrial complex V (ATP synthase) deficiency 3
+3505	Nestor-Guillermo progeria syndrome
+3506	Invasive pneumococcal disease, recurrent isolated, 2
+3507	Early infantile epileptic encephalopathy 18
+3508	COMBINED IMMUNODEFICIENCY AND MEGALOBLASTIC ANEMIA WITH OR WITHOUT HYPERHOMOCYSTEINEMIA
+3509	White-sutton syndrome
+3510	Severe myoclonic epilepsy in infancy
+3511	Deafness dystonia syndrome
+3512	De Lange syndrome
+3513	Deafness, autosomal recessive
+3514	Grange syndrome
+3515	Spondylometaphyseal dysplasia, Sedaghatian type
+3516	Mental retardation, autosomal recessive 54
+3517	Deafness, autosomal dominant 70
+3518	G6PD GASTONIA
+3519	G6PD MARION
+3520	G6PD MINNESOTA
+3521	G6PD PORTICI
+3522	G6PD NASHVILLE
+3523	G6PD ANAHEIM
+3524	Pontocerebellar hypoplasia type 3
+3525	Zimmermann-Laband syndrome with epileptic encephalopathy
+3526	Left ventricular noncompaction 2
+3527	Spinocerebellar ataxia type 21
+3528	VEXAS
+3529	Amyotrophic lateral sclerosis-parkinsonism-dementia complex
+3530	Ichthyosis prematurity syndrome
+3531	Stickler syndrome
+3532	Hypotrichosis 11
+3533	Deafness, autosomal recessive 48
+3534	Congenital brain dysgenesis due to glutamine synthetase deficiency
+3535	Pseudohypoparathyroidism type 1B
+3536	Spinocerebellar ataxia type 12
+3537	Hypothyroidism, congenital, nongoitrous, 6
+3538	Mental retardation, autosomal recessive 50
+3539	Macular dystrophy, patterned, 2
+3540	Deafness, autosomal dominant 68
+3541	Trichothiodystrophy 6, nonphotosensitive
+3542	Acrokeratosis verruciformis of Hopf
+3543	Deafness, autosomal dominant 41
+3544	Porokeratosis 9, multiple types
+3545	Torsion dystonia 2
+3546	Singleton-Merten syndrome 2
+3547	Congenital myopathy
+3548	MORM syndrome
+3549	Subcutaneous panniculitis-like T-cell lymphoma
+3550	X-linked dystonia-parkinsonism
+3551	Progressive familial heart block
+3552	Limb-girdle muscular dystrophy, type 1G
+3553	Mitochondrial phosphate carrier deficiency
+3554	Hypotrichosis 12
+3555	Mental retardation, autosomal recessive 43
+3556	Epilepsy, benign neonatal, 1, and/or myokymia
+3557	Craniolenticulosutural dysplasia
+3558	Spinocerebellar ataxia type 17
+3559	Cataract 31 multiple types
+3560	X-linked amelogenesis imperfecta hypoplastic/hypomaturation 2
+3561	Platelet-type bleeding disorder 8
+3562	PEHO-like syndrome
+3563	Primary microcephaly type 2
+3564	Primary autosomal recessive microcephaly 12
+3565	CODAS syndrome
+3566	Lissencephaly 6, with microcephaly
+3567	Cronkhite-Canada syndrome
+3568	Candidiasis, familial, 8
+3569	Cole-Carpenter syndrome 1
+3570	Atrial septal defect 1
+3571	Pulmonary atresia with intact ventricular septum
+3572	Cone-rod dystrophy 20
+3573	Brachydactyly-arterial hypertension syndrome
+3574	Knobloch syndrome 1
+3575	Richieri Costa-Pereira syndrome
+3576	Orofacial-digital syndrome III
+3577	TARP syndrome
+3578	Radioulnar synostosis-microcephaly-scoliosis syndrome
+3579	Geroderma osteodysplastica
+3580	Joubert syndrome 22
+3581	Congenital dyserythropoietic anemia
+3582	Pili torti-developmental delay-neurological abnormalities syndrome
+3583	ECTODERMAL DYSPLASIA AND IMMUNODEFICIENCY 1, MALE-RESTRICTED
+3584	Primary autosomal recessive microcephaly 14
+3585	GLUCOCORTICOID RECEPTOR POLYMORPHISM
+3586	Radial aplasia-thrombocytopenia syndrome
+3587	HYPERLIPOPROTEINEMIA, TYPE III, ASSOCIATED WITH APOE3(WASHINGTON)
+3588	Joubert syndrome 9
+3589	Corticosteroid response
+3590	Narcolepsy 7
+3591	Wolfram syndrome 2
+3592	Bowen-Conradi syndrome
+3593	GLUCOCORTICOID DEFICIENCY 4 WITH MINERALOCORTICOID DEFICIENCY
+3594	Glucocorticoid deficiency 4 with or without mineralocorticoid deficiency
+3595	Ventricular tachycardia, catecholaminergic polymorphic, 2
+3596	EMC1-Related Disorder
+3597	Triosephosphate isomerase deficiency
+3598	Estrogen resistance
+3599	Joubert syndrome 25
+3600	Amyotrophic lateral sclerosis 22 with or without frontotemporal dementia
+3601	Seckel syndrome 9
+3602	Ciliary dyskinesia, primary, 32
+3603	Nephrotic syndrome, type 11
+3604	Diamond-Blackfan anemia 15 with mandibulofacial dysostosis
+3605	Retinitis pigmentosa 60
+3606	Treacher Collins syndrome 2
+3607	Myasthenic syndrome, congenital, 18
+3608	Maturity-onset diabetes of the young, type 14
+3609	Diamond-Blackfan anemia 9
+3610	Ovarian dysgenesis 3
+3611	Diamond-Blackfan anemia 4
+3612	Ciliary dyskinesia, primary, 14
+3613	Diamond-Blackfan anemia 11
+3614	Diamond-Blackfan anemia 12
+3615	Retinitis pigmentosa 67
+3616	Maple syrup urine disease, mild variant
+3617	Agnathia-otocephaly complex
+3618	Nephrotic syndrome, type 13
+3619	Bartter syndrome, type 5, antenatal, transient
+3620	Nephrotic syndrome, type 12
+3621	Oromandibular-limb hypogenesis spectrum
+3622	Nasopharyngeal carcinoma, susceptibility to, 3
+3623	Classic homocystinuria
+3624	Retinitis pigmentosa 46
+3625	Focal segmental glomerulosclerosis 6
+3626	Primary pulmonary hypertension 3
+3627	X-Linked mental retardation 90
+3628	Diamond-Blackfan anemia 8
+3629	46,XY sex reversal, type 5
+3630	Amyotrophic lateral sclerosis 18
+3631	Mental retardation, X-linked 101
+3632	Retinitis pigmentosa 70
+3633	Seckel syndrome 2
+3634	Amyotrophic lateral sclerosis 20
+3635	Deficiency of glycerol kinase
+3636	Retinitis Pigmentosa 6
+3637	Fucosidosis
+3638	Hereditary nonpolyposis colorectal cancer type 4
+3639	Autosomal recessive keratitis-ichthyosis-deafness syndrome
+3640	G6PD MAHIDOL-LIKE
+3641	G6PD AURES
+3642	G6PD PAWNEE
+3643	G6PD MALAGA
+3644	G6PD SANTIAGO DE CUBA
+3645	Microcephaly and chorioretinopathy, autosomal recessive, 2
+3646	Gorlin syndrome
+3647	Mental retardation, X-linked 96
+3648	Autosomal recessive limb-girdle muscular dystrophy type 2B
+3649	Storage pool disease of platelets
+3650	Juvenile myopathy, encephalopathy, lactic acidosis AND stroke
+3651	Nonmedullary thyroid carcinoma 1
+3652	HNSHA due to aldolase A deficiency
+3653	Severe combined immunodeficiency, autosomal recessive, T cell-negative, B cell-positive, NK cell-positive
+3654	Cirrhosis, cryptogenic
+3655	Vitreoretinopathy, neovascular inflammatory
+3656	Charcot-Marie-Tooth disease, axonal, type 2R
+3657	Oxoglutaricaciduria
+3658	cerebellar-facial-dental syndrome
+3659	Cerebellofaciodental syndrome
+3660	Hepatic methionine adenosyltransferase deficiency
+3661	HSD10 disease
+3662	MENTAL RETARDATION, X-LINKED, SYNDROMIC, 35
+3663	Hypermethioninemia due to adenosine kinase deficiency
+3664	Alloalbuminemia
+3665	Analbuminemia
+3666	MEHMO syndrome
+3667	Myopathy, lactic acidosis, and sideroblastic anemia 1
+3668	Rokitansky Kuster Hauser syndrome
+3669	Atypical hemolytic-uremic syndrome 1
+3670	Deficiency of glycerate kinase
+3671	Mental retardation, X-linked, syndromic 33
+3672	CATECHOL-O-METHYLTRANSFERASE POLYMORPHISM
+3673	nicotine response - Efficacy
+3674	tramadol response - Dosage, Efficacy
+3675	methadone response - Dosage, Efficacy
+3676	morphine response - Dosage, Efficacy
+3677	opioids response - Dosage, Efficacy
+3678	oxycodone response - Dosage, Efficacy
+3679	remifentanil response - Dosage, Efficacy
+3680	sufentanil response - Dosage, Efficacy
+3681	FIBRINOGEN LONGMONT
+3682	FIBRINOGEN CHRISTCHURCH 2
+3683	FIBRINOGEN HAIFA 1
+3684	FIBRINOGEN TOKYO 2
+3685	Syndrome with microcephaly as major feature
+3686	NK-cell enteropathy
+3687	Chronic progressive multiple sclerosis
+3688	Myoclonic absences
+3689	Mitochondrial encephalopathy
+3690	Recurrent spontaneous abortion
+3691	Pure or complex autosomal recessive spastic paraplegia
+3692	Conotruncal defect
+3693	Ossifying fibroma of the jaw
+3694	Osteopoikilosis
+3695	Intellectual disability syndrome due to a DYRK1A point mutation
+3696	Cerebellar medulloblastoma
+3697	Otopalatodigital spectrum disorder
+3698	Microcephalic Osteodysplastic Primordial Dwarfism
+3699	Sodium channelopathy-related small fiber neuropathy
+3700	Interstitial cardiac fibrosis
+3701	Decreased activity of mitochondrial complex III
+3702	Hereditary late onset Parkinson disease
+3703	Effort-induced polymorphic ventricular tachycardias
+3704	ABeta amyloidosis, Italian type
+3705	Clear cell carcinoma of kidney
+3706	Aldosterone-producing adrenal cortex adenoma
+3707	Weakness of facial musculature
+3708	Anterior segment anomalies
+3709	Asymmetric septal hypertrophy
+3710	LMNA-Related Disorders
+3711	microform holoprosencephaly
+3712	AV nodal reentry tachycardia
+3713	GARS1-related neuropathies
+3714	Insulin-resistant diabetes mellitus
+3715	Spondyloepimetaphyseal dysplasia
+3716	Reduced number of teeth
+3717	Bilateral cleft lip
+3718	Cortical gyral simplification
+3719	Metabolic disease
+3720	Metopic ridging-ptosis-facial dysmorphism syndrome
+3721	Congenital lactic acidosis
+3722	Klatskin tumor
+3723	Postaxial polydactyly B
+3724	Male infertility due to obstructive azoospermia
+3725	Ovarioleukodystrophy
+3726	Mesothelioma
+3727	Inborn errors of metabolism
+3728	Isolated anophthalmia-microphthalmia syndrome
+3729	Brachyolmia
+3730	C3S/C3F POLYMORPHISM
+3731	Oocyte maturation defect
+3732	Distal myopathy
+3733	Motor neuropathy
+3734	Early-onset autosomal dominant Alzheimer disease
+3735	ACTL6B-related recessive epilepsy
+3736	Hereditary spherocytosis
+3737	STAG2-related disorder
+3738	Cystic Leukoencephalopathy
+3739	Mitochondrial complex 1 deficiency, nuclear type 13
+3740	DEVELOPMENTAL DELAY WITH OR WITHOUT DYSMORPHIC FACIES AND AUTISM
+3741	TRAPP-associated developmental delay
+3742	MAPK8IP3-related disorder
+3743	Neurodevelopmental disorder with or without variable brain abnormalities; NEDBA
+3744	MULTIPLE MITOCHONDRIAL DYSFUNCTIONS SYNDROME 6
+3745	PMPCB-related mitochondrial disorder
+3746	Hereditary elliptocytosis
+3747	ALBUMIN TAGLIACOZZO
+3748	Hyperthyroxinemia, familial dysalbuminemic
+3749	Neurodevelopmental disorder with relative macrocephaly and with or without cardiac or endocrine anomalies
+3750	SPOP-related condition
+3751	GRIN1-Related Disorder
+3752	Lissencephaly with decussation defect
+3753	ALBUMIN IOWA CITY 1
+3754	ALBUMIN CASEBROOK
+3755	PROALBUMIN MALMO
+3756	ALBUMIN TRADATE 2
+3757	Hereditary methemoglobinemia
+3758	Exercise intolerance, riboflavin-responsive
+3759	ERYTHROCYTOSIS, FAMILIAL, 5
+3760	Mental retardation, fra12a type
+3761	Anauxetic dysplasia 2
+3762	GENITOURINARY AND/OR BRAIN MALFORMATION SYNDROME
+3763	COFFIN-SIRIS SYNDROME 11
+3764	Inflammatory bowel disease 1
+3765	HYPEREKPLEXIA 4
+3766	LEUKODYSTROPHY, HYPOMYELINATING, 15
+3767	INTELLECTUAL DEVELOPMENTAL DISORDER WITH SPEECH DELAY, AUTISM, AND DYSMORPHIC FACIES
+3768	Mitochondrial complex 1 deficiency, nuclear type 9
+3769	Mitochondrial complex 1 deficiency, nuclear type 32
+3770	INTELLECTUAL DEVELOPMENTAL DISORDER, X-LINKED, SYNDROMIC, HACKMANN-DI DONATO TYPE
+3771	NEURODEVELOPMENTAL DISORDER WITH SPASTIC QUADRIPLEGIA, OPTIC ATROPHY, SEIZURES, AND STRUCTURAL BRAIN ANOMALIES
+3772	PONTOCEREBELLAR HYPOPLASIA, TYPE 13
+3773	PARAGANGLIOMAS 6
+3774	OOCYTE MATURATION DEFECT 6
+3775	EPILEPTIC ENCEPHALOPATHY, EARLY INFANTILE, 71
+3776	EPIDERMODYSPLASIA VERRUCIFORMIS, SUSCEPTIBILITY TO, 3
+3777	Mitochondrial complex 1 deficiency, nuclear type 8
+3778	KERATOCONUS 9
+3779	Mitochondrial complex 1 deficiency, nuclear type 22
+3780	Ciliary dyskinesia, primary, 36, X-linked
+3781	Amelogenesis imperfecta, type IJ
+3782	Aniridia 3
+3783	Epileptic encephalopathy, early infantile, 41
+3784	Peeling skin syndrome 5
+3785	Autosomal recessive cutis laxa type 2d
+3786	Epileptic encephalopathy, infantile or early childhood 3
+3787	Mitochondrial complex 1 deficiency, nuclear type 24
+3788	Inclusion body myopathy with early-onset paget disease with or without frontotemporal dementia 3
+3789	LONG QT SYNDROME 16
+3790	DEAFNESS, AUTOSOMAL RECESSIVE 112
+3791	SPERMATOGENIC FAILURE 27
+3792	Cortical dysplasia, complex, with other brain malformations 4
+3793	SPINOCEREBELLAR ATAXIA, AUTOSOMAL RECESSIVE 26
+3794	ARTHROGRYPOSIS MULTIPLEX CONGENITA 4, NEUROGENIC, WITH AGENESIS OF THE CORPUS CALLOSUM
+3795	MYOPIA 27
+3796	EPILEPTIC ENCEPHALOPATHY, EARLY INFANTILE, 70
+3797	Optic atrophy with negative electroretinograms
+3798	Renal dysplasia, cystic, susceptibility to
+3799	Epileptic encephalopathy, early infantile, 46
+3800	Myoclonus, intractable, neonatal
+3801	Short stature, rhizomelic, with microcephaly, micrognathia, and developmental delay
+3802	DEAFNESS, AUTOSOMAL DOMINANT 71
+3803	DEVELOPMENTAL AND EPILEPTIC ENCEPHALOPATHY 81
+3804	SWEENEY-COX SYNDROME
+3805	Hypomagnesemia, seizures, and mental retardation 2
+3806	Nephrotic syndrome type 16
+3807	NEURODEVELOPMENTAL DISORDER WITH CENTRAL AND PERIPHERAL MOTOR DYSFUNCTION
+3808	Seckel syndrome 6
+3809	Accelerated tumor formation, susceptibility to
+3810	LESSEL-KUBISCH SYNDROME
+3811	Skeletal defects, genital hypoplasia, and mental retardation
+3812	PERIPHERAL NEUROPATHY, AUTOSOMAL RECESSIVE, WITH OR WITHOUT IMPAIRED INTELLECTUAL DEVELOPMENT
+3813	Atrial fibrillation, familial, 15
+3814	BLEEDING DISORDER, PLATELET-TYPE, 22
+3815	SPINOCEREBELLAR ATAXIA 48
+3816	Symmetric circumferential skin creases, congenital, 1
+3817	IMMUNODEFICIENCY 15A
+3818	NEPHROTIC SYNDROME, TYPE 18
+3819	Mental retardation, autosomal recessive 56
+3820	NEURODEVELOPMENTAL DISORDER WITH MICROCEPHALY, ATAXIA, AND SEIZURES
+3821	Cirrhosis, noncryptogenic, susceptibility to
+3822	Breasts and/or nipples, aplasia or hypoplasia of, 2
+3823	DEAFNESS, AUTOSOMAL RECESSIVE 107
+3824	Menke-Hennekam syndrome 2
+3825	ARTHROGRYPOSIS, CLEFT PALATE, CRANIOSYNOSTOSIS, AND IMPAIRED INTELLECTUAL DEVELOPMENT
+3826	Combined oxidative phosphorylation deficiency 33
+3827	Perrault syndrome 6
+3828	MEIER-GORLIN SYNDROME 8
+3829	Porokeratosis 3, disseminated superficial actinic type
+3830	Cohen-Gibson syndrome
+3831	FACIAL PALSY, CONGENITAL, WITH PTOSIS AND VELOPHARYNGEAL DYSFUNCTION
+3832	FETAL AKINESIA DEFORMATION SEQUENCE 4
+3833	INTELLECTUAL DEVELOPMENTAL DISORDER WITH HYPOTONIA AND BEHAVIORAL ABNORMALITIES
+3834	Mitochondrial complex 1 deficiency, nuclear type 23
+3835	PARAGANGLIOMAS 7
+3836	NEUROPATHY, HEREDITARY MOTOR AND SENSORY, TYPE VIC, WITH OPTIC ATROPHY
+3837	SPONDYLOEPIMETAPHYSEAL DYSPLASIA, ISIDOR-TOUTAIN TYPE
+3838	Nephrotic syndrome type 15
+3839	INTELLECTUAL DEVELOPMENTAL DISORDER WITH IMPAIRED LANGUAGE AND DYSMORPHIC FACIES
+3840	INTELLECTUAL DEVELOPMENTAL DISORDER WITH SHORT STATURE AND BEHAVIORAL ABNORMALITIES
+3841	Neurodevelopmental disorder with midbrain and hindbrain malformations
+3842	MICROCEPHALY 19, PRIMARY, AUTOSOMAL RECESSIVE
+3843	INTELLECTUAL DEVELOPMENTAL DISORDER 60 WITH SEIZURES
+3844	Myopia 2, autosomal dominant
+3845	NEURODEVELOPMENTAL DISORDER WITH HYPOTONIA AND VARIABLE INTELLECTUAL AND BEHAVIORAL ABNORMALITIES
+3846	ICHTHYOTIC KERATODERMA, SPASTICITY, HYPOMYELINATION, AND DYSMORPHIC FACIAL FEATURES
+3847	HYDROCEPHALUS, CONGENITAL COMMUNICATING, 1
+3848	TRICHOTHIODYSTROPHY 7, NONPHOTOSENSITIVE
+3849	MYOPATHY, CENTRONUCLEAR, 6, WITH FIBER-TYPE DISPROPORTION
+3850	Polymicrogyria, perisylvian, with cerebellar hypoplasia and arthrogryposis
+3851	PONTOCEREBELLAR HYPOPLASIA, TYPE 12
+3852	SPONDYLOEPIMETAPHYSEAL DYSPLASIA WITH JOINT LAXITY, TYPE 3
+3853	Skin creases, congenital symmetric circumferential, 2
+3854	GLOBAL DEVELOPMENTAL DELAY, PROGRESSIVE ATAXIA, AND ELEVATED GLUTAMINE
+3855	NEPHROTIC SYNDROME, TYPE 19
+3856	CORTICAL DYSPLASIA, COMPLEX, WITH OTHER BRAIN MALFORMATIONS 9
+3857	Intellectual disability, x-linked 107
+3858	Alzheimer disease 19
+3859	INTELLECTUAL DEVELOPMENTAL DISORDER WITH NASAL SPEECH, DYSMORPHIC FACIES, AND VARIABLE SKELETAL ANOMALIES
+3860	INTELLECTUAL DEVELOPMENTAL DISORDER, AUTOSOMAL RECESSIVE 70
+3861	Schizophrenia 19
+3862	Epileptic encephalopathy, early infantile, 48
+3863	Early infantile epileptic encephalopathy 61
+3864	Diamond-Blackfan anemia 18
+3865	INFANTILE CATARACT, SKIN ABNORMALITIES, GLUTAMATE EXCESS, AND IMPAIRED INTELLECTUAL DEVELOPMENT
+3866	Congenital disorder of glycosylation with defective fucosylation 2
+3867	Deficiency of carnitine acetyltransferase
+3868	DIAMOND-BLACKFAN ANEMIA-LIKE
+3869	Diamond-Blackfan anemia 19
+3870	Microcephaly and chorioretinopathy, autosomal recessive, 3
+3871	MIRROR MOVEMENTS 4
+3872	VISUAL IMPAIRMENT AND PROGRESSIVE PHTHISIS BULBI
+3873	MICROCEPHALY 20, PRIMARY, AUTOSOMAL RECESSIVE
+3874	LEBER CONGENITAL AMAUROSIS WITH EARLY-ONSET DEAFNESS
+3875	Amyotrophic lateral sclerosis type 23
+3876	Ménière's disease
+3877	INTELLECTUAL DEVELOPMENTAL DISORDER WITH MACROCEPHALY, SEIZURES, AND SPEECH DELAY
+3878	Glaucoma 1, open angle, B
+3879	MENTAL RETARDATION, AUTOSOMAL RECESSIVE 64
+3880	INTELLECTUAL DEVELOPMENTAL DISORDER 61
+3881	Lazy leukocyte syndrome
+3882	PERIVENTRICULAR NODULAR HETEROTOPIA 8
+3883	NEPHROTIC SYNDROME, TYPE 17
+3884	Autosomal dominant progressive external ophthalmoplegia with mitochondrial DNA deletions 2
+3885	Muscular dystrophy, congenital, with cataracts and intellectual disability
+3886	MICROCEPHALY 22, PRIMARY, AUTOSOMAL RECESSIVE
+3887	RETINITIS PIGMENTOSA 86
+3888	Diamond-Blackfan anemia 17
+3889	Spermatogenic failure 4
+3890	Autosomal recessive cutis laxa type 2c
+3891	Hermansky-Pudlak syndrome 10
+3892	Retinitis pigmentosa 83
+3893	Oocyte maturation defect 2
+3894	AL KAISSI SYNDROME
+3895	Keratosis palmoplantaris striata II
+3896	Mental retardation, autosomal recessive 59
+3897	Seckel syndrome 10
+3898	Autosomal dominant progressive external ophthalmoplegia with mitochondrial DNA deletions 1
+3899	Coronary heart disease 5
+3900	SPERMATOGENIC FAILURE 23
+3901	AMYOTROPHIC LATERAL SCLEROSIS, SUSCEPTIBILITY TO, 25
+3902	Craniosynostosis 7
+3903	Diabetes mellitus, insulin-dependent, 5
+3904	MYOPATHY, DISTAL, 6, ADULT-ONSET, AUTOSOMAL DOMINANT
+3905	MYOPATHY, CONGENITAL, WITH STRUCTURED CORES AND Z-LINE ABNORMALITIES
+3906	Lopes-Maciel-Rodan syndrome
+3907	Intellectual disability, autosomal recessive 63
+3908	KHAN-KHAN-KATSANIS SYNDROME
+3909	Congenital heart defects and ectodermal dysplasia
+3910	Myoclonus, familial 1
+3911	Neurodevelopmental disorder with microcephaly and dysmorphic facies
+3912	Obesity, hyperphagia, and developmental delay
+3913	Eosinophil peroxidase deficiency
+3914	Optic atrophy 11
+3915	Asthma-related traits, susceptibility to, 5
+3916	Glaucoma 3, primary congenital, E
+3917	Charcot-Marie-Tooth disease, axonal, type 2CC
+3918	ENCEPHALOPATHY, ACUTE, INFECTION-INDUCED (HERPES-SPECIFIC), SUSCEPTIBILITY TO, 8
+3919	Combined oxidative phosphorylation deficiency 22
+3920	Mental retardation, autosomal dominant 33
+3921	MYASTHENIC SYNDROME, CONGENITAL, 23, PRESYNAPTIC
+3922	Lethal congenital contracture syndrome 8
+3923	Mitochondrial complex III deficiency, nuclear type 5
+3924	OVARIAN DYSGENESIS 6
+3925	DEAFNESS, AUTOSOMAL DOMINANT 75
+3926	SPASTIC ATAXIA 9, AUTOSOMAL RECESSIVE
+3927	G6PD KERALA-KALYAN
+3928	G6PD KERALA
+3929	G6PD KALYAN
+3930	Sensorineural deafness with hypertrophic cardiomyopathy
+3931	G6PD MEXICO CITY
+3932	Reclassified - variant of unknown significance
+3933	H3F3A-related condition
+3934	G6PD ILESHA
+3935	G6PD SUNDERLAND
+3936	D-Glyceric aciduria
+3937	G6PD NANKANG
+3938	G6PD ORISSA
+3939	G6PD REHOVOT
+3940	G6PD NILGIRI
+3941	G6PD AVEIRO
+3942	G6PD SERRES
+3943	G6PD PUERTO LIMON
+3944	G6PD GUADALAJARA
+3945	G6PD SANTIAGO
+3946	G6PD COIMBRA
+3947	G6PD JAPAN
+3948	G6PD LOMA LINDA
+3949	G6PD ALHAMBRA
+3950	Nonsyndromic Hearing Loss, Dominant
+3951	G6PD QUING YUAN
+3952	G6PD GAOHE
+3953	MITOCHONDRIAL COMPLEX IV DEFICIENCY, NUCLEAR TYPE 4
+3954	Lactate dehydrogenase B deficiency
+3955	Combined oxidative phosphorylation deficiency 34
+3956	Cardiomyopathy, mitochondrial
+3957	COMBINED OXIDATIVE PHOSPHORYLATION DEFICIENCY 41
+3958	Pontocerebellar hypoplasia, type 2e
+3959	VISSERS-BODMER SYNDROME
+3960	NEURODEVELOPMENTAL DISORDER WITH LANGUAGE IMPAIRMENT AND BEHAVIORAL ABNORMALITIES
+3961	NEURODEVELOPMENTAL DISORDER WITH DYSMORPHIC FACIES, IMPAIRED SPEECH, AND HYPOTONIA
+3962	Spastic paraplegia 18
+3963	DEVELOPMENTAL AND EPILEPTIC ENCEPHALOPATHY 87
+3964	Macrocephaly, dysmorphic facies, and psychomotor retardation
+3965	Trichothiodystrophy, nonphotosensitive 1
+3966	Progressive familial intrahepatic cholestasis
+3967	Acute myeloid leukemia, M6 type
+3968	46,XY sex reversal 11
+3969	Non-syndromic intellectual disability
+3970	Relapsing remitting multiple sclerosis
+3971	Aborted sudden cardiac death
+3972	Trabecular adenocarcinoma
+3973	OSTEOPOIKILOSIS WITH OR WITHOUT MELORHEOSTOSIS
+3974	PLATELET-ENDOTHELIAL CELL ADHESION MOLECULE 1 POLYMORPHISM
+3975	Three Vessel Coronary Disease
+3976	Ichthyosis histrix, curth-macklin type
+3977	Cone-Rod Dystrophy, Dominant
+3978	ARTHROGRYPOSIS, DISTAL, TYPE 2B4
+3979	Methemoglobinemia type 2
+3980	Retinitis Pigmentosa, Dominant
+3981	Alzheimer disease, protection against
+3982	Amyotrophic lateral sclerosis 1, autosomal recessive
+3983	Congenital Stationary Night Blindness, Dominant
+3984	Migraine, familial basilar
+3985	Ehlers-Danlos syndrome, classic-like, 1
+3986	Pituitary adenoma, familial isolated
+3987	Hypertension, salt-sensitive essential, susceptibility to
+3988	furosemide and spironolactone response - Efficacy
+3989	Darier disease, segmental
+3990	Darier disease, acral hemorrhagic type
+3991	Hydrocephalus due to aqueductal stenosis
+3992	Hydrocephalus, X-linked, with congenital idiopathic intestinal pseudoobstruction
+3993	Alzheimer disease, late-onset, susceptibility to
+3994	Primary Microcephaly 2 With or Without Cortical Malformations
+3995	Cardiac conduction defect, nonspecific
+3996	Alzheimer disease, familial, 3, with spastic paraparesis and apraxia
+3997	Methemoglobinemia, type I
+3998	Cataract 11, posterior polar
+3999	Cataract 11, posterior polar, with microphthalmia and neurodevelopmental abnormalities
+4000	Hemoglobinopathy
+4001	Acute Myeloid Leukemia with Multilineage Dysplasia
+4002	CSNK2B-related intellectual disability with or without epilepsy
+4003	DLG3-Related Disorder
+4004	EIF2AK2-related condition
+4005	LEUKOENCEPHALOPATHY, DEVELOPMENTAL DELAY, AND EPISODIC NEUROLOGIC REGRESSION SYNDROME
+4006	CARBAMOYL PHOSPHATE SYNTHETASE I POLYMORPHISM
+4007	Mast cell disease, systemic
+4008	CDK19-related condition
+4009	LISSENCEPHALY 10
+4010	Posterior Predominant Lissencephaly
+4011	EIF2AK1-related condition
+4012	LEUKOENCEPHALOPATHY, MOTOR DELAY, SPASTICITY, AND DYSARTHRIA SYNDROME
+4013	Apolipoprotein A-I deficiency
+4014	Colchicine resistance
+4015	GASTROINTESTINAL ULCERATION, RECURRENT, WITH DYSFUNCTIONAL PLATELETS
+4016	HYPOGONADOTROPIC HYPOGONADISM 25 WITH ANOSMIA
+4017	LOW DENSITY LIPOPROTEIN CHOLESTEROL LEVEL QUANTITATIVE TRAIT LOCUS 8
+4018	IMMUNODEFICIENCY 69
+4019	NEURODEVELOPMENTAL DISORDER WITH SPEECH IMPAIRMENT AND DYSMORPHIC FACIES
+4020	EPILEPSY, EARLY-ONSET, WITH OR WITHOUT DEVELOPMENTAL DELAY
+4021	INTELLECTUAL DEVELOPMENTAL DISORDER WITH SEIZURES AND LANGUAGE DELAY
+4022	BLOOD GROUP--WALDNER TYPE
+4023	Major depressive disorder
+4024	SORBITOL DEHYDROGENASE DEFICIENCY WITH PERIPHERAL NEUROPATHY
+4025	BLOOD GROUP--OK
+4026	BLOOD GROUP--FROESE
+4027	IMMUNODEFICIENCY 70
+4028	Treacher Collins syndrome 4
+4029	Landsteiner-Wiener phenotype
+4030	Myocardial infarction 1
+4031	Nonpersistence of intestinal lactase
+4032	IMMUNODEFICIENCY 72 WITH AUTOINFLAMMATION
+4033	DIETS-JONGMANS SYNDROME
+4034	Leukonychia totalis
+4035	MITOCHONDRIAL COMPLEX IV DEFICIENCY, NUCLEAR TYPE 20
+4036	MITOCHONDRIAL COMPLEX IV DEFICIENCY, NUCLEAR TYPE 16
+4037	DEEAH SYNDROME
+4038	SPERMATOGENIC FAILURE 44
+4039	Cerebellar ataxia, neuropathy, and vestibular areflexia syndrome
+4040	MITOCHONDRIAL COMPLEX I DEFICIENCY, NUCLEAR TYPE 35
+4041	Progressive myoclonic epilepsy, X-linked
+4042	DEVELOPMENTAL AND EPILEPTIC ENCEPHALOPATHY 88
+4043	RAJAB INTERSTITIAL LUNG DISEASE WITH BRAIN CALCIFICATIONS 2
+4044	COMBINED OXIDATIVE PHOSPHORYLATION DEFICIENCY 45
+4045	ANAUXETIC DYSPLASIA 3
+4046	RETINITIS PIGMENTOSA 89
+4047	Neurodevelopmental, jaw, eye, and digital syndrome
+4048	IMMUNE DYSREGULATION AND SYSTEMIC HYPERINFLAMMATION SYNDROME
+4049	ARRHYTHMOGENIC RIGHT VENTRICULAR DYSPLASIA, FAMILIAL, 14
+4050	carboplatin response - Efficacy
+4051	cisplatin response - Efficacy
+4052	oxaliplatin response - Efficacy
+4053	platinum response - Efficacy
+4054	Platinum compounds response - Efficacy
+4055	G6PD IOWA
+4056	G6PD IOWA CITY
+4057	G6PD SPRINGFIELD
+4058	G6PD WALTER REED
+4059	Obsessive-compulsive disorder, susceptibility to
+4060	Behavior disorder
+4061	CEREBRAL AMYLOID ANGIOPATHY, APP-RELATED, PIEDMONT VARIANT
+4062	PEPTIDE TRANSPORTER PSF1 POLYMORPHISM
+4063	Neural tube defects, folate-sensitive, susceptibility to
+4064	COL9A2-Related Disorders
+4065	NRXN-Related Disorder
+4066	Tubulinopathy
+4067	Noonan syndrome type 1
+4068	MAP2K1-Related Disorder
+4069	Moyamoya angiopathy with developmental delay
+4070	MULTIPLE JOINT DISLOCATIONS, SHORT STATURE, AND CRANIOFACIAL DYSMORPHISM WITHOUT CONGENITAL HEART DEFECTS
+4071	ROR2-Related Disorders
+4072	HSD17B10-Related Disorder
+4073	Intervertebral disc disease, susceptibility to
+4074	STAG1-Related Disorders
+4075	HSPB1-Related Disorder
+4076	CENPJ-Related Disorders
+4077	Spectraplakinopathy type I
+4078	SQSTM1-related disorder
+4079	Spina bifida, folate-sensitive, susceptibility to
+4080	PPP2R2B-Related Disorder
+4081	Dysmorphic features
+4082	Learning difficulty
+4083	DCTN1-Related Disorder
+4084	DUFFY BLOOD GROUP SYSTEM, FYA/FYB POLYMORPHISM
+4085	Asthma, nocturnal, susceptibility to
+4086	IGF1R-Related Disorder
+4087	DDX3X-Related Disorder
+4088	NADH-CYTOCHROME b5 REDUCTASE POLYMORPHISM
+4089	ABL1-Related Disorder
+4090	ADRB2 POLYMORPHISM
+4091	Evans syndrome, immunodeficiency, and premature immunosenescence associated with tripeptidyl-peptidase II deficiency
+4092	Hemolytic anemia, nonspherocytic, and neurologic deficits, due to glucose phosphate isomerase deficiency
+4093	Piebaldism with sensorineural deafness
+4094	Piebaldism, progressive
+4095	Hyperapobetalipoproteinemia, susceptibility to
+4096	Zellweger syndrome 2
+4097	Greig cephalopolysyndactyly syndrome, severe
+4098	PURA Syndrome
+4099	Autism 1
+4100	Dursun syndrome
+4101	Ventricular tachycardia, somatic
+4102	atypical cerebral palsy
+4103	Spherocytosis, type 1, autosomal recessive
+4104	Infant onset multiple organ failure
+4105	Cataract 9, autosomal recessive
+4106	Juvenile onset psychosis
+4107	Childhood-Onset Schizophrenia
+4108	CIC-DUX Sarcoma
+4109	Mental Retardation
+4110	Forebrain defects
+4111	Glycogen storage disease IIIc
+4112	Neurodegeneration due to 3-hydroxyisobutyryl coenzyme A hydrolase deficiency
+4113	Sensory Neuropathy with Spastic Paraplegia
+4114	all trans retinoic acid (ATRA) response
+4115	Hypereosinophilic syndrome, idiopathic, resistant to imatinib
+4116	Kuru, protection against
+4117	Monocarboxylate transporter 1 deficiency, autosomal dominant
+4118	Dabrafenib response
+4119	Spherocytosis, Recessive
+4120	PROTEASOME-ASSOCIATED AUTOINFLAMMATORY SYNDROME 1, DIGENIC
+4121	Saethre-Chotzen syndrome with eyelid anomalies
+4122	Epilepsy, juvenile myoclonic 6
+4123	Small cell carcinoma of the ovary, hypercalcemic type
+4124	Periventricular Heterotopia
+4125	RBBP8-Related Disorders
+4126	Cutis laxa, recessive
+4127	Factor V Hong Kong
+4128	Lymphoma, somatic
+4129	Developmental dyslexia
+4130	Parkinson disease 19b, early-onset
+4131	Classical primary microcephaly
+4132	Congenital heart disease (variable)
+4133	Dystonia, intellectual disability and language impairment
+4134	Dilated left ventricle
+4135	Cystic parathyroid adenoma
+4136	APOE5 VARIANT
+4137	Familial amyloid polyneuropathy, Iowa type
+4138	Amyloidosis, cardiac and cutaneous
+4139	Renal tubular acidosis, distal, with normal red cell morphology
+4140	Beta-2-adrenoreceptor agonist, reduced response to
+4141	ABeta amyloidosis, Dutch type
+4142	Joubert syndrome 12/15, digenic
+4143	AGK-Related Disorders
+4144	Treacher Collins Syndrome, Recessive
+4145	Renal Hypomagnesemia, Recessive
+4146	DNA ligase I deficiency
+4147	Hereditary Essential Tremor
+4148	Dna topoisomerase II, resistance to inhibition of, by amsacrine
+4149	DNA topoisomerase I, camptothecin-resistant
+4150	CAP-congenital myopathy with arthrogryposis multiplex congenita without heart involvement
+4151	GLI3-Related Disorders
+4152	Amyotrophic lateral sclerosis 6, autosomal recessive
+4153	Deafness
+4154	Pseudohermaphroditism, female, with hypokalemia, due to glucocorticoid resistance
+4155	Glucocorticoid resistance, cellular
+4156	Acatalasemia, japanese type
+4157	Amyotrophic Lateral Sclerosis/Frontotemporal Dementia
+4158	Glioblastoma multiforme, somatic
+4159	anthracyclines and related substances response - Toxicity/ADR
+4160	Estrogen receptor mutant, temperature-sensitive
+4161	Hypodysfibrinogenemia
+4162	Leukemia, megakaryoblastic, of Down syndrome
+4163	Hydrocephalus, X-linked, with hirschsprung disease
+4164	OSTEOGENESIS IMPERFECTA, TYPE IIC
+4165	Osteogenesis imperfecta, type III/IV
+4166	Immunodeficiency 26 without neurologic abnormalities
+4167	Oi/eds combined syndrome
+4168	Osteogenesis imperfecta type 2, thin-bone
+4169	Carbonic anhydrase I, Guam
+4170	Carbonic anhydrase I deficiency
+4171	Amyotrophic lateral sclerosis 22 with frontotemporal dementia
+4172	Emery-Dreifuss muscular dystrophy 6
+4173	Acampomelic campomelic dysplasia
+4174	Bardet-Biedl syndrome 1, modifier of
+4175	mitochondrial hepatopathy
+4176	Mental retardation, X-linked 18
+4177	Pelizaeus-Merzbacher disease, connatal
+4178	Pelizaeus-Merzbacher disease, mild
+4179	Phosphoglycerate kinase electrophoretic variant PGK II
+4180	Retinitis pigmentosa, X-linked, and sinorespiratory infections, with deafness
+4181	Spinocerebellar ataxia, X-linked
+4182	Triosephosphate isomerase manchester
+4183	Parkinson disease, autosomal recessive early-onset, digenic, PINK1/DJ1
+4184	CTSC-Related Disorders
+4185	Non-syndromic oligodontia
+4186	Charcot-Marie-Tooth, Intermediate
+4187	FLNB-Related Disorders
+4188	Anterior segment anomalies and cataract
+4189	Progeroid mandibuloacral dysplasia
+4190	CYFIP2-related neurodevelopmental disorders
+4191	Pfeiffer syndrome variant
+4192	ALKALINE PHOSPHATASE, PLACENTAL, ALLELE-3 POLYMORPHISM
+4193	sunitinib response - Toxicity/ADR
+4194	WBP11 spliceosomopathy
+4195	ACID PHOSPHATASE 1, SOLUBLE, A/B POLYMORPHISM OF
+4196	VCP-related multisystem proteinopathy
+4197	FH-Related Disorders
+4198	TWIST1-related disorder
+4199	Juvenile amyotrophic lateral sclerosis type 2
+4200	DUFFY BLOOD GROUP SYSTEM, FY(bwk) PHENOTYPE
+4201	GNB2-related condition
+4202	Chromatinopathy
+4203	POLR3A-related neurological disorders
+4204	FBXW11-related neurodevelopmental, brain, eye, and digit anomalies
+4205	congenital heart defect
+4206	GATAD2B-related intellectual disability syndrome
+4207	Cornelia de Lange
+4208	FLNA-related otopalatodigital spectrum disorders
+4209	MTSS2-related neurodevelopmental disorder
+4210	RAB3GAP2-Related Disorders
+4211	HETEROTOPIA, PERIVENTRICULAR NODULAR, X-LINKED DOMINANT, WITH MELNICK-NEEDLES SYNDROME
+4212	LONP1-related condition
+4213	Diabetes mellitus, type 1, susceptibility to
+4214	Immunological disorder
+4215	Neurodevelopmental disorder with brain malformations and multiple congenital anomalies
+4216	CDC42BPB-related neurodevelopmental syndrome
+4217	CSDE1-associated disorder
+4218	VPS16-associated disorder
+4219	Galactokinase deficiency with cataracts
+4220	PDS5A-related disorder
+4221	FLNA related lung disease
+4222	ERI1-associated disorder
+4223	GLYR1-related condition
+4224	Early-onset dementia of unclear type
+4225	CDKL5-related disorder
+4226	MATR3-Related Disorder
+4227	PAK1-related neurodevelopmental disorders
+4228	Non-progressive neurodevelopmental disorder with spasticity and transient opisthotonus
+4229	SETD1B-associated disorder
+4230	SPTBN1-related neurodevelopmental disease
+4231	HYPERLIPOPROTEINEMIA, TYPE III, AND ATHEROSCLEROSIS ASSOCIATED WITH APOE5
+4232	APOE2-DUNEDIN
+4233	APOE3(-)-FREIBURG
+4234	APOE2 VARIANT
+4235	APOE4 VARIANT
+4236	APOE4(+)
+4237	APOLIPOPROTEIN A-I (MILANO)
+4238	APOLIPOPROTEIN A-I (MUNSTER4)
+4239	APOLIPOPROTEIN A-I (GIESSEN)
+4240	APOLIPOPROTEIN A-I (NORWAY)
+4241	GLE1-Related Disorders
+4242	TERT-Related Disorders
+4243	Ataxia telangiectasi
+4244	APOLIPOPROTEIN A-I (MUNSTER3C)
+4245	APOLIPOPROTEIN A-I (MUNSTER3B)
+4246	APOLIPOPROTEIN A-I (BALTIMORE)
+4247	syndrome with premature-aging
+4248	GRIA2-related neurodevelopmental disorder
+4249	TAOK1-related neurodevelopmental disorder
+4250	TOMM70-related neurodevelopmental disorder
+4251	Kabuki Syndrome - KDM6A
+4252	GRIA4-related neurodevelopmental disorder
+4253	ACO2-related disorder
+4254	APOLIPOPROTEIN A-I (MARBURG)
+4255	GLI3-related postaxial polydactyly
+4256	CAMK2G-related syndromic intellectual disability
+4257	CIP1/WAF1 TUMOR-ASSOCIATED POLYMORPHISM 1
+4258	Spliceosomepathy
+4259	GARS-associated growth retardation and developmental delay
+4260	ALBUMIN ORTONOVO
+4261	ALBUMIN DUBLIN
+4262	ALBUMIN MALMO-5
+4263	ALBUMIN SONDRIA
+4264	ALBUMIN MALMO-47
+4265	ALBUMIN MALMO-10
+4266	ALBUMIN MALMO-95
+4267	ALBUMIN ASOLA
+4268	ALBUMIN CASERTA
+4269	ALBUMIN LARINO
+4270	ALBUMIN HERBORN
+4271	ALBUMIN KOMAGOME 2
+4272	ALBUMIN COARI I
+4273	ALBUMIN HIROSHIMA 1
+4274	ALBUMIN ROMA
+4275	ALBUMIN REDHILL
+4276	ALBUMIN NAGOYA
+4277	ALBUMIN YANOMAMA 2
+4278	ALBUMIN NAGASAKI 3
+4279	ALBUMIN BLENHEIM
+4280	PROALBUMIN TAKEFU
+4281	PROALBUMIN LILLE
+4282	ALBUMIN VIBO VALENTIA
+4283	ALPHA-2-MACROGLOBULIN POLYMORPHISM
+4284	ALBUMIN PARKLANDS
+4285	ALBUMIN NASKAPI
+4286	ALBUMIN NAGASAKI 2
+4287	ALBUMIN TOCHIGI
+4288	PRNP-associated condition
+4289	ALBUMIN TORINO
+4290	ALBUMIN HAWKES BAY
+4291	PROALBUMIN JAFFNA
+4292	ALBUMIN CASTEL DI SANGRO
+4293	ALBUMIN VANVES
+4294	ALBUMIN B
+4295	ALBUMIN OSAKA 1
+4296	ALBUMIN FUKUOKA 1
+4297	ALBUMIN MEXICO 2
+4298	ALBUMIN VANCOUVER
+4299	ALBUMIN HIROSHIMA 2
+4300	Family history of sudden cardiac death
+4301	STAT1-Related Disorder
+4302	May-Hegglin Disorder
+4303	DUFFY BLOOD GROUP SYSTEM, FY(a-b-) PHENOTYPE
+4304	POLYCYSTIC KIDNEY DISEASE 3 WITH POLYCYSTIC LIVER DISEASE
+4305	POLYCYSTIC KIDNEY DISEASE 3 WITHOUT POLYCYSTIC LIVER DISEASE
+4306	FLNC-associated cardiomyopathy
+4307	ALBUMIN BAZZANO
+4308	DYNC1H1-related neuronopathy
+4309	CACNB4-Related Disorders
+4310	ACTG2-Related Disorder
+4311	NEXN-Related Disorders
+4312	TAF1-related syndromic intellectual disability
+4313	sellar metastasis from primary bronchial carcinoid tumor
+4314	ECTODERMAL DYSPLASIA 11B, HYPOHIDROTIC/HAIR/TOOTH TYPE, AUTOSOMAL DOMINANT
+4315	FAAH POLYMORPHISM
+4316	USP9X-related neurodevelopmental disorder
+4317	Transferrin variant bv
+4318	NOTCH1-Related Disorders
+4319	Transferrin variant d1
+4320	VCP-Related Disorders
+4321	AKT3-Related Disorder
+4322	POC1A-related syndrome
+4323	MADD-related condition
+4324	ACTL6B-related neurodevelopmental disorder
+4325	DROSHA-related neurodevelopmental disorder
+4326	Lobular capillary hemangiomas
+4327	ENPP1-Related Disorders
+4328	G6PD NAMORU
+4329	G6PD SPLIT
+4330	MAP2K1-Related Disorders
+4331	Occult maculopathy
+4332	G6PD METAPONTO
+4333	G6PD HARILAOU
+4334	G6PD BEVERLY HILLS
+4335	G6PD TOMAH
+4336	G6PD RIVERSIDE
+4337	G6PD ANDALUS
+4338	G6PD IERAPETRA
+4339	G6PD NEAPOLIS
+4340	FLNB-Related Disorder
+4341	ECTODERMAL DYSPLASIA WITH FACIAL DYSMORPHISM AND ACRAL, OCULAR, AND BRAIN ANOMALIES, SOMATIC MOSAIC
+4342	neuro-ectodermal phenotype
+4343	ELN-related disorder
+4344	Dominant congenital non-syndromic sensorineural hearing loss
+4345	CNOT1-Related Disorder
+4346	TLK2-Related Disorder
+4347	SNAPC4-associated inflammatory disease
+4348	PPP1R21-related neurodevelopmental disorder
+4349	Ventricular fibrillation, idiopathic
+4350	EVI5-related condition
+4351	CTNNB1-related syndromic intellectual disability
+4352	Spermatogenic failure, susceptibility to
+4353	DNMT1-Related Disorder
+4354	ACO2-related disorders
+4355	PTPN23-related neurodevelopmental disorder
+4356	SPTBN4-related neurodevelopmental disorder
+4357	CTCF-Related Disorder
+4358	PPP2R1A-related disorder
+4359	ATP1A3-related neurologic disorders
+4360	FIBRINOGEN NIJMEGEN
+4361	FIBRINOGEN NAPLES
+4362	FIBRINOGEN ISE
+4363	FIBRINOGEN PONTOISE 2
+4364	FIBRINOGEN BALTIMORE 1
+4365	FIBRINOGEN BALTIMORE 3
+4366	FIBRINOGEN ASAHI
+4367	FIBRINOGEN NAGOYA 1
+4368	FIBRINOGEN KYOTO 3
+4369	FIBRINOGEN MILANO 1
+4370	FIBRINOGEN OSAKA 5
+4371	FIBRINOGEN MATSUMOTO 1
+4372	FIBRINOGEN GIESSEN 4
+4373	FIBRINOGEN HILLSBOROUGH
+4374	TPM2-Related Disorders
+4375	SLC25A46-associated optic atrophy spectrum disorder
