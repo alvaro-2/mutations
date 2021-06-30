@@ -1,0 +1,9 @@
+python 01_generate_protein_table.py
+python 02_preproc_clinvar.py --in ../raw_data/variant_summary.txt.gz --out ../raw_data/vs.tsv.gz
+python 03_parse_clinvar.py --clinvar ../raw_data/vs.tsv.gz --refseq ../raw_data/uniprot-refseq-nucleotido.tsv --prot ../db_tables/protein.tsv --out ../raw_data
+python 04_clean_mlo.py
+python 05_generate_tables_db.py
+python 05_generate_tables_db.py
+python 06_generate_disease_tables.py
+python 07_select_data_mutated_proteins.py
+python 08_sql_data.py

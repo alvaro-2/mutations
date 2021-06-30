@@ -25,6 +25,7 @@ El orden para ver los scripts seria algo asi:
 - /uniprot/uniprot_variants.ipynb  
 - generar_tabla_mutaciones.ipynb  
 - generar_tabla_proteinas.ipynb  
+- generate_tables_db.ipynb  
     
 Por ultimo, se deberia ir guardando las tablas finales para la db en /db_tables
 
