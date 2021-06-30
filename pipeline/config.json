@@ -1,7 +1,9 @@
 {
     "dbdata_dir": "../db_data",
-    "clinvar_source": "/mnt/c/Users/User/Documents/data/variant_summary.txt.gz",
-    "disgenet_source": "fill_in",
+    "clinvar_source": "/home/franco/cmblab/alvaro/data/variant_summary.txt.gz",
+    "disgenet_source": "/home/franco/cmblab/alvaro/data/curated_variant_disease_associations.tsv.gz",
+    "disgenet_genemap_source": "/home/franco/cmblab/alvaro/data/mapa_geneid_4_uniprot_crossref.tsv.gz",
+    "disgenet_varmap_source": "/home/franco/cmblab/alvaro/data/variant_to_gene_mappings.tsv.gz",
     "mut_data" : {
         "clinvar" : "../../data/vs_clinvar.csv.gz",
         "disgenet" : "../../data/disgenet.txt"

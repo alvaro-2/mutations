@@ -38,3 +38,17 @@ rule proc_clinvar:
         config["dbdata_dir"]+"/{protsource}_clinvar.csv.gz" # clinvar_box1_mutations_proc_test.csv.gz
     shell:
         "{config[python]} ../scripts/parse_clinvar.py --clinvar {input.clinvar} --prot {input.prot} --out {output}"
+
+rule download_disgenet:
+    params:
+        url="https://www.disgenet.org/static/disgenet_ap1/files/downloads/curated_variant_disease_associations.tsv.gz",
+        url2="https://www.disgenet.org/static/disgenet_ap1/files/downloads/mapa_geneid_4_uniprot_crossref.tsv.gz",
+        url3="https://www.disgenet.org/static/disgenet_ap1/files/downloads/variant_to_gene_mappings.tsv.gz"
+    output:
+        outfile=config["disgenet_source"],
+        outfile2=config["disgenet_genemap_source"],
+        outfile3=config["disgenet_varmap_source"]
+    shell:
+        "wget -O {output.outfile} {params.url}; "
+        "wget -O {output.outfile2} {params.url2}; "
+        "wget -O {output.outfile3} {params.url3}; "
