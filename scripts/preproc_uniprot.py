@@ -1,11 +1,11 @@
-# preproc_uniprot.py
+#python preproc_uniprot.py  --in ../raw_data/humsavar.txt  --out ../raw_data/humsavar.tsv
 
 import pandas as pd
 import numpy as np
 import re
 import argparse
 import os
-#os.chdir('G:\My Drive\FIL\project')
+
 
 
 def parse_args():
@@ -111,4 +111,4 @@ if __name__ == '__main__':
     # Save
     #humsavar.to_csv('humsavar.csv', index=False)
     humsavar.to_csv(opts.output, index=False, sep= '\t')
-    print(f'Saved in raw_data as {opts.output}')
+    print(f'Saved as {opts.output}')
