@@ -31,15 +31,6 @@ def parse_args():
     parser.parse_args()
 
 def mapp_by_all_ids(arg_files):
-    all_protein = pd.read_csv(arg_files.prot_file, sep="\t")
-    all_protein = all_protein[['id_protein', 'hgnc_id', 'uniprot_acc', 'gene_name', 'gene_id']]
-    
-    protein_gene = all_protein[['id_protein', 'gene_name']].copy()
-    protein_gene['gene_name'] = protein_gene['gene_name'].str.split(';')
-    protein_gene = protein_gene.explode('gene_name')
-    protein_gene['gene_name'] = protein_gene['gene_name'].str.strip()
-    protein_gene = protein_gene[~protein_gene['gene_name'].isnull()]
-    protein_gene = protein_gene[protein_gene['gene_name'] != '']
     
     vs_all = pd.read_csv(arg_files.clinvar_file, sep='\t', compression='gzip')  
     vs_all['index_line'] = list(range(0, len(vs_all)))
@@ -48,26 +39,43 @@ def mapp_by_all_ids(arg_files):
     #only kept in vs_all the 'index_line' and the ids used to mapp
     vs_all = vs_all[['index_line', 'gene_name', 'gene_by_name', 'hgnc_id', 'gene_id', 'refseq']]
     
-    print(f'clinvar {vs_all.shape[0]}') 
-    
+    print(f'clinvar {vs_all.shape[0]}')     
     coln = ['index_line', 'id_protein']
+        
+    all_protein = pd.read_csv(arg_files.prot_file, sep="\t")
+    all_protein = all_protein[['id_protein', 'hgnc_id', 'uniprot_acc', 'gene_name', 'gene_id']]
     
-    vs1 = vs_all.copy()
-    #merge by gene_name
-    vs1['gene_name'] = vs1['gene_name'].str.split(';')
-    vs1 = vs1.explode('gene_name')  
-    vs1['gene_name'] = vs1['gene_name'].str.strip()
-    print(f'clinvar explode gene_name {vs1.shape[0]}') 
-    vs1 = vs1.merge(protein_gene)
-    vs1 = vs1[coln]
-    print(f'clinvar merge by gene_name {vs1.shape[0]}')
+    #merge by refseq
+    refseq_nt = pd.read_csv(arg_files.refseq_file,  sep="\t")
+    protein_uniprot = all_protein[['id_protein', 'uniprot_acc']].copy()
+    protein_uniprot = protein_uniprot.merge(refseq_nt).drop(columns=['uniprot_acc', 'version'])
+    vs_refseq = vs_all.copy()
+    vs_refseq = vs_refseq.merge(protein_uniprot)
+    vs_refseq = vs_refseq[coln]
+    print(f'clinvar merge by ref_seq {vs_refseq.shape[0]}, unique {len(vs_refseq["index_line"].unique().tolist())}')
+    print(vs_refseq[vs_refseq['index_line'].isin(vs_refseq[vs_refseq.duplicated(['index_line'])]['index_line'].unique().tolist())])
     
-    #merge by gene_by_name
-    protein_gene = protein_gene.rename(columns={'gene_name': 'gene_by_name'})
-    vs2 = vs_all.copy()
-    vs2 = vs2.merge(protein_gene)
-    vs2 = vs2[coln]
-    print(f'clinvar merge by gene_by_name {vs2.shape[0]}')
+    vs_all = vs_all[~vs_all['index_line'].isin(vs_refseq['index_line'].tolist())]
+    
+    #merge by gene_id
+    protein_geneid = all_protein[['id_protein', 'gene_id']].copy()
+    protein_geneid['gene_id'] = protein_geneid['gene_id'].str.split(';')
+    protein_geneid = protein_geneid.explode('gene_id')
+    protein_geneid['gene_id'] = protein_geneid['gene_id'].str.strip()
+    protein_geneid = protein_geneid[~protein_geneid['gene_id'].isnull()]
+    protein_geneid = protein_geneid[protein_geneid['gene_id'] != '']
+    vs_geneid = vs_all.copy()
+    
+    vs_geneid = vs_geneid[~vs_geneid['gene_id'].isnull()]
+    vs_geneid['gene_id'] = [str(int(x)) for x in vs_geneid['gene_id'].tolist()]
+    vs_geneid['gene_id'] = vs_geneid['gene_id'].str.strip()
+    vs_geneid = vs_geneid[vs_geneid['gene_id'] != '']    
+    vs_geneid = vs_geneid.merge(protein_geneid)
+    vs_geneid = vs_geneid[coln]
+    print(f'clinvar merge by gene_id {vs_geneid.shape[0]}, unique {len(vs_geneid["index_line"].unique().tolist())}')
+    print(vs_geneid[vs_geneid['index_line'].isin(vs_geneid[vs_geneid.duplicated(['index_line'])]['index_line'].unique().tolist())])
+    
+    vs_all = vs_all[~vs_all['index_line'].isin(vs_geneid['index_line'].tolist())]
     
     #merge by hgnc_id
     protein_hgnc = all_protein[['id_protein', 'hgnc_id']].copy()
@@ -76,46 +84,54 @@ def mapp_by_all_ids(arg_files):
     protein_hgnc['hgnc_id'] = protein_hgnc['hgnc_id'].str.strip()
     protein_hgnc = protein_hgnc[~protein_hgnc['hgnc_id'].isnull()]
     protein_hgnc = protein_hgnc[protein_hgnc['hgnc_id'] != '']
-    vs3 = vs_all.copy()
+    vs_hgnc = vs_all.copy()
     
-    vs3['hgnc_id'] = vs3['hgnc_id'].str.strip()
-    vs3['hgnc_id'] = vs3['hgnc_id'].str.lstrip("HGNC:")
-    vs3 = vs3[~vs3['hgnc_id'].isnull()]
-    vs3 = vs3[vs3['hgnc_id'] != '']   
-    vs3 = vs3.merge(protein_hgnc)
-    vs3 = vs3[coln]
-    print(f'clinvar merge by hgnc_id {vs3.shape[0]}')
+    vs_hgnc['hgnc_id'] = vs_hgnc['hgnc_id'].str.strip()
+    vs_hgnc['hgnc_id'] = vs_hgnc['hgnc_id'].str.lstrip("HGNC:")
+    vs_hgnc = vs_hgnc[~vs_hgnc['hgnc_id'].isnull()]
+    vs_hgnc = vs_hgnc[vs_hgnc['hgnc_id'] != '']   
+    vs_hgnc = vs_hgnc.merge(protein_hgnc)
+    vs_hgnc = vs_hgnc[coln]
+    print(f'clinvar merge by hgnc_id {vs_hgnc.shape[0]}, unique {len(vs_hgnc["index_line"].unique().tolist())}')
     
-    #juntar por gene_id
-    protein_geneid = all_protein[['id_protein', 'gene_id']].copy()
-    protein_geneid['gene_id'] = protein_geneid['gene_id'].str.split(';')
-    protein_geneid = protein_geneid.explode('gene_id')
-    protein_geneid['gene_id'] = protein_geneid['gene_id'].str.strip()
-    protein_geneid = protein_geneid[~protein_geneid['gene_id'].isnull()]
-    protein_geneid = protein_geneid[protein_geneid['gene_id'] != '']
-    vs4 = vs_all.copy()
+    vs_all = vs_all[~vs_all['index_line'].isin(vs_hgnc['index_line'].tolist())]
     
-    vs4 = vs4[~vs4['gene_id'].isnull()]
-    vs4['gene_id'] = [str(int(x)) for x in vs4['gene_id'].tolist()]
-    vs4['gene_id'] = vs4['gene_id'].str.strip()
-    vs4 = vs4[vs4['gene_id'] != '']    
-    vs4 = vs4.merge(protein_geneid)
-    vs4 = vs4[coln]
-    print(f'clinvar merge by gene_id {vs4.shape[0]}')
+        #merge by gene_name
+    protein_gene = all_protein[['id_protein', 'gene_name']].copy()
+    protein_gene['gene_name'] = protein_gene['gene_name'].str.split(';')
+    protein_gene = protein_gene.explode('gene_name')
+    protein_gene['gene_name'] = protein_gene['gene_name'].str.strip()
+    protein_gene = protein_gene[~protein_gene['gene_name'].isnull()]
+    protein_gene = protein_gene[protein_gene['gene_name'] != '']
     
-    #juntar por refseq
-    refseq_nt = pd.read_csv(arg_files.refseq_file,  sep="\t")
-    protein_uniprot = all_protein[['id_protein', 'uniprot_acc']].copy()
-    protein_uniprot = protein_uniprot.merge(refseq_nt).drop(columns=['uniprot_acc', 'version'])
-    vs5 = vs_all.copy()
-    vs5 = vs5.merge(protein_uniprot)
-    vs5 = vs5[coln]
-    print(f'clinvar merge by ref_seq {vs5.shape[0]}')
-       
-    #juntar vs, rest_vs, rest_vs2, rest_vs3
-    mut_cv = pd.concat([vs1, vs2, vs3, vs4, vs5], ignore_index=True)
+    #merge by gene_by_name
+    protein_gene = protein_gene.rename(columns={'gene_name': 'gene_by_name'})
+    vs_byname = vs_all.copy()
+    vs_byname = vs_byname.merge(protein_gene)
+    vs_byname = vs_byname[coln]
+    print(f'clinvar merge by gene_by_name {vs_byname.shape[0]}, unique {len(vs_byname["index_line"].unique().tolist())}')
+    
+    vs_all = vs_all[~vs_all['index_line'].isin(vs_byname['index_line'].tolist())]
+    
+    
+    protein_gene = protein_gene.rename(columns={'gene_by_name': 'gene_name'})
+    vs_genename = vs_all.copy()
+    vs_genename['gene_name'] = vs_genename['gene_name'].str.split(';')
+    vs_genename = vs_genename.explode('gene_name')  
+    vs_genename['gene_name'] = vs_genename['gene_name'].str.strip()
+    print(f'\tclinvar explode gene_name {vs_genename.shape[0]}') 
+    vs_genename = vs_genename.merge(protein_gene)
+    vs_genename = vs_genename[coln]
+    print(f'clinvar merge by gene_name {vs_genename.shape[0]}, unique {len(vs_genename["index_line"].unique().tolist())}')
+    #one gene_name more than one idprotein
+    print(vs_genename[vs_genename['index_line'].isin(vs_genename[vs_genename.duplicated(['index_line'])]['index_line'].unique().tolist())])
+    
+    vs_all = vs_all[~vs_all['index_line'].isin(vs_genename['index_line'].tolist())]   
+    
+    #concat vs_refseq, vs_genename, vs_byname, vs_hgnc, vs_geneid
+    mut_cv = pd.concat([vs_refseq, vs_genename, vs_byname, vs_hgnc, vs_geneid], ignore_index=True)
     mut_cv = mut_cv.drop_duplicates()
-    print(f'clinvar without duplicates {mut_cv.shape[0]}') 
+    print(f'clinvar without duplicates {mut_cv.shape[0]}, unique {len(mut_cv["index_line"].unique().tolist())}') 
     
     print(f'clinvar proteins {len(mut_cv["id_protein"].unique())}')
     mut_cv = mut_cv.merge(vs_ids_other).drop(columns=['index_line'])
@@ -154,14 +170,6 @@ def seq3to1(seq):
     seq2 = re.findall('[A-Z][a-z]{2}', seq)  
     return "".join(protein_letters_3to1.get(aa, "X") for aa in seq2)
 
-def delete_brackets(x):
-    if re.search('\[\d+\]', x):
-        z = re.search('(\[\d+\])', x)
-        mlen = len(z.groups()[0])
-        return x[:-mlen]
-    else:
-        return x
-
 def separar_en_cols(df, column, conseq, conseq_regex, override=False):
     '''
     recibe un DataFrame, el nombre de una columna auxiliar (column)
@@ -170,35 +178,37 @@ def separar_en_cols(df, column, conseq, conseq_regex, override=False):
     como la siguiente (aa1, start_pos, aa2, end_pos, aa/s_nuevos).
     Devuelve el DataFrame df con estas 5 nuevas columnas
     '''
-    df_crop = df[df[column].str.contains(conseq_regex)].copy()
+    df_crop = df.copy()
       
     if override:
         df_crop['aux'] = df_crop[column].str.findall(conseq_regex).str[0]
     else:
         df_crop['aux'] = df_crop[column].str.findall('^([A-Z][a-z]{2})(\d+)_?([A-Z][a-z]{2})?(\d+)?'+conseq_regex+'(.*)$').str[0]
-        
-    if conseq == "missense":
-        df_crop['start_aa'] = df_crop['aux'].map(lambda x: x[1])
-        df_crop['end_aa'] = df_crop['aux'].map(lambda x: x[1])  # mismo start y end para los que no tienen un end
-        df_crop['from'] = df_crop['aux'].map(lambda x: seq3to1(x[0]))       
-        df_crop['to'] = df_crop['aux'].map(lambda x: seq3to1(x[2]))
-    else:
     
+    df_crop = df_crop[~df_crop['aux'].isnull()]
+    
+    if conseq == "repeted": 
+        df_crop['start_aa'] = df_crop['aux'].map(lambda x: x[0])
+        df_crop['end_aa'] = df_crop['aux'].map(lambda x: x[1] if x[1] != '' else x[0]) 
+        df_crop['from_aa'] = df_crop['aux'].map(lambda x: x[2]) #one aa letter
+        
+    else:
         # start position
         df_crop['start_aa'] = df_crop['aux'].map(lambda x: x[1])
-
         # end position
-        df_crop['end_aa'] = df_crop['aux'].map(lambda x: int(x[3]) if x[3] != '' else int(x[1])) # poner en el end el start si no hay end
-
-        # from: es el/los aa que cambian
-        df_crop['from'] = df_crop['aux'].map(lambda x: seq3to1(x[0]) + seq3to1(x[2])) # concateno si existe mas de un aa que cambia (o sea, si es un rango)
-
-        # to: aa/s nuevos
-        if conseq == "nonsense":
-            df_crop['to'] = "*"
-        else:
-            df_crop['to'] = df_crop['aux'].map(lambda x: seq3to1(x[4]) if x[4] != '' else np.nan)
-
+        df_crop['end_aa'] = df_crop['aux'].map(lambda x: x[3] if x[3] != '' else x[1]) # poner en el end el start si no hay end
+        # from: es el/los aa que cambian # concateno si existe mas de un aa que cambia (o sea, si es un rango)
+        df_crop['from_aa'] = df_crop['aux'].map(lambda x: seq3to1(str(x[0])) + ('-' + seq3to1(str(x[2])) if x[2] != '' and x[3] != '' else ''))   
+    
+    if conseq == "missense":     
+        df_crop['to_aa'] = df_crop['aux'].map(lambda x: seq3to1(x[2]))
+    elif conseq == "nonsense":
+        df_crop['to_aa'] = "*"
+    elif conseq in ["frameshift", 'duplications', 'nostop', 'deletion', 'repeted', 'synonym']:
+        df_crop['to_aa'] = "" #ver si poner las repeticiones para repeted
+    elif conseq in ['delins', 'insertion']: # to: aa/s nuevos
+        df_crop['to_aa'] = df_crop['aux'].map(lambda x: seq3to1(x[4]))
+    
     # consecuencia de la mutacion
     df_crop['consequence'] = conseq
 
@@ -206,42 +216,40 @@ def separar_en_cols(df, column, conseq, conseq_regex, override=False):
 
     return df_crop
 
-def separar_en_cols_raros(df, column, conseq, conseq_regex, override=False):
-    df_crop = df[df[column].str.contains(conseq_regex)].copy()
-      
+
+def separar_en_cols_cds(df, column, conseq, conseq_regex, override=False):
+    '''
+    recibe un DataFrame, el nombre de una columna auxiliar (column)
+    y un string con el tipo de consecuencia (conseq). La col. auxiliar
+    es una tupla con los elementos implicados en una mutacion
+    como la siguiente (nucleatides1, nucleatides2).
+    Devuelve el DataFrame df con estas 2 nuevas columnas
+    '''
+    
+    df_crop = df.copy()
     if override:
         df_crop['aux'] = df_crop[column].str.findall(conseq_regex).str[0]
     else:
-        df_crop['aux'] = df_crop[column].str.findall('^([A-Z][a-z]{2})(\d+)_?([A-Z][a-z]{2})?(\d+)?'+conseq_regex+'(.*)$').str[0]
-            
-    # start position
-    df_crop['start_aa'] = df_crop['aux'].map(lambda x: x[0])
-    df_crop.start_aa = df_crop.start_aa.apply(int)
+        df_crop['aux'] = df_crop[column].str.findall('^[-\+\*\d]+_?(?:[-\+\*\d]+)?([ACTG]+)?'+conseq_regex+'([ACTG]+)?$').str[0]
+  
+    df_crop = df_crop[~df_crop['aux'].isnull()]
     
-    # end position
-    df_crop['end_aa'] = df_crop['aux'].map(lambda x: int(x[1]) if x[1] != '' else int(x[0]))
+    print(df_crop[['aux', 'cambio_nt']])
+    df_crop['from_genomic'] = ''
+    df_crop['to_genomic'] = ''
     
-    if conseq != 'insertion':
-        # from: es el/los aa que cambian
-        df_crop['from'] = df_crop['aux'].map(lambda x: x[2]) # concateno si existe mas de un aa que cambia (o sea, si es un rango)
-        #df_crop['from'] = df_crop['from'].map(lambda x: seq3to1(x)) # ya viene en codigo de 1 letra
-        df_crop['from'] = df_crop['from'].apply(str)
-        
-        df_crop['to'] = np.nan
-    else:
-        # from: es el/los aa que se insertan
-        df_crop['to'] = df_crop['aux'].map(lambda x: x[2]) 
-        df_crop['to'] = df_crop['to'].apply(str)
-        
-        df_crop['from'] = np.nan
+    if conseq in ["delins", 'insertion', 'missense']: 
+        df_crop['to_genomic'] = df_crop['aux'].map(lambda x: x[1])
+    if conseq == 'missense': 
+        df_crop['from_genomic'] = df_crop['aux'].map(lambda x: x[0])
 
     # consecuencia de la mutacion
-    df_crop['consequence'] = conseq
-
+    df_crop['consequence_genomic'] = conseq
+    #print(df_crop[df_crop['badformat'] == True].sort_values(by='AA', key=lambda col: col.str.len(), ascending=False, na_position='last'))
+    
     df_crop = df_crop.drop(columns=['aux'])
 
     return df_crop
-
 
 if __name__ == "__main__":
 
@@ -250,109 +258,98 @@ if __name__ == "__main__":
     if not os.path.exists(opts.outfolder) or not os.path.isdir(opts.outfolder):
         os.mkdir(opts.outfolder)
     
-    proteins_clinvar_total = mapp_by_all_ids(opts)
+    proteins_clinvar_total = mapp_by_all_ids(opts)    
+    print(f'clinvar mutations to mapp AA: {proteins_clinvar_total.shape[0]}')
     
-    # separate synonyms mutations. We don't take them into account
-    syn = proteins_clinvar_total[proteins_clinvar_total.cambio.str.endswith('=')]
-    # delete them
-    cond = proteins_clinvar_total.index.isin(syn.index) # bool array
-    proteins_clinvar_total = proteins_clinvar_total.drop(proteins_clinvar_total[cond].index) # drop those rows
-    print(f'Found {syn.shape[0]} synonym mutations')
-    print(f'clinvar mutations to mapp: {proteins_clinvar_total.shape[0]}')
+    proteins_clinvar_total['index_line'] = list(range(0, len(proteins_clinvar_total)))
     
     # A DataFrame for each molecular consequence
-    delins = separar_en_cols(proteins_clinvar_total, "cambio", "delins", "delins")
-    deletions = separar_en_cols(proteins_clinvar_total, "cambio", "deletion", "del$") # finish with 'del'
-    insertions = separar_en_cols(proteins_clinvar_total, "cambio", "insertion", "(?<!del)ins") # Negative lookbehind search!
-    frameshift = separar_en_cols(proteins_clinvar_total, "cambio", "frameshit", '^([A-Z][a-z]{2})(\d+)_?(?!Ter)([A-Z][a-z]{2})?(\d+)?fs$(.*)$', override= True) # expressions as 'Lys1254Terfs' are nonsense, not frameshift
-    nonsense = separar_en_cols(proteins_clinvar_total, "cambio", "nonsense", "(?<=\d)Ter") # positiv lookbehind search! must have a number before, some delins insert a Ter
-    missense = separar_en_cols(proteins_clinvar_total, "cambio", "missense", '^([A-Z][a-z]{2})(\d+)(?!Ter)([A-Z][a-z]{2})$', override=True)
-    duplications = separar_en_cols(proteins_clinvar_total, "cambio", "duplication", "dup")
-
-    # Get indexes
-    ix_targets_lists = [list(x) for x in [delins.index, deletions.index, insertions.index, frameshift.index, nonsense.index, missense.index, duplications.index]]
-    ix_targets = [y for x in ix_targets_lists for y in x]
-    cond = proteins_clinvar_total.index.isin(ix_targets)                                    # bool array
-    box1_clinvar_left = proteins_clinvar_total.drop(proteins_clinvar_total[cond].index) # drop those rows
-
-    # Drop the '?' and Nan
-    box1_clinvar_left = box1_clinvar_left[(box1_clinvar_left.cambio != '?') & (box1_clinvar_left.cambio != '(?') & (box1_clinvar_left.cambio.notnull())]
-    box1_clinvar_left.cambio = box1_clinvar_left.cambio.apply(delete_brackets)
-
-    dup = box1_clinvar_left[box1_clinvar_left.type == 'Duplication']
-    dup_raros = separar_en_cols_raros(dup, "cambio", "duplication", '^(\d+)_?(\d+)?([A-Za-z]*)', override=True)
-
-    duplications2 = pd.concat([duplications, dup_raros])
-
-    delet = box1_clinvar_left[box1_clinvar_left.type == 'Deletion']
-    delet2 = separar_en_cols_raros(delet, "cambio", "deletion", '^(\d+)_?(\d+)?([A-Za-z]*)', override=True)
-
-    # agrego la posicion de fin faltante (o más, busca Nan en el end_aa)
-    ix = delet2.end_aa.isna()
-    for i in np.where(ix)[0]:
-        delet2['end_aa'].iloc[i] = delet2.start_aa.iloc[i] + len(delet2['from'].iloc[i]) - 1
-    deletions2 = pd.concat([deletions, delet2])
-
-    inser = box1_clinvar_left[box1_clinvar_left.type == 'Insertion']
-    insert2 = separar_en_cols_raros(inser, "cambio", "insertion", '^(\d+)_?(\d+)?([A-Za-z]*)', override=True)
-    insertions2 = pd.concat([insertions, insert2])
-
-    # Final round of cleaning up
-    ix_targets_lists = [list(x) for x in [delins.index, deletions2.index, insertions2.index, frameshift.index, nonsense.index, missense.index, duplications2.index]]
-    ix_targets = [y for x in ix_targets_lists for y in x]
-    cond = proteins_clinvar_total.index.isin(ix_targets)                       # es un array de bool
-    box1_clinvar_leftovers = proteins_clinvar_total.drop(proteins_clinvar_total[cond].index)   # drop esas filas
-    box1_clinvar_leftovers = box1_clinvar_leftovers[(box1_clinvar_leftovers.cambio != '?') & (box1_clinvar_leftovers.cambio != '(?') & (box1_clinvar_leftovers.cambio.notnull())]
-    box1_clinvar_leftovers.cambio = box1_clinvar_leftovers.cambio.apply(delete_brackets)
-    box1_clinvar_leftovers.shape
-
-    leftovers2check = separar_en_cols_raros(box1_clinvar_leftovers, "cambio", "to_check", '^(\d+)_?(\d+)?([A-Za-z]*)', override=True )
-    # si el rango de de las posiciones coincide con el nro de letras: es delecion
-    l = []
-    for i in leftovers2check.index:
-        start = int(leftovers2check.loc[i]["start_aa"])
-        try:
-            end = int(leftovers2check.loc[i]["end_aa"])
-        except:
-            pass
-        length = end - start + 1
-        aa = len(leftovers2check.loc[i]["from"])
-        l.append(length == aa)
-
-
-    leftovers2check['is_del'] = l
-    delet3 = leftovers2check[leftovers2check.is_del == True]
-    delet3["consequence"] = "deletion"
-    delet3 = delet3.drop(columns=["is_del"])
-    deletions3 = pd.concat([deletions2, delet3])
+    synonym = separar_en_cols(proteins_clinvar_total, "cambio", "synonym", "=$")   
+    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(synonym['index_line'].tolist())]
+    print(f"Found {synonym.shape[0]} synonyms")
     
-    delins2 = leftovers2check[leftovers2check.is_del == False]
-    delins2["consequence"] = "delins"
-    delins2 = delins2.drop(columns=["is_del"])
-    delins3 = pd.concat([delins, delins2])
-
-    ix_targets_lists = [list(x) for x in [delins3.index, deletions3.index, insertions2.index, frameshift.index, nonsense.index, missense.index, duplications2.index]]
-    ix_targets = [y for x in ix_targets_lists for y in x]
-    cond = proteins_clinvar_total.index.isin(ix_targets)                       # es un array de bool
-    box1_clinvar_leftovers_notmapped = proteins_clinvar_total.drop(proteins_clinvar_total[cond].index)   # drop esas filas
-    print(f"Found {box1_clinvar_leftovers_notmapped.shape[0]} not mapped")
-    print(box1_clinvar_leftovers_notmapped['cambio'])
-
-    ## Concatenate everything
-    print(f"Found {deletions3.shape[0]} deletions")
-    print(f"Found {delins3.shape[0]} delins")
-    print(f"Found {duplications2.shape[0]} duplications")
+    delins = separar_en_cols(proteins_clinvar_total, "cambio", "delins", "delins")
+    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(delins['index_line'].tolist())]
+    print(f"Found {delins.shape[0]} delins")
+    
+    deletions = separar_en_cols(proteins_clinvar_total, "cambio", "deletion", "del") # finish with 'del'
+    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(deletions['index_line'].tolist())]
+    print(f"Found {deletions.shape[0]} deletions")
+    
+    insertions = separar_en_cols(proteins_clinvar_total, "cambio", "insertion", "ins")
+    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(insertions['index_line'].tolist())]
+    print(f"Found {insertions.shape[0]} inserions")
+    
+    frameshift = separar_en_cols(proteins_clinvar_total, "cambio", "frameshift", 'fs') # expressions as 'Lys1254Terfs' es un frameshift donde el primer aa queda como *
+    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(frameshift['index_line'].tolist())]
     print(f"Found {frameshift.shape[0]} frameshift")
-    print(f"Found {insertions2.shape[0]} inserions")
-    print(f"Found {missense.shape[0]} missense")
+    
+    duplications = separar_en_cols(proteins_clinvar_total, "cambio", "duplication", "dup")
+    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(duplications['index_line'].tolist())]
+    print(f"Found {duplications.shape[0]} duplications")
+    
+    nonsense = separar_en_cols(proteins_clinvar_total, "cambio", "nonsense", "Ter$") # positiv lookbehind search! must have a number before, some delins insert a Ter
+    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(nonsense['index_line'].tolist())]
     print(f"Found {nonsense.shape[0]} nonsense")
+    
+    nostop = separar_en_cols(proteins_clinvar_total, "cambio", "nostop", "ext")
+    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(nostop['index_line'].tolist())]
+    print(f"Found {nostop.shape[0]} nostop")
+    
+    missense = separar_en_cols(proteins_clinvar_total, "cambio", "missense", '')
+    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(missense['index_line'].tolist())]
+    print(f"Found {missense.shape[0]} missense")
+    
+    repeted = separar_en_cols(proteins_clinvar_total, "cambio", "repeted", "^(\d+)_?(\d+)?([A-Z]*)\[(\d+)\]$", override=True)   
+    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(repeted['index_line'].tolist())]
+    print(f"Found {repeted.shape[0]} repeted")
+    
+    print(f"No mapped mutations {proteins_clinvar_total.shape[0]}")
+    print(proteins_clinvar_total['cambio'].unique().tolist())
+    ## Concatenate everything
 
-    tables = [deletions3, delins3, duplications2, frameshift, insertions2, missense, nonsense]
+    tables = [synonym, deletions, delins, duplications, frameshift, insertions, missense, nonsense, nostop, repeted]
     mutations = pd.concat(tables)
     print(f"Total mutations: {mutations.shape[0]}")
 
+    #split cds part
+    proteins_clinvar_total = mutations
+    print(f'clinvar mutations to mapp CDS: {proteins_clinvar_total.shape[0]}')
+      
+    delins = separar_en_cols_cds(proteins_clinvar_total, "cambio_nt", "delins", "delins")
+    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(delins['index_line'].tolist())]
+    print(f"Found {delins.shape[0]} delins")
+    
+    deletions = separar_en_cols_cds(proteins_clinvar_total, "cambio_nt", "deletion", "del") # finish with 'del'
+    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(deletions['index_line'].tolist())]
+    print(f"Found {deletions.shape[0]} deletions")
+    
+    insertions = separar_en_cols_cds(proteins_clinvar_total, "cambio_nt", "insertion", "ins")
+    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(insertions['index_line'].tolist())]
+    print(f"Found {insertions.shape[0]} inserions")
+    
+    duplications = separar_en_cols_cds(proteins_clinvar_total, "cambio_nt", "duplication", "dup")
+    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(duplications['index_line'].tolist())]
+    print(f"Found {duplications.shape[0]} duplications")
+    
+    inversions = separar_en_cols_cds(proteins_clinvar_total, "cambio_nt", "inversion", "inv")
+    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(inversions['index_line'].tolist())]
+    print(f"Found {inversions.shape[0]} inversions")
+    
+    missense = separar_en_cols_cds(proteins_clinvar_total, "cambio_nt", "missense", '>')
+    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(missense['index_line'].tolist())]
+    print(f"Found {missense.shape[0]} missense")
+    
+    print(f"No mapped mutations {proteins_clinvar_total.shape[0]}")
+    print(proteins_clinvar_total['cambio_nt'].unique().tolist())
+    ## Concatenate everything
+
+    tables = [deletions, delins, duplications, inversions, insertions, missense]
+    mutations = pd.concat(tables)
+    print(f"Total mutations: {mutations.shape[0]}")
+    
     # Assign id_mutation. A mutation is unique by the indexes : 'uniprot_acc', 'chromosome', 'start', 'stop', 'cambio', 'cambio_nt'
-    subset = mutations[['id_protein', 'chromosome', 'start', 'stop', 'cambio', 'cambio_nt']].drop_duplicates()
+    subset = mutations[['id_protein', 'chromosome', 'start', 'stop', 'start_aa', 'end_aa', 'from_aa', 'to_aa', 'from_genomic', 'to_genomic',]].drop_duplicates()
     subset['id_mutation'] = range(1, len(subset)+1)
     print(f'Subset (unique mutations) length: {len(subset)}')
     print(f'All mutations (vs) before: {mutations.shape[0]}')

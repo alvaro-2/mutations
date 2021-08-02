@@ -47,7 +47,7 @@ if __name__ == "__main__":
     vs = vs[~vs.cambio.isin(['(?)', '?', '='])]
 
     # Change in nucleotide
-    vs['cambio_nt'] = vs.name.map(lambda x: re.findall(': *c\.(.*) ?\(p\.', x))
+    vs['cambio_nt'] = vs.name.map(lambda x: re.findall(': *c\.([^ ]*) ?\(p\.', x))
     vs['cambio_nt'] = vs.cambio_nt.str[0]
     
     # Create a nuccore id col (transcripts accession)

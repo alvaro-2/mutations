@@ -5,7 +5,7 @@ print SEL_MUT "id_sample\tGENOMIC_MUTATION_ID\tLEGACY_MUTATION_ID\tMUTATION_ID\t
 while($line = <ALL_MUT>) {
 	chomp $line;
 	@cols = split(/\t/, $line);
-	#remove rows without muttaions in coding part ;
+	#remove rows without muttaions in coding part "p.?";
 	#remove the non canonic transcript
 	@ttt = split(/(_ENST)|\./, $cols[0]);	
     	if ((scalar(@ttt) == 1) and ($cols[24] eq '38') and ($cols[19] ne "c.?") and ($cols[20] ne "p.?")) {
