@@ -189,7 +189,7 @@ if __name__ == "__main__":
     delins = separar_en_cols(proteins_clinvar_total, "cambio", "delins", "delins")
     deletions = separar_en_cols(proteins_clinvar_total, "cambio", "deletion", "del$") # finish with 'del'
     insertions = separar_en_cols(proteins_clinvar_total, "cambio", "insertion", "(?<!del)ins") # Negative lookbehind search!
-    frameshift = separar_en_cols(proteins_clinvar_total, "cambio", "frameshit", '^([A-Z][a-z]{2})(\d+)_?(?!Ter)([A-Z][a-z]{2})?(\d+)?fs$(.*)$', override= True) # expressions as 'Lys1254Terfs' are nonsense, not frameshift
+    frameshift = separar_en_cols(proteins_clinvar_total, "cambio", "frameshift", '^([A-Z][a-z]{2})(\d+)_?(?!Ter)([A-Z][a-z]{2})?(\d+)?fs$(.*)$', override= True) # expressions as 'Lys1254Terfs' are nonsense, not frameshift
     nonsense = separar_en_cols(proteins_clinvar_total, "cambio", "nonsense", "(?<=\d)Ter") # positiv lookbehind search! must have a number before, some delins insert a Ter
     missense = separar_en_cols(proteins_clinvar_total, "cambio", "missense", '^([A-Z][a-z]{2})(\d+)(?!Ter)([A-Z][a-z]{2})$', override=True)
     duplications = separar_en_cols(proteins_clinvar_total, "cambio", "duplication", "dup")
