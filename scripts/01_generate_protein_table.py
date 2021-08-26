@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy
 import argparse
 
 def parse_args():

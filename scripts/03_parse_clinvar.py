@@ -1,7 +1,6 @@
 import pandas as pd
 import argparse
 import re
-import numpy as np
 import os
 
 # python 03_parse_clinvar.py --clinvar ../raw_data/vs.tsv.gz --refseq ../raw_data/uniprot-refseq-nucleotido.tsv --prot ../db_tables/protein.tsv --out ../raw_data
@@ -26,19 +25,20 @@ def parse_args():
 
 def mapp_by_all_ids(arg_files):
     
-    vs_all = pd.read_csv(arg_files.clinvar_file, sep='\t', compression='gzip')  
-    vs_all['index_line'] = list(range(0, len(vs_all)))
+    vs_refseq = pd.read_csv(arg_files.clinvar_file, sep='\t', compression='gzip')  
+    vs_refseq['index_line'] = list(range(0, len(vs_refseq)))
     #merge at the end to put the data
-    vs_ids_other = vs_all[['index_line', 'snp_id', 'variationid', 'chromosome', 'refseq', 'start', 'stop', 'type', 'notation_aa', 'notation_cds', 'origin', 'phenotypeids', 'phenotypelist', 'otherids']]
-    #only kept in vs_all the 'index_line' and the ids used to mapp
-    vs_all = vs_all[['index_line', 'gene_name', 'gene_by_name', 'hgnc_id', 'gene_id', 'refseq']]
+    vs_ids_other = vs_refseq[['index_line', 'refseq', 'snp_id', 'variationid', 'chromosome', 'start', 'stop', 'type', 'notation_aa', 'notation_cds', 'origin', 'phenotypeids', 'phenotypelist', 'otherids']]
+    #only kept in vs_refseq the 'index_line' and the ids used to mapp
+    #by the snp, some refseq can be associated to two or more chromosomes for example to X and Y 
+    vs_refseq = vs_refseq[['index_line', 'refseq', 'chromosome']]
     
-    print(f'clinvar {vs_all.shape[0]}')     
+    print(f'clinvar {vs_refseq.shape[0]}')     
     coln = ['index_line', 'id_protein']
         
     #merge by refseq
     protein_uniprot = pd.read_csv(arg_files.protein_uniprot,  sep="\t").rename(columns={'refseq_canonic': 'refseq'})
-    protein_uniprot = protein_uniprot[['id_protein', 'refseq']].copy()
+    protein_uniprot = protein_uniprot[['id_protein', 'refseq', 'chromosome']].copy()
 
     #split the field refseq_canonic
     #NP_XXX.x;NM_XXX.x
@@ -61,95 +61,55 @@ def mapp_by_all_ids(arg_files):
     protein_uniprot['refseq'] = protein_uniprot['refseq'].map(lambda x: x.split("."))
     protein_uniprot['refseq'] = protein_uniprot['refseq'].str[0]
     
-    vs_refseq = vs_all.copy()
-    vs_refseq = vs_refseq.merge(protein_uniprot)
-    vs_refseq = vs_refseq[coln]
+    protein_uniprot_nochr = protein_uniprot[(protein_uniprot['chromosome'].isnull()) | (protein_uniprot['chromosome'] == '')]
+    protein_uniprot_nochr = protein_uniprot_nochr[['id_protein', 'refseq']]
+    
+    #split chromosome
+    #split by ";"
+    protein_uniprot['chromosome'] = protein_uniprot['chromosome'].str.split(';')
+    protein_uniprot = protein_uniprot.explode('chromosome')
+    protein_uniprot['chromosome'] = protein_uniprot['chromosome'].str.strip()
+    protein_uniprot = protein_uniprot[~protein_uniprot['chromosome'].isnull()]
+    protein_uniprot = protein_uniprot[protein_uniprot['chromosome'] != '']
+    
+    #mapping by refseq and chromosome if exist
+    vs_refseq_chr = vs_refseq.merge(protein_uniprot)
+    vs_refseq = vs_refseq[~vs_refseq['index_line'].isin(vs_refseq_chr['index_line'].tolist())]
+    #mapping refseq for unsertain chromosome
+    vs_refseq_nochr = vs_refseq.merge(protein_uniprot_nochr)
+    
+    vs_refseq = pd.concat([vs_refseq_chr, vs_refseq_nochr])
     print(f'clinvar merge by ref_seq {vs_refseq.shape[0]}, unique {len(vs_refseq["index_line"].unique().tolist())}')
+   
+    #some id_protein can get more than one refseq
+    #kept only the most mutated transcript, ...
+    y = vs_refseq[['refseq', 'id_protein']]   
+    dd = y.groupby(['id_protein', 'refseq']).size().reset_index(name='counts')
+    dd = dd.sort_values(by=['id_protein', 'counts', 'refseq'], ascending=[False, False, True])
+    dd = dd.drop_duplicates(subset=['id_protein'], keep='first')
+    dd = dd[['id_protein', 'refseq']]
+    vs_refseq = vs_refseq.merge(dd)
+    print(f'rows mapped by only one refseq by id_protein {vs_refseq.shape[0]}') 
+    
+    #analizar refseq con disitino id_protein
+    y = vs_refseq[['refseq', 'id_protein', 'chromosome']]
+    y = y.drop_duplicates()
+    dd = y.groupby(['refseq']).size().reset_index(name='counts')
+    print('refseq to more than one id_protein should be analized later')
+    print('some snps are mapping to two or more chromosomes')
+    dd = dd[dd.counts > 1]
+    print(dd)
+    print(y[y['refseq'].isin(dd['refseq'])])
+    
+    vs_refseq = vs_refseq[coln]
     print(vs_refseq[vs_refseq['index_line'].isin(vs_refseq[vs_refseq.duplicated(['index_line'])]['index_line'].unique().tolist())])
     
-    vs_all = vs_all[~vs_all['index_line'].isin(vs_refseq['index_line'].tolist())]
-    '''
-    #merge by hgnc_id
-    protein_hgnc = all_protein[['id_protein', 'hgnc_id']].copy()
-    protein_hgnc['hgnc_id'] = protein_hgnc['hgnc_id'].str.split(';')
-    protein_hgnc = protein_hgnc.explode('hgnc_id')
-    protein_hgnc['hgnc_id'] = protein_hgnc['hgnc_id'].str.strip()
-    protein_hgnc = protein_hgnc[~protein_hgnc['hgnc_id'].isnull()]
-    protein_hgnc = protein_hgnc[protein_hgnc['hgnc_id'] != '']
-    vs_hgnc = vs_all.copy()
+    vs_refseq = vs_refseq.drop_duplicates()
+    print(f'clinvar without duplicates {vs_refseq.shape[0]}, unique {len(vs_refseq["index_line"].unique().tolist())}') 
     
-    vs_hgnc['hgnc_id'] = vs_hgnc['hgnc_id'].str.strip()
-    vs_hgnc['hgnc_id'] = vs_hgnc['hgnc_id'].str.lstrip("HGNC:")
-    vs_hgnc = vs_hgnc[~vs_hgnc['hgnc_id'].isnull()]
-    vs_hgnc = vs_hgnc[vs_hgnc['hgnc_id'] != '']   
-    vs_hgnc = vs_hgnc.merge(protein_hgnc)
-    vs_hgnc = vs_hgnc[coln]
-    print(f'clinvar merge by hgnc_id {vs_hgnc.shape[0]}, unique {len(vs_hgnc["index_line"].unique().tolist())}')
-    
-    vs_all = vs_all[~vs_all['index_line'].isin(vs_hgnc['index_line'].tolist())]
-        
-    #merge by gene_id
-    protein_geneid = all_protein[['id_protein', 'gene_id']].copy()
-    protein_geneid['gene_id'] = protein_geneid['gene_id'].str.split(';')
-    protein_geneid = protein_geneid.explode('gene_id')
-    protein_geneid['gene_id'] = protein_geneid['gene_id'].str.strip()
-    protein_geneid = protein_geneid[~protein_geneid['gene_id'].isnull()]
-    protein_geneid = protein_geneid[protein_geneid['gene_id'] != '']
-    vs_geneid = vs_all.copy()
-    
-    vs_geneid = vs_geneid[~vs_geneid['gene_id'].isnull()]
-    vs_geneid['gene_id'] = [str(int(x)) for x in vs_geneid['gene_id'].tolist()]
-    vs_geneid['gene_id'] = vs_geneid['gene_id'].str.strip()
-    vs_geneid = vs_geneid[vs_geneid['gene_id'] != '']    
-    vs_geneid = vs_geneid.merge(protein_geneid)
-    vs_geneid = vs_geneid[coln]
-    print(f'clinvar merge by gene_id {vs_geneid.shape[0]}, unique {len(vs_geneid["index_line"].unique().tolist())}')
-    print(vs_geneid[vs_geneid['index_line'].isin(vs_geneid[vs_geneid.duplicated(['index_line'])]['index_line'].unique().tolist())])
-    
-    vs_all = vs_all[~vs_all['index_line'].isin(vs_geneid['index_line'].tolist())]
-    
-    #merge by gene_name
-    protein_gene = all_protein[['id_protein', 'gene_name']].copy()
-    protein_gene['gene_name'] = protein_gene['gene_name'].str.split(';')
-    protein_gene = protein_gene.explode('gene_name')
-    protein_gene['gene_name'] = protein_gene['gene_name'].str.strip()
-    protein_gene = protein_gene[~protein_gene['gene_name'].isnull()]
-    protein_gene = protein_gene[protein_gene['gene_name'] != '']
-    
-    #merge by gene_by_name
-    protein_gene = protein_gene.rename(columns={'gene_name': 'gene_by_name'})
-    vs_byname = vs_all.copy()
-    vs_byname = vs_byname.merge(protein_gene)
-    vs_byname = vs_byname[coln]
-    print(f'clinvar merge by gene_by_name {vs_byname.shape[0]}, unique {len(vs_byname["index_line"].unique().tolist())}')
-    
-    vs_all = vs_all[~vs_all['index_line'].isin(vs_byname['index_line'].tolist())]
-    
-    
-    protein_gene = protein_gene.rename(columns={'gene_by_name': 'gene_name'})
-    vs_genename = vs_all.copy()
-    vs_genename['gene_name'] = vs_genename['gene_name'].str.split(';')
-    vs_genename = vs_genename.explode('gene_name')  
-    vs_genename['gene_name'] = vs_genename['gene_name'].str.strip()
-    print(f'\tclinvar explode gene_name {vs_genename.shape[0]}') 
-    vs_genename = vs_genename.merge(protein_gene)
-    vs_genename = vs_genename[coln]
-    print(f'clinvar merge by gene_name {vs_genename.shape[0]}, unique {len(vs_genename["index_line"].unique().tolist())}')
-    #one gene_name more than one idprotein
-    print(vs_genename[vs_genename['index_line'].isin(vs_genename[vs_genename.duplicated(['index_line'])]['index_line'].unique().tolist())])
-    
-    vs_all = vs_all[~vs_all['index_line'].isin(vs_genename['index_line'].tolist())]   
-    
-    #concat vs_refseq, vs_genename, vs_byname, vs_hgnc, vs_geneid
-    mut_cv = pd.concat([vs_refseq, vs_genename, vs_byname, vs_hgnc, vs_geneid], ignore_index=True)
-    '''
-    mut_cv = vs_refseq
-    mut_cv = mut_cv.drop_duplicates()
-    print(f'clinvar without duplicates {mut_cv.shape[0]}, unique {len(mut_cv["index_line"].unique().tolist())}') 
-    
-    print(f'clinvar proteins {len(mut_cv["id_protein"].unique())}')
-    mut_cv = mut_cv.merge(vs_ids_other).drop(columns=['index_line'])
-    return mut_cv
+    print(f'clinvar proteins {len(vs_refseq["id_protein"].unique())}')
+    vs_refseq = vs_refseq.merge(vs_ids_other).drop(columns=['index_line'])
+    return vs_refseq
 
 protein_letters_3to1 = {
     'Ala': 'A',
@@ -214,67 +174,52 @@ def separar_en_cols(df, column, conseq, conseq_regex, override=False):
     df_crop = df_crop.drop(columns=['aux'])
     return df_crop
 
-if __name__ == "__main__":
-
-    opts = parse_args()
-
-    if not os.path.exists(opts.outfolder) or not os.path.isdir(opts.outfolder):
-        os.mkdir(opts.outfolder)
+def put_mutation_consequence(mutations):
+    mutations['index_line'] = list(range(0, len(mutations)))
     
-    proteins_clinvar_total = mapp_by_all_ids(opts)    
-    print(f'clinvar mutations to mapp AA: {proteins_clinvar_total.shape[0]}')
-    
-    proteins_clinvar_total['index_line'] = list(range(0, len(proteins_clinvar_total)))
-    
-    #change the "notation_AA" from 3 letter code to one letter code    
-    # Create a regular expression from all of the dictionary keys
-    regex = re.compile("|".join(map(re.escape, protein_letters_3to1.keys())))
-    # For each match, look up the corresponding value in the dictionary
-    proteins_clinvar_total['notation_aa'] = [regex.sub(lambda match: protein_letters_3to1[match.group(0)], mut) for mut in proteins_clinvar_total['notation_aa'].tolist()]
-
     # A DataFrame for each molecular consequence
-    synonym = separar_en_cols(proteins_clinvar_total, "notation_aa", "synonym", "=$")   
-    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(synonym['index_line'].tolist())]
+    synonym = separar_en_cols(mutations, "notation_aa", "synonym", "=$")   
+    mutations = mutations[~mutations['index_line'].isin(synonym['index_line'].tolist())]
     print(f"Found {synonym.shape[0]} synonyms")
     
-    delins = separar_en_cols(proteins_clinvar_total, "notation_aa", "delins", "delins")
-    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(delins['index_line'].tolist())]
+    delins = separar_en_cols(mutations, "notation_aa", "delins", "delins")
+    mutations = mutations[~mutations['index_line'].isin(delins['index_line'].tolist())]
     print(f"Found {delins.shape[0]} delins")
     
-    deletions = separar_en_cols(proteins_clinvar_total, "notation_aa", "deletion", "del") # finish with del
-    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(deletions['index_line'].tolist())]
+    deletions = separar_en_cols(mutations, "notation_aa", "deletion", "del") # finish with del
+    mutations = mutations[~mutations['index_line'].isin(deletions['index_line'].tolist())]
     print(f"Found {deletions.shape[0]} deletions")
     
-    insertions = separar_en_cols(proteins_clinvar_total, "notation_aa", "insertion", "ins")
-    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(insertions['index_line'].tolist())]
+    insertions = separar_en_cols(mutations, "notation_aa", "insertion", "ins")
+    mutations = mutations[~mutations['index_line'].isin(insertions['index_line'].tolist())]
     print(f"Found {insertions.shape[0]} inserions")
     
-    frameshift = separar_en_cols(proteins_clinvar_total, "notation_aa", "frameshift", 'fs') #
-    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(frameshift['index_line'].tolist())]
+    frameshift = separar_en_cols(mutations, "notation_aa", "frameshift", 'fs') #
+    mutations = mutations[~mutations['index_line'].isin(frameshift['index_line'].tolist())]
     print(f"Found {frameshift.shape[0]} frameshift")
     
-    duplications = separar_en_cols(proteins_clinvar_total, "notation_aa", "duplication", "dup")
-    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(duplications['index_line'].tolist())]
+    duplications = separar_en_cols(mutations, "notation_aa", "duplication", "dup")
+    mutations = mutations[~mutations['index_line'].isin(duplications['index_line'].tolist())]
     print(f"Found {duplications.shape[0]} duplications")
     
-    nostop = separar_en_cols(proteins_clinvar_total, "notation_aa", "nostop", "ext") 
-    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(nostop['index_line'].tolist())]
+    nostop = separar_en_cols(mutations, "notation_aa", "nostop", "ext") 
+    mutations = mutations[~mutations['index_line'].isin(nostop['index_line'].tolist())]
     print(f"Found {nostop.shape[0]} nostop")    
     
-    nonsense = separar_en_cols(proteins_clinvar_total, "notation_aa", "nonsense", "\*$") # positiv lookbehind search! must have a number before, some delins insert a Ter
-    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(nonsense['index_line'].tolist())]
+    nonsense = separar_en_cols(mutations, "notation_aa", "nonsense", "\*$") # positiv lookbehind search! must have a number before, some delins insert a Ter
+    mutations = mutations[~mutations['index_line'].isin(nonsense['index_line'].tolist())]
     print(f"Found {nonsense.shape[0]} nonsense")    
     
-    missense = separar_en_cols(proteins_clinvar_total, "notation_aa", "missense", '')
-    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(missense['index_line'].tolist())]
+    missense = separar_en_cols(mutations, "notation_aa", "missense", '')
+    mutations = mutations[~mutations['index_line'].isin(missense['index_line'].tolist())]
     print(f"Found {missense.shape[0]} missense")
     
-    repeted = separar_en_cols(proteins_clinvar_total, "notation_aa", "repeted", "^p\.(\d+)_?(\d+)?([A-Z]*)\[(\d+)\]$", override=True)   
-    proteins_clinvar_total = proteins_clinvar_total[~proteins_clinvar_total['index_line'].isin(repeted['index_line'].tolist())]
+    repeted = separar_en_cols(mutations, "notation_aa", "repeted", "^p\.(\d+)_?(\d+)?([A-Z]*)\[(\d+)\]$", override=True)   
+    mutations = mutations[~mutations['index_line'].isin(repeted['index_line'].tolist())]
     print(f"Found {repeted.shape[0]} repeted")
     
-    print(f"No mapped mutations {proteins_clinvar_total.shape[0]}")
-    print(proteins_clinvar_total['notation_aa'].unique().tolist())
+    print(f"No mapped mutations {mutations.shape[0]}")
+    print(mutations['notation_aa'].unique().tolist())
     ## Concatenate everything
 
     tables = [synonym, deletions, delins, duplications, frameshift, insertions, missense, nonsense, nostop, repeted]
@@ -285,16 +230,32 @@ if __name__ == "__main__":
     subset = mutations[['id_protein', 'notation_aa', 'notation_cds']].drop_duplicates()
     subset['id_mutation'] = range(1, len(subset)+1)
     print(f'Subset (unique mutations) length: {len(subset)}')
-    print(f'All mutations (vs) before: {mutations.shape[0]}')
     mutations = mutations.merge(subset)
     dd = mutations.groupby(['id_mutation']).size().reset_index(name='counts')
     dd = dd[dd.counts > 1]
     print(dd)
-    k = mutations[mutations['id_mutation'].isin(dd['id_mutation'].tolist())]
-    
-    print(k[['snp_id', 'refseq', 'id_mutation', 'id_protein', 'notation_aa', 'notation_cds', 'chromosome', 'start', 'stop']])
     print(f'All mutations after merge: {mutations.shape[0]}')
+    print(mutations.columns.tolist())
+    return mutations.drop(columns=['index_line'])
 
+if __name__ == "__main__":
+
+    opts = parse_args()
+
+    if not os.path.exists(opts.outfolder) or not os.path.isdir(opts.outfolder):
+        os.mkdir(opts.outfolder)
+    
+    mutations = mapp_by_all_ids(opts)    
+    print(f'clinvar mutations to mapp AA: {mutations.shape[0]}')
+    
+    #change the "notation_AA" from 3 letter code to one letter code    
+    # Create a regular expression from all of the dictionary keys
+    regex = re.compile("|".join(map(re.escape, protein_letters_3to1.keys())))
+    # For each match, look up the corresponding value in the dictionary
+    mutations['notation_aa'] = [regex.sub(lambda match: protein_letters_3to1[match.group(0)], mut) for mut in mutations['notation_aa'].tolist()]
+
+    mutations = put_mutation_consequence(mutations)
+    
     # Another table for diseases
     diseases = mutations[['id_mutation', 'origin', 'phenotypeids', 'phenotypelist', 'otherids']].copy()
     diseases.to_csv(os.path.join(opts.outfolder, 'diseases_clinvar.tsv.gz'), sep='\t', index= False, compression='gzip')

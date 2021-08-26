@@ -1,7 +1,7 @@
 import argparse
 import pandas as pd
 import numpy as np
-import re
+import os
 
 def parse_args():
     parser = argparse.ArgumentParser(description= 'Pre-process UniProt humsavar.txt dataset')
@@ -13,7 +13,11 @@ def parse_args():
     parser.add_argument('--mapping_uniprot', 
                         dest='protein_uniprot',
                         help='File with uniprot mapping (uniprot_all_data_associated_to_mlo_preproc.tsv)')
-                
+                        
+    parser.add_argument('--out', 
+                        dest='outfolder',
+                        help='Output files: mutations_cosmic.tsv.gz, diseases_cosmic.tsv.gz, pubmeds_cosmic.tsv.gz')
+    
     opts = parser.parse_args()
     return opts
 
@@ -41,8 +45,11 @@ def mapping_enst(opts):
     #to string the columns
     mutation['pubmed'] = mutation['pubmed'].map(lambda x: str(int(x)) if not np.isnan(x) else x)
     
-    samples = mutation[["id_sample", "LEGACY_MUTATION_ID", "MUTATION_ID", "Primary_site", "Site_subtype_1", "Site_subtype_2", "Site_subtype_3", "Primary_histology", "Histology_subtype_1", "Histology_subtype_2", "Histology_subtype_3", "pubmed"]]
-    samples = samples.drop_duplicates()
+    disease = mutation[["LEGACY_MUTATION_ID", "MUTATION_ID", "Primary_site", "Site_subtype_1", "Site_subtype_2", "Site_subtype_3", "Primary_histology", "Histology_subtype_1", "Histology_subtype_2", "Histology_subtype_3"]]
+    disease = disease.drop_duplicates()
+    
+    pubmed = mutation[["LEGACY_MUTATION_ID", "MUTATION_ID", "pubmed"]]
+    pubmed = pubmed.drop_duplicates()
     
     mutation = mutation[["LEGACY_MUTATION_ID", "MUTATION_ID", "enst", "notation_cds", "notation_aa", "chromosome", "start_genomic", "end_genomic"]]
     mutation = mutation.drop_duplicates()
@@ -66,18 +73,20 @@ def mapping_enst(opts):
     y = y.drop_duplicates()
     dd = y.groupby(['enst']).size().reset_index(name='counts')
     print('transcript to more than one id_protein should be change later')
-    print(dd[dd.counts > 1])
+    dd = dd[dd.counts > 1]
+    print(dd)
+    print(y[y['enst'].isin(dd['enst'])])
     #este es un caso raro ya que la secuencia del transcripto es la union de dos uniprots
     #transcriptos de la misma ENST00000527548 u sus transcriptos equivalentes ENST00000529639, ENST00000531743
     #P35544 + P62861
-    #id_protein 4340 y 4342    
+    #id_protein 123 y 4462    
 
     mutation = mutation[["LEGACY_MUTATION_ID", "MUTATION_ID", "id_protein", "notation_cds", "notation_aa", "chromosome", "start_genomic", "end_genomic"]]
     mutation = mutation.drop_duplicates()    
     
     print(f'mutation-idprot-notation_aa_cds_genomic {mutation.shape[0]}')
     
-    return mutation, samples
+    return mutation, disease, pubmed
 
 def separar_en_cols(df, column, conseq, conseq_regex, override=False):
     '''
@@ -152,7 +161,7 @@ def put_mutation_consequence(mutation):
     nostop = pd.concat([nostop, aux_other])    
     print(f"Found {nostop.shape[0]} nostop")    
     
-    nonsense = separar_en_cols(mutation, "notation_aa", "nonsense", "\*$") # positiv lookbehind search! must have a number before, some delins insert a Ter
+    nonsense = separar_en_cols(mutation, "notation_aa", "nonsense", "\*$")
     mutation = mutation[~mutation['index_line'].isin(nonsense['index_line'].tolist())]
     print(f"Found {nonsense.shape[0]} nonsense")    
     
@@ -166,55 +175,70 @@ def put_mutation_consequence(mutation):
     
     print(f"No mapped mutations {mutation.shape[0]}")
     print(mutation['notation_aa'].unique().tolist())
-    print(mutation[["LEGACY_MUTATION_ID", 'notation_aa']].head(10))
     ## Concatenate everything
 
     tables = [synonym, deletions, delins, duplications, frameshift, insertions, missense, nonsense, nostop, repeted]
     mutation = pd.concat(tables)
+        
+    mutation['start_aa'] = mutation['start_aa'].astype(int)
+    mutation['end_aa'] = mutation['end_aa'].astype(int)
     print(f"Total mutations: {mutation.shape[0]}")
     return mutation
 
-def remapping_idprotein_4340_4342(mutation):
-    print('mutation in ENST00000527548 (id protein 4340) kept only mutations from 1-74')
-    print('mutation in ENST00000527548 (id protein 4342) kept only mutations from 75-133 and change the range to 1-59')
+def remapping_idprotein_ENST00000527548(mutation):
+    print('mutation in ENST00000527548 (id protein 123) kept only mutations from 1-74')
+    print('mutation in ENST00000527548 (id protein 4462) kept only mutations from 75-133 and change the range to 1-59')
     #change the anotation of mutations for the transcript ENST00000527548,
     #reported of two proteins 4340 and 4342
     #original nuevo	idprotein	uniprot
-    #1-74	 1-74 	4340  P35544
-    #75-133  1-59 	4342	  P62861
-    y_others = mutation[~mutation['id_protein'].isin(4340, 4342)]    
-    y_4340 = mutation[mutation['id_protein'] == 4340] 
-    y_4342 = mutation[mutation['id_protein'] == 4342] 
+    #1-74	 1-74 	123   P35544
+    #75-133  1-59 	4462  P62861
+    y_others = mutation[~mutation['id_protein'].isin([123, 4462])]    
+    y_123 = mutation[mutation['id_protein'] == 123] 
+    y_4462 = mutation[mutation['id_protein'] == 4462] 
     
-    y_4340 = y_4340[y_4340['start_aa'] < 75]
-    print(f'id protein 4340, mutations with start < 75 are {y_4340.shape[0]}')
-    y_4340 = y_4340[y_4340['end_aa'] < 75]
-    print(f'id protein 4340, mutations with end < 75 are {y_4340.shape[0]}')
+    y_123 = y_123[y_123['start_aa'] < 75]
+    print(f'id protein 123, mutations with start < 75 are {y_123.shape[0]}')
+    y_123 = y_123[y_123['end_aa'] < 75]
+    print(f'id protein 123, mutations with end < 75 are {y_123.shape[0]}')
     
-    y_4342 = y_4342[y_4342['start_aa'] > 74]
-    print(f'id protein 4342, mutations with start > 74 are {y_4342.shape[0]}')
-    y_4342 = y_4342[y_4342['end_aa'] > 74]
-    print(f'id protein 4342, mutations with end > 74 are {y_4342.shape[0]}')
+    y_4462 = y_4462[y_4462['start_aa'] > 74]
+    print(f'id protein 4462, mutations with start > 74 are {y_4462.shape[0]}')
+    y_4462 = y_4462[y_4462['end_aa'] > 74]
+    print(f'id protein 4462, mutations with end > 74 are {y_4462.shape[0]}')
         
     #change the start_aa and end_aa for 4342
     #75 should be the 1, and 133 should be 59
-    print(f'notations p. to repalce {y_4342["notation_aa"].tolist()}')
-    y_4342['start_aa'] = y_4342['start_aa'] - 74
-    y_4342['end_aa'] = y_4342['end_aa'] - 74
+    y_4462['start_aa'] = y_4462['start_aa'] - 74
+    y_4462['end_aa'] = y_4462['end_aa'] - 74
     #change the notation p. with the new mapping 1-59
+    print(y_4462['notation_aa'].tolist())
+    y_4462['notation_aa'] = y_4462['notation_aa'].str.findall('^(p\.[\*A-Z])(\d+)(_)?([\*A-Z])?(\d+)?(.*)$').str[0]
+    y_4462['notation_aa'] = y_4462['notation_aa'].map(lambda x: "".join([x[0], str(int(x[1]) - 74), x[2], x[3], str(int(x[4]) - 74) if x[4] != "" else "", x[5]])) 
+    print(y_4462['notation_aa'].tolist())    
     
-    
-    mutation = pd.concat([y_others, y_4340, y_4342])
+    mutation = pd.concat([y_others, y_123, y_4462])
     return mutation
 
 if __name__ == '__main__':
 
     opts = parse_args()
+    
+    if not os.path.exists(opts.outfolder) or not os.path.isdir(opts.outfolder):
+        os.mkdir(opts.outfolder)
        
-    mutation, samples = mapping_enst(opts)
+    mutation, disease, pubmed = mapping_enst(opts)
     
     mutation = put_mutation_consequence(mutation)
     
-    mutation = remapping_idprotein_4340_4342(mutation)
+    mutation = remapping_idprotein_ENST00000527548(mutation)
+    
+    y = mutation[["LEGACY_MUTATION_ID", "MUTATION_ID"]]
+    disease = disease.merge(y)
+    disease.to_csv(os.path.join(opts.outfolder, 'diseases_cosmic.tsv.gz'), sep='\t', index= False, compression='gzip')
+    pubmed = pubmed.merge(y)
+    pubmed.to_csv(os.path.join(opts.outfolder, 'pubmeds_cosmic.tsv.gz'), sep='\t', index= False, compression='gzip')
+    mutation.to_csv(os.path.join(opts.outfolder, 'mutations_cosmic.tsv.gz'), sep='\t', index= False, compression='gzip')
+
     
     

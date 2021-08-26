@@ -6,11 +6,13 @@ python 03_parse_clinvar.py --clinvar ../raw_data/vs.tsv.gz --mapping_uniprot ../
 
 #preproc and parse cosmic
 perl 04_preproc_cosmic.pl ../raw_data/cosmic_v94/CosmicMutantExport.tsv ../raw_data/cosmic_v94/CosmicMutantExport_sel.tsv
-python 05_parse_cosmic.py --cosmic_mutations ../raw_data/cosmic_v94/CosmicMutantExport_sel.tsv --mapping_uniprot ../raw_data/uniprot_all_data_associated_to_mlo_preproc.tsv 
+python 05_parse_cosmic.py --cosmic_mutations ../raw_data/cosmic_v94/CosmicMutantExport_sel.tsv --mapping_uniprot ../raw_data/uniprot_all_data_associated_to_mlo_preproc.tsv --out ../raw_data 
 
 #preproc and parse digenet
 
 #preproc and parse uniprot
+
+#adding mutation unique, duplicate source for not new mutations
 
 python 10_clean_mlo.py
 python 11_generate_tables_db.py
