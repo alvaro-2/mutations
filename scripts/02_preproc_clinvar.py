@@ -37,18 +37,18 @@ if __name__ == "__main__":
     vs = clinvar[['hgnc_id', 'gene_name', 'gene_id', 'snp_id', 'variationid', 'chromosome', 'start', 'stop', 'type', 'name', 'origin', 'phenotypeids', 'phenotypelist', 'otherids']]
 
     # Subset mutations with "p." only: change in protein
-    vs['cambio'] = vs.name.map(lambda x: re.findall('\(p\.(.*)\)$', x))
-    vs['cambio'] = vs.cambio.str[0]
+    vs['notation_aa'] = vs.name.map(lambda x: re.findall('\((p\..*)\)$', x))
+    vs['notation_aa'] = vs.notation_aa.str[0]
     #vs.cambio = vs.cambio.str.strip('()')
     #vs.cambio = vs.cambio.str.lstrip('p.')
     # drop the nans
-    vs = vs[vs.cambio.notnull()]
+    vs = vs[vs.notation_aa.notnull()]
     # drop the proteins as '(?)' or '?', '=' because don't have the protein notation    
-    vs = vs[~vs.cambio.isin(['(?)', '?', '='])]
+    vs = vs[~vs.notation_aa.isin(['p.(?)', 'p.?', 'p.='])]
 
     # Change in nucleotide
-    vs['cambio_nt'] = vs.name.map(lambda x: re.findall(': *c\.([^ ]*) ?\(p\.', x))
-    vs['cambio_nt'] = vs.cambio_nt.str[0]
+    vs['notation_cds'] = vs.name.map(lambda x: re.findall(': *(c\.[^ ]*) ?\(p\.', x))
+    vs['notation_cds'] = vs.notation_cds.str[0]
     
     # Create a nuccore id col (transcripts accession)
     #para las proteinas comienza con NM_
