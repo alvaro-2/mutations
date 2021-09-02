@@ -5,6 +5,7 @@ files_to_sel = ["protein",
                 "low_complexity", 
                 "protein_has_pfam_domain", 
                 "protein_has_mlo"]
+#protein_llps, 
 files_mutations = ["mutation"]
 
 #cargar cada file de files_mutations, quedarnos solo con la columna id_protein
