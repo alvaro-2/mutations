@@ -1,6 +1,6 @@
 #script folder
 perl 00_preproc_mapping_uniprot_protein.pl ../raw_data/uniprot_all_data_associated_to_mlo.txt ../raw_data/uniprot_all_data_associated_to_mlo_preproc.tsv
-python 01_generate_protein_table.py --mapping_uniprot ../raw_data/uniprot_all_data_associated_to_mlo_preproc.tsv --mobidb_dc ../raw_data/dc_mobidb_lite.csv
+python 01_generate_protein_table.py --mapping_uniprot ../raw_data/uniprot_all_data_associated_to_mlo_preproc.tsv --mobidb_dc ../raw_data/tablas_disphase_30-08/disorder_content.csv
 python 02_preproc_clinvar.py --in ../raw_data/variant_summary.txt.gz --out ../raw_data/vs.tsv.gz
 python 03_parse_clinvar.py --clinvar ../raw_data/vs.tsv.gz --mapping_uniprot ../raw_data/uniprot_all_data_associated_to_mlo_preproc.tsv --out ../raw_data
 
@@ -13,6 +13,7 @@ python 05_parse_cosmic.py --cosmic_mutations ../raw_data/cosmic_v94/CosmicMutant
 #preproc and parse uniprot
 
 #adding mutation unique, duplicate source for not new mutations
+python 09_all_mutations.py --inout ../raw_data
 
 python 10_clean_mlo.py
 python 11_generate_tables_db.py

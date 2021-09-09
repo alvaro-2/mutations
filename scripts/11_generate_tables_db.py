@@ -2,7 +2,18 @@ import pandas as pd
 import numpy as np
 import pyranges as pr
 
-def t_consequence_and_mutation(mutation):    
+def t_consequence_and_mutation():   
+    #comes from parse_clinvar.py
+    mutation = pd.read_csv('../raw_data/mutations_clinvar.tsv.gz', sep='\t', compression='gzip') 
+    cols_mut = ['id_protein', 'id_mutation', 'snp_id', 'chromosome', 'start_genomic', 'end_genomic', 'start_aa', 'end_aa', 'notation_aa', 'consequence', 'notation_cds']
+    mutation = mutation[cols_mut]
+    
+    mut2 = pd.read_csv('../raw_data/mutations_cosmic.tsv.gz', sep='\t', compression='gzip') 
+    mut2 = mut2[cols_mut]
+    
+    mutation = mutation.append(mut2, ignore_index = True)
+    mutation = mutation.drop_duplicates()
+    
     # consequence table
     cf = mutation.consequence.value_counts()
     consequence = pd.DataFrame({'id_consequence': range(1, len(cf)+1), 'consequence': cf.index})
@@ -14,22 +25,18 @@ def t_consequence_and_mutation(mutation):
     mutation.drop(columns='consequence', inplace= True)
 
     mutation = mutation[['id_mutation', 'snp_id', 'chromosome', 'start_genomic', 'end_genomic', 'start_aa','end_aa',
-                    'from_aa', 'to_aa', 'id_protein', 'id_consequence', 'nt_change']].sort_values('id_mutation')
+                    'notation_cds', 'notation_aa', 'id_protein', 'id_consequence']].sort_values('id_mutation')
 
     mutation.chromosome = mutation.chromosome.apply(str)
     print(f'Generating table mutation.tsv, rows {mutation.shape[0]}')
     mutation.to_csv('../db_tables/mutation.tsv', sep='\t', index = False)
+    return mutation
 
 def t_pfam_proteinpfam_mutationpfam(id_protein, aux_py):
     #pfam domain table
-    pfam = pd.read_csv('../raw_data/pfam.csv').rename(columns={'uniprot': 'uniprot_acc', 'tipo': 'pfam_name'})
-    pfam_map = pd.read_csv('../raw_data/pfam_map.csv')
-    pfam_map.duplicated().any()
-    pfam = pfam.merge(pfam_map)
-    pfam.duplicated().any()
+    pfam = pd.read_csv('../raw_data/tablas_disphase_30-08/pfam.csv').rename(columns={'uniprot': 'uniprot_acc', 'tipo': 'pfam_name'})
     
     # Array with unique pfam domains
-    pf_domain = pfam.pfam_name.unique() # unique pfam domains (2939 for this set of proteins)
     pfam_domain = pfam[['pfam_name', 'pfam_acc']].drop_duplicates()
     pfam_domain.rename(columns={'pfam_acc': 'id_pfam', 'pfam_name': 'pfam_domain'}, inplace= True)
     print(f'Generating table pfam_domain.tsv, rows {pfam_domain.shape[0]}')
@@ -70,12 +77,11 @@ def t_pfam_proteinpfam_mutationpfam(id_protein, aux_py):
 
 def t_lowcomplexity_mutationlc(id_protein, aux_lc_py):
     #low complexity
-    low_complexity = pd.read_csv('../raw_data/low_complexity.csv').rename(columns={'uniprot': 'uniprot_acc'})
+    low_complexity = pd.read_csv('../raw_data/tablas_disphase_30-08/low_complexity_regions.csv').rename(columns={'uniprot': 'uniprot_acc'})
     low_complexity['id_lc'] = range(1, len(low_complexity)+1)
     # Add length col 
     low_complexity['length'] = low_complexity.end - low_complexity.start + 1 
     # Add id_proteins
-    low_complexity.rename(columns={'uniprot': 'uniprot_acc'}, inplace= True)
     low_complexity = low_complexity.merge(id_protein)
     low_complexity.drop(columns='uniprot_acc', inplace= True)
     # Save
@@ -109,14 +115,14 @@ def t_lowcomplexity_mutationlc(id_protein, aux_lc_py):
 
 def t_disorder(aux_idr_py):
     # # Disorder Tables
-    disorder = pd.read_csv('../raw_data/disorder_lite.csv').rename(columns={'uniprot': 'uniprot_acc'})
+    disorder = pd.read_csv('../raw_data/tablas_disphase_30-08/disordered_regions.csv').rename(columns={'uniprot': 'uniprot_acc'})
     disorder['id_idr'] = range(1, len(disorder)+1)
     # ## disorder_region  
     # cols: id_idr, start, end, length, id_protein
     
     # Add length col 
     disorder['length'] = disorder.end - disorder.start + 1 
-    disorder_region = disorder.rename(columns={'uniprot': 'uniprot_acc'}).merge(id_protein).sort_values('id_protein')
+    disorder_region = disorder.merge(id_protein).sort_values('id_protein')
     disorder_region.drop(columns='uniprot_acc', inplace= True)
     # Save
     print(f'Generating table disorder_region.tsv, rows {disorder_region.shape[0]}')
@@ -204,62 +210,70 @@ def t_mlo_db_rol_proteinmlo(id_protein):
     print(f'Generating table protein_has_mlo.tsv, rows {protein_has_mlo.shape[0]}')
     protein_has_mlo.to_csv('../db_tables/protein_has_mlo.tsv', sep='\t', index= False)
 
-def t_source_mutationsource(mutations_with_source):
+def t_source_mutationsource(mutations_source_clinvar):
     # # source
-    source = pd.DataFrame({'id_source': [1, 2, 3], 'source': ['clinvar', 'disgenet', 'uniprot']})
+    source = pd.DataFrame({'id_source': [1, 2, 3], 'source': ['clinvar', 'disgenet', 'uniprot', 'cosmic']})
     # Save
     print(f'Generating table source.tsv, rows {source.shape[0]}')
     source.to_csv('../db_tables/source.tsv', sep='\t', index = False)
     
-    
+    mutation_has_sources = pd.read_csv('../raw_data/sources_cosmic.tsv.gz', sep='\t', compression='gzip')
+    mutation_has_sources = mutations_source_clinvar.append(mutation_has_sources, ignore_index=True)
     # # mutation_has_source
-    mutation_has_source = mutations_with_source.copy()
-    mutation_has_source.rename(columns={'variationid': 'id_insource'}, inplace= True)
     mutation_has_source.drop_duplicates(inplace= True)
     mutation_has_source = mutation_has_source.merge(source).drop(columns='source')
     # Save
     print(f'Generating table mutation_has_source.tsv, rows {mutation_has_source.shape[0]}')
     mutation_has_source.to_csv('../db_tables/mutation_has_source.tsv', sep='\t', index= False)
 
-def t_citationsource_mutationcitation(mutations_with_source):
+
+def t_citationsource_mutationcitation(mutations_source_clinvar):
     # # citation_source
-    pmid = pd.read_csv('../raw_data/var_citations.txt', sep='\t')
-    pmid.columns = pmid.columns.str.lower().str.replace(' ',"_").str.replace("-",'_').str.replace('/','_')
-    pmid = pmid[['variationid', 'citation_source', 'citation_id']].copy()
+    mutation_has_citation = pd.read_csv('../raw_data/var_citations.txt', sep='\t')
+    mutation_has_citation.columns = mutation_has_citation.columns.str.lower().str.replace(' ',"_").str.replace("-",'_').str.replace('/','_')
+    mutation_has_citation = mutation_has_citation.rename(columns={'variationid': 'id_insource'})
+    mutation_has_citation = mutation_has_citation[['id_insource', 'citation_source', 'citation_id']]
+    
+    mutation_has_citation = mutation_has_citation.merge(mutations_source_clinvar).drop(columns=['id_insource']).drop_duplicates()
+    
+    pmid = pd.read_csv('../raw_data/pubmeds_cosmic.tsv.gz', sep='\t')
+    
+    mutation_has_citation = mutation_has_citation.append(pmid, ignore_index=True)
     
     #pmid.variationid.isnull().any() # False. This is the ClinVar ID
-    pmid.variationid.drop_duplicates(inplace= True)
+    mutation_has_citation.drop_duplicates(inplace= True)
     
-    citation_source = pd.DataFrame({'name': pmid.citation_source.value_counts().index, 'id_citation_source': range(1, len(pmid.citation_source.unique())+1) })
+    citation_source = pd.DataFrame({'name': mutation_has_citation.citation_source.value_counts().index, 'id_citation_source': range(1, len(mutation_has_citation.citation_source.unique())+1) })
     # Save
     print(f'Generating table citation_source.tsv, rows {citation_source.shape[0]}')
     citation_source.to_csv('../db_tables/citation_source.tsv', sep='\t', index= False)
     
-    
     # # mutation_has_citation
-    mutation_has_citation = pmid.rename(columns={'citation_id': 'id_citation'})
+    mutation_has_citation = mutation_has_citation.rename(columns={'citation_id': 'id_citation'})
     mutation_has_citation = mutation_has_citation.merge(citation_source.rename(columns={'name': 'citation_source'})).drop(columns= 'citation_source')
-    mutation_has_citation = mutation_has_citation.merge(mutations_with_source).drop(columns=['source', 'variationid']).drop_duplicates()
     
     # Save
     print(f'Generating table mutation_has_citation.tsv, rows {mutation_has_citation.shape[0]}')
     mutation_has_citation.to_csv('../db_tables/mutation_has_citation.tsv', sep='\t', index= False) 
 
-if __name__ == "__main__":        
-    #comes from parse_clinvar.py
-    mutation = pd.read_csv('../raw_data/mutations.tsv.gz', sep='\t', compression='gzip') 
-    mutation = mutation[['id_protein', 'id_mutation', 'snp_id', 'chromosome', 'start', 'stop', 'start_aa', 'end_aa', 'from', 'to', 'consequence', 'cambio_nt']]
-    mutation.rename(columns={'start': 'start_genomic', 'stop': 'end_genomic', 'from': 'from_aa', 'to': 'to_aa', 'cambio_nt': 'nt_change'}, inplace= True)
+if __name__ == "__main__":  
+
+    protein = pd.read_csv('../raw_data/uniprot_all_data_associated_to_mlo_preproc.tsv', sep="\t")
+    protein = protein[['id_protein', 'uniprot_acc', 'uniprot_other_accesions']]
     
+    id_protein = protein[['id_protein', 'uniprot_other_accesions']].rename(columns={'uniprot_other_accesions': 'uniprot_acc'})
+    id_protein['uniprot_acc'] = id_protein['uniprot_acc'].str.split(';')
+    id_protein = id_protein.explode('uniprot_acc')
+    id_protein['uniprot_acc'] = id_protein['uniprot_acc'].str.strip()
+    id_protein = id_protein[~id_protein['uniprot_acc'].isnull()]
+    id_protein = id_protein[id_protein['uniprot_acc'] != '']
+    
+    id_protein = pd.concat([protein[['id_protein', 'uniprot_acc']], id_protein])
+      
     #consequence and mutation table
-    t_consequence_and_mutation(mutation)
+    aux_range = t_consequence_and_mutation()
     
-    # protein table for our db. Same above but one protein by row
-    id_protein = pd.read_csv('../db_tables/protein.tsv', sep='\t')    
-    # DataFrame with unique id_protein col
-    id_protein = id_protein[['id_protein', 'uniprot_acc']].copy()
-    
-    aux_range = mutation[['start_aa', 'end_aa', 'id_mutation', 'id_protein']].copy()
+    aux_range = aux_range[['start_aa', 'end_aa', 'id_mutation', 'id_protein']]
     aux_range.rename(columns={'id_protein': 'Chromosome', 'start_aa': 'Start', 'end_aa': 'End'}, inplace= True)
     # Pyranges object of mutations
     aux_range = pr.PyRanges(aux_range)
@@ -270,12 +284,17 @@ if __name__ == "__main__":
     t_lowcomplexity_mutationlc(id_protein, aux_range)
     #tables related to disorder
     t_disorder(aux_range)
-    #table related to mlos
+    
+    2- agregar metodo para regiones llps en proteina y mutacion
+    3- agregar metodo para ptms en proteina
+    
+    #table related to mlos    
+    4- add the field reviewed as varchar 2 LT or HT to 
     t_mlo_db_rol_proteinmlo(id_protein)
     
-    mutations_with_source = pd.read_csv('../raw_data/mutations_with_source.tsv.gz', sep='\t', compression='gzip')
+    mutations_source_clinvar = pd.read_csv('../raw_data/mutations_source_clinvar.tsv.gz', sep='\t', compression='gzip')
     
     #table related to source    
-    t_source_mutationsource(mutations_with_source)
+    t_source_mutationsource(mutations_source_clinvar)
     #table related to citation
-    t_citationsource_mutationcitation(mutations_with_source)    
+    t_citationsource_mutationcitation(mutations_source_clinvar)    

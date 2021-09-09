@@ -1,8 +1,0 @@
-id_cross	name	url
-1	MedGen	https://www.ncbi.nlm.nih.gov/medgen/
-2	OMIM	https://www.omim.org/
-3	MeSH	https://www.ncbi.nlm.nih.gov/mesh/
-4	MONDO	https://www.ebi.ac.uk/ols/ontologies/mondo/
-5	Human Phenotype Ontology	https://hpo.jax.org/
-6	Orphanet	https://www.orpha.net/
-7	EFO	https://www.ebi.ac.uk/ols/ontologies/efo

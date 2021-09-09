@@ -25,10 +25,10 @@ def parse_args():
 
 def mapp_by_all_ids(arg_files):
     
-    vs_refseq = pd.read_csv(arg_files.clinvar_file, sep='\t', compression='gzip')  
+    vs_refseq = pd.read_csv(arg_files.clinvar_file, sep='\t', compression='gzip').rename(columns={'start': 'start_genomic', 'stop': 'end_genomic'})
     vs_refseq['index_line'] = list(range(0, len(vs_refseq)))
     #merge at the end to put the data
-    vs_ids_other = vs_refseq[['index_line', 'refseq', 'snp_id', 'variationid', 'chromosome', 'start', 'stop', 'type', 'notation_aa', 'notation_cds', 'origin', 'phenotypeids', 'phenotypelist', 'otherids']]
+    vs_ids_other = vs_refseq[['index_line', 'refseq', 'snp_id', 'variationid', 'chromosome', 'start_genomic', 'end_genomic', 'type', 'notation_aa', 'notation_cds', 'origin', 'phenotypeids', 'phenotypelist', 'otherids']]
     #only kept in vs_refseq the 'index_line' and the ids used to mapp
     #by the snp, some refseq can be associated to two or more chromosomes for example to X and Y 
     vs_refseq = vs_refseq[['index_line', 'refseq', 'chromosome']]
@@ -224,19 +224,10 @@ def put_mutation_consequence(mutations):
 
     tables = [synonym, deletions, delins, duplications, frameshift, insertions, missense, nonsense, nostop, repeted]
     mutations = pd.concat(tables)
+    mutations = mutations.drop(columns=['index_line']).drop_duplicates()
     print(f"Total mutations: {mutations.shape[0]}")
    
-    # Assign id_mutation. A mutation is unique by the indexes : 'id_protein', 'notation_aa', 'notation_cds'
-    subset = mutations[['id_protein', 'notation_aa', 'notation_cds']].drop_duplicates()
-    subset['id_mutation'] = range(1, len(subset)+1)
-    print(f'Subset (unique mutations) length: {len(subset)}')
-    mutations = mutations.merge(subset)
-    dd = mutations.groupby(['id_mutation']).size().reset_index(name='counts')
-    dd = dd[dd.counts > 1]
-    print(dd)
-    print(f'All mutations after merge: {mutations.shape[0]}')
-    print(mutations.columns.tolist())
-    return mutations.drop(columns=['index_line'])
+    return mutations
 
 if __name__ == "__main__":
 
@@ -256,14 +247,26 @@ if __name__ == "__main__":
 
     mutations = put_mutation_consequence(mutations)
     
+    # Assign id_mutation. A mutation is unique by the indexes : 'id_protein', 'notation_aa', 'notation_cds'
+    subset = mutations[['id_protein', 'notation_aa', 'notation_cds', 'chromosome', 'start_genomic', 'end_genomic']].drop_duplicates()
+    subset['id_mutation'] = range(1, len(subset)+1)
+    print(f'Subset (unique mutations) length: {len(subset)}')
+    mutations = mutations.merge(subset)
+    dd = mutations.groupby(['id_mutation']).size().reset_index(name='counts')
+    dd = dd[dd.counts > 1]
+    print(dd)
+    print(f'All mutations after merge: {mutations.shape[0]}')
+    print(mutations.columns.tolist())
+    
+    
     # Another table for diseases
     diseases = mutations[['id_mutation', 'origin', 'phenotypeids', 'phenotypelist', 'otherids']].copy()
     diseases.to_csv(os.path.join(opts.outfolder, 'diseases_clinvar.tsv.gz'), sep='\t', index= False, compression='gzip')
     
     # Add ClinVar source
-    mutations_with_source = mutations[['id_mutation', 'variationid']].drop_duplicates()
+    mutations_with_source = mutations[['id_mutation', 'variationid']].drop_duplicates().rename(columns={'variationid': 'id_insource'})
     mutations_with_source['source'] = 'clinvar'
-    mutations_with_source.to_csv(os.path.join(opts.outfolder, 'mutations_with_source_clinvar.tsv.gz'), sep='\t', index= False, compression='gzip')
+    mutations_with_source.to_csv(os.path.join(opts.outfolder, 'mutations_source_clinvar.tsv.gz'), sep='\t', index= False, compression='gzip')
     
     # drop columns
     mutations.drop(columns=['variationid', 'origin', 'phenotypeids', 'phenotypelist', 'otherids'], inplace= True)

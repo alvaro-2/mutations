@@ -2,24 +2,13 @@ import pandas as pd
 
 # Proteins from each LLPS database with their roles, mlos and dataset
 # Each combination: uniprot, mlo, db, rol must be unique
-mlo_db_rol = pd.read_csv('../raw_data/database_entrada.csv')
-mlo_db_rol.drop(columns='organism', inplace= True)
+
+#uniprot	 mlo db	rol	reviewed
+
+mlo_db_rol = pd.read_csv('../raw_data/tablas_disphase_30-08/dataset_entrada_mlos.csv')
 mlo_db_rol.drop_duplicates(inplace = True)
 mlo_db_rol.rename(columns= {'uniprot': 'uniprot_acc'}, inplace= True)
 #mlo_db_rol.info()
-
-# Drop rows with same uniprot, mlo, db and different rol
-print('Duplicated entries to fix')
-aa = mlo_db_rol.drop_duplicates().groupby(['uniprot_acc', 'mlo', 'db']).size().reset_index(name='counts')
-print(aa[aa.counts > 1])
-'''
-# Check one of them
-print(mlo_db_rol[(mlo_db_rol.uniprot_acc == 'O43781') & (mlo_db_rol.mlo == 'Stress granule') & (mlo_db_rol.db == 'phasepdb_rev')])
-print(mlo_db_rol[(mlo_db_rol.uniprot_acc == 'P31483') & (mlo_db_rol.mlo == 'Stress granule') & (mlo_db_rol.db == 'phasepdb_rev')])
-print(mlo_db_rol[(mlo_db_rol.uniprot_acc == 'Q92973') & (mlo_db_rol.mlo == 'Stress granule') & (mlo_db_rol.db == 'phasepdb_rev')])
-print(mlo_db_rol[(mlo_db_rol.uniprot_acc == 'Q9UHD9') & (mlo_db_rol.mlo == 'Stress granule') & (mlo_db_rol.db == 'phasepdb_rev')])
-'''
-mlo_db_rol.drop([137, 141, 277, 204], inplace= True)
 
 # ## Deal with mlos annotations
 
@@ -123,5 +112,6 @@ mlo_db_rol.replace('Sress granule', 'Stress granule', inplace= True)
 mlo_db_rol.drop_duplicates(inplace= True)
 
 print(f'MLOs database and rol found {mlo_db_rol.shape[0]} rows')
+print(f'unique MLOs {len(set(mlo_db_rol["mlo"].tolist()))}')
 #mlo_db_rol.info()
 mlo_db_rol.to_csv('../raw_data/mlo_db_rol_cleaned.tsv', sep="\t", index=False)

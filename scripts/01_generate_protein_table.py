@@ -1,5 +1,6 @@
 import pandas as pd
 import argparse
+import numpy
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Pre-process clinvar file')
@@ -10,7 +11,7 @@ def parse_args():
     
     parser.add_argument('--mobidb_dc',
                         dest='modidb',
-                        help='Mobidb disorder content dc_mobidb_lite.csv')
+                        help='Mobidb disorder content disorder_content.csv')
 
     opts = parser.parse_args()
     return opts
@@ -25,9 +26,24 @@ if __name__ == "__main__":
     
     # Mobidb disorder content
     mobidb = pd.read_csv(opts.modidb).rename(columns={'uniprot': 'uniprot_acc', 'dc': 'disorder_content'})
+    print(f'modibd dc {mobidb.shape[0]}')
     
-    #take in count the uniprot O43236 is the current accesion for Q8NEP4 (old)
-    mobidb['uniprot_acc'] = mobidb['uniprot_acc'].str.replace("Q8NEP4", "O43236")
+    #take in count some uniprot can be old accession
+    p_new_old = protein[['id_protein', 'uniprot_other_accesions']].rename(columns={'uniprot_other_accesions': 'uniprot_acc'})
+    p_new_old['uniprot_acc'] = p_new_old['uniprot_acc'].str.split(';')
+    p_new_old = p_new_old.explode('uniprot_acc')
+    p_new_old['uniprot_acc'] = p_new_old['uniprot_acc'].str.strip()
+    p_new_old = p_new_old[~p_new_old['uniprot_acc'].isnull()]
+    p_new_old = p_new_old[p_new_old['uniprot_acc'] != '']
+    
+    p_new_old = pd.concat([protein[['id_protein', 'uniprot_acc']], p_new_old])
+    
+    #not human uniprot accessions
+    #print(set(mobidb['uniprot_acc'].tolist()).difference(set(p_new_old['uniprot_acc'].tolist())))
+    
+    mobidb = mobidb.merge(p_new_old)
+    mobidb = mobidb[['id_protein', 'disorder_content']].drop_duplicates()
+    print(f'mobidb_dc mapped llps proteins, rows {mobidb.shape[0]}, unique id_protein {len(set(mobidb["id_protein"].tolist()))}')
     
     #add disorder content
     protein = protein.merge(mobidb, how= 'left')
@@ -36,7 +52,10 @@ if __name__ == "__main__":
     k = "|".join(["ubiquinone", "ATP", "NAD", "NADH", "NADP", "NADPH", "NADP\(\+\)", "NMDA", "ADP\/GDP-forming", "GDP-forming", "ADP-forming", "acylating", "ammonia", "flavin-containing", "isomerizing", "carboxylating", "decarboxylating", "acetyl-transferring"])
     protein['protein_names'] = protein['protein_names'].str.replace(' ?\[('+k+')\]', '', regex=True)
     
+    print(f'total of proteins {protein.shape[0]}')
+    
     protein.to_csv('../db_tables/protein.tsv', sep='\t', index= False)
+    
     '''
     print(numpy.nanmax(protein['uniprot_status'].str.len())) #10
     print(numpy.nanmax(protein['sequence'].str.len())) #34350
