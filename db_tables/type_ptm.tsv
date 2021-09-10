@@ -1,0 +1,8 @@
+type	id_type
+Phosphorylation	1
+Acetylation	2
+Methylation	3
+Ubiquitination	4
+Sumoylation	5
+O-GlcNAc	6
+O-GalNAc	7

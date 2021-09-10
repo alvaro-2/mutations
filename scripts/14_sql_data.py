@@ -86,7 +86,28 @@ TABLES_ORDER_NUMTYPE = [
      "int": ["id_cross"]},
     {"table": "disease_has_cross_reference",
      "file": "disease_has_cross_reference",
-     "int": ["id_disease", "id_cross"]}     
+     "int": ["id_disease", "id_cross"]},
+    {"table": "type_ptm",
+     "file": "type_ptm",
+     "int": ["id_type"]},  
+    {"table": "class_ptm",
+     "file": "class_ptm",
+     "int": ["id_class"]},
+    #{"table": "ptm",
+    # "file": "ptm", #only the proteins with mutations
+    # "int": ["id_ptm", "id_type", "id_class", "pos_aa", "id_protein"]},   
+    {"table": "ptm",
+     "file": "ptm_sel", #only the proteins with mutations
+     "int": ["id_ptm", "id_type", "id_class", "pos_aa", "id_protein"]}, 
+    #{"table": "llps_region",
+    #"file": "llps_region", #only the proteins with mutations
+    #"int": ["id_llps", "start", "end", "length", "id_protein"]},   
+    {"table": "llps_regions",
+     "file": "llps_region_sel", #only the proteins with mutations
+     "int": ["id_llps", "start", "end", "length", "id_protein"]}, 
+    {"table": "mutation_has_llps",
+     "file": "mutation_has_llps_region", #only the proteins with mutations
+     "int": ["id_llps", "id_mutation"]},     
     ]
 
 FOLDER_TABLES = "db_tables"
@@ -108,7 +129,6 @@ def generate_sql(table_info):
     table_data = pd.read_csv(os.path.join("..", FOLDER_TABLES, table_info['file'] + ".tsv"), sep="\t")
     #read the colnames
     coln_names = list(table_data.columns)
-    cols_intfloat = table_info.get('int', []) + table_info.get('float', [])
         
     for i in coln_names:
         y = table_data[i].isna()

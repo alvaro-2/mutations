@@ -1,0 +1,11 @@
+id_consequence	consequence
+1	missense
+2	synonym
+3	nonsense
+4	frameshift
+5	deletion
+6	delins
+7	insertion
+8	duplication
+9	nostop
+10	repeted

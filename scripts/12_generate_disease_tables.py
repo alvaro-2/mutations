@@ -1,5 +1,5 @@
 import pandas as pd
-disdata = pd.read_csv("../raw_data/diseases.tsv.gz", sep="\t", compression='gzip')
+disdata = pd.read_csv("../raw_data/diseases_clinvar.tsv.gz", sep="\t", compression='gzip')
 
 y = disdata[['phenotypeids', 'phenotypelist']]
 y = y.drop_duplicates()
@@ -52,12 +52,13 @@ for index, row in disdata.iterrows():
 #eliminar las falsas enfermedades de mut_dis y ph_all
 y = list(set(list(ph_all.keys())))
 y.sort() 
+print(y)
 
 #manually selected as no valid disease
 no_valid_disease = ['not provided', 'not specified', '', '-', '10 conditions', '11 conditions', '12 conditions', 
                     '13 conditions', '14 conditions', '15 conditions', '16 conditions', '17 conditions', '18 conditions', 
-                    '19 conditions', '20 conditions', '21 conditions', '22 conditions', '23 conditions', '25 conditions', 
-                    '27 conditions', '36 conditions', '6 conditions', '7 conditions', '8 conditions', '9 conditions']
+                    '19 conditions', '20 conditions', '21 conditions', '22 conditions', '24 conditions', '27 conditions', 
+                    '36 conditions', '6 conditions', '7 conditions', '8 conditions', '9 conditions']
 
 ph_data = {key:ph_all[key] for key in no_valid_disease}
 #only two mutations (mutation id 8897 and 249100) has the disease '' and that have the {'OMIM': '114500'}
