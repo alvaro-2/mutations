@@ -34,11 +34,12 @@ def t_consequence_and_mutation():
 
 def t_pfam_proteinpfam_mutationpfam(id_protein, aux_py):
     #pfam domain table
-    pfam = pd.read_csv('../raw_data/tablas_disphase_30-08/pfam.csv').rename(columns={'uniprot': 'uniprot_acc', 'tipo': 'pfam_name'})
+    pfam = pd.read_csv('../raw_data/tablas_disphase_30-08/pfam_domains.csv').rename(columns={'uniprot': 'uniprot_acc', 'pfam_acc': 'id_pfam', 'domain': 'pfam_domain'})
     
+    #columns uniprot pfam_acc start end domain
+
     # Array with unique pfam domains
-    pfam_domain = pfam[['pfam_name', 'pfam_acc']].drop_duplicates()
-    pfam_domain.rename(columns={'pfam_acc': 'id_pfam', 'pfam_name': 'pfam_domain'}, inplace= True)
+    pfam_domain = pfam[['id_pfam', 'pfam_domain']].drop_duplicates()
     print(f'Generating table pfam_domain.tsv, rows {pfam_domain.shape[0]}')
     pfam_domain.to_csv('../db_tables/pfam_domain.tsv', sep='\t', index= False)
 
@@ -46,19 +47,15 @@ def t_pfam_proteinpfam_mutationpfam(id_protein, aux_py):
     # cols: id_protein, id_pfam, start, end, length
     protein_has_pfam_domain = pfam.merge(id_protein) # agregar col id_protein
     protein_has_pfam_domain['length'] = protein_has_pfam_domain.end - protein_has_pfam_domain.start + 1 # col length
-    protein_has_pfam_domain.drop(columns='pfam_name', inplace= True)
-    protein_has_pfam_domain = protein_has_pfam_domain.merge(pfam) # to add the col pfam_id
-    protein_has_pfam_domain.rename(columns={'pfam_acc': 'id_pfam'}, inplace= True)
-    protein_has_pfam_domain = protein_has_pfam_domain[['id_protein', 'id_pfam', 'start', 'end', 'length']].sort_values('id_protein')
+    protein_has_pfam_domain.drop(columns=['pfam_domain', 'uniprot_acc'], inplace= True)
+    protein_has_pfam_domain = protein_has_pfam_domain.sort_values('id_protein')
     
     #protein_has_pfam_domain.duplicated().any()
     print(f'Generating table protein_has_pfam_domain.tsv, rows {protein_has_pfam_domain.shape[0]}')
     protein_has_pfam_domain.to_csv('../db_tables/protein_has_pfam_domain.tsv', sep='\t', index= False)
     
     # mutation_has_pfam_domain 
-    df = pfam.rename(columns={'pfam_name': 'pfam_domain'}).merge(pfam_domain)
-    df = df.merge(id_protein) # mapping uniprot_acc - id_protein
-    df.drop(columns='uniprot_acc', inplace= True)
+    df = protein_has_pfam_domain.copy()
     df.rename(columns={'id_protein': 'Chromosome', 'start': 'Start', 'end': 'End'}, inplace= True)
     
     # Create the pyranges object of pfam domains
@@ -75,7 +72,7 @@ def t_pfam_proteinpfam_mutationpfam(id_protein, aux_py):
     print(f'Generating table mutation_has_pfam_domain.tsv, rows {mutation_has_pfam_domain.shape[0]}')
     mutation_has_pfam_domain.to_csv('../db_tables/mutation_has_pfam_domain.tsv', sep='\t', index= False)
 
-def t_lowcomplexity_mutationlc(id_protein, aux_lc_py):
+def t_lowcomplexity_mutationlc(id_protein, aux_py):
     #low complexity
     low_complexity = pd.read_csv('../raw_data/tablas_disphase_30-08/low_complexity_regions.csv').rename(columns={'uniprot': 'uniprot_acc'})
     low_complexity['id_lc'] = range(1, len(low_complexity)+1)
@@ -99,7 +96,7 @@ def t_lowcomplexity_mutationlc(id_protein, aux_lc_py):
     lc_has_py = pr.PyRanges(lc_has)
     
     # Join both pyranges object: this assings mutations to low-complexity regions
-    lc_py = aux_lc_py.join(lc_has_py, strandedness= False, slack=1).drop(like="_b") # strandedness= False doesnt take count of the chain strand;
+    lc_py = aux_py.join(lc_has_py, strandedness= False, slack=1).drop(like="_b") # strandedness= False doesnt take count of the chain strand;
                                                                                     # slack= 1 include bounds; drop(like="_b"): delete those cols (redudants)
     # Pyrange to DataFrame
     mutation_has_low_complexity = lc_py.df[['id_mutation', 'id_lc']] # cols to keep
@@ -113,7 +110,7 @@ def t_lowcomplexity_mutationlc(id_protein, aux_lc_py):
     print(f'Generating table mutation_has_low_complexity.tsv, rows {mutation_has_low_complexity.shape[0]}')
     mutation_has_low_complexity.to_csv('../db_tables/mutation_has_low_complexity.tsv', sep='\t', index= False)
 
-def t_disorder(aux_idr_py):
+def t_disorder(id_protein, aux_py):
     # # Disorder Tables
     disorder = pd.read_csv('../raw_data/tablas_disphase_30-08/disordered_regions.csv').rename(columns={'uniprot': 'uniprot_acc'})
     disorder['id_idr'] = range(1, len(disorder)+1)
@@ -139,7 +136,7 @@ def t_disorder(aux_idr_py):
     idr_has_py = pr.PyRanges(idr_has)
     
     # Join both pyranges object: this assings mutations to pfam domains
-    idr_py = aux_idr_py.join(idr_has_py, strandedness= False, slack=1).drop(like="_b") # strandedness= False doesnt take count of the chain strand;
+    idr_py = aux_py.join(idr_has_py, strandedness= False, slack=1).drop(like="_b") # strandedness= False doesnt take count of the chain strand;
                                                                                        # slack= 1 include bounds; drop(like="_b"): delete those cols (redudants)
     
     # Pyrange to DataFrame
@@ -155,14 +152,12 @@ def t_disorder(aux_idr_py):
     mutation_has_disorder_region.to_csv('../db_tables/mutation_has_disorder_region.tsv', sep='\t', index= False)
 
 def t_mlo_db_rol_proteinmlo(id_protein):
-    # # Rol table 
+    # cols: uniprot_acc	mlo	db	rol	reviewed
     mlo_db_rol = pd.read_csv('../raw_data/mlo_db_rol_cleaned.tsv', sep="\t")
-    # cols: id_rol, rol
     
-    #database_entrada.rol.unique()
-    #database_entrada.rol.value_counts()
-    
-    rol = pd.DataFrame({'rol': mlo_db_rol.rol.value_counts().index, 'id_rol': range(1, len(mlo_db_rol.rol.value_counts())+1)})
+    # # Rol table 
+    # cols: id_rol, rol    
+    rol = pd.DataFrame({'rol': mlo_db_rol.rol.value_counts().index, 'id_rol': range(1, len(mlo_db_rol.mlo[mlo_db_rol.rol.notnull()].unique())+1)})
     # Save
     print(f'Generating table rol.tsv, rows {rol.shape[0]}')
     rol.to_csv('../db_tables/rol.tsv', sep='\t', index= False)
@@ -198,7 +193,7 @@ def t_mlo_db_rol_proteinmlo(id_protein):
     # Add id_mlo
     protein_has_mlo = protein_has_mlo.merge(mlo, how= 'left')
     # Add id_rol and id_database
-    protein_has_mlo = protein_has_mlo.merge(rol)
+    protein_has_mlo = protein_has_mlo.merge(rol, how= 'left')
     protein_has_mlo = protein_has_mlo.rename(columns={'db': 'dataset'}).merge(dataset).sort_values('id_protein')
     protein_has_mlo.drop(columns=['uniprot_acc', 'mlo', 'rol', 'dataset'], inplace= True)
     
@@ -220,11 +215,11 @@ def t_source_mutationsource(mutations_source_clinvar):
     mutation_has_sources = pd.read_csv('../raw_data/sources_cosmic.tsv.gz', sep='\t', compression='gzip')
     mutation_has_sources = mutations_source_clinvar.append(mutation_has_sources, ignore_index=True)
     # # mutation_has_source
-    mutation_has_source.drop_duplicates(inplace= True)
-    mutation_has_source = mutation_has_source.merge(source).drop(columns='source')
+    mutation_has_sources.drop_duplicates(inplace= True)
+    mutation_has_sources = mutation_has_sources.merge(source).drop(columns='source')
     # Save
-    print(f'Generating table mutation_has_source.tsv, rows {mutation_has_source.shape[0]}')
-    mutation_has_source.to_csv('../db_tables/mutation_has_source.tsv', sep='\t', index= False)
+    print(f'Generating table mutation_has_source.tsv, rows {mutation_has_sources.shape[0]}')
+    mutation_has_sources.to_csv('../db_tables/mutation_has_source.tsv', sep='\t', index= False)
 
 
 def t_citationsource_mutationcitation(mutations_source_clinvar):
@@ -256,6 +251,79 @@ def t_citationsource_mutationcitation(mutations_source_clinvar):
     print(f'Generating table mutation_has_citation.tsv, rows {mutation_has_citation.shape[0]}')
     mutation_has_citation.to_csv('../db_tables/mutation_has_citation.tsv', sep='\t', index= False) 
 
+def t_llps_regions(id_protein, aux_py):
+    # # Disorder Tables
+    llps = pd.read_csv('../raw_data/tablas_disphase_30-08/llps_regions.csv').rename(columns={'uniprot': 'uniprot_acc'})
+    llps['id_llps'] = range(1, len(llps)+1)
+    # ## disorder_region  
+    # cols: id_idr, start, end, length, id_protein
+    
+    # Add length col 
+    llps['length'] = llps.end - llps.start + 1 
+    llps_region = llps.merge(id_protein).sort_values('id_protein')
+    llps_region.drop(columns='uniprot_acc', inplace= True)
+    # Save
+    print(f'Generating table llps_region.tsv, rows {llps_region.shape[0]}')
+    llps_region.to_csv('../db_tables/llps_region.tsv', sep='\t', index= False)
+    
+    # ## mutation_has_llps_region  
+    # cols: id_mutation, id_idr
+    
+    # Table for IDRs data
+    llpsr_has = llps_region.copy()
+    llpsr_has.rename(columns={'id_protein': 'Chromosome', 'start': 'Start', 'end': 'End'}, inplace= True)
+    
+    # Create the Pyranges objects
+    llpsr_has_py = pr.PyRanges(llpsr_has)
+    
+    # Join both pyranges object: this assings mutations to pfam domains
+    llpsr_py = aux_py.join(llpsr_has_py, strandedness= False, slack=1).drop(like="_b") # strandedness= False doesnt take count of the chain strand;
+                                                                                       # slack= 1 include bounds; drop(like="_b"): delete those cols (redudants)
+    # Pyrange to DataFrame
+    mutation_has_llps_region = llpsr_py.df[['id_mutation', 'id_llps']] # cols to keep
+    
+    # Save
+    print(f'Generating table mutation_has_llps_region.tsv, rows {mutation_has_llps_region.shape[0]}')
+    mutation_has_llps_region.to_csv('../db_tables/mutation_has_llps_region.tsv', sep='\t', index= False)
+
+def t_ptms(id_protein):
+    #PTMS table 
+    ptms = pd.read_csv('../raw_data/tablas_disphase_30-08/ptms.csv').rename(columns={'uniprot': 'uniprot_acc', 'clase': 'class'}, inplace= True)
+    # cols: uniprot	type	 pos aa	mod	clase
+    
+    # table class_ptm
+    # cols: id_class, class    
+    
+    class_ptm = pd.DataFrame({'class': ptms['class'].value_counts().index, 'id_class': range(1, len(ptms['class'][ptms['class'].notnull()].unique())+1)})
+    # Save
+    print(f'Generating table class_ptm.tsv, rows {class_ptm.shape[0]}')
+    class_ptm.to_csv('../db_tables/class_ptm.tsv', sep='\t', index= False)
+    
+    # table type_ptm
+    # cols: id_type, type
+    
+    type_ptm = pd.DataFrame({'type': ptms['type'].value_counts().index, 'id_type': range(1, len(ptms['type'][ptms['type'].notnull()].unique())+1)})
+    # Save
+    print(f'Generating table type_ptm.tsv, rows {type_ptm.shape[0]}')
+    type_ptm.to_csv('../db_tables/type_ptm.tsv', sep='\t', index= False)
+    
+    # ## protein_has_ptms  
+    # cols: id_type, id_class, id_protein, pos_aa, mod, aa
+    
+    protein_has_ptms = ptms.copy()
+    
+    # Add id_protein, class and type
+    protein_has_ptms = protein_has_ptms.merge(id_protein)
+    protein_has_ptms = protein_has_ptms.merge(class_ptm, how='left')
+    protein_has_ptms = protein_has_ptms.merge(type_ptm, how='left').sort_values('id_protein')
+    protein_has_ptms.drop(columns=['uniprot_acc', 'class', 'type'], inplace= True)
+    
+    protein_has_ptms[protein_has_ptms.duplicated()] # OK
+    
+    # Save
+    print(f'Generating table protein_has_ptms.tsv, rows {protein_has_ptms.shape[0]}')
+    protein_has_ptms.to_csv('../db_tables/ptm.tsv', sep='\t', index= False)
+
 if __name__ == "__main__":  
 
     protein = pd.read_csv('../raw_data/uniprot_all_data_associated_to_mlo_preproc.tsv', sep="\t")
@@ -283,13 +351,15 @@ if __name__ == "__main__":
     #tables related to low_complexity
     t_lowcomplexity_mutationlc(id_protein, aux_range)
     #tables related to disorder
-    t_disorder(aux_range)
+    t_disorder(id_protein, aux_range)
     
-    2- agregar metodo para regiones llps en proteina y mutacion
-    3- agregar metodo para ptms en proteina
+    #table of llps regions in protein and mutacion
+    t_llps_regions(id_protein, aux_range)
+    
+    #table of ptms in proteins
+    t_ptms(id_protein)
     
     #table related to mlos    
-    4- add the field reviewed as varchar 2 LT or HT to 
     t_mlo_db_rol_proteinmlo(id_protein)
     
     mutations_source_clinvar = pd.read_csv('../raw_data/mutations_source_clinvar.tsv.gz', sep='\t', compression='gzip')
