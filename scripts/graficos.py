@@ -138,4 +138,23 @@ proteins = pd.read_csv('db_tables\protein_sel.tsv', sep='\t', usecols=['id_prote
 
 # %%
 prot_mutation = mutations.merge(proteins)[['id_mutation',	'snp_id', 'start_aa',	'end_aa',	'from_aa',	'to_aa',	'change',	'consequence',	'uniprot_acc',	'uniprot_name']]
+# %% Group
+prot = prot_mutation.groupby('uniprot_name')['id_mutation'].count().sort_values(ascending= False)
+prot_others = pd.Series({'others': prot[10:].sum()})
+prot_topten = prot[:10]
+prot_topten_others= pd.concat([prot_others, prot_topten])
+# %% PLOT top ten mutations in LLPS proteins
+sns.set_style("whitegrid")
+sns.set_palette("husl", 10)
+
+bar,ax = plt.subplots(figsize=(14,8))
+ax = sns.barplot(x= prot_topten, y= prot_topten.index, orient='h')
+ax.set_title("Phase Separation proteins with most mutations in DisPhaseDB\n", fontsize=25, weight='bold')
+ax.set_xlabel ("Number of mutations", fontsize=20, weight='bold')
+ax.set_ylabel ("Protein name", fontsize=20, weight='bold')
+ax.tick_params(labelsize=15)
+for i, v in enumerate(prot_topten):
+    ax.text(v, i, str(v), weight='bold', fontsize=14)
+
+plt.show()
 # %%
