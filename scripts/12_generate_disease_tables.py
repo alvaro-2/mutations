@@ -120,4 +120,7 @@ print(f'Generating table mutation_has_disease.tsv, rows {mutation_has_disease.sh
 mutation_has_disease.to_csv("../db_tables/mutation_has_disease.tsv", sep="\t", index=False)
 
 
-
+de la tabla de deases names clinvar quedarnos con: 
+Finding
+Disease
+Infectious disease
