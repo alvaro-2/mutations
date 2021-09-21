@@ -294,7 +294,7 @@ def t_llps_regions(id_protein, aux_py):
 
 def t_ptms(id_protein):
     #PTMS table 
-    ptms = pd.read_csv('../raw_data/tablas_disphase_30-08/ptms.csv').rename(columns={'uniprot': 'uniprot_acc', 'clase': 'class', 'pos': 'pos_aa'})
+    ptms = pd.read_csv('../raw_data/tablas_disphase_30-08/ptms.csv').rename(columns={'uniprot': 'uniprot_acc', 'clase': 'class', 'pos': 'pos_aa', 'res': 'aa', 'tipo': 'type', 'tipo_res': 'mod'})
     # cols: uniprot	type	 pos aa	mod	clase
     
     # table class_ptm
