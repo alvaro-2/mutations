@@ -61,13 +61,13 @@ mutation_has_disease = mutation_has_disease.drop_duplicates(ignore_index=True)
 #save the mutation_has_disease
 print(f'Generating table mutation_has_disease.tsv, rows {mutation_has_disease.shape[0]}') 
 mutation_has_disease.to_csv("../db_tables/mutation_has_disease.tsv", sep="\t", index=False)
-print(mutation_has_disease.columns.tolist())
+
 #save the disease
 disease = disease[disease['cui'].isin(mutation_has_disease['cui'].unique().tolist())]
 disease = disease.rename(columns={'name':'disease_name'})
 print(f'Generating table disease.tsv, rows {disease.shape[0]}') 
 disease.to_csv("../db_tables/disease.tsv", sep="\t", index=False)
-print(disease.columns.tolist())
+
 #save the disease_has_synonyms
 disease_synonyms = disease_synonyms[disease_synonyms['cui'].isin(disease['cui'].unique().tolist())]
 
@@ -75,14 +75,15 @@ cross_reference = disease_synonyms[['sab']].copy().drop_duplicates(ignore_index=
 cross_reference['id_cross'] = range(1, len(cross_reference) + 1)
 
 disease_synonyms = disease_synonyms.merge(cross_reference, on="sab").drop(columns=['sab']).rename(columns={'str':'name'})
+disease_synonyms['name'] = disease_synonyms['name'].str.replace('"', "")
 
 cross_reference = cross_reference.rename(columns={'sab':'cross_name'})
 print(f'Generating table cross_references.tsv, rows {cross_reference.shape[0]}') 
-cross_reference.to_csv("../db_tables/cross_references.tsv", sep="\t", index=False)
-print(cross_reference.columns.tolist())
+cross_reference.to_csv("../db_tables/cross_reference.tsv", sep="\t", index=False)
+
 print(f'Generating table disease_has_synonyms.tsv, rows {disease_synonyms.shape[0]}') 
 disease_synonyms.to_csv("../db_tables/disease_has_synonyms.tsv", sep="\t", index=False)
-print(disease_synonyms.columns.tolist())
+
 '''
 de la tabla de deases names clinvar quedarnos con: 
 Finding
