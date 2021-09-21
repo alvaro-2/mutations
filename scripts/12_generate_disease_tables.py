@@ -4,6 +4,7 @@ disease = pd.read_csv("../raw_data/MRCONSO.RRF", dtype="str", sep="|", names=['c
 
 disease = disease[(disease['lat'] == 'ENG')]
 disease_synonyms = disease[['cui', 'str', 'sab', 'code']].copy()
+disease_synonyms['str'] = disease_synonyms['str'].str.replace('"', "")
 disease_synonyms = disease_synonyms.drop_duplicates(ignore_index=True)
 
 #keept only one name per term
@@ -75,7 +76,8 @@ cross_reference = disease_synonyms[['sab']].copy().drop_duplicates(ignore_index=
 cross_reference['id_cross'] = range(1, len(cross_reference) + 1)
 
 disease_synonyms = disease_synonyms.merge(cross_reference, on="sab").drop(columns=['sab']).rename(columns={'str':'name'})
-disease_synonyms['name'] = disease_synonyms['name'].str.replace('"', "")
+
+disease_synonyms = disease_synonyms.drop_duplicates(ignore_index=True)
 
 cross_reference = cross_reference.rename(columns={'sab':'cross_name'})
 print(f'Generating table cross_references.tsv, rows {cross_reference.shape[0]}') 
