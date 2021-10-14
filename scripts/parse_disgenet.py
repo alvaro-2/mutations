@@ -21,7 +21,7 @@ vda = pd.read_csv('../raw_data/curated_variant_disease_associations.tsv', sep='\
 vda.columns = vda.columns.str.lower().str.replace(' ',"_").str.replace("-",'_').str.replace('/','_')
 vda = vda.rename(columns={'snpid':'snp_id'})
 # Add a generic id for each record
-
+vda['id_disgenet'] = range(1, len(vda)+1)
 # %%
 # Dataset con consultas de VEP. one row per snp
 cols1 = ['snp_id', 'allele_string', 'start_genome', 'end_genome', 'chromosome', 'assembly', 'most_severe_consequence', 'transcript_consequences']
@@ -170,9 +170,10 @@ mutation[mutation.snp_id.isin(vda.snp_id.unique())]
 snps_also_in_disgenet = mutation[mutation.snp_id.isin(vda.snp_id.unique())][['id_mutation', 'snp_id']]
 # %% I must add to this table the source in disgenet (2)
 mutation_has_source.duplicated().any() # False, ok
-# disgenet no tiene un id_insource
-# agregar un id generico?
+# disgenet no tiene un id_insource (agregue un id generico)
 # %% Subseteo mutation_has_source por el id_mutation de los snps en disgenet
-mutation_has_source[mutation_has_source.id_mutation.isin(snps_also_in_disgenet.id_mutation)] 
+to_update = mutation_has_source[mutation_has_source.id_mutation.isin(snps_also_in_disgenet.id_mutation)]
+to_update.duplicated().any() # False, ok
+
 # %%
 # not finished yet
