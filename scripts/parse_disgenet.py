@@ -88,9 +88,9 @@ disgenet_disease = vda[['snp_id', 'diseaseid', 'diseasename', 'diseasetype', 'di
 # Add an unique identifier for diseases in disgenet
 disgenet_disease['disgenet_disease_id'] = range(1, len(disgenet_disease)+1)
 
-# %% Subset with no-disease
-vda_gene = vda[['snp_id', 'chromosome', 'position', 'source']].copy()
-vda_gene.head()
+# %% Subset without diseases
+vda_gene = vda[['id_disgenet', 'snp_id', 'chromosome', 'position', 'source']].copy()
+#vda_gene.head()
 # vda_gene.drop_duplicates() # 179589 unique
 # %%
 # Check the chromosomes
@@ -108,7 +108,7 @@ variant_gene.snp_id.value_counts()
 #variant_gene[variant_gene.snp_id == 'rs17119346']
 
 # %% Add the proteins data
-# Subset here only our LLPS proteins
+# Subset here only our LLPS proteins (add the id_protein)
 variant_gene_llps = variant_gene.merge(protein_id).drop(columns= 'uniprot_acc')
 len(variant_gene_llps.id_protein.unique()) # 4187
 # %% With this, subset vda dataset by the snp
@@ -136,6 +136,8 @@ allele_data_1 # 5397 rows
 # %%
 len(allele_data.snp_id.unique()) # 5665
 len(allele_data_1.snp_id.unique()) #3580; this is the subset with only llps proteins
+
+
 # %%
 # Get SNPs that already exist in the others db
 snps = ((mutation_ids[mutation_ids.snp_id.notnull()]).snp_id.unique()) # array of unique snps; 165627
@@ -165,6 +167,7 @@ snps_unique_disgenet = variant_gene_llps[~variant_gene_llps.snp_id.isin(snps)]
 len(snps_unique_disgenet.snp_id.unique()) # 34966
 # pero de estos snps no todos son coding
 # %% snps de disgenet que ya estan en mutation table: agregar el source disgenet (2)
+#mutation[mutation.snp_id.isin(snps_unique_disgenet.snp_id.unique())] # vacio, esta ok
 mutation[mutation.snp_id.isin(vda.snp_id.unique())]
 # ok, de aqui me tengo que traer el id de la mutation
 snps_also_in_disgenet = mutation[mutation.snp_id.isin(vda.snp_id.unique())][['id_mutation', 'snp_id']]
@@ -175,5 +178,10 @@ mutation_has_source.duplicated().any() # False, ok
 to_update = mutation_has_source[mutation_has_source.id_mutation.isin(snps_also_in_disgenet.id_mutation)]
 to_update.duplicated().any() # False, ok
 
-# %%
+# %% Agrego el id de source de disgenet (2).
+xx = to_update.append(
+    to_update.assign(**{'id_source': 2}), ignore_index= True
+    ).sort_values(by= 'id_mutation')
+
+# %%  OJO, falta agregar el id in source. Debo traerlo somehow de vda_gene
 # not finished yet
