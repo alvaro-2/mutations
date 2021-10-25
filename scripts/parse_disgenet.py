@@ -4,15 +4,15 @@ import numpy as np
 
 # ############################## LOAD DATASETS: ##############################  
 # ## Disgenet data:  
-# * variant - disease association curated; Summary of Curated VDAs  
-# * rsid_data (VEP query)  
-# * allele_data (VEP query)  
+# * variant - disease association curated; Summary of Curated VDAs   
 # ### Cross references  
 # * mapa_geneid_4_uniprot_crossref.tsv.gz
 # 
-# ## From ClinVar parsed data:  
-# * mutation.tsv table  
-# ## From our db:  
+# ## From ClinVar and COSMIC parsed data:  
+# * mutation.tsv table 
+# * mutation_has_source.tsv table  
+# * source.tsv table 
+# ## From our database:  
 # * protein.tsv table
 
 # %%
@@ -22,14 +22,6 @@ vda.columns = vda.columns.str.lower().str.replace(' ',"_").str.replace("-",'_').
 vda = vda.rename(columns={'snpid':'snp_id'})
 # Add a generic id for each record
 vda['id_disgenet'] = range(1, len(vda)+1)
-# %%
-# Dataset con consultas de VEP. one row per snp
-cols1 = ['snp_id', 'allele_string', 'start_genome', 'end_genome', 'chromosome', 'assembly', 'most_severe_consequence', 'transcript_consequences']
-rsid_data = pd.read_csv('../raw_data/rsid_data.txt', sep= '\t', names= cols1, skiprows= 1)
-# %%
-# In this dataset one row per allele, i.e., for C/A/G/T will be three rows for that snp
-cols2 = ['snp_id', 'allele_string', 'type', 'ensembl_gene', 'allele_alt', 'from_to_aa', 'cdna_start', 'cdna_end', 'codons', 'impact', 'gene_name', 'cds_start', 'cds_end', 'aa_start', 'aa_end', 'consequence']
-allele_data = pd.read_csv('../raw_data/allele_data.txt', sep= '\t', names= cols2, skiprows= 1)
 # %%
 # Mappings UniProts: uniprots id with entrez gene id (https://www.disgenet.org/downloads, Mappings)
 uniprots = pd.read_csv('../raw_data/mapa_geneid_4_uniprot_crossref.tsv.gz', sep='\t', compression='gzip').rename(columns={'UniProtKB':'uniprot_acc', 'GENEID':'gene_id'})
@@ -180,19 +172,16 @@ to_add.drop_duplicates(inplace= True)
 to_add.rename(columns={'id_disgenet': 'id_insource'}, inplace= True)
 
 # %% Concat both tables
-pd.concat([mutation_has_source, to_add], ignore_index= True).sort_values(by= 'id_mutation')
+mutation_has_source = pd.concat([mutation_has_source, to_add], ignore_index= True).sort_values(by= 'id_mutation')
 # %%
-
-# %% I must add to this table the source in disgenet (2)
 mutation_has_source.duplicated().any() # False, ok
 # %% Subseteo mutation_has_source por el id_mutation de los snps en disgenet
-to_update = mutation_has_source[mutation_has_source.id_mutation.isin(snps_also_in_disgenet.id_mutation)]
-to_update.duplicated().any() # False, ok
+# to_update = mutation_has_source[mutation_has_source.id_mutation.isin(snps_also_in_disgenet.id_mutation)]
+# to_update.duplicated().any() # False, ok
 
 # %% Agrego el id de source de disgenet (2).
-xx = to_update.append(
-    to_update.assign(**{'id_source': 2}), ignore_index= True
-    ).sort_values(by= 'id_mutation')
+# xx = to_update.append(
+#     to_update.assign(**{'id_source': 2}), ignore_index= True
+#     ).sort_values(by= 'id_mutation')
 
-# %%  OJO, falta agregar el id in source. Debo traerlo somehow de vda_gene
 # not finished yet
