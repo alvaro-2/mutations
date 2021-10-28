@@ -34,7 +34,7 @@ mutation_ids = mutation.merge(mutation_has_source).drop(
 protein = pd.read_csv('../db_tables/protein.tsv', sep='\t')
 protein_id = protein[['id_protein',	'uniprot_acc']].copy()
 
-# Preprocessing
+# %% Preprocessing
 
 print(f'unique snps in vda dataset: {len(vda.snp_id.unique())}')
 vda.snp_id.isnull().any() # all entries have a snp
@@ -86,8 +86,6 @@ len(snps_unique_disgenet.snp_id.unique()) # 34966
 mutation[mutation.snp_id.isin(vda_1.snp_id.unique())]
 # ok, de aqui me tengo que traer el id de la mutation
 snps_also_in_disgenet = mutation[mutation.snp_id.isin(vda_1.snp_id.unique())][['id_mutation', 'snp_id']]
-
-# %%
 # len(snps_also_in_disgenet.snp_id.unique()) # 25820
 # len(vda_1.snp_id.unique()) # 53402
 
@@ -123,8 +121,30 @@ snps_unique_uniprot = uniprot_variants[~uniprot_variants.snp_id.isin(snps)] # 13
 # SNPs que ya estan en mutations.tsv
 # Use dopna() to skip nans in snp_id
 snps_also_in_uniprot = mutation[mutation.snp_id.isin(uniprot_variants.snp_id.dropna())][['id_mutation', 'snp_id']]
-# %% Add id_mutation to uniprot_variants
-uniprot_variants.merge(snps_also_in_uniprot)
+# %% With this, add id_mutation to uniprot_variants
+uniprot_to_add = uniprot_variants.merge(snps_also_in_uniprot, on= 'snp_id')[['ft_id', 'id_mutation']]
+# add source 3 for uniprot
+uniprot_to_add["id_source"] = 3
+uniprot_to_add.drop_duplicates(inplace= True)
+uniprot_to_add.rename(columns={'ft_id': 'id_insource'}, inplace= True)
+# %%
+mutation_has_source = pd.concat([mutation_has_source, uniprot_to_add], ignore_index= True).sort_values(by= 'id_mutation')
+#mutation_has_source.duplicated().any() # False, ok
 
+# %% Now, add mutations unique in disgenet and uniprot to mutation table
+# Para agregar las de disgenet me esta faltando el id_consequence
 
+# Agrego las de uniprot (son todas missense)
+mutation_to_add = pd.DataFrame(columns= mutation.columns)
+# %% Add notation_aa_col
+snps_unique_uniprot["notation_aa"] = "p." + snps_unique_uniprot.from_aa.astype(str) + snps_unique_uniprot.start_aa.astype(str) + snps_unique_uniprot.to_aa.astype(str)
+# %% Format
+snps_unique_uniprot.replace({"consequence": {"missense": 1}}, inplace= True)
+snps_unique_uniprot.rename(columns= {'consequence': 'id_consequence'}, inplace= True)
+# %% Add mutations
+mutation_to_add = pd.concat([mutation_to_add, snps_unique_uniprot[
+    ['snp_id', 'start_aa', 'end_aa', 'notation_aa', 'id_protein', 'id_consequence']
+]])
+# Add a unique id for each new mutation
+mutation_to_add.id_mutation = range(len(mutation)+1, len(mutation)+len(mutation_to_add)+1)
 # %% not finished yet
