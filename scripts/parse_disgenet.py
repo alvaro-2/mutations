@@ -147,4 +147,8 @@ mutation_to_add = pd.concat([mutation_to_add, snps_unique_uniprot[
 ]])
 # Add a unique id for each new mutation
 mutation_to_add.id_mutation = range(len(mutation)+1, len(mutation)+len(mutation_to_add)+1)
+
+# %% Traer el ft_id (id_insource)
+snps_unique_uniprot.merge(mutation_to_add)
+snps_unique_uniprot.merge(mutation_to_add)[['id_mutation', 'ft_id', 'source']]
 # %% not finished yet
