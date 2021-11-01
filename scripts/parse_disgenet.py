@@ -103,7 +103,7 @@ mutation_has_source = pd.concat([mutation_has_source, to_add], ignore_index= Tru
 
 ######################################################################################################
 # %% Ahora agregar las de uniprot
-# ft_id: unique and stable feature identifier
+# ft_id: unique and stable feature identifier (id_insource)
 uniprot_variants = pd.read_csv('../raw_data/uniprot_all_proteins_mutations.tsv.gz', sep='\t')
 # %% Generate a separated table for diseases. The id is ft_id col
 uniprot_variants_disease = uniprot_variants[
@@ -120,9 +120,9 @@ snps_unique_uniprot = uniprot_variants[~uniprot_variants.snp_id.isin(snps)] # 13
 
 # SNPs que ya estan en mutations.tsv
 # Use dopna() to skip nans in snp_id
-snps_also_in_uniprot = mutation[mutation.snp_id.isin(uniprot_variants.snp_id.dropna())][['id_mutation', 'snp_id']]
+snps_also_in_uniprot = mutation[mutation.snp_id.isin(uniprot_variants_gene.snp_id.dropna())][['id_mutation', 'snp_id']] # 8984
 # %% With this, add id_mutation to uniprot_variants
-uniprot_to_add = uniprot_variants.merge(snps_also_in_uniprot, on= 'snp_id')[['ft_id', 'id_mutation']]
+uniprot_to_add = uniprot_variants_gene.merge(snps_also_in_uniprot, on= 'snp_id')[['ft_id', 'id_mutation']]
 # add source 3 for uniprot
 uniprot_to_add["id_source"] = 3
 uniprot_to_add.drop_duplicates(inplace= True)
@@ -132,7 +132,7 @@ mutation_has_source = pd.concat([mutation_has_source, uniprot_to_add], ignore_in
 #mutation_has_source.duplicated().any() # False, ok
 
 # %% Now, add mutations unique in disgenet and uniprot to mutation table
-# Para agregar las de disgenet me esta faltando el id_consequence
+# Para agregar las de disgenet me esta faltando el id_consequence (ver)
 
 # Agrego las de uniprot (son todas missense)
 mutation_to_add = pd.DataFrame(columns= mutation.columns)
@@ -148,7 +148,14 @@ mutation_to_add = pd.concat([mutation_to_add, snps_unique_uniprot[
 # Add a unique id for each new mutation
 mutation_to_add.id_mutation = range(len(mutation)+1, len(mutation)+len(mutation_to_add)+1)
 
-# %% Traer el ft_id (id_insource)
-snps_unique_uniprot.merge(mutation_to_add)
-snps_unique_uniprot.merge(mutation_to_add)[['id_mutation', 'ft_id', 'source']]
+# %% Ahora agregar en mutation_has_source
+# Traer el ft_id (id_insource)
+mutation_has_source_to_add = snps_unique_uniprot.merge(mutation_to_add)
+mutation_has_source_to_add = snps_unique_uniprot.merge(mutation_to_add)[['id_mutation', 'ft_id', 'source']].drop_duplicates()
+mutation_has_source_to_add.replace({'source': {"uniprot": 3}}, inplace= True)
+mutation_has_source_to_add.rename(columns={'ft_id': 'id_insource', 'source': 'id_source'}, inplace= True)
+# %% Add to mutation_has_source table
+mutation_has_source = pd.concat([mutation_has_source, mutation_has_source_to_add], ignore_index= True).sort_values(by= 'id_mutation')
+
+# %% Ok, falta agregar las unique de disgenet...
 # %% not finished yet
