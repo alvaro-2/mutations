@@ -38,10 +38,26 @@ def t_consequence_and_mutation():
 
 def t_pfam_proteinpfam_mutationpfam(id_protein, aux_py):
     #pfam domain table
-    pfam = pd.read_csv('../raw_data/tablas_disphase_30-08/pfam_domains.csv').rename(columns={'uniprot': 'uniprot_acc', 'pfam_acc': 'id_pfam', 'domain': 'pfam_domain'})
-    
+    pfam = pd.read_csv('../raw_data/tablas_disphase_30-08/pfam_domains.csv').rename(columns={'uniprot': 'uniprot_acc', 'pfam_acc': 'id_pfam', 'domain': 'pfam_domain'})    
     #columns uniprot pfam_acc start end domain
+    
+    # PLDs table
+    plds = pd.read_csv('../raw_data/pld.csv')
+    plds.rename(
+        columns= {'uniprot': 'uniprot_acc'}, inplace= True
+    )
+    # Create a generic id for each PLD region
+    id_pfam = [ "PLD" + str(i) for i in range(1, len(plds)+1) ]
 
+    # Add id_pfam and pfam_domain cols
+    plds["id_pfam"] = id_pfam
+    plds["pfam_domain"] = "PLD"
+    plds.drop(
+        columns=['score', 'seq'], inplace= True
+    )
+    # Concat both tables
+    pfam = pd.concat([pfam, plds]).drop_duplicates()
+      
     # Array with unique pfam domains
     pfam_domain = pfam[['id_pfam', 'pfam_domain']].drop_duplicates()
     print(f'Generating table pfam_domain.tsv, rows {pfam_domain.shape[0]}')
