@@ -102,7 +102,7 @@ mutation_has_source = pd.concat([mutation_has_source, to_add], ignore_index= Tru
 #mutation_has_source.duplicated().any() # False, ok
 
 ######################################################################################################
-# %% Ahora agregar las de uniprot
+# %% Ahora agregar las de UNIPROT
 # ft_id: unique and stable feature identifier (id_insource)
 uniprot_variants = pd.read_csv('../raw_data/uniprot_all_proteins_mutations.tsv.gz', sep='\t')
 # %% Generate a separated table for diseases. The id is ft_id col
@@ -126,8 +126,8 @@ uniprot_to_add = uniprot_variants_gene.merge(snps_also_in_uniprot, on= 'snp_id')
 # add source 3 for uniprot
 uniprot_to_add["id_source"] = 3
 uniprot_to_add.drop_duplicates(inplace= True)
-uniprot_to_add.rename(columns={'ft_id': 'id_insource'}, inplace= True)
-# %%
+uniprot_to_add.rename(columns={'ft_id': 'id_insource'}, inplace= True) # esto es mutation_has_source
+# %% Agrego esas mutations que tambien tienen source de uniprot
 mutation_has_source = pd.concat([mutation_has_source, uniprot_to_add], ignore_index= True).sort_values(by= 'id_mutation')
 #mutation_has_source.duplicated().any() # False, ok
 
@@ -147,6 +147,8 @@ mutation_to_add = pd.concat([mutation_to_add, snps_unique_uniprot[
 ]])
 # Add a unique id for each new mutation
 mutation_to_add.id_mutation = range(len(mutation)+1, len(mutation)+len(mutation_to_add)+1)
+mutation = pd.concat([mutation, mutation_to_add], ignore_index= True)
+#mutation.duplicated().any() # False, Ok
 
 # %% Ahora agregar en mutation_has_source
 # Traer el ft_id (id_insource)
@@ -157,5 +159,8 @@ mutation_has_source_to_add.rename(columns={'ft_id': 'id_insource', 'source': 'id
 # %% Add to mutation_has_source table
 mutation_has_source = pd.concat([mutation_has_source, mutation_has_source_to_add], ignore_index= True).sort_values(by= 'id_mutation')
 
-# %% Ok, falta agregar las unique de disgenet...
-# %% not finished yet
+# Hasta aca actualice: mutation.tsv; mutation_has_source.tsv
+# %% Ok, faltaria agregar las unique de disgenet...
+# %% save
+mutation.to_csv('../db_tables/mutation_new.tsv.gz', sep= '\t', index= False, compression='gzip')
+mutation_has_source.to_csv('../db_tables/mutation_has_source_new.tsv', sep= '\t', index= False)
